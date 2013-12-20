@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg -->
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>sides</object-name>
+    <object-name>pedestal</object-name>
+    <object-name>overhead</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.528 </y-m>
+      <z-m>  0.092 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.001 </x-m>
+      <y-m> 0.528 </y-m>
+      <z-m> 0.092 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m>  0.095 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.637 </y-m>
+      <z-m>  0.098 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.421 </y-m>
+      <z-m> 0.098 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.637 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.421 </y-m>
+      <z-m> 0.005 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.098 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.638 </y-m>
+      <z-m> 0.098 </z-m>
+    </offsets>
+  </model>
+
+  <!-- UIZ -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-4.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.112 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+
+  <!-- UT-7A -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-1.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.035 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-4.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.106 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.322 </y-m>
+      <z-m> -0.018 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.739 </y-m>
+      <z-m> 0.113 </z-m>
+    </offsets>
+  </model>
+
+  <!-- UAP -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.206 </y-m>
+      <z-m>  0.096 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.206 </y-m>
+      <z-m> 0.096 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
