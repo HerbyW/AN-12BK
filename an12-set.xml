@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="an12-jsbsim-cnf.xml"> -->
+<PropertyList include="an12-yasim-cnf.xml">
+
+  <sim>
+
+    <description>Antonov An 12 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>intportetour</object-name>
+    <object-name>planchet</object-name>
+    <object-name>intbaie</object-name>
+    <object-name>intbaieG</object-name>
+    <object-name>intbaieD</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+  </effect>
+  
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -13.35934 </x-m>
+      <y-m>  -0.54728 </y-m>
+      <z-m>  -2.06901 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -14.00613 </x-m>
+      <y-m>   0.00000 </y-m>
+      <z-m>  -1.96245 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Doors animations -->
+  <animation>
+    <name>IntLaPorteduCote</name>
+    <object-name>intporte</object-name>
+    <object-name>intportetour</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntLaPorteduCote</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntLaPorteduCote</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.03 </ind><dep> -0.2 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -0.2 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntLaPorteduCote</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.03 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 165 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -5.15101 </x-m>
+      <y-m> -1.94248 </y-m>
+      <z-m> -2.37726 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>intbaie</object-name>
+    <object-name>intbaieG</object-name>
+    <object-name>intbaieD</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.baie.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaie</object-name>
+    <property>sim/model/door-positions/baie/position-norm</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> 12.67527 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.03524 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaieG</object-name>
+    <property>sim/model/door-positions/baie/position-norm</property>
+    <factor> 95 </factor>
+    <axis>
+      <x1-m>  5.65958 </x1-m>
+      <y1-m> -1.15391 </y1-m>
+      <z1-m> -3.27792 </z1-m>
+      <x2-m>  9.11353 </x2-m>
+      <y2-m> -1.15391 </y2-m>
+      <z2-m> -2.06237 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intbaieD</object-name>
+    <property>sim/model/door-positions/baie/position-norm</property>
+    <factor> -95 </factor>
+    <axis>
+      <x1-m>  5.65958 </x1-m>
+      <y1-m>  1.15391 </y1-m>
+      <z1-m> -3.27792 </z1-m>
+      <x2-m>  9.11353 </x2-m>
+      <y2-m>  1.15391 </y2-m>
+      <z2-m> -2.06237 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
