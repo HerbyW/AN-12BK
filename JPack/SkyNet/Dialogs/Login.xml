@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<name>LoginBox</name>		<!-- rename to your needs -->
+	<modal>false</modal>
+	<layout>vbox</layout>
+	<!-- width>470</width>
+	<height>125</height>
+	<border>2</border -->
+
+	<text>
+		<label>Login with your username/password for the Jabberwocky Website</label>		
+		<valign>top</valign>
+		<halign>center</halign>
+	</text>
+
+	<!-- First Group -->
+
+	<group>
+		<layout>table</layout>
+		<halign>fill</halign>
+		<default-padding>8</default-padding>
+
+		<text>
+			<label>Username</label>		
+			<row>0</row>
+			<col>0</col>
+			<halign>left</halign>
+		</text>
+
+		<input>
+			<row>0</row>
+			<col>1</col>
+			<halign>fill</halign>
+			<property>skynet/username</property>			
+			<binding>						
+				<command>dialog-apply</command>		
+			</binding>
+			<live>true</live>
+		</input>
+
+		<text>
+			<label>Callsign</label>		
+			<row>1</row>
+			<col>0</col>
+			<halign>left</halign>
+		</text>
+
+		<input>
+			<row>1</row>
+			<col>1</col>
+			<halign>fill</halign>
+			<property>skynet/callsign</property>			
+			<binding>						
+				<command>dialog-apply</command>		
+			</binding>
+			<live>true</live>
+		</input>
+
+		<text>
+			<label>Password</label>		
+			<row>2</row>
+			<col>0</col>
+			<halign>left</halign>
+		</text>
+
+		<input>
+			<row>2</row>
+			<col>1</col>
+			<halign>fill</halign>
+			<property>skynet/password</property>			
+			<binding>						
+				<command>dialog-apply</command>		
+			</binding>
+			<live>true</live>
+		</input>
+	</group>
+
+	<hrule/>
+	
+	<group>
+		<layout>hbox</layout>
+
+		<button>
+			<legend>Cancel</legend>
+			<default>true</default>
+			<key>Esc</key>
+			<binding>
+				<command>property-assign</command>
+				<property>skynet/login-pending</property>			
+				<value>false</value>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<button>
+			<legend>Login</legend>
+			<default>true</default>
+			<key>Enter</key>
+			<binding>
+				<command>property-assign</command>
+				<property>skynet/login-pending</property>			
+				<value>true</value>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<empty><stretch>true</stretch></empty>
+	</group>
+
+</PropertyList>
+
