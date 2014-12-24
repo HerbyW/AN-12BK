@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+
+<!--Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc  -->
+
+<!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
+              this is not a AN-12, but for a start not bad                 -->
+
 <PropertyList>
 
-  <!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg -->
+  
   <path>panel.ac</path>
 
   <animation>
@@ -34,7 +40,63 @@
     </offsets>
   </model>
   
+  
+  
 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.638 </y-m>
+      <z-m>  -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.528 </y-m>
+      <z-m>  -0.019 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.528 </y-m>
+      <z-m> -0.019 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.098 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.761 </y-m>
+      <z-m> -0.000 </z-m>
+    </offsets>
+  </model>
+  
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
     <offsets>
@@ -84,7 +146,7 @@
 
   <!-- VSI -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.420 </y-m>
@@ -93,14 +155,84 @@
   </model>
 
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
+      <x-m> -0.000 </x-m>
       <y-m> 0.638 </y-m>
       <z-m> 0.098 </z-m>
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-75.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  -0.005 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-75.xml</path>
+    <offsets>
+      <x-m> -0.000 </x-m>
+      <y-m> 0.870 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.637 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+  
+  <!--test-->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  -0.125 </z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-0.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-1.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-2.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.112 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+  
   <!-- UIZ -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>
@@ -190,7 +322,7 @@
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.739 </y-m>
-      <z-m> 0.113 </z-m>
+      <z-m> 0.093 </z-m>
     </offsets>
   </model>
 

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<!-- SkyNet folder activated -->
+
 <PropertyList>
 
   <default>
@@ -14,6 +16,7 @@
         </binding>
       </item>
     </menu>
+
 		<menu n="11">
 			<label>SkyNet</label>
 			<enabled type="bool">true</enabled>
@@ -23,12 +26,12 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						var login=gui.Dialog.new("sim/gui/dialogs/ground/dialog", "Aircraft/Loreley/JPack/SkyNet/Dialogs/Login.xml");
+						var login=gui.Dialog.new("sim/gui/dialogs/ground/dialog", "JPack/SkyNet/Dialogs/Login.xml");
 						login.open();
 					</script>
 				</binding>
 			</item>
-		</menu>
+                </menu>
   </default>
 
 </PropertyList>

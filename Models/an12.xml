@@ -27,9 +27,9 @@
     </unload>
   </nasal>
 
-
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
 <!--Working For ANY GLASS AND Rembrandt-->
+
 <animation>
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
@@ -46,14 +46,6 @@
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>
-
-
-
-
-
-
-
-
 
   <animation>
     <!-- Objets opaques -->
@@ -437,7 +429,7 @@
       </greater-than>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>850.001</value>
+        <value>750.001</value>
       </less-than>
     </and>
     </condition>
@@ -457,12 +449,6 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGE</object-name>
-    <condition>
-      <greater-than>
-        <property>engines/engine[0]/rpm</property>
-        <value> 20 </value>
-      </greater-than>
-    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -528,12 +514,6 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGI</object-name>
-    <condition>
-      <greater-than>
-        <property>engines/engine[1]/rpm</property>
-        <value> 20 </value>
-      </greater-than>
-    </condition>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -599,12 +579,6 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDI</object-name>
-    <condition>
-      <greater-than>
-        <property>engines/engine[2]/rpm</property>
-        <value> 20 </value>
-      </greater-than>
-    </condition>
     <property>/engines/engine[2]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -670,12 +644,6 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDE</object-name>
-    <condition>
-      <greater-than>
-        <property>engines/engine[3]/rpm</property>
-        <value> 20 </value>
-      </greater-than>
-    </condition>
     <property>engines/engine[3]/rpm</property>
     <factor> 1 </factor>
     <center>

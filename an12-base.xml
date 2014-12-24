@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<!--Changes in various files for learning and understanding from HerbyW, Dec 2014 -->
+
 <PropertyList>
 
   <sim include="Nasal/views.xml">
@@ -22,11 +24,12 @@
       </livery>
     </model>
 
+<!--Weapons are not supported for now
     <submodels>
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/Antonov-An-12/Models/weapons/release.xml</path>
     </submodels>
-
+                                   -->
     <sound>
       <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
     </sound>
@@ -163,8 +166,9 @@
 
 	<nasal>
 		<SkyNet>
-			<file>Aircraft/Loreley/JPack/SkyNet/Nasal/Login.nas</file>
+			<file>JPack/SkyNet/Nasal/Login.nas</file>
 		</SkyNet>
+	
 
     <doors>
       <file>Aircraft/Antonov-An-12/Nasal/doors.nas</file>

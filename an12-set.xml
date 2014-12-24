@@ -17,6 +17,8 @@
 
   </sim>
 
+<!-- Adding sript for oel-temperature with 5 sec delay -->
+  
   <nasal>
     <oel>
     <file>Aircraft/Antonov-An-12/Nasal/oel.nas</file>

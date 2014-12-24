@@ -4,10 +4,9 @@
 
 <path>interior.ac</path>
 
-
-
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
 <!--Working For ANY GLASS AND Rembrandt-->
+
 <animation>
     <object-name>intvitre</object-name>
     <object-name>vitreporte</object-name>
@@ -27,18 +26,6 @@
     <object-name>vitreporte</object-name>
 </animation>
 
-
-
-
-
-
-
-
-
-
-
-
-
 <animation>
 <!-- Objets opaques -->
 <!-- <object-name>interieur</object-name>
@@ -54,9 +41,7 @@
 <object-name>intvitreporte</object-name>
 </animation>
 
-
-
-<!-- Pilote -->
+<!-- Pilote
 <model>
 <path>Aircraft/Antonov-An-12/Models/Pilot/pilot.xml</path>
 <offsets>
@@ -64,7 +49,7 @@
 <y-m>  -0.54728 </y-m>
 <z-m>  -2.06901 </z-m>
 </offsets>
-</model>
+</model>                -->
 
 <!-- Planche de bord -->
 <model>
