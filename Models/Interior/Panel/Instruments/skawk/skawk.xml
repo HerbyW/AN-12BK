@@ -1,0 +1,382 @@
+<PropertyList>
+ <path>skawk.ac</path>
+
+ 
+ <!--MTSCH Schwitch left --> 
+
+ <animation>
+  <type>rotate</type>
+  <object-name>s1</object-name>
+  <property>systems/kurs_mp/pu_2/s1</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>    
+    <entry><ind>2</ind>	<dep>30</dep></entry>       
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>s1</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/s1</property>
+  <step>1</step>
+  <min>1</min>
+  <max>2</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>s1</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/s1</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>2</max> 
+   </binding>
+  </action>
+</animation>
+  
+
+ <!--Gotov Knob ABC ready --> 
+<animation>
+  <type>rotate</type>
+  <object-name>r1</object-name>
+  <property>systems/kurs_mp/pu_2/r1</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>30</dep></entry>    
+    <entry><ind>3</ind>	<dep>60</dep></entry> 
+    <entry><ind>4</ind>	<dep>90</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>r1</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r1</property>
+  <step>1</step>
+  <min>1</min>
+  <max>4</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>r1</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r1</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>4</max> 
+   </binding>
+  </action>
+</animation>
+
+ 
+ <!--botom Schwitch thousandsleft --> 
+
+<animation>
+<type>rotate</type>
+  <object-name>r2</object-name>
+  <property>systems/kurs_mp/pu_2/r2</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>30</dep></entry>    
+    <entry><ind>3</ind>	<dep>60</dep></entry> 
+    <entry><ind>4</ind>	<dep>90</dep></entry>   
+    <entry><ind>5</ind>	<dep>120</dep></entry>
+    <entry><ind>6</ind>	<dep>150</dep></entry>    
+    <entry><ind>7</ind>	<dep>180</dep></entry>
+    <entry><ind>8</ind>	<dep>210</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>r2</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r2</property>
+  <step>1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>r2</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r2</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+
+ <!--botom Schwitch hundreds --> 
+
+<animation>
+<type>rotate</type>
+  <object-name>r3</object-name>
+  <property>systems/kurs_mp/pu_2/r3</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>30</dep></entry>    
+    <entry><ind>3</ind>	<dep>60</dep></entry> 
+    <entry><ind>4</ind>	<dep>90</dep></entry>   
+    <entry><ind>5</ind>	<dep>120</dep></entry>
+    <entry><ind>6</ind>	<dep>150</dep></entry>    
+    <entry><ind>7</ind>	<dep>180</dep></entry>
+    <entry><ind>8</ind>	<dep>210</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>r3</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r3</property>
+  <step>1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>r3</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r3</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+
+ <!--botom Schwitch tens --> 
+
+<animation>
+<type>rotate</type>
+  <object-name>r4</object-name>
+  <property>systems/kurs_mp/pu_2/r4</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>30</dep></entry>    
+    <entry><ind>3</ind>	<dep>60</dep></entry> 
+    <entry><ind>4</ind>	<dep>90</dep></entry>   
+    <entry><ind>5</ind>	<dep>120</dep></entry>
+    <entry><ind>6</ind>	<dep>150</dep></entry>    
+    <entry><ind>7</ind>	<dep>180</dep></entry>
+    <entry><ind>8</ind>	<dep>210</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>r4</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r4</property>
+  <step>1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>r4</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r4</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+
+ <!--botom Schwitch singels --> 
+
+<animation>
+<type>rotate</type>
+  <object-name>r5</object-name>
+  <property>systems/kurs_mp/pu_2/r5</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>30</dep></entry>    
+    <entry><ind>3</ind>	<dep>60</dep></entry> 
+    <entry><ind>4</ind>	<dep>90</dep></entry>   
+    <entry><ind>5</ind>	<dep>120</dep></entry>
+    <entry><ind>6</ind>	<dep>150</dep></entry>    
+    <entry><ind>7</ind>	<dep>180</dep></entry>
+    <entry><ind>8</ind>	<dep>210</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>r5</object-name> 
+  <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r5</property>
+  <step>1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+  
+  
+<animation>
+  <type>pick</type> 
+  <object-name>r5</object-name> 
+  <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+  <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/r5</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>8</max> 
+   </binding>
+  </action>
+</animation>
+
+
+
+<animation>
+	<type>material</type>
+	<object-name>s1</object-name>
+	<object-name>r1</object-name>
+	<object-name>r2</object-name>
+	<object-name>r3</object-name>
+	<object-name>r4</object-name>
+        <object-name>r5</object-name>
+	<emission>
+		<red>0.9</red>
+		<green>0.9</green>
+		<blue>0.9</blue>
+		<factor-prop>systems/kurs_mp/pu_2/servis</factor-prop>
+	</emission>
+</animation>
+ 
+
+</PropertyList>
+

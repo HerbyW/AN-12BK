@@ -1,0 +1,129 @@
+<PropertyList>
+ <path>so-63.ac</path>
+
+<animation>
+  <type>rotate</type>
+  <object-name>group</object-name>
+  <property>systems/kurs_mp/pu_2/group</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>    
+    <entry><ind>2</ind>	<dep>15</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>group</object-name> 
+- <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/group</property>
+  <step>1</step>
+  <min>1</min>
+  <max>2</max> 
+   </binding>
+  </action>
+  </animation>
+  
+  
+  <animation>
+  <type>pick</type> 
+  <object-name>group</object-name> 
+- <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/group</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>2</max> 
+   </binding>
+  </action>
+  </animation>
+  
+  
+   <animation>
+  <type>rotate</type>
+  <object-name>group.002</object-name>
+  <property>systems/kurs_mp/pu_2/group.002</property>
+  <factor>1.0</factor>
+
+  <interpolation>
+    <entry><ind>1</ind>	<dep>0</dep></entry>
+    <entry><ind>2</ind>	<dep>45</dep></entry>    
+    <entry><ind>3</ind>	<dep>135</dep></entry> 
+    <entry><ind>4</ind>	<dep>180</dep></entry>    
+  </interpolation>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+
+
+<animation>
+  <type>pick</type> 
+  <object-name>group.002</object-name> 
+- <action>
+  <button>3</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/group.002</property>
+  <step>1</step>
+  <min>1</min>
+  <max>4</max> 
+   </binding>
+  </action>
+  </animation>
+  
+  
+  <animation>
+  <type>pick</type> 
+  <object-name>group.002</object-name> 
+- <action>
+  <button>4</button> 
+  <repeatable>true/</repeatable> 
+  <interval-sec>0.2</interval-sec>
+- <binding>
+  <command>property-adjust</command> 
+  <property>systems/kurs_mp/pu_2/group.002</property>
+  <step>-1</step>
+  <min>1</min>
+  <max>4</max> 
+   </binding>
+  </action>
+  </animation>
+
+<animation>
+	<type>material</type>
+	<object-name>group</object-name>
+	<object-name>group.002</object-name>
+	<emission>
+		<red>0.9</red>
+		<green>0.9</green>
+		<blue>0.9</blue>
+		<factor-prop>systems/kurs_mp/pu_2/servis</factor-prop>
+	</emission>
+</animation>
+
+
+ 
+
+ </PropertyList>
+

@@ -185,61 +185,21 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m> -0.637 </y-m>
-      <z-m> -0.105 </z-m>
+      <y-m> -0.837 </y-m>
+      <z-m>  0.045 </z-m>
     </offsets>
   </model>
+     
   
-  <!--test-->
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.737 </y-m>
-      <z-m>  -0.125 </z-m>
-    </offsets>
-  </model>
- 
-  <model>
-     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-0.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.112 </y-m>
-      <z-m>  0.140 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-1.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.038 </y-m>
-      <z-m>  0.140 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-2.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.038 </y-m>
-      <z-m>  0.140 </z-m>
-    </offsets>
-  </model>
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm-3.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.112 </y-m>
-      <z-m>  0.140 </z-m>
-    </offsets>
-  </model>
   
   <!-- UIZ -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>
+    <name>uiz-1</name>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uiz/uiz-1.xml</path>    
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.112 </y-m>
-      <z-m> -0.140 </z-m>
+      <z-m> -0.140 </z-m>      
     </offsets>
   </model>
 
@@ -307,6 +267,50 @@
     </offsets>
   </model>
 
+  
+  
+  
+  
+  <model>      
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.235 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets> 
+   </model>
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> -0.235 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.035 </y-m>
+      <z-m> -0.235 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.106 </y-m>
+      <z-m> -0.235 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
   <!-- TURN -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor/vor-ind.xml</path>
@@ -344,5 +348,223 @@
       <z-m> 0.096 </z-m>
     </offsets>
   </model>
+  
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/Gear_ind/gear_ind2.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.110 </y-m>
+      <z-m>  0.096 </z-m>
+    </offsets>
+  </model>
+  
 
+  
+ 
+  <model>
+    <name>flaps_ind</name>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/flaps_ind/flaps_ind.xml</path>    
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.001 </y-m>
+      <z-m>  0.096 </z-m>      
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+    
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/RV_ind/RV_ind.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.206 </y-m>
+      <z-m> -0.009 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.837 </y-m>
+      <z-m>  -0.040 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+ 
+ <!--new back panel-->
+ 
+ 
+  
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_1.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.510 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_2.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_1.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_2.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_knob.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.600 </y-m>
+      <z-m>  0.310 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.510 </y-m>
+      <z-m>  0.310 </z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.310 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel1_R.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m>  0.310 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel1_R1.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.310 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/skawk/skawk.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.285 </y-m>
+      <z-m>  0.215 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/skawk/so-63.xml</path>
+    <offsets>
+      <x-m>  1.920 </x-m>
+      <y-m> -0.470 </y-m>
+      <z-m>  0.215 </z-m>
+    </offsets>
+  </model>
+ 
+ <!-- Code for turning and scaling instruments
+ 
+ <model>
+<name>Pilot asi</name>
+<path>Aircraft/dhc8/Models/Instruments/asi300-3d.xml</path>
+<offsets>
+<x-m>-8.927</x-m>
+<y-m>-0.702</y-m>
+<z-m>2.382</z-m>
+<pitch-deg>0</pitch-deg>
+</offsets>
+</model>
+
+
+<pitch-deg>0</pitch-deg>
+[00:08] (Kanal) cain: <roll-deg>0</roll-deg>
+ 
+ scalieren
+ <animation>
+<type>scale</type>
+<x-offset>0.5</x-offset>
+<y-offset>0.5</y-offset>
+<z-offset>0.5</z-offset>
+</animation>
+
+
+
+[00:20] (Kanal) cain: animation>
+<type>scale</type>
+<object-name>Object</object-name>
+<property>sim/time/sun-angle-rad</property>
+<x-min>1.0</x-min>
+<y-min>1.0</y-min>
+<z-min>1.0</z-min>
+<x-factor>1.4</x-factor>
+<y-factor>1.4</y-factor>
+<z-factor>2.0</z-factor>
+</animation>
+
+[00:21] (Kanal) cain: <animation>
+<type>scale</type>
+<object-name>Object</object-name>
+<property>sim/time/sun-angle-rad</property>
+<x-min>1.0</x-min>
+<y-min>1.0</y-min>
+<z-min>1.0</z-min>
+<x-factor>1.4</x-factor>
+<y-factor>1.4</y-factor>
+<z-factor>2.0</z-factor>
+</animation>
+
+
+<animation>
+<type>scale</type>
+<object-name>Object</object-name>
+<property>sim/time/sun-angle-rad</property>
+<x-min>1.0</x-min>
+<y-min>1.0</y-min>
+<z-min>1.0</z-min>
+<x-factor>1.4</x-factor>
+<y-factor>1.4</y-factor>
+<z-factor>2.0</z-factor>
+<type>scale</type>
+<x-offset>0.5</x-offset>
+<y-offset>0.5</y-offset>
+<z-offset>0.5</z-offset>
+</animation>
+
+
+ -->
+  
+ 
 </PropertyList>

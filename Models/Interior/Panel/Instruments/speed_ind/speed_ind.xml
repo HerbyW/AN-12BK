@@ -1,0 +1,82 @@
+<PropertyList>
+ <path>speed_ind.ac</path>
+
+
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>kus_rect1</object-name>
+  <property>instrumentation/us-450/indicated-speed-kmh</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    0</dep></entry> 
+   <entry><ind> 100</ind><dep>  20</dep></entry>
+   <entry><ind> 200</ind><dep>  73</dep></entry>
+   <entry><ind> 300</ind><dep>  125</dep></entry>
+   <entry><ind> 400</ind><dep>  180</dep></entry>
+   <entry><ind> 500</ind><dep>  225</dep></entry>
+   <entry><ind> 600</ind><dep>  273</dep></entry>
+   <entry><ind> 700</ind><dep>  330</dep></entry>
+   <entry><ind> 800</ind><dep>  359</dep></entry>
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>kus_rect2</object-name>
+  <property>instrumentation/us-450/groundspeed-kmh</property>
+  <interpolation>
+   <entry><ind>  0.0</ind><dep>    0</dep></entry> 
+   <entry><ind> 100</ind><dep>  20</dep></entry>
+   <entry><ind> 200</ind><dep>  70</dep></entry>
+   <entry><ind> 300</ind><dep>  122</dep></entry>
+   <entry><ind> 400</ind><dep>  190</dep></entry>
+   <entry><ind> 500</ind><dep>  240</dep></entry>
+   <entry><ind> 600</ind><dep>  282</dep></entry>
+   <entry><ind> 700</ind><dep>  340</dep></entry>
+   <entry><ind> 800</ind><dep>  385</dep></entry>
+   <entry><ind> 900</ind><dep>  430</dep></entry>
+   <entry><ind> 1000</ind><dep> 462</dep></entry>
+   <entry><ind> 1100</ind><dep> 535</dep></entry>
+
+  </interpolation>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+               <!--Lights-->
+               
+   <animation>
+   <type>material</type>
+   <object-name>kus</object-name>
+   <object-name>kus_rect2</object-name>
+   <object-name>kus_rect1</object-name>
+   <emission>
+	<red-prop>instrumentation/lights/panelR/int-red</red-prop>
+    <green-prop>instrumentation/lights/panelR/int-green</green-prop>
+    <blue-prop>instrumentation/lights/panelR/int-blue</blue-prop>
+	</emission>
+</animation>              
+                                   
+
+
+
+ </PropertyList>
+
