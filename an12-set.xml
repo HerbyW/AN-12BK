@@ -17,7 +17,7 @@
 
   </sim>
 
-<!-- Adding sript for oel-temperature with 5 sec delay -->
+<!-- Adding script for oel-temperature with 5 sec delay -->
   
   <nasal>
     <oel>

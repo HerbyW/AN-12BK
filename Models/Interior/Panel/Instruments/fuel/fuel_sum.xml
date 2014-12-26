@@ -1,16 +1,16 @@
 <PropertyList>
  <path>fuel_sum.ac</path>
 
-
+<!--fuel sum of all tanks in kg -->
  
  <animation>
   <type>rotate</type>
   <object-name>n1</object-name>
-  <property>/instrumentation/fuel/sum/n1</property>
+  <property>consumables/fuel/total-fuel-kg</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep> 0.0 </dep></entry> 
 
-   <entry><ind> 100000</ind><dep>  300</dep></entry>
+   <entry><ind> 10000</ind><dep>  300</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>

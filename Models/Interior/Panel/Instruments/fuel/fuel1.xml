@@ -1,12 +1,12 @@
 <PropertyList>
  <path>fuel1.ac</path>
 
-
+<!--sum of all tanks in kg, big needle -->
  
  <animation>
   <type>rotate</type>
   <object-name>n1</object-name>
-  <property>instrumentation/fuel/E1/n1</property>
+  <property>consumables/fuel/total-fuel-kg</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep> 0.0 </dep></entry> 
 
@@ -25,14 +25,16 @@
   </axis>
  </animation>
  
+ <!--percentage of fuel availible in all tanks, small needle -->
+ 
  <animation>
   <type>rotate</type>
   <object-name>n2</object-name>
-  <property>instrumentation/fuel/E1/n2</property>
+  <property>consumables/fuel/total-fuel-norm</property>
   <interpolation>
     <entry><ind>  0.0</ind><dep> 0.0 </dep></entry> 
 
-   <entry><ind> 7000</ind><dep>  270</dep></entry>
+   <entry><ind> 0.700</ind><dep>  270</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>

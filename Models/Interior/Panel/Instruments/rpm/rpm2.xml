@@ -6,13 +6,13 @@
  <animation>
   <type>rotate</type>
   <object-name>rect1</object-name>
-  <property>instrumentation/RPM2/n1</property>
+  <property>engines/engine[1]/n2</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry> 
    <entry><ind> 30</ind><dep>  90</dep></entry>
    <entry><ind> 60</ind><dep>  180</dep></entry>
    <entry><ind> 90</ind><dep>  270</dep></entry>
-   <entry><ind> 110</ind><dep>  345</dep></entry>
+   <entry><ind> 110</ind><dep>  340</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>
@@ -29,13 +29,10 @@
  <animation>
   <type>rotate</type>
   <object-name>rect2</object-name>
-  <property>instrumentation/RPM2/n2</property>
+  <property>engines/engine[1]/rpm</property>
   <interpolation>
-   <entry><ind>  0.0</ind><dep>/0</dep></entry> 
-   <entry><ind> 30</ind><dep>  90</dep></entry>
-   <entry><ind> 60</ind><dep>  180</dep></entry>
-   <entry><ind> 90</ind><dep>  270</dep></entry>
-   <entry><ind> 110</ind><dep>  345</dep></entry>
+   <entry><ind>  0.0</ind><dep>/0</dep></entry>   
+   <entry><ind> 999</ind><dep>  325</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>

@@ -1,19 +1,15 @@
 <PropertyList>
  <path>fuel1_R1.ac</path>
 
-
+ <!--sum of tank 1+2 content in kg, small needle -->
  
  <animation>
   <type>rotate</type>
-  <object-name>rect1</object-name>
-  <property>systems/fuel/ind/eng_1/needle_1</property>
+  <object-name>fr2</object-name>
+  <property>consumables/fuel/tank[1]/level-kg</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>/0</dep></entry> 
-   <entry><ind> 5000</ind><dep>  53</dep></entry>
-   <entry><ind> 10000</ind><dep>  106</dep></entry>
-   <entry><ind> 15000</ind><dep>  160</dep></entry>
-   <entry><ind> 20000</ind><dep>  193</dep></entry>
-   <entry><ind> 25000</ind><dep>  246</dep></entry>
+   <entry><ind> 12500</ind><dep>  246</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>
@@ -27,17 +23,16 @@
   </axis>
  </animation>
  
+ <!--fuel flow in gallons per hour for tank 2, big needle -->
+ 
  <animation>
   <type>rotate</type>
-  <object-name>rect2</object-name>
-  <property>instrumentation/R1_fuel/L1</property>
+  <object-name>fr1</object-name>
+  <property>engines/engine[1]/fuel-flow-gph</property>
   <interpolation>
-    <entry><ind>  0.0</ind><dep>  0   </dep></entry> 
-   <!--entry><ind> 5000</ind><dep>  62</dep></entry>
-   <entry><ind> 10000</ind><dep> 124</dep></entry>
-   <entry><ind> 15000</ind><dep> 185</dep></entry-->
-   <entry><ind> 25000</ind><dep> 309</dep></entry>
-
+    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
+    <entry><ind> 220</ind><dep> 90</dep></entry>
+    <entry><ind> 470</ind><dep> 205</dep></entry>
   </interpolation>
   <center>
    <x-m>0.0</x-m>
