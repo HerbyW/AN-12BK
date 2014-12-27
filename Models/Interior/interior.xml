@@ -41,7 +41,7 @@
 <object-name>intvitreporte</object-name>
 </animation>
 
-<!-- Pilote
+<!-- Pilote, for what? I am the pilot
 <model>
 <path>Aircraft/Antonov-An-12/Models/Pilot/pilot.xml</path>
 <offsets>

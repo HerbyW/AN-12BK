@@ -7,7 +7,7 @@
   <sim include="Nasal/views.xml">
 
     <description>Antonov An 12 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
@@ -156,20 +156,7 @@
     <keyboard include="Nasal/an12-keyboard.xml"/>
   </input>
  
-	<skynet>
-		<username type="string">"*"</username>
-		<callsign type="string">"*"</callsign>
-		<password type="string">"****"</password>
-		<login-pending type="bool">false</login-pending>
-		<session type="string">null</session>
-	</skynet>
-
-	<nasal>
-		<SkyNet>
-			<file>JPack/SkyNet/Nasal/Login.nas</file>
-		</SkyNet>
-	
-
+  <nasal>
     <doors>
       <file>Aircraft/Antonov-An-12/Nasal/doors.nas</file>
     </doors>

@@ -8,10 +8,10 @@
   <object-name>k1</object-name>
   <property>systems/fuel/controls/F_ind</property>
   <interpolation>
-   <entry><ind>  0</ind><dep>0</dep></entry> 
-   <entry><ind> 1</ind><dep> 30</dep></entry>
-   <entry><ind> 2</ind><dep> 90</dep></entry>
-   <entry><ind> 3</ind><dep> 120</dep></entry>
+   <entry><ind>  0</ind><dep> 3</dep></entry> 
+   <entry><ind> 1</ind><dep> 27</dep></entry>
+   <entry><ind> 2</ind><dep> 69</dep></entry>
+   <entry><ind> 3</ind><dep> 92</dep></entry>
 
   </interpolation>
   <center>

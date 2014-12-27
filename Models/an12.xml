@@ -406,7 +406,9 @@
     <object-name>bolGE</object-name>
   </animation>
 
-  <!-- Selection of the visible object based on the rpm -->
+  <!-- Selection of the visible object based on the rpm,
+       needs to be fixed, right propellers make strage artefacts -->
+  
   <animation>
     <type>select</type>
     <object-name>propdiscGE</object-name>

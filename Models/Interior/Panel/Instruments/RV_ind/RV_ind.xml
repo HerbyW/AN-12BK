@@ -6,7 +6,7 @@
  <animation>
   <type>rotate</type>
   <object-name>rect</object-name>
-  <property>instrumentation/rv-um/rv-altitude-m</property>
+  <property>position/gear-agl-m</property>
   <min>0</min>
   <max>750</max> 
  
@@ -39,13 +39,16 @@
   <max>9</max> 
  
   <interpolation>
-   <entry><ind>  0</ind><dep>  0</dep></entry> 
-   <entry><ind> 1</ind><dep> 0</dep></entry>
-   <entry><ind> 2</ind><dep>  0</dep></entry>
-   <entry><ind>  3</ind><dep> 60</dep></entry> 
-   <entry><ind> 4</ind><dep>  75</dep></entry>
-  <entry><ind>  5</ind><dep> 88</dep></entry> 
-   <entry><ind> 8</ind><dep>  125</dep></entry>
+   <entry><ind> 0</ind><dep>  0</dep></entry> 
+   <entry><ind> 1</ind><dep> 30</dep></entry>
+   <entry><ind> 2</ind><dep> 60</dep></entry>
+   <entry><ind> 3</ind><dep> 90</dep></entry> 
+   <entry><ind> 4</ind><dep>120</dep></entry>
+   <entry><ind> 5</ind><dep>150</dep></entry> 
+   <entry><ind> 6</ind><dep>197</dep></entry>
+   <entry><ind> 7</ind><dep>245</dep></entry> 
+   <entry><ind> 8</ind><dep>295</dep></entry>
+   <entry><ind> 9</ind><dep>305</dep></entry> 
   
   </interpolation>
   <center>

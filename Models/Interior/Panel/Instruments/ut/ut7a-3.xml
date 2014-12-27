@@ -58,13 +58,17 @@
     </emission>
   </animation>
 
-  <!--Needles-->
+<!--Needles-->
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine[2]/rpm</property>
-    <factor> .39 </factor>
-    <offset-deg> -225 </offset-deg>    
+    <property>/engines/engine[2]/n2</property>
+    <factor> 1 </factor>
+    <interpolation>
+      <entry><ind>	0.0</ind>	<dep>	190.0</dep></entry>
+      <entry><ind>	60.7</ind>	<dep>	324.0</dep></entry>
+      <entry><ind>	99.6</ind>	<dep>	465.0</dep></entry>
+    </interpolation>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -75,9 +79,9 @@
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>controls/engines/engine[2]/propeller-pitch</property>
-    <factor> 350 </factor>
-    <offset-deg> 180 </offset-deg>
+    <property>/engines/engine[2]/n2</property>
+    <factor> 3.6 </factor>
+    <offset-deg> 90 </offset-deg>
     <center>
       <x-m>  0.00000 </x-m>
       <y-m>  0.00022 </y-m>

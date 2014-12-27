@@ -6,7 +6,7 @@
   <sim>
 
     <description>Antonov An 12 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW adding instruments dec 2014</author>
 
     <rating>
       <FDM type="int">     2 </FDM>
@@ -17,13 +17,7 @@
 
   </sim>
 
-<!-- Adding script for oel-temperature with 5 sec delay -->
-  
-  <nasal>
-    <oel>
-    <file>Aircraft/Antonov-An-12/Nasal/oel.nas</file>
-    </oel>
-  </nasal>
+
   
 </PropertyList>
 

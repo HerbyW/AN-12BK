@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- SkyNet folder activated -->
 
 <PropertyList>
 
@@ -10,28 +9,8 @@
       <enabled type="bool">true</enabled>
       <item>
         <label>Select Livery</label>
-        <binding>
-          <command>nasal</command>
-          <script>aircraft.livery.dialog.toggle()</script>
-        </binding>
       </item>
     </menu>
-
-		<menu n="11">
-			<label>SkyNet</label>
-			<enabled type="bool">true</enabled>
-
-			<item>
-				<label>Login</label>
-				<binding>
-					<command>nasal</command>
-					<script>
-						var login=gui.Dialog.new("sim/gui/dialogs/ground/dialog", "JPack/SkyNet/Dialogs/Login.xml");
-						login.open();
-					</script>
-				</binding>
-			</item>
-                </menu>
   </default>
 
 </PropertyList>

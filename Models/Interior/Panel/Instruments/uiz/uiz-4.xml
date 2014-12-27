@@ -61,16 +61,32 @@
     </emission>
   </animation>
 
-  <!--Needles-->
+  <!-- Internal instruments lighting -->
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle_1</object-name>
+    <object-name>needle_2</object-name>
+    <object-name>needle_3</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <!--Needles Fuel pressure Kg/cm2-->
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/engines/engine[3]/fuel-pressure-psi</property>
-    <!--Fuel pressure Kg/cm2-->
+    <property>/engines/engine/n2</property>
     <factor> 0.0703 </factor>
     <interpolation>
       <entry><ind>   0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 100 </ind><dep> 97 </dep></entry>
+      <entry><ind>  60 </ind><dep> 55 </dep></entry>
+      <entry><ind> 100 </ind><dep> 78 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.00157 </x-m>
@@ -84,13 +100,16 @@
     </axis>
   </animation>
 
+  <!--Needles Oel pressure Kg/cm2-->  
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>/engines/engine[3]/oilp-norm</property>
+    <property>/engines/engine/n2</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 101 </dep></entry>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.00150 </x-m>
@@ -104,13 +123,16 @@
     </axis>
   </animation>
 
+  <!--Needles Oel temperatur in C -->
+  
   <animation>
     <type>rotate</type>
     <object-name>needle_3</object-name>
-    <property>/engines/engine[3]/oilt-norm</property>
+    <property>/engines/engine/n2</property>    
     <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 107 </dep></entry>
+      <entry><ind>   0 </ind><dep> 0 </dep></entry>
+      <entry><ind>  60 </ind><dep> 40 </dep></entry>
+      <entry><ind> 100 </ind><dep> 85 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.00164 </x-m>

@@ -30,6 +30,10 @@ January, 02, 2013.
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
+HerbyW
+Dec 2014
+https://github.com/HerbyW/an-12-flightgear
+
 
 [Français]
 ----------
