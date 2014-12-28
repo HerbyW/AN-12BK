@@ -1,7 +1,49 @@
 <PropertyList>
  <path>speed_ind.ac</path>
 
+  <animation>
+     <object-name>kus</object-name>
+     <object-name>group</object-name>
+     <object-name>kus_rect2</object-name>
+     <object-name>kus_rect1</object-name>
 
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+     <object-name>kus</object-name>
+     <object-name>group</object-name>
+     <object-name>kus_rect2</object-name>
+     <object-name>kus_rect1</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
  
  <animation>
   <type>rotate</type>
@@ -50,22 +92,5 @@
   </axis>
  </animation>
  
-               <!--Lights-->
-               
-   <animation>
-   <type>material</type>
-   <object-name>kus</object-name>
-   <object-name>kus_rect2</object-name>
-   <object-name>kus_rect1</object-name>
-   <emission>
-	<red-prop>instrumentation/lights/panelR/int-red</red-prop>
-    <green-prop>instrumentation/lights/panelR/int-green</green-prop>
-    <blue-prop>instrumentation/lights/panelR/int-blue</blue-prop>
-	</emission>
-</animation>              
-                                   
-
-
-
- </PropertyList>
+</PropertyList>
 

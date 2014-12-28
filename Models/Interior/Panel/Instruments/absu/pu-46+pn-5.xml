@@ -27,10 +27,11 @@
   <object-name>navigac</object-name>
   <object-name>posadk</object-name>
     <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
-  </emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
 </animation>
 
 <!-- Internal instruments lighting -->
@@ -45,10 +46,11 @@
   <object-name>auto_pitch</object-name>
   <object-name>_handle_marker</object-name>
   <emission>
-    <red-prop>tu154/light/instruments/int-red</red-prop>
-    <green-prop>tu154/light/instruments/int-green</green-prop>
-    <blue-prop>tu154/light/instruments/int-blue</blue-prop>
-  </emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
 </animation>
 
 <!--Indicators-->

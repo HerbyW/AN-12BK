@@ -2,6 +2,37 @@
  <path>skawk.ac</path>
 
  
+
+    <animation>	
+	<object-name>s1</object-name>
+	<object-name>r1</object-name>
+	<object-name>r2</object-name>
+	<object-name>r3</object-name>
+	<object-name>r4</object-name>
+        <object-name>r5</object-name>
+	<object-name>group</object-name>
+     </animation>
+
+  <!-- working for Rembrandt -->
+
+  <animation>
+    <type>material</type>
+        <object-name>s1</object-name>
+	<object-name>r1</object-name>
+	<object-name>r2</object-name>
+	<object-name>r3</object-name>
+	<object-name>r4</object-name>
+        <object-name>r5</object-name>
+	<object-name>group</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+ 
  <!--MTSCH Schwitch left --> 
 
  <animation>
@@ -360,23 +391,6 @@
 </animation>
 
 
-
-<animation>
-	<type>material</type>
-	<object-name>s1</object-name>
-	<object-name>r1</object-name>
-	<object-name>r2</object-name>
-	<object-name>r3</object-name>
-	<object-name>r4</object-name>
-        <object-name>r5</object-name>
-	<emission>
-		<red>0.9</red>
-		<green>0.9</green>
-		<blue>0.9</blue>
-		<factor-prop>systems/kurs_mp/pu_2/servis</factor-prop>
-	</emission>
-</animation>
- 
 
 </PropertyList>
 

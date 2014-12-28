@@ -16,7 +16,7 @@
   <animation>
     <object-name>fond</object-name>
 
-    <object-name>base</object-name>
+    <object-name>face</object-name>
     <object-name>index</object-name>
     <object-name>needle</object-name>
 
@@ -46,7 +46,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>base</object-name>
+    <object-name>face</object-name>
     <object-name>index</object-name>
     <object-name>needle</object-name>
     <emission>

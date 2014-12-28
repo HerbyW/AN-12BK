@@ -8,23 +8,38 @@
     -->
 <!-- Clock ACHS-2
 3D instrument -->
+
 <PropertyList>
- <path>achs-2.ac</path>
+
+<path>achs-2.ac</path>
+
 <!-- Internal instruments lighting -->
-<!--
-<animation>
-  <type>material</type>
-  <object-name>base</object-name>
-  <object-name>hour_needle</object-name>
-  <object-name>min_needle</object-name>
-  <object-name>sec_needle</object-name>
-  <emission>
-    <red-prop>tu154/light/instruments/int-red</red-prop>
-    <green-prop>tu154/light/instruments/int-green</green-prop>
-    <blue-prop>tu154/light/instruments/int-blue</blue-prop>
-  </emission>
-</animation>
--->
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>hour_needle</object-name>
+    <object-name>min_needle</object-name>
+    <object-name>sec_needle</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <object-name>hour_needle</object-name>
+    <object-name>min_needle</object-name>
+    <object-name>sec_needle</object-name>
+   <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+   </emission>
+  </animation>
 
   
 <!--Needles-->

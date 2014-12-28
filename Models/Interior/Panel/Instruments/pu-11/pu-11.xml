@@ -9,44 +9,43 @@
 
 <!-- PU-11 control gauge
 3D instrument for Tu-154 -->
+
 <PropertyList>
- <path>pu-11.ac</path>
+
+   <path>pu-11.ac</path>
+
 <!--External panel lighting-->
-<animation>
-  <type>material</type>
-  <object-name>base</object-name>
-    <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
-  </emission>
-</animation>
-<animation>
-  <type>material</type>
-  <object-name>switches</object-name>
-  <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
-    <factor>0.5</factor>
-  </emission>
-</animation>
-
 <!-- Internal instruments lighting -->
-<animation>
-  <type>material</type>
-  <object-name>text</object-name>
-  <object-name>lat</object-name>
-  <object-name>handle_fi</object-name>
-  <object-name>otkaz_o_2</object-name>
-  <object-name>otkaz_k_2</object-name>
-  <emission>
-    <red-prop>tu154/light/instruments/int-red</red-prop>
-    <green-prop>tu154/light/instruments/int-green</green-prop>
-    <blue-prop>tu154/light/instruments/int-blue</blue-prop>
-  </emission>
-</animation>
 
+ 
+ <animation>
+    <type>material</type>     
+     <object-name>handle_fi</object-name>  
+     <object-name>lat</object-name>
+     <object-name>switches</object-name>
+     <object-name>button</object-name> 
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+ </animation>
+
+  
+ <animation>
+    <type>material</type>     
+         
+     <object-name>lat</object-name>
+     <object-name>text</object-name>     
+     <object-name>base</object-name>  
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.01 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+    </emission>
+ </animation>
 
 
 <!--Failure lamps-->
@@ -60,7 +59,7 @@
     <red>1.0</red>
     <green>0.0</green>
     <blue>0.0</blue>
-    <factor-prop>tu154/systems/electrical/buses/DC27-bus-L/volts</factor-prop>
+    <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
   </emission>
 </animation>
 

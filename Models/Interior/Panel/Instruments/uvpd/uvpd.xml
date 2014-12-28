@@ -9,30 +9,44 @@
 
 <!-- Variometer
 3D instrument for Tu-154 -->
+
 <PropertyList>
- <path>uvpd.ac</path>
+
+<path>uvpd.ac</path>
+
+
 <!-- Internal instruments lighting -->
-<animation>
-  <type>material</type>
-  <object-name>base</object-name>
-  <emission>
-    <red-prop>light/instruments/int-red</red-prop>
-    <green-prop>light/instruments/int-green</green-prop>
-    <blue-prop>light/instruments/int-blue</blue-prop>
-  </emission>
+
+<animation> 
+  <object-name>Circle</object-name>
+  <object-name>Circle.002</object-name>
+  <object-name>needle_1</object-name>
+  <object-name>needle_2</object-name>
+  <object-name>bezel</object-name>  
 </animation>
 
-<animation>
-  <type>material</type>
-  <object-name>needle</object-name>
-  <emission>
-    <red-prop>light/instruments/int-red</red-prop>
-    <green-prop>light/instruments/int-green</green-prop>
-    <blue-prop>light/instruments/int-blue</blue-prop>
-  </emission>
-</animation>
+  <!-- working for Rembrandt -->
+ 
+  <animation>
+    <type>material</type>
+     <object-name>Circle</object-name>
+     <object-name>Circle.002</object-name>
+     <object-name>needle_1</object-name>
+     <object-name>needle_2</object-name>
+     <object-name>bezel</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+
 
 <!--Needles-->
+
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>

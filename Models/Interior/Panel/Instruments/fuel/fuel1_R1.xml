@@ -1,6 +1,41 @@
 <PropertyList>
  <path>fuel1_R1.ac</path>
 
+    <!--Lights-->
+                                   
+ <animation>   
+   <object-name>fuel_r</object-name>
+   <object-name>fr1</object-name>
+   <object-name>n1</object-name>   
+</animation>
+
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuel_r</object-name>
+   <object-name>fr1</object-name>
+   <object-name>n1</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+ 
+ 
+ 
 <!--sum of tank 3+4 content in kg, small needle -->
  
  <animation>
@@ -23,7 +58,7 @@
   </axis>
  </animation>
  
- <!--fuel flow in gallons per hour for tank 4, big needle -->
+ <!--fuel flow in gallons per hour for tank 3+4, big needle -->
  
  <animation>
   <type>rotate</type>
@@ -46,7 +81,7 @@
   </axis>
  </animation>
  
-    <animation>
+ <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
 - <action>
@@ -61,10 +96,10 @@
   <max>25000</max> 
    </binding>
   </action>
-  </animation>
+ </animation>
   
   
-  <animation>
+ <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
 - <action>
@@ -79,24 +114,7 @@
   <max>25000</max> 
    </binding>
   </action>
-  </animation>
- 
- 
-               <!--Lights-->
-                                   
- <animation>
-   <type>material</type>
-   <object-name>fuel_r</object-name>
-   <object-name>fr1</object-name>
-   <object-name>n1</object-name>
-   <emission>
-	<red-prop>instrumentation/lights/centr_panel/int-red</red-prop>
-    <green-prop>instrumentation/lights/centr_panel/int-green</green-prop>
-    <blue-prop>instrumentation/lights/centr_panel/int-blue</blue-prop>
-	</emission>
-</animation>
+ </animation>
 
-
-
- </PropertyList>
+</PropertyList>
 

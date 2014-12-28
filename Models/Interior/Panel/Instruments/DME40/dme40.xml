@@ -2,6 +2,38 @@
 
 <path>dme40.ac</path>
 
+   <!-- Lights -->
+
+  <animation>
+    <object-name>DME40.test</object-name>
+    <object-name>DME40.knob2</object-name>
+    <object-name>DME40.knob1</object-name>
+    <object-name>DME40.dim</object-name>
+    <object-name>DME</object-name>    
+  </animation>
+
+  <!-- working for Rembrandt -->
+
+  <animation>
+    <type>material</type>
+     <object-name>DME40.test</object-name>
+     <object-name>DME40.knob2</object-name>
+     <object-name>DME40.knob1</object-name>
+     <object-name>DME40.dim</object-name>
+     <object-name>DME</object-name> 
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+
+
+
+
     <animation>
         <type>select</type>
         <object-name>DME.invalid</object-name>

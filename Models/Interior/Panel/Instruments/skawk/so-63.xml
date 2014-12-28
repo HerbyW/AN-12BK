@@ -1,6 +1,39 @@
 <PropertyList>
  <path>so-63.ac</path>
 
+ 
+  <animation>	
+	<object-name>group</object-name>
+	<object-name>group.001</object-name>
+	<object-name>group.002</object-name>
+	<object-name>group.003</object-name>
+	<object-name>Untitled</object-name>
+   </animation>
+
+
+  <!-- working for Rembrandt -->
+  
+
+  <animation>
+    <type>material</type>
+     <object-name>group</object-name>
+     <object-name>group.001</object-name>
+     <object-name>group.002</object-name>
+     <object-name>group.003</object-name>
+     <object-name>Untitled</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+ 
+ 
+ 
+ 
+ 
 <animation>
   <type>rotate</type>
   <object-name>group</object-name>
@@ -109,21 +142,6 @@
    </binding>
   </action>
   </animation>
-
-<animation>
-	<type>material</type>
-	<object-name>group</object-name>
-	<object-name>group.002</object-name>
-	<emission>
-		<red>0.9</red>
-		<green>0.9</green>
-		<blue>0.9</blue>
-		<factor-prop>systems/kurs_mp/pu_2/servis</factor-prop>
-	</emission>
-</animation>
-
-
- 
 
  </PropertyList>
 

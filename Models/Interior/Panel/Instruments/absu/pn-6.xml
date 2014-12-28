@@ -26,10 +26,11 @@
   <object-name>at</object-name>
   <object-name>at_wheel</object-name>
     <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
-  </emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
 </animation>
 
 <!-- Internal instruments lighting -->
@@ -38,10 +39,11 @@
   <object-name>text</object-name>
   <object-name>_handle_marker</object-name>
   <emission>
-    <red-prop>tu154/light/instruments/int-red</red-prop>
-    <green-prop>tu154/light/instruments/int-green</green-prop>
-    <blue-prop>tu154/light/instruments/int-blue</blue-prop>
-  </emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
 </animation>
 
 <animation>
@@ -52,11 +54,11 @@
   <object-name>lamp_4</object-name>
   <object-name>lamp_5</object-name>
   <emission>
-    <red>1.0</red>
-    <green>1.0</green>
-    <blue>1.0</blue>
-    <factor-prop>tu154/instrumentation/pn-6/serviceable</factor-prop>
-  </emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
 </animation>
 <!--AT selector-->
 <animation>

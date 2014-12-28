@@ -407,7 +407,8 @@
   </animation>
 
   <!-- Selection of the visible object based on the rpm,
-       needs to be fixed, right propellers make strage artefacts -->
+       needs to be fixed, right propellers make strage artefacts,
+       so I have now unselected the blur and disc parts and set the factor of helice to 0.5-->
   
   <animation>
     <type>select</type>
@@ -415,7 +416,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value>850</value>
+        <value>9850</value>
       </greater-than>
     </condition>
   </animation>
@@ -427,11 +428,11 @@
     <and>
       <greater-than>
         <property>engines/engine[0]/rpm</property>
-        <value>600.000</value>
+        <value>6600.000</value>
       </greater-than>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>750.001</value>
+        <value>8750.001</value>
       </less-than>
     </and>
     </condition>
@@ -443,7 +444,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>850</value>
+        <value>950</value>
       </less-than>
     </condition>
   </animation>
@@ -452,7 +453,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteGE</object-name>
     <property>engines/engine[0]/rpm</property>
-    <factor> 1 </factor>
+    <factor> .5 </factor>
     <center>
       <x-m> -5.89102 </x-m>
       <y-m> -9.56800 </y-m>
@@ -480,7 +481,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value>850</value>
+        <value>9850</value>
       </greater-than>
     </condition>
   </animation>
@@ -492,11 +493,11 @@
     <and>
       <greater-than>
         <property>engines/engine[1]/rpm</property>
-        <value>600.000</value>
+        <value>6600.000</value>
       </greater-than>
       <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>850.001</value>
+        <value>7850.001</value>
       </less-than>
     </and>
     </condition>
@@ -508,7 +509,7 @@
     <condition>
       <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>850</value>
+        <value>950</value>
       </less-than>
     </condition>
   </animation>
@@ -517,7 +518,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteGI</object-name>
     <property>engines/engine[1]/rpm</property>
-    <factor> 1 </factor>
+    <factor> .5 </factor>
     <center>
       <x-m> -6.76873 </x-m>
       <y-m> -4.63488 </y-m>
@@ -545,7 +546,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value>850</value>
+        <value>9850</value>
       </greater-than>
     </condition>
   </animation>
@@ -557,11 +558,11 @@
     <and>
       <greater-than>
         <property>engines/engine[2]/rpm</property>
-        <value>600.000</value>
+        <value>6600.000</value>
       </greater-than>
       <less-than>
         <property>engines/engine[2]/rpm</property>
-        <value>850.001</value>
+        <value>7850.001</value>
       </less-than>
     </and>
     </condition>
@@ -573,7 +574,7 @@
     <condition>
       <less-than>
         <property>engines/engine[2]/rpm</property>
-        <value>850</value>
+        <value>950</value>
       </less-than>
     </condition>
   </animation>
@@ -582,7 +583,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteDI</object-name>
     <property>/engines/engine[2]/rpm</property>
-    <factor> 1 </factor>
+    <factor> .5 </factor>
     <center>
       <x-m> -6.76873 </x-m>
       <y-m>  4.63488 </y-m>
@@ -610,7 +611,7 @@
     <condition>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value>850</value>
+        <value>9850</value>
       </greater-than>
     </condition>
   </animation>
@@ -622,11 +623,11 @@
     <and>
       <greater-than>
         <property>engines/engine[3]/rpm</property>
-        <value>600.000</value>
+        <value>6600.000</value>
       </greater-than>
       <less-than>
         <property>engines/engine[3]/rpm</property>
-        <value>850.001</value>
+        <value>7850.001</value>
       </less-than>
     </and>
     </condition>
@@ -638,7 +639,7 @@
     <condition>
       <less-than>
         <property>engines/engine[3]/rpm</property>
-        <value>850</value>
+        <value>950</value>
       </less-than>
     </condition>
   </animation>
@@ -647,7 +648,7 @@
     <type>spin</type>
     <object-name>HeliceCompleteDE</object-name>
     <property>engines/engine[3]/rpm</property>
-    <factor> 1 </factor>
+    <factor> .5 </factor>
     <center>
       <x-m> -5.89102 </x-m>
       <y-m>  9.56800 </y-m>
