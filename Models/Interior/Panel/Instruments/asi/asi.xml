@@ -4,6 +4,25 @@
 
 <path>asi.ac</path>
 
+
+  <animation>
+    <type>material</type>
+        <object-name>ASI320.needle</object-name>
+        <object-name>mach.subdial</object-name>
+        <object-name>index.marker</object-name>
+        <object-name>ASI320.knob</object-name>       
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+
+
+
+
     <animation>
         <type>rotate</type>
         <object-name>ASI320.needle</object-name>

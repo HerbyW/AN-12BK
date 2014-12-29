@@ -44,7 +44,7 @@
     <object-name>pitch_sw</object-name>
     <object-name>bg</object-name> 
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>

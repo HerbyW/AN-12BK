@@ -82,6 +82,18 @@
       <z-m> -0.019 </z-m>
     </offsets>
   </model>
+
+    <!-- TNV-15, OUtside Temperatur Indicator -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.805 </y-m>
+      <z-m>  0.115 </z-m>
+    </offsets>
+  </model>
+  
   
   <!-- UAP, AOA and G-meter -->
   
@@ -120,6 +132,16 @@
       <x-m>  0.000 </x-m>
       <y-m> -0.320 </y-m>
       <z-m>  0.095 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.550 </y-m>
+      <z-m>  -0.219 </z-m>
     </offsets>
   </model>
 
@@ -193,6 +215,18 @@
     </offsets>
   </model>
 
+    <!-- UVO, Altimeter Electric -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  -0.110 </z-m>
+    </offsets>
+  </model>
+ 
+  
   <!-- VAR-30, Rate and Climb Indicator -->
   
   <model>
@@ -223,7 +257,7 @@
       <z-m>  -0.005 </z-m>
     </offsets>
   </model>
-
+ 
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-75.xml</path>
     <offsets>
@@ -682,7 +716,34 @@
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
+
+  <!-- Switches and Buttons -->
   
+   <!-- Light switches block -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/bano.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> 0.286 </y-m>
+      <z-m>  -0.156 </z-m>
+    </offsets>
+  </model>
+
+     <!-- Trim Neutral Placecards -->
+      
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/trim-neutral/ind_8.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.92 </y-m>
+      <z-m>  -0.10 </z-m>
+    </offsets>
+  </model>
+ 
+ 
+ 
+ 
  <!-- Code for turning and scaling instruments
  
  <model>

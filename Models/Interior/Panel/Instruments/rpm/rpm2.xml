@@ -36,7 +36,7 @@
    <object-name>rect1</object-name>
    <object-name>rect2</object-name> 
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>

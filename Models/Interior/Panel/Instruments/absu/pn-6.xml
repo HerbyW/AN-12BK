@@ -26,7 +26,7 @@
   <object-name>at</object-name>
   <object-name>at_wheel</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -39,7 +39,7 @@
   <object-name>text</object-name>
   <object-name>_handle_marker</object-name>
   <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -54,7 +54,7 @@
   <object-name>lamp_4</object-name>
   <object-name>lamp_5</object-name>
   <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
