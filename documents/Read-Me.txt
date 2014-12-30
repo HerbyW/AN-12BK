@@ -1,0 +1,30 @@
+
+I have now included the original manual from AN-12,
+it is in russian language and has about 570 pages,
+you may open it with any PDF-reader:
+
+An-12_RLYE.pdf
+
+Source:
+
+http://airspot.ru/library/rukovodstva-po-letnoy-ekspluatatsii?page=2
+
+On this russian airspoter page you find all kinds off constuction and
+operating manuals for a lot of old and not so old aircrafts.
+
+
+
+
+For better implementation of instrumens there are some fotos from here:
+
+https://www.flickr.com/photos/raf_yyc/ , all rights belong to raf_yyc
+
+
+
+
+And here is the one which was the model for the first developer on this aircraft:
+
+http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg
+
+sorry to say, but this is not a AN-12, so we have to work on it,
+but nevertheless thanks for starting this project.

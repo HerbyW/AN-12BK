@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff			 	  	#
@@ -9,6 +11,8 @@
      3D instrument for Tu-154 -->
 
 <PropertyList>
+
+  <path>pnp.ac</path>
 
   <params>
     <mode>tu154/instrumentation/pnp[0]/mode</mode>
@@ -25,7 +29,7 @@
     <blank-dist>tu154/instrumentation/pnp[0]/blank-dist</blank-dist>
   </params>
 
-  <path>pnp.ac</path>
+
   
   <!--External panel lighting-->
   

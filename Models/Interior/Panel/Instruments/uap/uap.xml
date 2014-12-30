@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
 
@@ -8,7 +8,6 @@
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
-
     <object-name>vitre</object-name>
   </animation>
 

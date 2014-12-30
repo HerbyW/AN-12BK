@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
@@ -17,18 +17,30 @@
   <object-name>handle_1</object-name>
   <object-name>handle_2</object-name>
   <object-name>handle_3</object-name>
+  
+  
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.21 </red>
+      <green> 0.21 </green>
+      <blue>  0.21 </blue>
+    </emission>
+</animation>
+
+<animation>
+  <type>material</type>
   <object-name>base_1</object-name>
   <object-name>base_2</object-name>
   <object-name>base_3</object-name>
   <object-name>base_4</object-name>
-  <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.01 </red>
-      <green> 0.01 </green>
-      <blue>  0.01 </blue>
+  
+    <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
 </animation>
-
   
 <animation>
   <type>rotate</type>
@@ -135,10 +147,6 @@
     </binding>
   </action>
 </animation>
-
-
-     
-
 
 
 <animation>

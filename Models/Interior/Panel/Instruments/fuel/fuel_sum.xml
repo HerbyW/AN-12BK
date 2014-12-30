@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <PropertyList>
  <path>fuel_sum.ac</path>
 
@@ -11,13 +13,7 @@
 
 
   <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>vitre</object-name>
-  </effect>
+  
 
   <animation>
     <type>material</type>

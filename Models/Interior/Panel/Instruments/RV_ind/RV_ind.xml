@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
 <PropertyList>
  <path>RV_ind.ac</path>
 
@@ -7,10 +9,11 @@
    <type>material</type>
    <object-name>rect</object-name>
    <emission>
+		<factor-prop>tu154/switches/gauge-light</factor-prop>
 		<red>0.5</red>
 		<green>0.0</green>
 		<blue>0.0</blue>
-		<factor-prop>tu154/switches/gauge-light</factor-prop>
+		
 	</emission>
 </animation>
 
@@ -18,10 +21,11 @@
    <type>material</type>
    <object-name>rect2</object-name>
    <emission>
+		<factor-prop>tu154/switches/gauge-light</factor-prop>
 		<red>0.4</red>
 		<green>0.0</green>
 		<blue>0.0</blue>
-		<factor-prop>tu154/switches/gauge-light</factor-prop>
+		
 	</emission>
 </animation>
 
@@ -29,10 +33,11 @@
    <type>material</type>
    <object-name>group</object-name>
    <emission>
+		<factor-prop>tu154/switches/gauge-light</factor-prop>
 		<red>0.5</red>
 		<green>0.25</green>
 		<blue>0.25</blue>
-		<factor-prop>tu154/switches/gauge-light</factor-prop>
+		
 	</emission>
 </animation>
 
@@ -40,10 +45,11 @@
    <type>material</type>
    <object-name>L1</object-name>
    <emission>
+		<factor-prop>instrumentation/rv-um/lamp</factor-prop>
 		<red>1.0</red>
 		<green>1.0</green>
 		<blue>0.0</blue>
-		<factor-prop>instrumentation/rv-um/lamp</factor-prop>
+		
 	</emission>
 </animation>
 

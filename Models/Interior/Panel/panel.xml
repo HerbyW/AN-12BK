@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- Instrumentation by HerbyW, dec 2014, status: not finished, lots of work to do -->
 <!--Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc  -->
@@ -270,7 +270,7 @@
   <!-- VOR-IND, VOR Localizer and Glidescope Indicator -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor/vor-ind.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.316 </y-m>
@@ -279,7 +279,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor/vor-ind.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.730 </y-m>
@@ -611,7 +611,7 @@
     </offsets>
   </model>
  
-  <!--engineur panel: Skawk and SO-63 Transponder Control Modules
+  <!--engineur panel: Skawk Transponder Control Module
                       KM-5 magnetic variation module,
                       PU-11 TKS compass system, the lateral gyro control panel
                       Kurs-MP 1+2 nav radios, left knop controls the bearing, right knop the frequency,
@@ -620,23 +620,13 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/skawk/skawk.xml</path>
     <offsets>
-      <x-m>  1.915 </x-m>
+      <x-m>  1.913 </x-m>
       <y-m>  1.080 </y-m>
       <z-m>  0.330 </z-m>
-      <heading-deg>0</heading-deg>
+      <heading-deg>180</heading-deg>
     </offsets>
-  </model>
+  </model>  
   
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/skawk/so-63.xml</path>
-    <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.080 </y-m>
-      <z-m>  0.390 </z-m>
-      <heading-deg>0</heading-deg>
-    </offsets>
-  </model>
-    
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/km-5/km-5-1.xml</path>
     <offsets>

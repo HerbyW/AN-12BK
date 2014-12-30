@@ -1,8 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
 <PropertyList>
 
 <!--  TrueHeading Needle in Autopilot activated, HerbyW 21 Dec 2014 -->
 
 <path>hsi.ac</path>
+
+
+  <animation>
+    <object-name>HSI.dstoff</object-name>
+    <object-name>HSI.card</object-name>
+    <object-name>HSI.crsneedle</object-name>
+    <object-name>HSI.crsdeflection</object-name>
+    <object-name>HSI.dst100</object-name>
+    <object-name>HSI.dst10</object-name>
+    <object-name>HSI.dst1</object-name>
+    <object-name>HSI.dst0</object-name>
+    <object-name>HSI.navbrg</object-name>
+    <object-name>HSI.crsneedle</object-name>
+    <object-name>HSI.crsdeflection</object-name>
+    <object-name>HSI.hdgbug</object-name>
+    <object-name>HSI.crsneedle</object-name>
+    <object-name>HSI.crsdeflection</object-name>
+    <object-name>HSI.crs100</object-name>
+    <object-name>HSI.crs10</object-name>
+    <object-name>HSI.crs1</object-name>
+    <object-name>HSI.crsknob</object-name>
+    <object-name>HSI.hdgknob</object-name>
+    <object-name>navflag</object-name>
+    <object-name>toflag</object-name>
+    <object-name>fromflag</object-name>
+    <object-name>gs.needle</object-name>        
+  </animation>
+
+  <animation>
+    <type>material</type>
+     <object-name>HSI.dstoff</object-name>
+     <object-name>HSI.card</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.dst100</object-name>
+     <object-name>HSI.dst10</object-name>
+     <object-name>HSI.dst1</object-name>
+     <object-name>HSI.dst0</object-name>
+     <object-name>HSI.navbrg</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.hdgbug</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.crs100</object-name>
+     <object-name>HSI.crs10</object-name>
+     <object-name>HSI.crs1</object-name>
+     <object-name>HSI.crsknob</object-name>
+     <object-name>HSI.hdgknob</object-name>
+     <object-name>navflag</object-name>
+     <object-name>toflag</object-name>
+     <object-name>fromflag</object-name>
+     <object-name>gs.needle</object-name> 
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
 
     <animation>
         <type>select</type>

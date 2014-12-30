@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
 <PropertyList>
  <path>flaps_ind.ac</path>
 
@@ -23,9 +26,9 @@
    <type>material</type>
    <object-name>flaps_ind</object-name>
    <emission>
-		<red>   0.10</red>
-		<green> 0.10</green>
-		<blue>  0.10</blue>
+		<red>   0.1</red>
+		<green> 0.1</green>
+		<blue>  0.1</blue>
 		<factor-prop>tu154/switches/gauge-light</factor-prop>
 	</emission>
    </animation>

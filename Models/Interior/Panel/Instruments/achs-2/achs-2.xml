@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff			 	  	#
@@ -20,11 +20,6 @@
     <object-name>hour_needle</object-name>
     <object-name>min_needle</object-name>
     <object-name>sec_needle</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
   </animation>
 
   <animation>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff			 	  	#
@@ -28,27 +28,6 @@
   <object-name>index</object-name>
   <object-name>flag</object-name>  
 </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>vitre</object-name>
-  </effect>
 
   <animation>
     <type>material</type>

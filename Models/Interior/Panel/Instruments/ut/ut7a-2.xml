@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff - port for FGFS,  FDM,                 #
@@ -20,7 +20,6 @@
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>
     <object-name>cache</object-name>
-
     <object-name>vitre</object-name>
   </animation>
 

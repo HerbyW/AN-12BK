@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
     #    (C) 2007 by Yurik V. Nikiforoff			 	  	#
@@ -24,42 +24,20 @@
   <object-name>n_max</object-name>
   <object-name>n_min</object-name>
   <object-name>sector</object-name>
-  <object-name>n_blank</object-name>
-  <object-name>vitre</object-name>
+  <object-name>n_blank</object-name>  
  </animation>
-
-   <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>vitre</object-name>
-  </effect>
 
   <animation>
     <type>material</type>
     <object-name>a_txt</object-name>
-  <object-name>n_txt</object-name>
-  <object-name>a_needle</object-name>
-  <object-name>n_needle</object-name>
-  <object-name>n_max</object-name>
-  <object-name>n_min</object-name>
-  <object-name>sector</object-name>
-  <object-name>n_blank</object-name>
-  <object-name>vitre</object-name>
+    <object-name>n_txt</object-name>
+    <object-name>a_needle</object-name>
+    <object-name>n_needle</object-name>
+    <object-name>n_max</object-name>
+    <object-name>n_min</object-name>
+    <object-name>sector</object-name>
+    <object-name>n_blank</object-name>
+    <object-name>vitre</object-name>
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>

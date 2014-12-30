@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
   Автопилот))
@@ -17,26 +17,7 @@
   <object-name>bg</object-name> 
 </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>vitre</object-name>
-  </effect>
+ 
 
   <animation>
     <type>material</type>
@@ -298,9 +279,12 @@
  </emission>
 </animation>
 
+
+<!-- ??????????????
+
 <animation>
   <type>pick</type>
-  <object-name>on</object-name>
+  <object-name>power_sw</object-name>
   <visible>false</visible>
   <action>
     <button>1</button>
@@ -313,7 +297,7 @@
       </script>
     </binding>
     </action>
-</animation>
+</animation>                -->
 
 <!--Lamp-->
  
@@ -321,9 +305,10 @@
   
 <!--КВ-->
 <!--Pick-->
+
 <animation>
   <type>pick</type>
-  <object-name>kv</object-name>
+  <object-name>pitch_sw</object-name>
   <visible>false</visible>
   <action>
     <button>0</button>
@@ -340,7 +325,7 @@
 
 <animation>
   <type>pick</type>
-  <object-name>kv</object-name>
+  <object-name>pitch_sw</object-name>
   <visible>false</visible>
   <action>
     <button>1</button>
@@ -359,14 +344,15 @@
 
 <animation>
   <type>select</type>
-  <object-name>kv_lamp</object-name>
+  <object-name>ready_btn</object-name>
   <condition>
 	   <property>instrumentation/ap40/althold</property>
  </condition>
 </animation>
 
-<!--Left-->
- <animation>
+<!--Left
+
+<animation>
   <type>pick</type> 
   <object-name>left</object-name> 
  <visible>false</visible>
@@ -382,10 +368,11 @@
       </script>
     </binding>
     </action>
-  </animation>
+  </animation>              -->
 
-<!--Right-->
- <animation>
+<!--Right
+
+<animation>
   <type>pick</type> 
   <object-name>right</object-name> 
  <visible>false</visible>
@@ -401,9 +388,10 @@
       </script>
     </binding>
     </action>
-  </animation>
+  </animation>                    -->
 
-<!--Nol-->
+<!--Nol
+
 <animation>
   <type>pick</type>
   <object-name>nol</object-name>
@@ -418,10 +406,11 @@
       </script>
     </binding>
     </action>
-</animation>
+</animation>               -->
 
 <!--Down-->
- <animation>
+
+<animation>
   <type>pick</type> 
   <object-name>down_zone</object-name> 
  <visible>false</visible>
@@ -439,6 +428,7 @@
     </binding>
     </action>
   </animation>
+
 <!--Up-->
 
  <animation>
