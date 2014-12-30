@@ -668,7 +668,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/com/com1.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio1.xml</path>
     <offsets>
       <x-m>  1.92 </x-m>
       <y-m>  1.28 </y-m>
@@ -688,7 +688,7 @@
   </model>
       
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/com/com2.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio2.xml</path>
     <offsets>
       <x-m>  1.92 </x-m>
       <y-m>  1.28 </y-m>

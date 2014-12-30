@@ -17,7 +17,7 @@
     <volume>instrumentation/comm[0]/volume</volume>
   </params>
 
- <path>com.ac</path>
+ <path>radio.ac</path>
 
  <!--Light -->
  <!-- working for Rembrandt -->
