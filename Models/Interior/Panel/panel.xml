@@ -49,7 +49,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
     <offsets>
       <x-m> 0.002 </x-m>
-      <y-m> -0.420 </y-m>
+      <y-m> -0.41 </y-m>
       <z-m> -0.009 </z-m>
     </offsets>
   </model>
@@ -70,7 +70,7 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.528 </y-m>
-      <z-m>  -0.019 </z-m>
+      <z-m>  -0.165 </z-m>
     </offsets>
   </model>
 
@@ -89,29 +89,20 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.805 </y-m>
-      <z-m>  0.115 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m>  0.024 </z-m>
     </offsets>
   </model>
   
   
   <!-- UAP, AOA and G-meter -->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
-    <offsets>
-      <x-m>  0.009 </x-m>
-      <y-m> -0.737 </y-m>
-      <z-m>  0.098 </z-m>
-    </offsets>
-  </model>
-  
+      
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
     <offsets>
       <x-m>  0.009 </x-m>
-      <y-m> -0.837 </y-m>
-      <z-m>  -0.138 </z-m>
+      <y-m> -0.737 </y-m>
+      <z-m>  0.098 </z-m>
     </offsets>
   </model>
     
@@ -140,8 +131,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
     <offsets>
       <x-m>  0.003 </x-m>
-      <y-m> -0.550 </y-m>
-      <z-m>  -0.219 </z-m>
+      <y-m> -0.532 </y-m>
+      <z-m>  -0.047 </z-m>
     </offsets>
   </model>
 
@@ -183,8 +174,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvid-15/uvid-15-m.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.637 </y-m>
-      <z-m>  0.005 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m> -0.056 </z-m>
     </offsets>
   </model>
   
@@ -192,8 +183,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvid-15/uvid-15-ft.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.637 </y-m>
-      <z-m> -0.1005 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m> -0.153 </z-m>
     </offsets>
   </model>
 
@@ -254,7 +245,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.737 </y-m>
-      <z-m>  -0.005 </z-m>
+      <z-m>  -0.009 </z-m>
     </offsets>
   </model>
  
@@ -273,7 +264,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.316 </y-m>
+      <y-m> -0.31 </y-m>
       <z-m> -0.012 </z-m>
     </offsets>
   </model>
@@ -462,8 +453,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-1.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.126 </y-m>
-      <z-m> -0.155 </z-m>
+      <y-m>  0.205 </y-m>
+      <z-m> -0.0 </z-m>
     </offsets>
   </model>
 
@@ -471,8 +462,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-2.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.042 </y-m>
-      <z-m> -0.155 </z-m>
+      <y-m>  0.27 </y-m>
+      <z-m> -0.0 </z-m>
     </offsets>
   </model>
 
@@ -480,8 +471,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-3.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m>  0.042 </y-m>
-      <z-m> -0.155 </z-m>
+      <y-m>  0.205 </y-m>
+      <z-m> -0.058 </z-m>
     </offsets>
   </model>
 
@@ -489,8 +480,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ut/ut7a-4.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m>  0.126 </y-m>
-      <z-m> -0.155 </z-m>
+      <y-m>  0.27 </y-m>
+      <z-m> -0.058 </z-m>
     </offsets>
   </model>
  
@@ -504,7 +495,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.194 </y-m>
-      <z-m> -0.225 </z-m>
+      <z-m> -0.182 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -514,7 +505,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.126 </y-m>
-      <z-m> -0.225 </z-m>
+      <z-m> -0.17 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -524,7 +515,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.042 </y-m>
-      <z-m> -0.225 </z-m>
+      <z-m> -0.17 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -534,7 +525,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m>  0.042 </y-m>
-      <z-m> -0.225 </z-m>
+      <z-m> -0.17 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -544,7 +535,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m>  0.126 </y-m>
-      <z-m> -0.225 </z-m>
+      <z-m> -0.17 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -567,7 +558,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ap40/ap.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m> -0.380 </y-m>
+      <y-m> -0.367 </y-m>
       <z-m> -0.144 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>0</pitch-deg>    
@@ -579,22 +570,22 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pn-6.xml</path>
     <offsets>
-      <x-m>  0.293 </x-m>
-      <y-m>  0.075 </y-m>
-      <z-m> -0.262 </z-m>
+      <x-m>  0.085 </x-m>
+      <y-m>  0.082 </y-m>
+      <z-m> -0.328 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>-80</pitch-deg>
+      <pitch-deg>-37</pitch-deg>
     </offsets>
   </model>
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pu-46+pn-5.xml</path>
     <offsets>
-      <x-m>  0.39 </x-m>
-      <y-m> -0.085 </y-m>
-      <z-m> -0.28 </z-m>
+      <x-m>  0.143 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m> -0.405 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>-80</pitch-deg>
+      <pitch-deg>-37</pitch-deg>
     </offsets>
   </model>
  
@@ -603,11 +594,11 @@
  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/quadrant/quadrant.xml</path>
     <offsets>
-      <x-m> -0.050 </x-m>
-      <y-m> -0.32 </y-m>
+      <x-m> -0.00</x-m>
+      <y-m> -0.26 </y-m>
       <z-m> -0.35 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>45</pitch-deg>
+      <pitch-deg>43</pitch-deg>
     </offsets>
   </model>
  
