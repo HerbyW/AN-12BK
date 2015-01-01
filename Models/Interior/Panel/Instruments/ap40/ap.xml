@@ -33,7 +33,8 @@
   </animation>
 
 
-<!--Switches-->
+<!--Power-on Switch-->
+
 <animation>
     <type>rotate</type>
     <object-name>power_sw</object-name>
@@ -49,7 +50,7 @@
     </axis>
 </animation>
 
-<!-- ******************** pick staff ******************************* -->
+
 <animation>
 	<type>pick</type>
 	<object-name>power_sw</object-name>
@@ -97,6 +98,8 @@
 		</binding>
 	</action>
 </animation>
+
+<!--Pitch Switch-->
 
 <animation>
     <type>rotate</type>
@@ -160,8 +163,11 @@
 		</binding>
 	</action>
 </animation>
-<!--Lamp-->
+
+<!--Lamps-->
+
 <!--Ready Lamp--> 
+
 <animation>
   <type>material</type>
   <object-name>ready_btn</object-name>
@@ -173,10 +179,8 @@
  </emission>
 </animation>
 
+<!--Online Lamp-->
 
-
-<!--On-->
-<!--Pick-->
 <animation>
   <type>pick</type>
   <object-name>online_btn</object-name>
@@ -216,6 +220,7 @@
       <z>0.0</z>
     </axis>
 </animation>
+
 <!-- ############################## -->
 <animation>
   <type>material</type>
@@ -304,7 +309,7 @@
  
   
 <!--КВ-->
-<!--Pick-->
+<!--Pick
 
 <animation>
   <type>pick</type>
@@ -338,7 +343,7 @@
       </script>
     </binding>
     </action>
-</animation>
+</animation>             -->
 
 <!--Lamp-->
 
