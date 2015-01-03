@@ -24,7 +24,8 @@
   <object-name>n_max</object-name>
   <object-name>n_min</object-name>
   <object-name>sector</object-name>
-  <object-name>n_blank</object-name>  
+  <object-name>n_blank</object-name>
+  <object-name>vitre</object-name>  
  </animation>
 
   <animation>

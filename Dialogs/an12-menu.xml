@@ -11,6 +11,16 @@
         <label>Select Livery</label>
       </item>
     </menu>
+    <menu n="5">
+    <item n="10">
+     <label>Pushback</label>
+     <name>pushback</name>
+     <binding>
+      <command>dialog-show</command>
+      <dialog-name>pushback</dialog-name>
+     </binding>
+    </item>
+   </menu>
   </default>
 
 </PropertyList>

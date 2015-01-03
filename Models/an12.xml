@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!--Pushback added-->
+
 <PropertyList>
 
   <path>an12.ac</path>
@@ -27,6 +29,18 @@
     </unload>
   </nasal>
 
+  <model>
+  <name>Pushback</name>
+  <path>Models\Airport\Pushback\Goldhofert.xml</path>
+  <offsets>
+   <x-m>-13.15</x-m>
+   <y-m>0</y-m>
+   <z-m>-5.25</z-m>
+  </offsets>
+ </model>
+ 
+
+  
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
 <!--Working For ANY GLASS AND Rembrandt-->
 

@@ -336,5 +336,11 @@
 
   <!-- Mass distribution -->
   <ballast x="18" y="0" z="-4" mass="6000"/>
+  
+  <!-- Thruster for Pushback action -->
+  
+  <thruster x="-11.51110" y="0" z="-5.26151" vx="1" vy="0" vz="0" thrust="5000">
+  <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+  </thruster>
 
 </airplane>

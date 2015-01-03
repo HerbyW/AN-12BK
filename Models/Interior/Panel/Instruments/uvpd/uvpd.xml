@@ -18,22 +18,18 @@
 <!-- Internal instruments lighting -->
 
 <animation> 
-  <object-name>Circle</object-name>
-  <object-name>Circle.002</object-name>
-  <object-name>needle_1</object-name>
-  <object-name>needle_2</object-name>
-  <object-name>bezel</object-name>  
+   <object-name>housing</object-name>
+   <object-name>needle_1</object-name>
+   <object-name>needle_2</object-name> 
 </animation>
 
   <!-- working for Rembrandt -->
  
   <animation>
     <type>material</type>
-     <object-name>Circle</object-name>
-     <object-name>Circle.002</object-name>
-     <object-name>needle_1</object-name>
-     <object-name>needle_2</object-name>
-     <object-name>bezel</object-name>
+     <object-name>housing</object-name>
+   <object-name>needle_1</object-name>
+   <object-name>needle_2</object-name> 
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.50 </red>

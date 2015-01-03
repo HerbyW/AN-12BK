@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Instrumentation by HerbyW, dec 2014, status: not finished, lots of work to do -->
+<!-- Instrumentation by HerbyW, dec 2014, status: not finished, lots of work to do
+     Panel and Interior redesign from "firefly" Dec 2014                          -->
 <!--Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc  -->
 
 <!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
@@ -98,7 +99,7 @@
   <!-- UAP, AOA and G-meter -->
       
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap/uap.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
     <offsets>
       <x-m>  0.009 </x-m>
       <y-m> -0.737 </y-m>
@@ -546,13 +547,23 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
     <offsets>
       <x-m> 0.008 </x-m>
+      <y-m> -0.84 </y-m>
+      <z-m> -0.133 </z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
+    <offsets>
+      <x-m> 0.008 </x-m>
       <y-m> 0.820 </y-m>
       <z-m> 0.093 </z-m>
-      <heading-deg>180</heading-deg>
+      <heading-deg>0</heading-deg>
     </offsets>
   </model>
 
-  <!--Autopilot, provisorium but still not working --> 
+  <!--Autopilot, provisorium but still not working 
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ap40/ap.xml</path>
@@ -565,7 +576,7 @@
     </offsets>
   </model>
   
-  <!--Autopilot from TU154B -->
+  Autopilot from TU154B 
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pn-6.xml</path>
@@ -587,8 +598,26 @@
       <heading-deg>0</heading-deg>
       <pitch-deg>-37</pitch-deg>
     </offsets>
-  </model>
- 
+  </model>                                                  -->
+  
+
+  <!--Autopilot
+		Lake of Constance Hangar :: M.Kraus
+		Boeing 707 for Flightgear Septemper 2013
+		This file is licenced under the terms of the GNU General Public Licence V2 or later
+		###################################################################################
+-->
+  
+ <model>
+  <name>Autopilot Helper</name>
+  <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ap/ap-fg.xml</path>
+  <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.286 </y-m>
+      <z-m>  0.210 </z-m>
+  </offsets>
+ </model>
+    
    <!--Throttle, Propeller-Pitch, Mixture Control Panel -->
  
  <model>
@@ -599,6 +628,29 @@
       <z-m> -0.35 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>43</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!--USH, USHDB DME and VOR Navigation Compasses -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
+    <offsets>
+      <x-m> -0.00</x-m>
+      <y-m> -0.44 </y-m>
+      <z-m> -0.35 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ush/ush.xml</path>
+    <offsets>
+      <x-m> -0.00</x-m>
+      <y-m> -0.58 </y-m>
+      <z-m> -0.35 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>0</pitch-deg>
     </offsets>
   </model>
  

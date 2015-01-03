@@ -8,7 +8,7 @@
 
     <description>Antonov An 12 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation)</author>
-    <aircraft-version>0.1</aircraft-version>
+    <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>0.6</fuel-fraction>
@@ -23,7 +23,9 @@
         <file type="string">default</file>
       </livery>
     </model>
-
+    
+ 
+    
 <!--Weapons are not supported for now
     <submodels>
       <serviceable type="bool">true</serviceable>
@@ -80,6 +82,31 @@
         <name>D</name>
         <desc>Open/Close cargo doors</desc>
       </key>
+      
+      <text>
+	Here you will find soon a helping text for An-12.
+	
+	There is a green panel in the middle console, the right switch makes the lights on.
+	
+	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation.
+	
+	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
+	
+	Please use the Autopilot from FG, then you may use some instruments to put in the values -
+	(Heading Control: Heading Bug, Velocity Control: Speed with Throttle, Pitch/Attitude Control is jet not possible,
+	
+	For ILS Landing you may use the Buttons in the FG-Autopilot if the little Instrument with the yellow and blue strips
+	gives you the indication that ILS is intersepted).
+	
+	Flaps Controll Panel will give you the right level for landing and starting if the white strips are in the middle position
+	(1-2 for starting, 2-4 for landing).
+	
+	Open the backdoor during flight if you get to hot :) and take a look from the navigator view backwards.
+	
+	Pushback car is now there. Do not use the brakes to stop backwards driving, use the pushback control please.
+	
+	Trails are now working only above 6000 ft, on ground it is not realistic.
+      </text>
     </help>
 
     <menubar include="Dialogs/an12-menu.xml"/>
@@ -166,4 +193,5 @@
     </an12>
   </nasal>
 
+  
 </PropertyList>
