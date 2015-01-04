@@ -94,6 +94,8 @@
 	
 	Please use the Autopilot from FG, then you may use some instruments to put in the values -
 	(Heading Control: Heading Bug, Velocity Control: Speed with Throttle, Pitch/Attitude Control is jet not possible,
+	after activating the generic Autopilot you can deselect the functions on the green panel in the middle upper position
+	on the console (activating is in work but now not working).
 	
 	For ILS Landing you may use the Buttons in the FG-Autopilot if the little Instrument with the yellow and blue strips
 	gives you the indication that ILS is intersepted).
