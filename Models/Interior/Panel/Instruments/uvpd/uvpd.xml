@@ -46,7 +46,8 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>instrumentation/uvpd/altitude</property>
+    <property>position/altitude-ft</property>
+    <factor>0.003048</factor>
     <interpolation>
   	<entry><ind>	0</ind>		<dep>	0</dep></entry>
 	<entry><ind>	5</ind>		<dep>	-54.9</dep></entry>
@@ -63,7 +64,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>instrumentation/uvpd/perepad</property>
+    <property>environment/atmosphere/density-tropo-avg</property>
     <interpolation>
   	<entry><ind>	-0.04</ind>	<dep>	-40</dep></entry>
 	<entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>

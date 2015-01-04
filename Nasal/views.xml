@@ -28,12 +28,12 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">   1.020 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  -1.770 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -12.780 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <x-offset-m archive="y">   0.520 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -2.350 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -12.550 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -10 </pitch-offset-deg>
       <default-field-of-view-deg> 77 </default-field-of-view-deg>
-      <heading-offset-deg type="double">180 </heading-offset-deg>
+      <heading-offset-deg type="double">275 </heading-offset-deg>
     </config>
   </view>
   
@@ -86,12 +86,29 @@
     </config>
   </view>
   
+  <view n="105">
+    <name>Passenger Middle Cabin</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.700 </x-offset-m> <!--Right-->
+      <y-offset-m archive="y">  -2.250 </y-offset-m> <!--Up-->
+      <z-offset-m archive="y"> -10.750 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 77 </default-field-of-view-deg>
+      <heading-offset-deg type="double"> 250 </heading-offset-deg>
+    </config>
+  </view>
+  
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y">  -0.500 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  -1.595 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -13.251 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">  -0.53 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.60 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.25 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
       <default-field-of-view-deg> 77 </default-field-of-view-deg>
     </config>
