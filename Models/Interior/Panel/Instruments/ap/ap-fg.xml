@@ -407,8 +407,7 @@
 	    <binding>
               <command>property-assign</command>
               <property>/autopilot/settings/vertical-speed-fpm</property>
-              <property>/velocities/vertical-speed-fps</property>
-	      <factor>60</factor>
+	      <property>/autopilot/internal/vert-speed-fpm</property>
             </binding>
             
         </action>
