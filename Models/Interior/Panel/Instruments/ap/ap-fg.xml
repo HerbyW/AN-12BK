@@ -251,7 +251,12 @@
 		  <command>property-assign</command>
 		  <property>/autopilot/locks/altitude</property>
 		  <value type="string">altitude-hold</value>
-		</binding>            
+		</binding>
+		<binding>
+		  <command>property-assign</command>
+		  <property>/autopilot/settings/target-altitude-ft</property>
+		  <property>/position/altitude-ft</property>
+		</binding>   
         </action>
     </animation>
 
@@ -294,7 +299,12 @@
               <command>property-assign</command>
               <property>/autopilot/locks/speed</property>
               <value type="string">speed-with-throttle</value>
-            </binding>           
+            </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>/autopilot/settings/target-speed-kt</property>
+              <property>/velocities/airspeed-kt</property>
+            </binding> 
         </action>
     </animation>
 
@@ -393,6 +403,12 @@
               <command>property-assign</command>
               <property>/autopilot/locks/altitude</property>
               <value type="string"></value>
+            </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>/autopilot/settings/vertical-speed-fpm</property>
+              <property>/velocities/vertical-speed-fps</property>
+	      <factor>60</factor>
             </binding>
             
         </action>
