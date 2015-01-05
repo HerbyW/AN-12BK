@@ -32,39 +32,13 @@
         <object-name>pitchOn</object-name>
 		<emission>
 			<red>0.6</red>
-			<green>0.4</green>
-			<blue>0.3</blue>
-		</emission>
-	</animation>
-
-  <animation>
-		<type>material</type>
-        <object-name>altOn</object-name>
-        <object-name>apOn</object-name>
-        <object-name>apprOn</object-name>
-        <object-name>hdgOn</object-name>
-        <object-name>iasOn</object-name>
-        <object-name>navOn</object-name>        
-        <object-name>gpsOn</object-name>
-        <object-name>pitchOn</object-name>
-        <object-name>altOff</object-name>
-        <object-name>apOff</object-name>
-        <object-name>apprOff</object-name>
-        <object-name>hdgOff</object-name>
-        <object-name>iasOff</object-name>
-        <object-name>navOff</object-name>        
-        <object-name>gpsOff</object-name>
-        <object-name>pitchOff</object-name>
-		<condition>
-			<less-than><property>tu154/switches/gauge-light</property><value>1</value></less-than>
-		</condition>
-		<emission>
-			<red>0.6</red>
-			<green>0.4</green>
-			<blue>0.3</blue>
+			<green>0.5</green>
+			<blue>0.5</blue>
 			<factor-prop>tu154/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
+
+  
 	
 	<animation>
 		<type>material</type>
@@ -84,15 +58,12 @@
         <object-name>navOff</object-name>        
         <object-name>gpsOff</object-name>
         <object-name>pitchOff</object-name>
-				<object-name>shadow</object-name>
-		<condition>
-			<not><property>/sim/rendering/rembrandt/enabled</property></not>
-			<property>tu154/switches/gauge-light</property>
-		</condition>
+	<object-name>shadow</object-name>
+		
 		<emission>
-		  <red>0.8</red>
-		  <green>0.8</green>
-		  <blue>0.8</blue>
+		  <red>0.6</red>
+		  <green>0.5</green>
+		  <blue>0.5</blue>
 		  <factor-prop>tu154/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
@@ -157,15 +128,21 @@
         <object-name>apOn</object-name>
         <action>
             <button>0</button>
-				  <binding>
-				    <command>property-assign</command>
-				     <property>/autopilot/locks/heading</property>
-				      <value type="string"></value>
+				 <binding> 
+				   <command>property-assign</command>
+				    <property>/autopilot/locks/heading</property>
+				     <value type="string"></value>
+				 </binding>
+				 <binding>
+				   <command>property-assign</command>
 				     <property>/autopilot/locks/altitude</property>
 		                      <value type="string"></value>
-			             <property>/autopilot/locks/speed</property>
-		                      <value type="string"></value>
-				  </binding>
+				 </binding>
+				 <binding>
+                                   <command>property-assign</command>
+                                     <property>/autopilot/locks/speed</property>
+                                      <value type="string"></value>
+                                 </binding>     
         </action>
     </animation>
 
@@ -378,7 +355,7 @@
 		    </not>
         </condition>
     </animation>
-
+        
     <animation>
         <type>pick</type>
         <visible>true</visible>
@@ -389,6 +366,11 @@
               <command>property-assign</command>
               <property>/autopilot/locks/altitude</property>
               <value type="string">vertical-speed-hold</value>
+            </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>/autopilot/settings/vertical-speed-fpm</property>
+	      <property>/autopilot/internal/vert-speed-fpm</property>
             </binding>
         </action>
     </animation>
@@ -403,13 +385,7 @@
               <command>property-assign</command>
               <property>/autopilot/locks/altitude</property>
               <value type="string"></value>
-            </binding>
-	    <binding>
-              <command>property-assign</command>
-              <property>/autopilot/settings/vertical-speed-fpm</property>
-	      <property>/autopilot/internal/vert-speed-fpm</property>
-            </binding>
-            
+            </binding>            
         </action>
     </animation>
 
