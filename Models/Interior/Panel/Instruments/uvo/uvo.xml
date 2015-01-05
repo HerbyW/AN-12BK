@@ -35,7 +35,7 @@
   <object-name>dig_p_hund</object-name>
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.50 </red>
+      <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
@@ -46,9 +46,8 @@
 <animation>
   <type>rotate</type>
   <object-name>long_needle</object-name>
-  <property>instrumentation/altimeter/indicated-altitude-ft</property>
-  <factor>-0.11</factor>
-  
+  <property>instrumentation/gps/indicated-altitude-ft</property>
+  <factor>-0.11</factor>  
   <axis>
     <x>1.0</x>
     <y>0.0</y>
@@ -59,11 +58,8 @@
 <animation>
   <type>rotate</type>
   <object-name>short_needle</object-name>
-  <property>instrumentation/altimeter/indicated-altitude-ft</property>
-  <factor>-0.011</factor>
-  <condition>
-    <property>tu154/systems/svs/powered</property>
-  </condition>
+  <property>instrumentation/gps/indicated-altitude-ft</property>
+  <factor>-0.011</factor>  
   <axis>
     <x>1.0</x>
     <y>0.0</y>
@@ -77,8 +73,8 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>instrumentation/altimeter/setting-inhg</property>
-  <factor>36.0</factor>
+  <property>environment/pressure-inhg</property>
+  <factor>1417.322835</factor>
   <center>
     <x-m>-0.01117</x-m>
     <y-m>0.0</y-m>
@@ -96,8 +92,8 @@
   <object-name>dig_p_dec</object-name>
   <expression>
     <table>
-      <mod>
-        <property>instrumentation/altimeter/setting-inhg</property>
+      <mod>	
+        <property>environment/pressure-inhg</property>	
         <value>100</value>
       </mod>
       <entry><ind>	 0</ind>	<dep>	0</dep></entry>
@@ -141,7 +137,7 @@
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter/setting-inhg</property>
+	<property>environment/pressure-inhg</property>	
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>

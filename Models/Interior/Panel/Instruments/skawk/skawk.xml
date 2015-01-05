@@ -141,6 +141,22 @@
       <max>7</max>
     </binding>
   </action>
+  
+
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>squawk-code</tooltip-id>
+      <label>Transponder code: %s</label>
+      <property>tu154/instrumentation/skawk/handle-4</property>
+      <mapping>nasal</mapping>
+      <script>
+        var modes = ['0', '1', '2', '3', '4', '5', '6', '7'];
+        return modes[arg[0]];
+      </script>
+    </binding>
+  </hovered>
+  
   <center>
     <x-m>0.0</x-m>
     <y-m>0.053828</y-m>

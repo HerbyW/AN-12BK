@@ -32,8 +32,8 @@
         <object-name>pitchOn</object-name>
 		<emission>
 			<red>0.6</red>
-			<green>0.4</green>
-			<blue>0.3</blue>
+			<green>0.5</green>
+			<blue>0.5</blue>
 		</emission>
 	</animation>
 
@@ -44,8 +44,7 @@
         <object-name>apprOn</object-name>
         <object-name>hdgOn</object-name>
         <object-name>iasOn</object-name>
-        <object-name>navOn</object-name>
-        <object-name>apprOn</object-name>
+        <object-name>navOn</object-name>        
         <object-name>gpsOn</object-name>
         <object-name>pitchOn</object-name>
         <object-name>altOff</object-name>
@@ -53,8 +52,7 @@
         <object-name>apprOff</object-name>
         <object-name>hdgOff</object-name>
         <object-name>iasOff</object-name>
-        <object-name>navOff</object-name>
-        <object-name>apprOff</object-name>
+        <object-name>navOff</object-name>        
         <object-name>gpsOff</object-name>
         <object-name>pitchOff</object-name>
 		<condition>
@@ -62,8 +60,8 @@
 		</condition>
 		<emission>
 			<red>0.6</red>
-			<green>0.4</green>
-			<blue>0.3</blue>
+			<green>0.5</green>
+			<blue>0.5</blue>
 			<factor-prop>tu154/switches/gauge-light</factor-prop>
 		</emission>
 	</animation>
@@ -75,8 +73,7 @@
         <object-name>apprOn</object-name>
         <object-name>hdgOn</object-name>
         <object-name>iasOn</object-name>
-        <object-name>navOn</object-name>
-        <object-name>apprOn</object-name>
+        <object-name>navOn</object-name>        
         <object-name>gpsOn</object-name>
         <object-name>pitchOn</object-name>
         <object-name>altOff</object-name>
@@ -84,8 +81,7 @@
         <object-name>apprOff</object-name>
         <object-name>hdgOff</object-name>
         <object-name>iasOff</object-name>
-        <object-name>navOff</object-name>
-        <object-name>apprOff</object-name>
+        <object-name>navOff</object-name>        
         <object-name>gpsOff</object-name>
         <object-name>pitchOff</object-name>
 				<object-name>shadow</object-name>
@@ -131,7 +127,9 @@
     </animation>
 
     <!--################  buttons on the ap-console #################### -->
+    
     <!-- Main Switch AP -->
+    
     <animation>
         <type>select</type>
         <object-name>apOff</object-name>
@@ -148,12 +146,27 @@
 		        <equals>
 		          <property>/autopilot/locks/speed</property>
 		          <value type="string"></value>
-		        </equals>          
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
+		        </equals> 
           </and>
         </condition>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <visible>true</visible>
+        <object-name>apOn</object-name>
+        <action>
+            <button>0</button>
+				  <binding>
+				    <command>property-assign</command>
+				     <property>/autopilot/locks/heading</property>
+				      <value type="string"></value>
+				     <property>/autopilot/locks/altitude</property>
+		                      <value type="string"></value>
+			             <property>/autopilot/locks/speed</property>
+		                      <value type="string"></value>
+				  </binding>
+        </action>
     </animation>
 
     <animation>
@@ -162,62 +175,26 @@
         <object-name>apOff</object-name>
         <action>
             <button>0</button>
-				    <binding>
-				        <command>nasal</command>
-				        <script>
-				        	var bt = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;
-				        	var bat = getprop("/b707/ess-bus") or 0;
-				        	if(!bt and bat > 20){
-				        		setprop("/autopilot/Bendix-PB-20/controls/active", 1);
-				        	}
-				        </script>
-				    </binding>
 				  <binding>
-				    <command>property-toggle</command>
-				    <property>/sim/sound/switch3</property>
+				    <command>property-assign</command>
+				    <property>/autopilot/locks/heading</property>
+				    <value type="string">wing-leveler</value>
 				  </binding>
         </action>
     </animation>
-
-    <animation>
-        <type>pick</type>
-        <visible>true</visible>
-        <object-name>apOn</object-name>
-        <action>
-            <button>0</button>
-				    <binding>
-				        <command>nasal</command>
-				        <script>
-			        		setprop("/autopilot/Bendix-PB-20/controls/active", 0);
-			        		setprop("/autopilot/Bendix-PB-20/controls/alt-active", 0);
-			        		setprop("/autopilot/Bendix-PB-20/controls/mode-selector", 2);
-			        		setprop("/autopilot/locks/speed", "");
-				        </script>
-				    </binding>
-				  <binding>
-				    <command>property-toggle</command>
-				    <property>/sim/sound/switch3</property>
-				  </binding>
-        </action>
-    </animation>
-
 
     <!-- Heading Hold -->
+    
     <animation>
         <type>select</type>
         <object-name>hdgOff</object-name>
-        <condition>
-        	<and>
+        <condition>        	
         	  <not>
-				      <equals>
-				        <property>/autopilot/locks/heading</property>
-				        <value type="string">dg-heading-hold</value>
-				      </equals>
-				    </not>       
-		        
-            	<property>tu154/switches/gauge-light</property>
-          
-          </and>
+		      <equals>
+		        <property>/autopilot/locks/heading</property>
+		        <value type="string">dg-heading-hold</value>
+		      </equals>
+		  </not>
         </condition>
     </animation>
 
@@ -229,23 +206,9 @@
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>1</value>
-            </binding>
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;            	
-						    	var bat = getprop("/b707/ess-bus") or 0;
-            			if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/mode-selector", 2);}, 0.2);
-						    	}
-						    </script>
-						</binding>  
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+              <property>/autopilot/locks/heading</property>
+              <value type="string">dg-heading-hold</value>
+	    </binding>            
         </action>
     </animation>
 
@@ -256,33 +219,25 @@
         <action>
             <button>0</button>
             <binding>
-              <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>2</value>
+               <command>property-assign</command>
+                <property>/autopilot/locks/heading</property>
+                <value type="string">wing-leveler</value>
             </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
-        </action>
+         </action>
     </animation>
 
     <!-- Altitude Hold -->
+    
     <animation>
         <type>select</type>
         <object-name>altOff</object-name>
         <condition>
-        	<and>
-      	  	<not>
-				      <equals>
-				        <property>/autopilot/locks/altitude</property>
-				        <value type="string">altitude-hold</value>
-				      </equals>
-				    </not>      
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+	  <not>
+	      <equals>
+	        <property>/autopilot/locks/altitude</property>
+	        <value type="string">altitude-hold</value>
+	      </equals>
+	  </not>
         </condition>
     </animation>
 
@@ -292,24 +247,16 @@
         <object-name>altOff</object-name>
         <action>
             <button>0</button>
-						<binding>
-						  <command>property-assign</command>
-						  <property>/autopilot/Bendix-PB-20/controls/alt-active</property>
-						  <value>1</value>
-						</binding> 
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;
-						    	if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/alt-active", 0);}, 0.2);
-						    	}
-						    </script>
-						</binding>  
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+		<binding>
+		  <command>property-assign</command>
+		  <property>/autopilot/locks/altitude</property>
+		  <value type="string">altitude-hold</value>
+		</binding>
+		<binding>
+		  <command>property-assign</command>
+		  <property>/autopilot/settings/target-altitude-ft</property>
+		  <property>/position/altitude-ft</property>
+		</binding>   
         </action>
     </animation>
 
@@ -319,57 +266,28 @@
         <object-name>altOn</object-name>
         <action>
             <button>0</button>
-						<binding>
-						  <command>property-assign</command>
-						  <property>/autopilot/Bendix-PB-20/controls/alt-active</property>
-						  <value>0</value>
-						</binding> 
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;
-						    	if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/alt-active", 0);}, 0.2);
-						    	}
-						    </script>
-						</binding> 
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+		<binding>
+		  <command>property-assign</command>
+		  <property>/autopilot/locks/altitude</property>
+                  <value type="string"></value>
+		</binding>            
         </action>
     </animation>
 
     <!-- IAS Hold -->
+    
     <animation>
         <type>select</type>
         <object-name>iasOff</object-name>
         <condition>
-        	<and>
-      	  	<not>
-				      <equals>
-				        <property>/autopilot/locks/speed</property>
-				        <value type="string">speed-with-throttle</value>
-				      </equals>
-				    </not>           
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+              <not>
+               <equals>
+                 <property>/autopilot/locks/speed</property>
+                 <value type="string">speed-with-throttle</value>
+               </equals>
+              </not>           
         </condition>
-    </animation>
-
-    <animation>
-        <type>translate</type>
-        <object-name>iasOff</object-name>
-        <property>/autopilot/locks/speed</property>
-        <factor>-0.004</factor>
-        <axis>
-            <x>1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
+    </animation>    
 
     <animation>
         <type>pick</type>
@@ -382,19 +300,11 @@
               <property>/autopilot/locks/speed</property>
               <value type="string">speed-with-throttle</value>
             </binding>
-            <binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;
-						    	if(!apa){
-						    		settimer(func{ setprop("/autopilot/locks/speed", "");}, 0.2);
-						    	}
-						    </script>
-						</binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+	    <binding>
+              <command>property-assign</command>
+              <property>/autopilot/settings/target-speed-kt</property>
+              <property>/velocities/airspeed-kt</property>
+            </binding> 
         </action>
     </animation>
 
@@ -408,11 +318,7 @@
               <command>property-assign</command>
               <property>/autopilot/locks/speed</property>
               <value type="string"></value>
-            </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+            </binding>            
         </action>
     </animation>
 
@@ -421,17 +327,12 @@
         <type>select</type>
         <object-name>gpsOff</object-name>
         <condition>
-        	<and>
-        		<not>
-				      <equals>
-				        <property>/autopilot/locks/heading</property>
-				        <value type="string">true-heading-hold</value>
-				      </equals>
-				    </not>        
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+            <not>
+	      <equals>
+	        <property>/autopilot/locks/heading</property>
+	        <value type="string">true-heading-hold</value>
+	      </equals>
+	    </not>
         </condition>
     </animation>
 
@@ -443,22 +344,8 @@
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>0</value>
-            </binding>
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;            	
-						    	var bat = getprop("/b707/ess-bus") or 0;
-            			if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/mode-selector", 2);}, 0.2);
-						    	}
-						    </script>
-						</binding>  
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
+              <property>/autopilot/locks/heading</property>
+              <value type="string">true-heading-hold</value>
             </binding>
         </action>
     </animation>
@@ -471,32 +358,24 @@
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>2</value>
-            </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+              <property>/autopilot/locks/heading</property>
+              <value type="string"></value>
+            </binding>            
         </action>
     </animation>
 
-    <!-- Pitch Hold -->
+    <!-- Vertical Speed Hold -->
+    
     <animation>
         <type>select</type>
         <object-name>pitchOff</object-name>
-        <condition>
-        	<and>
-        		<not>
+        <condition>        	
+                   <not>
 		          <equals>
 		          	<property>/autopilot/locks/altitude</property>
 		          	<value type="string">vertical-speed-hold</value>
 		          </equals>
-				    </not>        
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+		    </not>
         </condition>
     </animation>
 
@@ -510,19 +389,6 @@
               <command>property-assign</command>
               <property>/autopilot/locks/altitude</property>
               <value type="string">vertical-speed-hold</value>
-            </binding>
-            <binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;
-						    	if(!apa){
-						    		settimer(func{ setprop("/autopilot/locks/speed", "");}, 0.2);
-						    	}
-						    </script>
-						</binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
             </binding>
         </action>
     </animation>
@@ -538,29 +404,27 @@
               <property>/autopilot/locks/altitude</property>
               <value type="string"></value>
             </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
+	    <binding>
+              <command>property-assign</command>
+              <property>/autopilot/settings/vertical-speed-fpm</property>
+	      <property>/autopilot/internal/vert-speed-fpm</property>
             </binding>
+            
         </action>
     </animation>
 
     <!-- NAV1 Hold -->
+    
     <animation>
         <type>select</type>
         <object-name>navOff</object-name>
         <condition>
-        	<and>
-        		<not>
-		          <equals>
-		          	<property>/autopilot/locks/heading</property>
-		          	<value type="string">nav1-hold</value>
-		          </equals>
-				    </not>        
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+	  <not>
+            <equals>
+          	<property>/autopilot/locks/heading</property>
+          	<value type="string">nav1-hold</value>
+            </equals>
+          </not>
         </condition>
     </animation>
 
@@ -572,23 +436,9 @@
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>3</value>
-            </binding>
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;            	
-						    	var bat = getprop("/b707/ess-bus") or 0;
-            			if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/mode-selector", 2);}, 0.2);
-						    	}
-						    </script>
-						</binding> 
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+              <property>/autopilot/locks/heading</property>
+              <value type="string">nav1-hold</value>
+            </binding>            
         </action>
     </animation>
 
@@ -602,30 +452,22 @@
               <command>property-assign</command>
               <property>/autopilot/locks/heading</property>
               <value type="string"></value>
-            </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+            </binding>            
         </action>
     </animation>
 
     <!-- Approach / Glideslope -->
+    
     <animation>
         <type>select</type>
         <object-name>apprOff</object-name>
         <condition>
-          <and>
-        		<not>
-		          <equals>
-		          	<property>/autopilot/locks/altitude</property>
-		          	<value type="string">gs1-hold</value>
-		          </equals>
-				    </not>        
-		        
-            	<property>tu154/switches/gauge-light</property>
-          	
-          </and>
+	   <not>
+             <equals>
+          	<property>/autopilot/locks/altitude</property>
+          	<value type="string">gs1-hold</value>
+             </equals>
+	    </not>
         </condition>
     </animation>
 
@@ -637,22 +479,8 @@
             <button>0</button>
             <binding>
               <command>property-assign</command>
-              <property>/autopilot/Bendix-PB-20/controls/mode-selector</property>
-              <value>4</value>
-            </binding>
-						<binding>
-						    <command>nasal</command>
-						    <script>
-						    	var apa = getprop("/autopilot/Bendix-PB-20/controls/active") or 0;            	
-						    	var bat = getprop("/b707/ess-bus") or 0;
-            			if(!apa){
-						    		settimer(func{ setprop("/autopilot/Bendix-PB-20/controls/mode-selector", 2);}, 0.2);
-						    	}
-						    </script>
-						</binding> 
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
+              <property>/autopilot/locks/altitude</property>
+              <value type="string">gs1-hold</value>
             </binding>
         </action>
     </animation>
@@ -667,11 +495,7 @@
               <command>property-assign</command>
               <property>/autopilot/locks/altitude</property>
               <value type="string"></value>
-            </binding>
-            <binding>
-              <command>property-toggle</command>
-              <property>/sim/sound/switch3</property>
-            </binding>
+            </binding>            
         </action>
     </animation>
 </PropertyList>

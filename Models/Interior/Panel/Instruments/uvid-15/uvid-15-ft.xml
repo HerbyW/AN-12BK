@@ -53,24 +53,18 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>tu154/systems/electrical/checking-lamps/lamps-power</factor-prop>
+    <factor-prop>tu154/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
 <animation>
   <type>select</type>
   <object-name>lamp</object-name>
-  <condition>
-    <or>
-      <and>
-       <less-than>
-      	<property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
-        <value>0.0</value>
-       </less-than>
-       <property>tu154/instrumentation/altimeter[1]/powered</property>
-      </and>
-      <property>tu154/systems/electrical/checking-lamps/main-panel</property>
-    </or>
+  <condition>    
+       <greater-than>
+      	<property>tu154/switches/gauge-light</property>
+        <value>0.5</value>
+       </greater-than>       
   </condition>
 </animation>
 
@@ -79,11 +73,8 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
-    <factor>0.36</factor>
-    <condition>
-    	<property>tu154/instrumentation/altimeter[1]/powered</property>
-    </condition>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>    
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -94,11 +85,8 @@
 <!--Altitude digits-->
 <animation>
   <type>rotate</type>
-  <object-name>dig_a_dec</object-name>
-  <condition>
-    <property>tu154/instrumentation/altimeter[1]/powered</property>
-  </condition>
-  <property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
+  <object-name>dig_a_dec</object-name>  
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>3.6</factor>
   <center>
     <x-m>-0.01985</x-m>
@@ -113,14 +101,11 @@
 </animation>
 <animation>
   <type>rotate</type>
-  <object-name>dig_a_hund</object-name>
-  <condition>
-    <property>tu154/instrumentation/altimeter[1]/powered</property>
-  </condition>
+  <object-name>dig_a_hund</object-name>  
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>
@@ -161,13 +146,11 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_a_ths</object-name>
-  <condition>
-    <property>tu154/instrumentation/altimeter[1]/powered</property>
-  </condition>
+  
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>10000</value>
       </mod>
       <entry><ind>	   0</ind>	<dep>	0</dep></entry>
@@ -208,13 +191,11 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_a_decths</object-name>
-  <condition>
-    <property>tu154/instrumentation/altimeter[1]/powered</property>
-  </condition>
+  
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter[1]/indicated-altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>100000</value>
       </mod>
       <entry><ind>	    0</ind>	<dep>	0</dep></entry>
@@ -257,8 +238,8 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
-  <factor>36.0</factor>
+  <property>instrumentation/altimeter/setting-inhg</property>
+  <factor>360</factor>
   <center>
     <x-m>-0.01257</x-m>
     <y-m>0.0</y-m>
@@ -278,15 +259,15 @@
     <product>
       <difference>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>100</value>
         </mod>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>10</value>
         </mod>
       </difference>
-      <value>3.6</value>
+      <value>360</value>
     </product>
   </expression>
   <center>
@@ -308,15 +289,15 @@
     <product>
       <difference>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>1000</value>
         </mod>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>100</value>
         </mod>
       </difference>
-      <value>0.36</value>
+      <value>36</value>
     </product>
   </expression>
   <center>
@@ -338,15 +319,15 @@
     <product>
       <difference>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>10000</value>
         </mod>
         <mod>
-          <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
+          <property>instrumentation/altimeter/setting-inhg</property>
           <value>1000</value>
         </mod>
       </difference>
-      <value>0.036</value>
+      <value>3.6</value>
     </product>
   </expression>
   <center>
@@ -366,13 +347,15 @@
 <animation>
   <type>knob</type>
   <object-name>hs</object-name>
-  <visible>false</visible>
+  <visible>true</visible>
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/altimeter[1]/inhgX100</property>
-      <min>0</min>
-      <max>3365</max>
+      <property>instrumentation/altimeter/setting-inhg</property>
+      <value>29.92</value>
+      <factor>0.01</factor>
+      <min>25</min>
+      <max>34</max>
     </binding>
   </action>
 </animation>
