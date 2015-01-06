@@ -84,7 +84,7 @@
       </key>
       
       <text>
-	Here you will find soon a helping text for An-12.
+	Some instruments will show you metric values, some ft.
 	
 	There is a green panel in the middle console, the right switch makes the lights on.
 	
@@ -92,22 +92,32 @@
 	
 	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
 	
-	Please use the Autopilot from FG, then you may use some instruments to put in the values -
-	(Heading Control: Heading Bug, Velocity Control: Speed with Throttle, Pitch/Attitude Control is jet not possible,
-	after activating the generic Autopilot you can deselect the functions on the green panel in the middle upper position
-	on the console (activating is in work but now not working).
+	The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values -
+	- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator),
+	- Velocity Control: Speed with Throttle are set in the Speed Indicator, then push IAS
+	- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS,
+	- Wing leveler is activ when you push the AP button, it is also the AP activating Button,
+	- APRP is used for intersepting the Glide Scope,
+	- GPS for flying routes from the Route Manager,
+	- ALT is holding your attidude
 	
-	For ILS Landing you may use the Buttons in the FG-Autopilot if the little Instrument with the yellow and blue strips
-	gives you the indication that ILS is intersepted).
+	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it
+	gives you the indication that ILS and/or Glide Scope is intersepted.
 	
-	Flaps Controll Panel will give you the right level for landing and starting if the white strips are in the middle position
-	(1-2 for starting, 2-4 for landing).
+	Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side),
+	if the white strips are in the middle position (1-2 for starting, 2-4 for landing).
 	
 	Open the backdoor during flight if you get to hot :) and take a look from the navigator view backwards.
 	
 	Pushback car is now there. Do not use the brakes to stop backwards driving, use the pushback control please.
 	
 	Trails are now working only above 6000 ft, on ground it is not realistic.
+	
+	There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
+	 the upper one is in meter and mmHG, the lower one in ft and inHG,
+	 they are connected and you should set them to the ATIS information of the airport befor starting.
+	 
+	The compasses are not cleared of the magnetic variation, it will be done soon. 
       </text>
     </help>
 

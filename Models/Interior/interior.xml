@@ -9,22 +9,22 @@
 <!--Working For ANY GLASS AND Rembrandt-->
 
 <animation>
-    <object-name>intvitre</object-name>
-    <object-name>vitreporte</object-name>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
 </animation>
 
 <animation>
 <type>noshadow</type>
-    <object-name>intvitre</object-name>
-    <object-name>vitreporte</object-name>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
 </animation>
 
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitre</object-name>
-    <object-name>vitreporte</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>windows</object-name>
 </animation>
 
 <animation>
@@ -38,7 +38,7 @@
 <object-name>intbaieD</object-name> -->
 
 <!-- Objets transparents -->
-<object-name>intvitres</object-name>
+<object-name>windows</object-name>
 <object-name>intvitreporte</object-name>
 </animation>
 

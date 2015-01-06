@@ -112,7 +112,7 @@
     <object-name>heliceDE</object-name>
 
     <!-- Objets transparents -->
-    <object-name>vitre</object-name>
+    
     <object-name>vitreporte</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
@@ -264,7 +264,7 @@
   
   <animation>
     <type>noshadow</type>
-    <object-name>vitres</object-name>
+    
     <object-name>vitreporte</object-name>
     <object-name>bosses</object-name>
     <object-name>propblurGE</object-name>
@@ -285,7 +285,7 @@
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
-    <object-name>vitres</object-name>
+    
     <object-name>vitreporte</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
