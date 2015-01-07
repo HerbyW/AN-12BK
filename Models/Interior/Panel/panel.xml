@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- Instrumentation by HerbyW, dec 2014, status: not finished, lots of work to do
-     Panel and Interior redesign from "firefly" Dec 2014                          -->
+     Panel and Interior redesign from "firefly" Dec/Jan 2014                          -->
 <!--Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc  -->
 
 <!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
@@ -540,6 +540,7 @@
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
+  
 
    <!--Variometer, For Cabine and Outside pressure control, need to change the texture --> 
   
@@ -606,6 +607,7 @@
 		Boeing 707 for Flightgear Septemper 2013
 		This file is licenced under the terms of the GNU General Public Licence V2 or later
 		###################################################################################
+		completly simpified by HerbyW Jan 2014 
 -->
   
  <model>
@@ -663,9 +665,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/skawk/skawk.xml</path>
     <offsets>
-      <x-m>  1.913 </x-m>
-      <y-m>  1.080 </y-m>
-      <z-m>  0.330 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  1.050 </y-m>
+      <z-m>  0.140 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>  
@@ -673,9 +675,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/km-5/km-5-1.xml</path>
     <offsets>
-      <x-m>  1.915 </x-m>
-      <y-m>  1.25 </y-m>
-      <z-m>  0.20 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.60  </y-m>
+      <z-m>  0.130 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -683,9 +685,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pu-11/pu-11.xml</path>
     <offsets>
-      <x-m>  1.915 </x-m>
-      <y-m>  1.08 </y-m>
-      <z-m>  0.20 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.80 </y-m>
+      <z-m>  0.130 </z-m>
       <heading-deg>180</heading-deg>
      </offsets>
   </model>
@@ -693,9 +695,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-1.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.28 </y-m>
-      <z-m>  0.05 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.90 </y-m>
+      <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -703,9 +705,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-2.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.08 </y-m>
-      <z-m>  0.05 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.70 </y-m>
+      <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -713,9 +715,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio1.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.28 </y-m>
-      <z-m>  -0.065 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.9 </y-m>
+      <z-m>  -0.1065 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -723,9 +725,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/dme/dme1.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.08 </y-m>
-      <z-m> -0.065 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.7 </y-m>
+      <z-m> -0.1065 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -733,9 +735,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio2.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.28 </y-m>
-      <z-m>  -0.165 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.9 </y-m>
+      <z-m>  -0.185 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
@@ -743,14 +745,172 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/dme/dme2.xml</path>
     <offsets>
-      <x-m>  1.92 </x-m>
-      <y-m>  1.08 </y-m>
-      <z-m> -0.165 </z-m>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.7 </y-m>
+      <z-m> -0.185 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
 
-  <!-- Switches and Buttons -->
+ 
+   <!-- Fuel Control Ingineer Panel: Knob (no function jet)
+                     Total Fuel Sum below 10 t for all tanks combined
+                     Total Fuel in t and in percent for all tanks combined
+                     Tank 1-4, Fuel Flow and Sum in t -->
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_knob.xml</path>
+    <offsets>
+      <x-m>  2.10 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.242 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
+    <offsets>
+      <x-m>  2.0 </x-m>
+      <y-m> 1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+    
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  1.90 </x-m>
+      <y-m> 1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R.xml</path>
+    <offsets>
+      <x-m>  1.80 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R1.xml</path>
+    <offsets>
+      <x-m>  1.70 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R.xml</path>
+    <offsets>
+      <x-m>  1.60 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R1.xml</path>
+    <offsets>
+      <x-m>  1.50 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.225 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+
+ <!-- Pressuremeters 4-2 and 8-2  -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_1.xml</path>
+    <offsets>
+      <x-m>  1.500 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.31 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_2.xml</path>
+    <offsets>
+      <x-m>  1.600 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.31 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+   
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_3.xml</path>
+    <offsets>
+      <x-m>  1.700 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.31 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres4_2/pres42_4.xml</path>
+    <offsets>
+      <x-m>  1.800 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.31 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_1.xml</path>
+    <offsets>
+      <x-m>  1.500 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.39 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_2.xml</path>
+    <offsets>
+      <x-m>  1.600 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.39 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_3.xml</path>
+    <offsets>
+      <x-m>  1.700 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.39 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pres8_2/pres82_4.xml</path>
+    <offsets>
+      <x-m>  1.800 </x-m>
+      <y-m>  1.275 </y-m>
+      <z-m> -0.39 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+ <!-- Switches and Buttons -->
   
    <!-- Light switches block -->
   

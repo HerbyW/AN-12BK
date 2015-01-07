@@ -73,7 +73,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <property>position/altitude-ft</property>
     <factor>0.36</factor>    
     <axis>
       <x>-1.0</x>
@@ -86,7 +86,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_a_dec</object-name>  
-  <property>instrumentation/altimeter/indicated-altitude-ft</property>
+  <property>position/altitude-ft</property>
   <factor>3.6</factor>
   <center>
     <x-m>-0.01985</x-m>
@@ -105,7 +105,7 @@
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <property>position/altitude-ft</property>
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>
@@ -150,7 +150,7 @@
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <property>position/altitude-ft</property>
         <value>10000</value>
       </mod>
       <entry><ind>	   0</ind>	<dep>	0</dep></entry>
@@ -195,7 +195,7 @@
   <expression>
     <table>
       <mod>
-        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <property>position/altitude-ft</property>
         <value>100000</value>
       </mod>
       <entry><ind>	    0</ind>	<dep>	0</dep></entry>
@@ -238,7 +238,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>instrumentation/altimeter/setting-inhg</property>
+  <property>instrumentation/altimeter/inhg100</property>
   <factor>360</factor>
   <center>
     <x-m>-0.01257</x-m>
@@ -259,11 +259,11 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>100</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>10</value>
         </mod>
       </difference>
@@ -289,11 +289,11 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>1000</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>100</value>
         </mod>
       </difference>
@@ -319,11 +319,11 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>10000</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/setting-inhg</property>
+          <property>instrumentation/altimeter/inhg100</property>
           <value>1000</value>
         </mod>
       </difference>
@@ -351,11 +351,11 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>instrumentation/altimeter/setting-inhg</property>
-      <value>29.92</value>
-      <factor>0.01</factor>
-      <min>25</min>
-      <max>34</max>
+      <property>instrumentation/altimeter/inhg100</property>
+      <value>2992</value>
+      <factor>1</factor>
+      <min>2500</min>
+      <max>3400</max>
     </binding>
   </action>
 </animation>

@@ -70,11 +70,13 @@
 
 <!--Pressure digits-->
 
+
+
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>environment/pressure-inhg</property>
-  <factor>1417.322835</factor>
+  <property>instrumentation/altimeter/mmhg</property>
+  <factor>36.0</factor>
   <center>
     <x-m>-0.01117</x-m>
     <y-m>0.0</y-m>
@@ -92,8 +94,9 @@
   <object-name>dig_p_dec</object-name>
   <expression>
     <table>
-      <mod>	
-        <property>environment/pressure-inhg</property>	
+      <mod>
+        <property>instrumentation/altimeter/mmhg</property>
+	
         <value>100</value>
       </mod>
       <entry><ind>	 0</ind>	<dep>	0</dep></entry>
@@ -137,7 +140,8 @@
   <expression>
     <table>
       <mod>
-	<property>environment/pressure-inhg</property>	
+        <property>instrumentation/altimeter/mmhg</property>
+	
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>

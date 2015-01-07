@@ -203,7 +203,10 @@
       <file>Aircraft/Antonov-An-12/Nasal/liveries.nas</file>
       <file>Aircraft/Antonov-An-12/Nasal/light.nas</file>
     </an12>
-  </nasal>
+    <instruments>
+      <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>
+      </instruments>
+    </nasal>
 
   
 </PropertyList>
