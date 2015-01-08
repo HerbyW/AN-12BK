@@ -542,7 +542,7 @@
   </model>
   
 
-   <!--Variometer, For Cabine and Outside pressure control, need to change the texture --> 
+   <!--Variometer, For Cabine and Outside pressure control--> 
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>

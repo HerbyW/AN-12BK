@@ -11,9 +11,10 @@
      Engines              : 4 x Progress AI-20L or AI-20M turboprops (4000 hp each)
      Max speed            : 777 km/h   (   419 kt      )
      Cruise speed         : 670 km/h   (   361 kt      )
--->
 
-<airplane mass="62000">
+     adding some stuff in different files: HerbyW Jan2015                           -->
+
+<airplane mass="62000" version="YASIM_VERSION_CURRENT">
 
   <approach speed="98" aoa="8" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
@@ -335,7 +336,7 @@
   <tank x="3" y="-6.817" z="-0.4" capacity="8745"/>
 
   <!-- Mass distribution -->
-  <ballast x="18" y="0" z="-4" mass="6000"/>
+  <ballast x="19" y="0" z="-4" mass="16000"/>
   
   <!-- Thruster for Pushback action -->
   
