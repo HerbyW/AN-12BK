@@ -15,6 +15,15 @@
       <model type="int">   4 </model>
     </rating>
    
+   <systems>
+          <autopilot>
+	    <name>Autopilot</name>
+               <path>Nasal/An-12-autopilot.xml</path>
+         </autopilot>
+   </systems>
+   
+   
+   
   </sim>
   
   
