@@ -1358,7 +1358,7 @@
         <model>
 		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_1.xml</path>
 		<offsets>
-			<x-m> -5.89102 </x-m>
+      <x-m> -5.89102 </x-m>
       <y-m> -9.56800 </y-m>
       <z-m> -0.93836 </z-m>
 		</offsets>
@@ -1367,7 +1367,7 @@
 	<model>
 		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_2.xml</path>
 		<offsets>
-			<x-m> -6.76873 </x-m>
+      <x-m> -6.76873 </x-m>
       <y-m> -4.63488 </y-m>
       <z-m> -0.93836 </z-m>
 		</offsets>
@@ -1376,7 +1376,7 @@
 	<model>
 		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_3.xml</path>
 		<offsets>
-			<x-m> -6.76873 </x-m>
+      <x-m> -6.76873 </x-m>
       <y-m>  4.63488 </y-m>
       <z-m> -0.93836 </z-m>
 		</offsets>
@@ -1386,7 +1386,7 @@
 	<model>
 		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_4.xml</path>
 		<offsets>
-			<x-m> -5.89102 </x-m>
+      <x-m> -5.89102 </x-m>
       <y-m>  9.56800 </y-m>
       <z-m> -0.93836 </z-m>
 		</offsets>
