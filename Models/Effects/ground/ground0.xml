@@ -55,18 +55,18 @@
     <particle>
       <start>
         <color>
-          <red><value>   0.65 </value></red>
-          <green><value> 0.65 </value></green>
-          <blue><value>  0.65 </value></blue>
+          <red><value>   0.45 </value></red>
+          <green><value> 0.45 </value></green>
+          <blue><value>  0.45 </value></blue>
           <alpha><value> 0.05 </value></alpha>
         </color>
         <size><value> 0.5 </value></size>
       </start>
       <end>
         <color>
-          <red><value>   0.600 </value></red>
-          <green><value> 0.600 </value></green>
-          <blue><value>  0.600 </value></blue>
+          <red><value>   0.400 </value></red>
+          <green><value> 0.400 </value></green>
+          <blue><value>  0.400 </value></blue>
           <alpha><value> 0.020 </value></alpha>
         </color>
         <size><value> 3 </value></size>

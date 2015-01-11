@@ -15,12 +15,12 @@
         <greater-than>
           <!-- engines/engine[2]/n2 -->
           <property>sim/multiplay/generic/float[6]</property>
-          <value>50</value>
+          <value>70</value>
         </greater-than>
         <greater-than>
           <!-- position/altitude-ft -->
           <property>sim/multiplay/generic/float[3]</property>
-          <value>6000</value>
+          <value>7000</value>
         </greater-than>
       </and>
     </condition>
@@ -52,7 +52,7 @@
 
     <counter>
       <particles-per-sec>
-        <value>35</value>
+        <value>30</value>
         <spread>0</spread>
       </particles-per-sec>
     </counter>

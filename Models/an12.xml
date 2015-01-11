@@ -596,7 +596,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteDI</object-name>
-    <property>/engines/engine[2]/rpm</property>
+    <property>engines/engine[2]/rpm</property>
     <factor> .5 </factor>
     <center>
       <x-m> -6.76873 </x-m>
@@ -1199,7 +1199,7 @@
   <animation>
     <type>translate</type>
     <object-name>LaPorteduCote</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 0.2 </ind><dep> -0.2 </dep></entry>
@@ -1215,7 +1215,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LaPorteduCote</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/multiplay/generic/float[0]</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -1252,7 +1252,7 @@
   <animation>
     <type>rotate</type>
     <object-name>baie</object-name>
-    <property>sim/model/door-positions/baie/position-norm</property>
+    <property>sim/multiplay/generic/float[12]</property>
     <factor> 30 </factor>
     <center>
       <x-m> 12.67527 </x-m>
@@ -1266,10 +1266,12 @@
     </axis>
   </animation>
 
+  <!--MP amimation-->
+  
   <animation>
     <type>rotate</type>
     <object-name>baieG</object-name>
-    <property>sim/model/door-positions/baie/position-norm</property>
+    <property>sim/multiplay/generic/float[12]</property>
     <factor> 95 </factor>
     <axis>
       <x1-m>  5.65958 </x1-m>
@@ -1280,11 +1282,11 @@
       <z2-m> -2.06237 </z2-m>
     </axis>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>baieD</object-name>
-    <property>sim/model/door-positions/baie/position-norm</property>
+    <property>sim/multiplay/generic/float[12]</property>
     <factor> -95 </factor>
     <axis>
       <x1-m>  5.65958 </x1-m>
@@ -1351,6 +1353,43 @@
     </offsets>
   </model>
   
-
+  <!-- smoke -->
+  
+        <model>
+		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_1.xml</path>
+		<offsets>
+			<x-m> -5.89102 </x-m>
+      <y-m> -9.56800 </y-m>
+      <z-m> -0.93836 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_2.xml</path>
+		<offsets>
+			<x-m> -6.76873 </x-m>
+      <y-m> -4.63488 </y-m>
+      <z-m> -0.93836 </z-m>
+		</offsets>
+	</model>
+	
+	<model>
+		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_3.xml</path>
+		<offsets>
+			<x-m> -6.76873 </x-m>
+      <y-m>  4.63488 </y-m>
+      <z-m> -0.93836 </z-m>
+		</offsets>
+	</model>
+	
+	
+	<model>
+		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_4.xml</path>
+		<offsets>
+			<x-m> -5.89102 </x-m>
+      <y-m>  9.56800 </y-m>
+      <z-m> -0.93836 </z-m>
+		</offsets>
+	</model>
 
 </PropertyList>

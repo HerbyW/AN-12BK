@@ -45,7 +45,7 @@
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
@@ -60,6 +60,7 @@
         <float n="9" alias="/controls/engines/engine[1]/throttle" />
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
+        <float n="12" alias="/sim/model/door-positions/baie/position-norm"/>
         <string n="9" type="string"/>                                              <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
