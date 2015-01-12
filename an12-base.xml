@@ -118,7 +118,9 @@
 	 the upper one is in meter and mmHG, the lower one in ft and inHG,
 	 they are connected and you should set them to the ATIS information of the airport befor starting.
 	 
-	The compasses are not cleared of the magnetic variation, it will be done soon. 
+	The compasses are not cleared of the magnetic variation, it will be done soon.
+	
+	Maximal start weight is: 134481 lb = 61.000 kg
       </text>
     </help>
 
