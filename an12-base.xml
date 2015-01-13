@@ -24,7 +24,10 @@
       </livery>
     </model>
     
- 
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Antonov-An-12/Models/Effects/Submodels/submodels.xml</path>
+    </submodels>
     
 <!--Weapons are not supported for now
     <submodels>
@@ -84,7 +87,10 @@
         <name>D</name>
         <desc>Open/Close cargo doors</desc>
       </key>
-      
+      <key>
+        <name>=</name>
+        <desc>Parachutist</desc>
+      </key>
       <text>
 	Some instruments will show you metric values, some ft.
 	
@@ -119,7 +125,9 @@
 	 the upper one is in meter and mmHG, the lower one in ft and inHG,
 	 they are connected and you should set them to the ATIS information of the airport befor starting.
 	 
-	The compasses are not cleared of the magnetic variation, it will be done soon.
+	The compasses are cleared of the magnetic variation.
+	
+	Paratroopers need a open back door to jump out, then use the switch on the panel to give the signal :)
 	
 	Maximal start weight is: 134481 lb = 61.000 kg
       </text>
@@ -151,6 +159,10 @@
     <gear>
       <brake-parking type="double">1</brake-parking>
     </gear>
+    <paratroopers>
+      <paratroopers type="float">150</paratroopers>
+      <weight type="float">30000</weight>
+    </paratroopers>
   </controls>
 
   <engines>
@@ -210,7 +222,10 @@
     <instruments>
       <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>
       </instruments>
-    </nasal>
+    <para>
+      <file>Aircraft/Antonov-An-12/Nasal/paratroopers.nas</file>
+    </para>
+  </nasal>
 
   
 </PropertyList>

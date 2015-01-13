@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <submodel> 
+    <name>parachutist</name>
+    <model>Aircraft/Antonov-An-12/Models/Effects/Submodels/parachuter.xml</model>
+    <!--
+    <condition>
+      <equals>
+        <property>instrumentation/doors/passenger/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    -->
+    <trigger>controls/paratroopers/trigger/state</trigger>
+    <speed> 0 </speed>
+    <repeat> true </repeat>
+    <delay> 0 </delay>
+    <count> 150 </count>
+    <x-offset> -5 </x-offset>
+    <y-offset>  0 </y-offset>
+    <z-offset> -2.5 </z-offset>
+    <yaw-offset> 0 </yaw-offset>
+    <pitch-offset> 0 </pitch-offset>
+    <cd> 5 </cd>
+    <eda> 100 </eda>
+    <weight> 200 </weight>
+    <wind> true </wind>
+    <buoyancy> -150 </buoyancy>
+    <life> 600 </life>
+  </submodel>
+
+</PropertyList>

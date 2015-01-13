@@ -934,8 +934,49 @@
     </offsets>
   </model>
  
+ <!-- Paratroopers -->
  
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m>  0.20 </z-m>
+    </offsets>
+  </model>
+
+  <text>
+    <name>parachute_signal</name>
+    <type type="string">literal</type>
+    <text type="string">Parachut Signal</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.035</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.0 </y-m>
+      <z-m>  0.18 </z-m>
+    </offsets>
+  </text>
  
+ <animation>
+    <type>material</type>    
+    <object-name>parachute_signal</object-name>    
+    <emission>
+      <red>0.6</red>
+      <green>0.6</green>
+      <blue>0.8</blue>
+    </emission>
+  </animation>
  
  <!-- Code for turning and scaling instruments
  

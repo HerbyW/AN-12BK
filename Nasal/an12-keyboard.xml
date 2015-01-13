@@ -20,5 +20,15 @@
     </binding>
   </key>
  
+ <key n="61"> 
+    <name>=</name>
+    <desc>Jump signal</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/paratroopers/jump-signal</property>
+      <value>true</value>
+    </binding>
+  </key>
+ 
   
 </PropertyList>

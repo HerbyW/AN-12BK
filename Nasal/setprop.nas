@@ -3,6 +3,18 @@ setprop("/instrumentation/altimeter/mmhg", getprop("/environment/config/interpol
 setprop("/instrumentation/altimeter/inhg100", getprop("/environment/config/interpolated/pressure-inhg") * 100);
 
 
+#
+#Paratroopers
+#
+setlistener("/controls/paratroopers/jump-signal", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/paratroopers/jump-signal-pos", 1, 0.25);
+  }else{
+    interpolate("/controls/paratroopers/jump-signal-pos", 0, 0.25);
+  }
+});
+
+
 
 #var AP_VS_neutral = func() {interpolate( getprop("/autopilot/settings/vertical-speed-fpm"), 0.0 , 5 );
 #}
