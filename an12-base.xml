@@ -61,6 +61,7 @@
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
         <float n="12" alias="/sim/model/door-positions/baie/position-norm"/>
+        <float n="13" alias="/gear/gear/rollspeed-ms" />
         <string n="9" type="string"/>                                              <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
