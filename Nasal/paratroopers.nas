@@ -2,7 +2,15 @@
 #      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
 ##########################################################
 
-var jumper = aircraft.light.new("controls/paratroopers/trigger", [2,3.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
+var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.5,0.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
+
+
+var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 200)},  0, 0);
+
+
+
+
+
 
 setlistener("controls/paratroopers/trigger/state", func(state){								# On écoute le switch qui déclenche le signal
   if(state.getValue()){													# Si un parachutiste saute
@@ -13,8 +21,8 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
     }else{														# Sinon si la porte est ouverte
       var nb_para = getprop("controls/paratroopers/paratroopers") - 1;							# On calcul combien il reste de parachutiste
       setprop("controls/paratroopers/paratroopers", nb_para);								# On attribut le nombre de parachutiste à la propriété
-      var weight = getprop("controls/paratroopers/weight") - 120;							# On calcul le poids des parachutistes restant
-      setprop("controls/paratroopers/weight", weight);									# On attribut le poids restant à la propriété
+      var weight = getprop("/sim/weight[2]/weight-lb") - 120;							# On calcul le poids des parachutistes restant
+      setprop("/sim/weight[2]/weight-lb", weight);									# On attribut le poids restant à la propriété
       if(getprop("controls/paratroopers/paratroopers") > 0){								# Si il reste encore des parachutistes
         setprop("sim/messages/copilot", getprop("controls/paratroopers/paratroopers")~" Paratroopers remaining");	# On indique le nombre de parachutistes restant  
       }else{                                                     							# Sinon
