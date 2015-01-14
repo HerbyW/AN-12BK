@@ -339,8 +339,8 @@
   <ballast x="19" y="0" z="-4" mass="16000"/>
   
   <weight x="15.0" y="0" z="2.97" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="5" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
-  <weight x="5" y="0" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
+  <weight x="7" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="7" y="0" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
   
   <!-- Thruster for Pushback action -->
   
