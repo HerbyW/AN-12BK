@@ -15,6 +15,33 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 });
 
 
+#
+# Air and Groundspeed selector for USVP-Instrument
+#
+setlistener("/tu154/switches/usvp-selector-trans", func 
+
+  { if(getprop("/tu154/switches/usvp-selector-trans") > 0.5)
+      {
+        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/groundspeed-kt"));
+      }
+      else
+      {
+        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/airspeed-kt"));
+      }
+  
+  }
+  );
+
+
+      
+
+
+      
+      
+      
+      
+      
+      
 
 #var AP_VS_neutral = func() {interpolate( getprop("/autopilot/settings/vertical-speed-fpm"), 0.0 , 5 );
 #}
