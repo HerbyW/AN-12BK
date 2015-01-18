@@ -7,7 +7,7 @@
   <sim include="Nasal/views.xml">
 
     <description>Antonov An 12 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation)</author>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation), Firefly (3D interior and panel)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
