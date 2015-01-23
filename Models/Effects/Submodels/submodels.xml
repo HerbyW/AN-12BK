@@ -29,6 +29,7 @@
     <wind> true </wind>
     <buoyancy> -150 </buoyancy>
     <life> 600 </life>
+    <randomness>1.0</randomness>
   </submodel>
 
 </PropertyList>

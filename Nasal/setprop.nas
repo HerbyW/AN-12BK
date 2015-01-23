@@ -38,7 +38,11 @@ setlistener("/tu154/switches/usvp-selector-trans", func
 
       
       
-      
+#   initialisieren:
+#
+#  var flaginfo = props.globals.initNode("/controls/flag-info",0,"INT");
+#
+#  DOUBLE oder BOOL
       
       
       

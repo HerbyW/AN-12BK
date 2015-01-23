@@ -1,8 +1,8 @@
 ##########################################################
-#      DE L'HAMAIDE Clément for Douglas DC-3 C47         #
+#      DE L'HAMAIDE Clément for Douglas DC-3 C47         # modified by HerbyW 01/2015
 ##########################################################
 
-var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.5,0.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
+var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.8,0.8], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
 
 
 var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 200)},  0, 0);
