@@ -3,7 +3,38 @@
 <!--Changes in various files for learning and understanding from HerbyW, Dec 2014 -->
 
 <PropertyList>
-
+  
+ <controls> 
+    <lighting>
+       <nav-lights type="float">0</nav-lights>
+    </lighting>
+     <engines>
+      <engine n="0">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="2">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="3">
+        <boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+    <paratroopers>
+      <paratroopers type="int">0</paratroopers>
+      <weight type="float">0</weight>
+    </paratroopers> 
+ </controls>
+ 
   <sim include="Nasal/views.xml">
 
     <description>Antonov An 12 (YASim)</description>
@@ -50,6 +81,7 @@
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+	<int type="int" n="8" alias="/controls/lighting/nav-lights"> 0 </int>
         <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
@@ -104,6 +136,7 @@
 	Some instruments will show you metric values, some ft.
 	
 	There is a green panel in the middle console, the right switch makes the lights on.
+	The middle switch is for nav-lights.
 	
 	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation.
 	
@@ -146,33 +179,7 @@
 
   </sim>
 
-  <controls>
-    <engines>
-      <engine n="0">
-        <boost type="double">0</boost>
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="1">
-        <boost type="double">0</boost>
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="2">
-        <boost type="double">0</boost>
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="3">
-        <boost type="double">0</boost>
-        <magnetos>0</magnetos>
-      </engine>
-    </engines>
-    <gear>
-      <brake-parking type="double">1</brake-parking>
-    </gear>
-    <paratroopers>
-      <paratroopers type="int">0</paratroopers>
-      <weight type="float">0</weight>
-    </paratroopers>
-  </controls>
+  
 
   
   <!-- 150 und 30000  gegen  2 mal 0 getauscht-->

@@ -1304,7 +1304,7 @@
     <offsets>
       <x-m> 13.12209 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m>  5.16760 </z-m>
+      <z-m>  5.18 </z-m>
     </offsets>
   </model>
 
@@ -1313,7 +1313,7 @@
     <offsets>
       <x-m> -3.28209 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m> -0.13925 </z-m>
+      <z-m> -4.42 </z-m>
     </offsets>
   </model>
   
@@ -1350,6 +1350,52 @@
       <x-m> -1.16900 </x-m>
       <y-m> 18.89128 </y-m>
       <z-m> -0.69819 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  13.27 </x-m>
+      <y-m>   0.00 </y-m>
+      <z-m>   5.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> 14.25 </x-m>
+      <y-m> -5.98 </y-m>
+      <z-m>  -0.4 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> 14.25 </x-m>
+      <y-m>  5.98 </y-m>
+      <z-m>  -0.4 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Lighting Landing -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -11.95 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -4.4 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m> -11.95 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  -4.4 </z-m>
     </offsets>
   </model>
   
