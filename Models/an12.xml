@@ -307,6 +307,19 @@
     </offsets>
   </model> -->
 
+    <animation>
+    <type>material</type>
+<object-name>glass</object-name>
+<object-name>vitreporte</object-name>
+<emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.8 </blue>
+    </emission>
+  </animation>
+ 
+  
   <!-- Interior -->
   <model>
     <name>Interieur</name>
@@ -1299,15 +1312,15 @@
   </animation>
 
   <!-- Lighting effects -->
+  <!-- Beacon: red-orange at top and bottom of fuselage -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/beacon.xml</path>
     <offsets>
-      <x-m> 13.12209 </x-m>
+      <x-m> -3.12209 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m>  5.18 </z-m>
+      <z-m>  -0.10 </z-m>
     </offsets>
   </model>
-
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/beacon.xml</path>
     <offsets>
@@ -1317,6 +1330,7 @@
     </offsets>
   </model>
   
+  <!-- VavLights: green-right, red-left -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/RedLight.xml</path>
     <offsets>
@@ -1324,17 +1338,7 @@
       <y-m> -18.89128 </y-m>
       <z-m>  -0.69819 </z-m>
     </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
-    <offsets>
-      <x-m>  -1.16900 </x-m>
-      <y-m> -18.89128 </y-m>
-      <z-m>  -0.69819 </z-m>
-    </offsets>
-  </model>
-
+  </model>  
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/GreenLight.xml</path>
     <offsets>
@@ -1343,7 +1347,50 @@
       <z-m> -0.69819 </z-m>
     </offsets>
   </model>
-  
+    
+  <!-- PositionLights: white-steady -->
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> 14.25 </x-m>
+      <y-m> -5.98 </y-m>
+      <z-m>  -0.4 </z-m>
+    </offsets>
+  </model>  
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> 14.25 </x-m>
+      <y-m>  5.98 </y-m>
+      <z-m>  -0.4 </z-m>
+    </offsets>
+  </model>
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -4.99 </x-m>
+      <y-m> -1.73 </y-m>
+      <z-m>  -3.58 </z-m>
+    </offsets>
+  </model>  
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -4.99 </x-m>
+      <y-m>  1.73 </y-m>
+      <z-m>  -3.58 </z-m>
+    </offsets>
+  </model>
+    
+  <!-- StrobeLights: white-pulse, left-right-back-->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -1.16900 </x-m>
+      <y-m> -18.89128 </y-m>
+      <z-m>  -0.69819 </z-m>
+    </offsets>
+  </model>
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
     <offsets>
@@ -1351,32 +1398,13 @@
       <y-m> 18.89128 </y-m>
       <z-m> -0.69819 </z-m>
     </offsets>
-  </model>
-  
+  </model>  
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m>  13.27 </x-m>
       <y-m>   0.00 </y-m>
       <z-m>   5.18 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> 14.25 </x-m>
-      <y-m> -5.98 </y-m>
-      <z-m>  -0.4 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> 14.25 </x-m>
-      <y-m>  5.98 </y-m>
-      <z-m>  -0.4 </z-m>
     </offsets>
   </model>
   
@@ -1390,14 +1418,82 @@
     </offsets>
   </model>
   
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/light/light-cone.xml</path>
-    <offsets>
-      <x-m> -11.95 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m>  -4.4 </z-m>
-    </offsets>
-  </model>
+  
+  
+  <!-- Lighting Landing 154 beginn -->
+  
+   <!--External lights-->
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <name>headlight_c</name>
+  <offsets>
+    <x-m>-19.037</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.55</z-m>
+   <pitch-deg>80.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <name>taxilight_c</name>
+  <offsets>
+    <x-m>-19.037</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.55</z-m>
+   <pitch-deg>70.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <name>headlight_l</name>
+  <offsets>
+   <x-m>-3.71</x-m>
+   <y-m>-3.81</y-m>
+   <z-m>-0.1</z-m>
+   <pitch-deg>80.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <name>headlight_r</name>
+  <offsets>
+   <x-m>-3.71</x-m>
+   <y-m>3.81</y-m>
+   <z-m>-0.1</z-m>
+   <pitch-deg>80.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <name>taxilight_l</name>
+  <offsets>
+   <x-m>-3.71</x-m>
+   <y-m>-3.81</y-m>
+   <z-m>-0.1</z-m>
+   <pitch-deg>70.0</pitch-deg>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <name>taxilight_r</name>
+  <offsets>
+   <x-m>-3.71</x-m>
+   <y-m>3.81</y-m>
+   <z-m>-0.1</z-m>
+   <pitch-deg>70.0</pitch-deg>
+  </offsets>
+ </model>
+
+  
+  <!-- Lighting Landing 154 end -->
+  
+  
+  
   
   <!-- smoke -->
   
