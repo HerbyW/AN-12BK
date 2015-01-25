@@ -58,11 +58,31 @@
 
   <animation>
 	  <type>select</type>
+	  <object-name>lightcone-landing</object-name>
 	  <condition>
 		  <property>sim/multiplay/generic/int[9]</property>		  
 	  </condition>
   </animation>
 
+  <!--Lights-->
+                                   
+ <animation>  
+   <object-name>lightcone-landing</object-name>  
+</animation>
 
+
+  <!-- working for Rembrandt -->
  
-</PropertyList> 
+
+  <animation>
+    <type>material</type>
+    <object-name>lightcone-landing</object-name>
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  </PropertyList> 

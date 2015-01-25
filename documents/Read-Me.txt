@@ -3,6 +3,8 @@ I have now included the original manual from AN-12,
 it is in russian language and has about 570 pages,
 you may open it with any PDF-reader:
 
+(you get it in the git repository also)
+
 An-12_RLYE.pdf
 
 Source:
@@ -28,3 +30,5 @@ http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg
 
 sorry to say, but this is not a AN-12, so we have to work on it,
 but nevertheless thanks for starting this project.
+
+HerbW, 12/2014

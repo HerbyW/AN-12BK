@@ -40,7 +40,7 @@
 
     <description>Antonov An 12 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation), Firefly (3D interior and panel)</author>
-    <aircraft-version>0.2</aircraft-version>
+    <aircraft-version>0.3</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>0.6</fuel-fraction>
@@ -102,15 +102,10 @@
  <!--       <float n="14" alias="/controls/paratroopers/trigger/state" />
         <float n="15" alias="/controls/paratroopers/jump-signal" />
         <float n="16" alias="/controls/paratroopers/jump-signal-pos" />
-        <float n="17" alias="/sim/time/elapsed-sec" />
-        
-        -->
-         <string n="9" type="string"/>                                              <!-- string[9] reserved for bombable mode -->
-     
+        <float n="17" alias="/sim/time/elapsed-sec" />        -->
+         <string n="9" type="string"/>                              <!-- string[9] reserved for bombable mode -->     
      </generic>
-    </multiplay>
-    
-  
+    </multiplay>  
 
     <flaps>
       <setting> 0.00 </setting>
@@ -179,13 +174,7 @@
 
     <menubar include="Dialogs/an12-menu.xml"/>
 
-  </sim>
-
-  
-
-  
-  <!-- 150 und 30000  gegen  2 mal 0 getauscht-->
-  
+  </sim>  
   
   <engines>
     <engine n="0">

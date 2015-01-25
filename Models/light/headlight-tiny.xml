@@ -55,13 +55,12 @@
    <near-m>1</near-m>
    <far-m>100</far-m>
  </animation>
- <!--
+
   <animation>
 	  <type>select</type>
 	  <condition>
-		  <property>tu154/light/headlight-selector</property>
-		  <property>tu154/systems/electrical/buses/DC27-bus-L/volts</property> 
+		  <property>tu154/switches/gauge-light</property>		  
 	  </condition>
-  </animation> -->
+  </animation>
 
 </PropertyList> 
