@@ -36,7 +36,7 @@
     </paratroopers> 
  </controls>
  
-  <sim include="Nasal/views.xml">
+  <sim include="Systems/views.xml">
 
     <description>Antonov An 12 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation), Firefly (3D interior and panel)</author>

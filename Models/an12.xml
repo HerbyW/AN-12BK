@@ -1431,7 +1431,7 @@
     <x-m>-19.037</x-m>
     <y-m>0.0</y-m>
     <z-m>-0.55</z-m>
-   <pitch-deg>80.0</pitch-deg>
+   <pitch-deg>78.5</pitch-deg>
   </offsets>
  </model> 
  
@@ -1442,7 +1442,7 @@
    <x-m>-3.71</x-m>
    <y-m>-3.81</y-m>
    <z-m>-0.1</z-m>
-   <pitch-deg>80.0</pitch-deg>
+   <pitch-deg>78.5</pitch-deg>
   </offsets>
  </model>
  
@@ -1453,7 +1453,7 @@
    <x-m>-3.71</x-m>
    <y-m>3.81</y-m>
    <z-m>-0.1</z-m>
-   <pitch-deg>80.0</pitch-deg>
+   <pitch-deg>78.5</pitch-deg>
   </offsets>
  </model>
  
