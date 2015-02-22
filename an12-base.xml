@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--Changes in various files for learning and understanding from HerbyW, Dec 2014 -->
+<!--Changes in various files for learning and understanding from HerbyW, Dec 2014- Feb 2015 -->
 
 <PropertyList>
   
@@ -8,6 +8,7 @@
     <lighting>
        <nav-lights type="int">0</nav-lights>    
        <landing-lights type="int">0</landing-lights>
+       <taxi-lights type="int">0</taxi-lights>
     </lighting>
      <engines>
       <engine n="0">
@@ -39,7 +40,7 @@
   <sim include="Systems/views.xml">
 
     <description>Antonov An 12 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation), Firefly (3D interior and panel)</author>
+    <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation+Animation), Firefly (3D interior and panel)</author>
     <aircraft-version>0.3</aircraft-version>
     <status>Alpha</status>
 
@@ -84,7 +85,8 @@
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
+        <int type="int" n="11" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
@@ -133,7 +135,7 @@
 	Some instruments will show you metric values, some ft.
 	
 	There is a green panel in the middle console, the right switch makes the lights on.
-	The middle switch is for nav-lights. The left for landing lights.
+	The middle switch is for nav-lights. The switch right from this panel is for landing and taxi lights.
 	
 	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation.
 	

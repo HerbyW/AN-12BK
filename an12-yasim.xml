@@ -111,7 +111,7 @@
          length="5.976"
          sweep="3.5"
          taper="0.45">
-         <stall aoa="18" width="2" peak="1.4"/>
+         <stall aoa="18" width="1" peak="1.4"/>
          <flap0 start="0" end="1" lift="1.4" drag="1.5"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
