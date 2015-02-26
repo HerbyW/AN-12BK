@@ -267,7 +267,7 @@
         <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
 
-        <control-speed control="EXTEND" transition-time="5"/>
+        <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
   <!-- Left wheel 1 -->
@@ -282,7 +282,7 @@
         
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="5"/>
+        <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
   <!-- Left wheel 2 -->
@@ -297,7 +297,7 @@
         
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="5"/>
+        <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
   <!-- Right wheel 1 -->
@@ -312,7 +312,7 @@
         
         <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="5"/>
+        <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
   <!-- Right wheel 2 -->
@@ -327,7 +327,7 @@
         
         <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"/>
         
-        <control-speed control="EXTEND" transition-time="5"/>
+        <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
   <tank x="3" y=" 4.817" z="-0.4" capacity="8745"/>
