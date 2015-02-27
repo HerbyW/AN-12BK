@@ -12,17 +12,18 @@
 <PropertyList>
  <path>ushdb_selector.ac</path>
 <!-- Internal instruments lighting -->
-<!--<animation>
+<animation>
   <type>material</type>
   <object-name>rect</object-name>
   <object-name>handle_1</object-name>
   <object-name>handle_2</object-name>
   <emission>
-    <red-prop>tu154/light/instruments/int-red</red-prop>
-    <green-prop>tu154/light/instruments/int-green</green-prop>
-    <blue-prop>tu154/light/instruments/int-blue</blue-prop>
-  </emission>
-</animation>-->
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
 
 <animation>
   <type>rotate</type>

@@ -910,19 +910,64 @@
     </offsets>
   </model>
  
- <!-- Switches and Buttons -->
+  <!-- Switches and Buttons -->
   
    <!-- Light switches block -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/bano.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> 0.286 </y-m>
-      <z-m>  -0.156 </z-m>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.120 </y-m>
+      <z-m>  0.200 </z-m>
     </offsets>
   </model>
-
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/azs4-5.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.01 </y-m>
+      <z-m>  0.195 </z-m>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>LandingTaxi</name>
+    <type type="string">literal</type>
+    <text type="string">Landing
+      none
+      Taxi</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.04</max-height>
+    <max-width>0.025</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.020 </y-m>
+      <z-m>  0.195 </z-m>
+    </offsets>
+  </text>
+ 
+ <animation>
+    <type>material</type>    
+    <object-name>LandingTaxi</object-name>    
+    <emission>
+      <red>  0.6 </red>
+      <green>0.6 </green>
+      <blue> 0.6 </blue>
+    </emission>
+  </animation>
+  
+  
      <!-- Trim Neutral Placecards -->
       
   <model>
@@ -940,7 +985,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m> -0.0 </y-m>
+      <y-m>  0.08 </y-m>
       <z-m>  0.20 </z-m>
     </offsets>
   </model>
@@ -963,7 +1008,7 @@
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.0 </y-m>
+      <y-m>  0.08 </y-m>
       <z-m>  0.18 </z-m>
     </offsets>
   </text>

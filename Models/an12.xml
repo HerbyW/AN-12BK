@@ -1371,7 +1371,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
     <offsets>
-      <x-m>  -1.16900 </x-m>
+      <x-m>  -1.0700 </x-m>
       <y-m> -18.89128 </y-m>
       <z-m>  -0.69819 </z-m>
     </offsets>
@@ -1379,7 +1379,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
     <offsets>
-      <x-m> -1.16900 </x-m>
+      <x-m> -1.0700 </x-m>
       <y-m> 18.89128 </y-m>
       <z-m> -0.69819 </z-m>
     </offsets>
@@ -1396,6 +1396,17 @@
   <!-- Lighting Landing frontgear-->
   <model>
     <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    
+    <condition>
+        <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+        </or>
+       </condition>    
+       <condition>
+	  <property>gear/gear[0]/position-norm</property>
+       </condition>
+    
     <offsets>
       <x-m> -11.95 </x-m>
       <y-m>  0.0 </y-m>
@@ -1406,6 +1417,14 @@
   <!-- Lighting Landing sidegear-->
   <model>
    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <condition>
+    
+      <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+      </or>
+     
+   </condition>
     <offsets>
       <x-m> -4.99 </x-m>
       <y-m> -1.73 </y-m>
@@ -1414,6 +1433,14 @@
   </model>  
   <model>
    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <condition>
+    
+      <or>
+	  <property>sim/multiplay/generic/int[9]</property>
+	  <property>sim/multiplay/generic/int[10]</property>
+      </or>
+     
+   </condition>
     <offsets>
       <x-m> -4.99 </x-m>
       <y-m>  1.73 </y-m>
@@ -1427,6 +1454,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
     <x-m>-19.037</x-m>
     <y-m>0.0</y-m>
@@ -1438,6 +1468,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
   <name>headlight_l</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-3.71</x-m>
    <y-m>-3.81</y-m>
@@ -1449,6 +1482,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
   <name>headlight_r</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-3.71</x-m>
    <y-m>3.81</y-m>
@@ -1460,6 +1496,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
   <name>taxilight_c</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
     <x-m>-19.037</x-m>
     <y-m>0.0</y-m>
@@ -1471,6 +1510,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
   <name>taxilight_l</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-3.71</x-m>
    <y-m>-3.81</y-m>
@@ -1482,6 +1524,9 @@
  <model>
   <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
   <name>taxilight_r</name>
+  <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
   <offsets>
    <x-m>-3.71</x-m>
    <y-m>3.81</y-m>

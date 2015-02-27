@@ -27,9 +27,9 @@
   <object-name>base</object-name>  
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.05 </red>
-      <green> 0.05 </green>
-      <blue>  0.05 </blue>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
     </emission>
 </animation>
 
@@ -41,9 +41,9 @@
     <object-name>digits</object-name>
    <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
     </emission>
   </animation>
  
@@ -53,32 +53,6 @@
     <object-name>base</object-name>
  </effect>
 
-<animation>
-  <type>select</type>
-  <object-name>d1_night</object-name>
-  <object-name>d2_night</object-name>
-  <object-name>digits_night</object-name>
-  <condition>
-    <greater-than>
-      <property>tu154/light/instruments/int-red</property>
-      <value>0.1</value>
-    </greater-than>
-  </condition>
-</animation>
-
-<animation>
-  <type>select</type>
-  <object-name>d1</object-name>
-  <object-name>d2</object-name>
-  <object-name>digits</object-name>
-  <condition>
-    <less-than>
-      <property>tu154/light/instruments/int-red</property>
-      <value>0.1</value>
-    </less-than>
-  </condition>
-</animation>
-
 <!-- Internal instruments lighting -->
 <animation>
   <type>material</type>
@@ -86,7 +60,9 @@
   <object-name>d2_night</object-name>
   <object-name>digits_night</object-name>
   <emission>
-    <red>0.6</red>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
   </emission>
 </animation>
 

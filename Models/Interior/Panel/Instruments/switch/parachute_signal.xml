@@ -15,9 +15,9 @@
     <object-name>switch</object-name>
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.60 </red>
-      <green> 0.60 </green>
-      <blue>  0.60 </blue>
+      <red>   0.5 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
     </emission>
   </animation>
   

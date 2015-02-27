@@ -37,9 +37,9 @@
   <object-name>flag</object-name> 
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
     </emission>
   </animation>
 
@@ -49,9 +49,9 @@
   <type>material</type>
   <object-name>base</object-name>
   <emission>
-    <red-prop>tu154/light/panel/ext-red</red-prop>
-    <green-prop>tu154/light/panel/ext-green</green-prop>
-    <blue-prop>tu154/light/panel/ext-blue</blue-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
   </emission>
 </animation>
 

@@ -47,9 +47,9 @@
     <object-name>RightThrottle</object-name>    
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.01 </red>
-      <green> 0.01 </green>
-      <blue>  0.01 </blue>
+      <red>   0.55 </red>
+      <green> 0.55 </green>
+      <blue>  0.55 </blue>
     </emission>
   </animation>  
 
@@ -58,9 +58,9 @@
     <object-name>box</object-name>    
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.5 </red>
-      <green> 0.5 </green>
-      <blue>  0.5 </blue>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
     </emission>
   </animation>  
 
