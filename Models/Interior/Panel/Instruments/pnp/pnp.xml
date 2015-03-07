@@ -28,25 +28,12 @@
     <blank-gs>tu154/instrumentation/pnp[0]/blank-gs</blank-gs>
     <blank-dist>tu154/instrumentation/pnp[0]/blank-dist</blank-dist>
   </params>
-
-
   
   <!--External panel lighting-->
   
   <animation>
     <type>material</type>
-    <object-name>cover</object-name>
-    <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
-    </emission>
-  </animation>
-
-  <!-- Internal instrument lighting -->  
-  <animation>
-    <type>material</type>
+    <object-name>cover</object-name>    
     <object-name>compass</object-name>
     <object-name>needle</object-name>
     <object-name>kurs_plan</object-name>
@@ -68,7 +55,7 @@
     <object-name>blanker_g</object-name>
     <object-name>blanker_ks</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -84,10 +71,12 @@
     <object-name>heading_marker_90</object-name>
     <object-name>heading_marker_180</object-name>
     <object-name>heading_marker_270</object-name>
-    <emission>
-      <red-prop>tu154/light/instruments/int-red</red-prop>
-      <green-prop>tu154/light/instruments/int-green</green-prop>
-    </emission>
+     <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+       <red>0.0</red>
+       <green>1.0</green>
+       <blue>1.0</blue>
+     </emission>
   </animation>
  
  <!--Red color-->
@@ -97,20 +86,25 @@
     <object-name>blanker_dkm</object-name>
     <object-name>blanker_heading</object-name>
     <emission>
-      <red-prop>tu154/light/instruments/int-red</red-prop>
-    </emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+       <red>1.0</red>
+       <green>0.0</green>
+       <blue>0.0</blue>
+     </emission>
   </animation>
+  
   <animation>
 	  <type>material</type>
 	  <object-name>sp_on</object-name>
 	  <object-name>vor_on</object-name>
 	  <object-name>nv_on</object-name>
 	  <object-name>rsbn_on</object-name>
-	  <emission>
-		  <red>1.0</red>
-		  <green>1.0</green>
-		  <blue>1.0</blue>
-	  </emission>
+	   <emission>
+            <factor-prop>tu154/switches/gauge-light</factor-prop>
+             <red>1.0</red>
+             <green>0.0</green>
+             <blue>0.0</blue>
+           </emission>
   </animation>
 
 <!--mode selector-->

@@ -17,35 +17,24 @@
   <object-name>handle_1</object-name>
   <object-name>handle_2</object-name>
   <object-name>handle_3</object-name>
-  
-  
-    <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.21 </red>
-      <green> 0.21 </green>
-      <blue>  0.21 </blue>
-    </emission>
-</animation>
-
-<animation>
-  <type>material</type>
   <object-name>base_1</object-name>
   <object-name>base_2</object-name>
   <object-name>base_3</object-name>
-  <object-name>base_4</object-name>
-  
+  <object-name>base_4</object-name>  
     <emission>
-      <factor>1</factor>
-      <red>   0.25 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
     </emission>
 </animation>
-  
+
+
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>tu154/switches/gauge-light</property>  
+  <property>tu154/switches/cabin</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -96,7 +85,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/gauge-light", 1.0, 0.1 );
+        interpolate("tu154/switches/cabin", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -111,7 +100,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/gauge-light", 0.0, 0.1 );
+        interpolate("tu154/switches/cabin", 0.0, 0.1 );
       </script>
     </binding>
   </action>

@@ -6,6 +6,8 @@
 
   <animation>
     <type>material</type>
+     <object-name>VOR</object-name>
+     <object-name>VOR.face</object-name>
      <object-name>VOR.to-flag</object-name>
      <object-name>VOR.off</object-name>
      <object-name>vor.needle</object-name>

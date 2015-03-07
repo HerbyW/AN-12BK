@@ -1542,7 +1542,7 @@
   <path>Aircraft/Antonov-An-12/Models/light/light-cone-707.xml</path>
   <name>taxilight_r</name>
   <offsets>
-   <x-m> -1.95 </x-m>
+      <x-m> -1.95 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -4.4 </z-m>
    <pitch-deg>0.0</pitch-deg>
@@ -1552,13 +1552,27 @@
   <path>Aircraft/Antonov-An-12/Models/light/light-cone-taxi-707.xml</path>
   <name>taxilight_r</name>
   <offsets>
-   <x-m> -1.95 </x-m>
+      <x-m> -1.95 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -4.4 </z-m>
    <pitch-deg>0.0</pitch-deg>
   </offsets>
  </model>
   
+    <!--Internal Cabin lights for Rembrand, switch: bano-->
+ <model>
+  <path>Aircraft/Antonov-An-12/Models/light/headlight-tiny.xml</path>
+  <name>tiny</name>
+   <condition>
+      <property>/sim/rendering/rembrandt/enabled</property>
+   </condition>
+  <offsets>
+      <x-m>-4.3</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-2.3</z-m>
+   <pitch-deg>90</pitch-deg>
+  </offsets>
+ </model> 
   
   
   <!-- smoke -->

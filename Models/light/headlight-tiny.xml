@@ -14,44 +14,47 @@
  
  <animation>
     <type>noshadow</type>
-    <object-name>lightcone-taxi</object-name>
+    <object-name>lightcone-tiny</object-name>
   </animation>
 
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>lightcone-taxi</object-name>
+    <object-name>lightcone-tiny</object-name>
     <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
+      <property>/sim/rendering/rembrandt/enabled</property>
     </condition>
   </effect>
  
- <animation>  
-   <object-name>lightcone-taxi</object-name> 
-</animation>
-
+  <animation>  
+   <object-name>lightcone-tiny</object-name> 
+  </animation>  
 
   <!-- working for Rembrandt -->
  
-
   <animation>
     <type>material</type>
-    <object-name>lightcone-landing</object-name>
+    <object-name>lightcone-tiny</object-name>
     <emission>
-      <property>tu154/switches/gauge-light</property>
-      <red>   0.25 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <property>tu154/switches/cabin</property>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
     </emission>
   </animation> 
  
- 
+ <animation>
+		<type>scale</type>
+		<x-offset>3</x-offset>
+                <y-offset>3</y-offset>
+                <z-offset>3</z-offset>                
+	</animation>
  
 <!--Spot lights-->
 
 <animation>
    <type>light</type>
    <light-type>spot</light-type>
-   <object-name>lightcone-taxi</object-name>
+   <object-name>lightcone-tiny</object-name>
    <nopreview/>
    <position>
      <x>0.0</x>
@@ -70,16 +73,16 @@
      <a>1.0</a>
    </ambient>
    <diffuse>
-     <r>0.7</r>
-     <g>0.7</g>
-     <b>0.6</b>
+     <r>0.37</r>
+     <g>0.37</g>
+     <b>0.36</b>
      <a>1.0</a>
    </diffuse>
    <specular>
-     <r>0.7</r>
-     <g>0.7</g>
-     <b>0.7</b>
-     <a>1.0</a>
+     <r>0.65</r>
+     <g>0.65</g>
+     <b>0.65</b>
+     <a>0.50</a>
    </specular>
    <attenuation>
      <c>1.0</c>
@@ -87,15 +90,15 @@
      <q>0.00005</q>
    </attenuation>
    <exponent>30.0</exponent>
-   <cutoff>80</cutoff>
+   <cutoff>8</cutoff>
    <near-m>1</near-m>
-   <far-m>100</far-m>
+   <far-m>10</far-m>
  </animation>
-
-  <animation>
-	  <type>select</type>
+ 
+ <animation>
+	  <type>select</type>	  
 	  <condition>
-		  <property>tu154/switches/gauge-light</property>		  
+		  <property>tu154/switches/cabin</property>		  
 	  </condition>
   </animation>
 

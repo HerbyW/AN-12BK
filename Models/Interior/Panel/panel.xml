@@ -564,50 +564,12 @@
     </offsets>
   </model>
 
-  <!--Autopilot, provisorium but still not working 
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ap40/ap.xml</path>
-    <offsets>
-      <x-m>  0.002 </x-m>
-      <y-m> -0.367 </y-m>
-      <z-m> -0.144 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>0</pitch-deg>    
-    </offsets>
-  </model>
-  
-  Autopilot from TU154B 
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pn-6.xml</path>
-    <offsets>
-      <x-m>  0.085 </x-m>
-      <y-m>  0.082 </y-m>
-      <z-m> -0.328 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-37</pitch-deg>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/absu/pu-46+pn-5.xml</path>
-    <offsets>
-      <x-m>  0.143 </x-m>
-      <y-m> -0.082 </y-m>
-      <z-m> -0.405 </z-m>
-      <heading-deg>0</heading-deg>
-      <pitch-deg>-37</pitch-deg>
-    </offsets>
-  </model>                                                  -->
-  
-
   <!--Autopilot
 		Lake of Constance Hangar :: M.Kraus
 		Boeing 707 for Flightgear Septemper 2013
 		This file is licenced under the terms of the GNU General Public Licence V2 or later
 		###################################################################################
-		completly simpified by HerbyW Jan 2014 
+		completly simplified by HerbyW Jan 2014 
 -->
   
  <model>
@@ -936,7 +898,7 @@
     <name>LandingTaxi</name>
     <type type="string">literal</type>
     <text type="string">Landing
-      none
+      Lights
       Taxi</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
@@ -961,9 +923,10 @@
     <type>material</type>    
     <object-name>LandingTaxi</object-name>    
     <emission>
-      <red>  0.6 </red>
-      <green>0.6 </green>
-      <blue> 0.6 </blue>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
     </emission>
   </animation>
   
@@ -1017,9 +980,10 @@
     <type>material</type>    
     <object-name>parachute_signal</object-name>    
     <emission>
-      <red>0.6</red>
-      <green>0.6</green>
-      <blue>0.9</blue>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.06 </red>
+      <green> 0.65 </green>
+      <blue>  0.06 </blue>
     </emission>
   </animation>
   
@@ -1124,6 +1088,18 @@
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
+ 
+ <!-- Text to the screen -->
+ 
+ <label>
+		<width>2</width>
+		<height>2</height>
+		<format>RPM:%6.3f</format>
+		<halign>left</halign>
+		<input>
+			<property>engines/engine/rpm</property>
+		</input>        
+ </label>
  
  
  <!-- Code for turning and scaling instruments

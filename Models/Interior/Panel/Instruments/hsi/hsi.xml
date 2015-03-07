@@ -9,33 +9,8 @@
 
 
   <animation>
-    <object-name>HSI.dstoff</object-name>
-    <object-name>HSI.card</object-name>
-    <object-name>HSI.crsneedle</object-name>
-    <object-name>HSI.crsdeflection</object-name>
-    <object-name>HSI.dst100</object-name>
-    <object-name>HSI.dst10</object-name>
-    <object-name>HSI.dst1</object-name>
-    <object-name>HSI.dst0</object-name>
-    <object-name>HSI.navbrg</object-name>
-    <object-name>HSI.crsneedle</object-name>
-    <object-name>HSI.crsdeflection</object-name>
-    <object-name>HSI.hdgbug</object-name>
-    <object-name>HSI.crsneedle</object-name>
-    <object-name>HSI.crsdeflection</object-name>
-    <object-name>HSI.crs100</object-name>
-    <object-name>HSI.crs10</object-name>
-    <object-name>HSI.crs1</object-name>
-    <object-name>HSI.crsknob</object-name>
-    <object-name>HSI.hdgknob</object-name>
-    <object-name>navflag</object-name>
-    <object-name>toflag</object-name>
-    <object-name>fromflag</object-name>
-    <object-name>gs.needle</object-name>        
-  </animation>
-
-  <animation>
-    <type>material</type>
+    <object-name>HSI</object-name>
+    <object-name>HSI.face</object-name>
      <object-name>HSI.dstoff</object-name>
      <object-name>HSI.card</object-name>
      <object-name>HSI.crsneedle</object-name>
@@ -58,7 +33,38 @@
      <object-name>navflag</object-name>
      <object-name>toflag</object-name>
      <object-name>fromflag</object-name>
-     <object-name>gs.needle</object-name> 
+     <object-name>gs.needle</object-name>
+     <object-name>Plane.137</object-name>      
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>HSI</object-name>
+    <object-name>HSI.face</object-name>
+     <object-name>HSI.dstoff</object-name>
+     <object-name>HSI.card</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.dst100</object-name>
+     <object-name>HSI.dst10</object-name>
+     <object-name>HSI.dst1</object-name>
+     <object-name>HSI.dst0</object-name>
+     <object-name>HSI.navbrg</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.hdgbug</object-name>
+     <object-name>HSI.crsneedle</object-name>
+     <object-name>HSI.crsdeflection</object-name>
+     <object-name>HSI.crs100</object-name>
+     <object-name>HSI.crs10</object-name>
+     <object-name>HSI.crs1</object-name>
+     <object-name>HSI.crsknob</object-name>
+     <object-name>HSI.hdgknob</object-name>
+     <object-name>navflag</object-name>
+     <object-name>toflag</object-name>
+     <object-name>fromflag</object-name>
+     <object-name>gs.needle</object-name>
+     <object-name>Plane.137</object-name>
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>

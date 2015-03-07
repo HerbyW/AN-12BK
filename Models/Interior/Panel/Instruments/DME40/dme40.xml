@@ -23,7 +23,18 @@
      <object-name>DME40.knob2</object-name>
      <object-name>DME40.knob1</object-name>
      <object-name>DME40.dim</object-name>
-     <object-name>DME</object-name> 
+     <object-name>DME</object-name>
+     <object-name>DME.invalid</object-name>
+     <object-name>NM.1</object-name>
+     <object-name>NM1</object-name>
+     <object-name>NM10</object-name>
+     <object-name>NM100</object-name>
+     <object-name>min1</object-name>
+     <object-name>min10</object-name>
+     <object-name>min100</object-name>
+     <object-name>kt1</object-name>
+     <object-name>kt10</object-name>
+     <object-name>kt100</object-name>     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -32,36 +43,31 @@
     </emission>
   </animation>
 
-
-
-
-
-
     <animation>
         <type>select</type>
         <object-name>DME.invalid</object-name>
 		  <condition>
-				<greater-than>
-				<property>systems/electrical/outputs/dme</property>
-				<value>1</value>
-				</greater-than>
+			<greater-than>
+			<property>systems/electrical/outputs/dme</property>
+			<value>1</value>
+			</greater-than>
 		  </condition>
     </animation>
 
     <animation>
         <type>select</type>
-        <object-name>NM.1</object-name>
+                  <object-name>NM.1</object-name>
 		  <object-name>NM1</object-name>
 		  <object-name>NM10</object-name>
 		  <object-name>NM100</object-name>
 		  <condition>
-				<and>
-					<property>instrumentation/dme/in-range</property>
-					<greater-than>
-						<property>systems/electrical/outputs/dme</property>
-						<value>1</value>
-					</greater-than>
-				</and>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+			</and>
 		  </condition>
     </animation>
 
@@ -71,17 +77,17 @@
 		  <object-name>min10</object-name>
 		  <object-name>min100</object-name>
 		  <condition>
-				<and>
-					<property>instrumentation/dme/in-range</property>
-					<greater-than>
-						<property>systems/electrical/outputs/dme</property>
-						<value>1</value>
-					</greater-than>
-					<equals>
-						<property>instrumentation/dme/switch-position[1]</property>
-						<value>1</value>
-					</equals>
-				</and>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+				<equals>
+					<property>instrumentation/dme/switch-position[1]</property>
+					<value>1</value>
+				</equals>
+			</and>
 		  </condition>
     </animation>
 
@@ -91,17 +97,17 @@
 		  <object-name>kt10</object-name>
 		  <object-name>kt100</object-name>
 		  <condition>
-				<and>
-					<property>instrumentation/dme/in-range</property>
-					<greater-than>
-						<property>systems/electrical/outputs/dme</property>
-						<value>1</value>
-					</greater-than>
-					<equals>
-						<property>instrumentation/dme/switch-position[1]</property>
-						<value>2</value>
-					</equals>
-				</and>
+			<and>
+				<property>instrumentation/dme/in-range</property>
+				<greater-than>
+					<property>systems/electrical/outputs/dme</property>
+					<value>1</value>
+				</greater-than>
+				<equals>
+					<property>instrumentation/dme/switch-position[1]</property>
+					<value>2</value>
+				</equals>
+			</and>
 		  </condition>
     </animation>
 
@@ -312,12 +318,12 @@
              <binding>
                 <command>nasal</command>
                 <script>
-						var tst=getprop("instrumentation/dme/switch-position[0]");
-						if(tst==0){
-							setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
-						}elsif(tst==2){
-							setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
-						}</script>
+		var tst=getprop("instrumentation/dme/switch-position[0]");
+		if(tst==0){
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
+		}elsif(tst==2){
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
+		}</script>
             </binding>
 			</action>
     </animation>
@@ -338,12 +344,12 @@
              <binding>
                 <command>nasal</command>
                 <script>
-						var tst=getprop("instrumentation/dme/switch-position[0]");
-						if(tst==0){
-							setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
-						}elsif(tst==2){
-							setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
-						}</script>
+		var tst=getprop("instrumentation/dme/switch-position[0]");
+		if(tst==0){
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
+		}elsif(tst==2){
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
+		}</script>
             </binding>
         </action>
     </animation>

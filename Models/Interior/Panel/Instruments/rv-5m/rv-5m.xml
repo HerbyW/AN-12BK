@@ -31,10 +31,14 @@
 
   <animation>
     <type>material</type>
-    <object-name>text</object-name>
-  <object-name>needle</object-name>
-  <object-name>index</object-name>
-  <object-name>flag</object-name> 
+     <object-name>text</object-name>
+     <object-name>needle</object-name>
+     <object-name>index</object-name>
+     <object-name>flag</object-name>
+     <object-name>base</object-name>
+     <object-name>blank</object-name>
+     <object-name>center</object-name>
+     <object-name>flag</object-name>     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -61,7 +65,7 @@
   <type>select</type>
   <object-name>flag</object-name>
   <condition>
-    <property alias="../../../params/blank"/>
+    <property>tu154/instrumentation/rv-5m[0]/blank</property>
   </condition>
 </animation>
 
@@ -82,7 +86,7 @@
   <object-name>lamp</object-name>
   <condition>
     <or>
-      <property alias="../../../../params/warn"/>
+      <property>tu154/instrumentation/rv-5m[0]/warn</property>
       <property>tu154/systems/electrical/checking-lamps/main-panel</property>
     </or>
   </condition>
@@ -93,7 +97,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property alias="../../params/altitude"/>
+    <property>tu154/instrumentation/rv-5m[0]/altitude</property>
     <interpolation>
       <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
       <entry><ind>	50.0</ind>	<dep>	75.0</dep></entry>
@@ -117,7 +121,7 @@
 <animation>
   <type>rotate</type>
   <object-name>index</object-name>
-  <property alias="../../params/dialed"/>
+  <property>tu154/instrumentation/rv-5m[0]/dialed</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	50.0</ind>	<dep>	75.0</dep></entry>
@@ -147,7 +151,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property alias="../../../../params/dialed"/>
+      <property>tu154/instrumentation/rv-5m[0]/dialed</property>
       <factor>5</factor>
       <min>0</min>
       <max>750</max>
