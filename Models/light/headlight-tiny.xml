@@ -44,9 +44,9 @@
  
  <animation>
 		<type>scale</type>
-		<x-offset>3</x-offset>
-                <y-offset>3</y-offset>
-                <z-offset>3</z-offset>                
+		<x-offset>16</x-offset>
+                <y-offset>16</y-offset>
+                <z-offset>16</z-offset>                
 	</animation>
  
 <!--Spot lights-->
@@ -73,16 +73,16 @@
      <a>1.0</a>
    </ambient>
    <diffuse>
-     <r>0.37</r>
-     <g>0.37</g>
-     <b>0.36</b>
+     <r>0.7</r>
+     <g>0.7</g>
+     <b>0.6</b>
      <a>1.0</a>
    </diffuse>
    <specular>
      <r>0.65</r>
      <g>0.65</g>
      <b>0.65</b>
-     <a>0.50</a>
+     <a>1.00</a>
    </specular>
    <attenuation>
      <c>1.0</c>
@@ -90,8 +90,8 @@
      <q>0.00005</q>
    </attenuation>
    <exponent>30.0</exponent>
-   <cutoff>8</cutoff>
-   <near-m>1</near-m>
+   <cutoff>22</cutoff>
+   <near-m>0</near-m>
    <far-m>10</far-m>
  </animation>
  

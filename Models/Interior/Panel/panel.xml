@@ -1089,19 +1089,6 @@
     </offsets>
   </model>
  
- <!-- Text to the screen -->
- 
- <label>
-		<width>2</width>
-		<height>2</height>
-		<format>RPM:%6.3f</format>
-		<halign>left</halign>
-		<input>
-			<property>engines/engine/rpm</property>
-		</input>        
- </label>
- 
- 
  <!-- Code for turning and scaling instruments
  
  <model>

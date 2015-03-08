@@ -3,14 +3,15 @@
 
 <PropertyList>
  <path>fuel1_R1.ac</path>
-
   
-  <!--Lights-->
+    <!--Lights-->
                                    
  <animation>   
-   <object-name>fuel_r</object-name>
-   <object-name>fr1</object-name>
-   <object-name>n1</object-name>      
+    <object-name>fuel_r</object-name>
+    <object-name>fr1</object-name>
+    <object-name>fr2</object-name>    
+    <object-name>k1</object-name>
+    <object-name>rect</object-name>
 </animation>
 
 
@@ -21,7 +22,9 @@
     <type>material</type>
     <object-name>fuel_r</object-name>
     <object-name>fr1</object-name>
-    <object-name>n1</object-name>   
+    <object-name>fr2</object-name>
+    <object-name>rect</object-name> 
+    <object-name>k1</object-name>   
    <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -74,36 +77,35 @@
    <y>0</y>
    <z>0</z>
   </axis>
- </animation>
- 
+ </animation> 
  
  <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
-- <action>
+  <action>
   <button>3</button> 
   <repeatable>true/</repeatable> 
   <interval-sec>0.2</interval-sec>
-- <binding>
+  <binding>
   <command>property-adjust</command> 
-  <property>instrumentation/R1_fuel/k1</property>
+  <property>instrumentation/R1_fuel/k12</property>
   <step>100</step>
   <min>0</min>
   <max>25000</max> 
    </binding>
   </action>
-  </animation>
+ </animation>
   
-   <animation>
+ <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
-- <action>
+  <action>
   <button>4</button> 
   <repeatable>true/</repeatable> 
   <interval-sec>0.2</interval-sec>
-- <binding>
+  <binding>
   <command>property-adjust</command> 
-  <property>instrumentation/R1_fuel/k1</property>
+  <property>instrumentation/R1_fuel/k12</property>
   <step>-100</step>
   <min>0</min>
   <max>25000</max> 

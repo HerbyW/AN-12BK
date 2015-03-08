@@ -347,7 +347,7 @@
 <animation>
   <type>knob</type>
   <object-name>hs</object-name>
-  <visible>true</visible>
+  <visible>false</visible>
   <action>
     <binding>
       <command>property-adjust</command>

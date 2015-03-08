@@ -8,7 +8,10 @@
     -->
 
 <!-- Variometer
-3D instrument for Tu-154 -->
+3D instrument for Tu-154 
+
+wicota v kabine = Kabinendruckhöhe
+perepad davlenii = Unterschied des Drucks-->
 
 <PropertyList>
 
@@ -47,12 +50,12 @@
     <type>rotate</type>
     <object-name>needle_1</object-name>
     <property>position/altitude-ft</property>
-    <factor>0.003048</factor>
+    <factor>0.36</factor>
     <interpolation>
-  	<entry><ind>	0</ind>		<dep>	0</dep></entry>
-	<entry><ind>	5</ind>		<dep>	-54.9</dep></entry>
-	<entry><ind>	10</ind>	<dep>	-102.3</dep></entry>
-	<entry><ind>	15</ind>	<dep>	-145.4</dep></entry>
+  	<entry><ind>    -200</ind>	<dep>       5</dep></entry>
+	<entry><ind>	   0</ind>	<dep>	    0</dep></entry>
+	<entry><ind>	8000</ind>	<dep>	-90</dep></entry>
+	<entry><ind>	25000</ind>	<dep>	-90.0</dep></entry>
     </interpolation>
     <axis>
       <x>1.0</x>
@@ -64,16 +67,13 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>environment/atmosphere/density-tropo-avg</property>
+    <property>controls/pressurization/diffdruck</property>
+    <factor>1.0</factor>    
     <interpolation>
   	<entry><ind>	-0.04</ind>	<dep>	-40</dep></entry>
 	<entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
-        <entry><ind>	0.1</ind>	<dep>	25.4</dep></entry>
-        <entry><ind>	0.2</ind>	<dep>	47.6</dep></entry>
-        <entry><ind>	0.3</ind>	<dep>	67.4</dep></entry>
-        <entry><ind>	0.4</ind>	<dep>	85.9</dep></entry>
-	<entry><ind>	0.5</ind>	<dep>	103.3</dep></entry>
-	<entry><ind>	0.6</ind>	<dep>	118.9</dep></entry>
+        <entry><ind>	0.48</ind>	<dep>	5.4</dep></entry>        
+	<entry><ind>	3.6</ind>	<dep>	118.9</dep></entry>
     </interpolation>
     <axis>
       <x>1.0</x>
