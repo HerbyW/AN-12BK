@@ -49,7 +49,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>position/altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.10973</factor>
     
     <axis>
@@ -64,7 +64,7 @@
   <type>rotate</type>
   <object-name>dig_a_dec</object-name>
   
-  <property>position/altitude-ft</property>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>1.0973</factor>
   <center>
     <x-m>-0.01866</x-m>
@@ -85,7 +85,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>1000</value>
@@ -133,7 +133,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>10000</value>
@@ -181,7 +181,7 @@
     <table>
       <mod>
         <product>
-          <property>position/altitude-ft</property>
+          <property>instrumentation/altimeter/indicated-altitude-ft</property>
           <value>0.3048</value>
         </product>
         <value>100000</value>
@@ -337,11 +337,10 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>instrumentation/altimeter/mmhg</property>
-      <value>2992</value>
-      <factor>1</factor>
-      <min>2500</min>
-      <max>3400</max>
+      <property>/instrumentation/altimeter/setting-inhg</property>
+      <factor>0.01</factor>
+      <min>28.10</min>
+      <max>31.00</max>
     </binding>
   </action>
 </animation>

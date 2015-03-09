@@ -14,8 +14,7 @@
   <path>turn.ac</path>
    
   <animation>
-    <object-name>fond</object-name>
-    
+    <object-name>fond</object-name>    
     <object-name>face</object-name>
     <object-name>ball</object-name>
     <object-name>needle</object-name>    
@@ -34,14 +33,14 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
+  <!-- working for Rembrandt
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>vitre</object-name>
-  </effect>
+  </effect>                                     -->
 
   <animation>
     <type>material</type>

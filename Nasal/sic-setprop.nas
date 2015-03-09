@@ -1,15 +1,20 @@
 
+
+setprop("/instrumentation/altimeter/mmhg", getprop("/environment/config/interpolated/pressure-inhg") * 25.39999);
+
+setprop("/instrumentation/altimeter/inhg100", getprop("/environment/config/interpolated/pressure-inhg") * 100);
+
 #UVID-15 Control for Pressure in mmhg and inhg
-# create timer with 0.10 second interval
-var timerPressure = maketimer(0.10, func
-
-{     
-    setprop("/instrumentation/altimeter/mmhg", getprop("/instrumentation/altimeter/setting-inhg") * 25.39999);    
-  }
-);
-
-# start the timer (with 0.10 second inverval)
-timerPressure.start();
+# create timer with 0.1 second interval
+#var timerPressure = maketimer(0.1, func
+#
+#{     
+#    setprop("/instrumentation/altimeter/inhg100", (getprop("/instrumentation/altimeter/mmhg") / 25.39999));
+#  }
+#);
+#
+# start the timer (with 0.1 second inverval)
+#timerPressure.start();
 
 
 #UVPD Control

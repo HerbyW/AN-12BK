@@ -36,18 +36,21 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
+  <!-- working for Rembrandt
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
     <object-name>vitre</object-name>
-  </effect>
+  </effect>                                        -->
 
   <!-- Internal instruments lighting -->
-  <animation>
+ 
+ <animation>
     <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>infos</object-name>
     <object-name>face</object-name>
     <object-name>needle_1</object-name>
     <object-name>needle_2</object-name>

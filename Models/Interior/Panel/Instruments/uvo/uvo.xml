@@ -15,13 +15,13 @@
 <path>uvo.ac</path>
  
  
-   <!--Lights-->
+   <!--Lights
  
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
   <object-name>long_needle</object-name>
   <object-name>short_needle</object-name>
- </effect>
+ </effect>                                       -->
 
  <!-- Internal instruments lighting -->
 

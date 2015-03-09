@@ -91,8 +91,7 @@
     <object-name>bolDE</object-name>
     <object-name>tourelle</object-name>
     <object-name>antennes</object-name>
-    <object-name>cables</object-name>
-    
+    <object-name>cables</object-name>    
     <object-name>trous</object-name>
     <object-name>echappes</object-name>
     <object-name>axeA1</object-name>
@@ -112,7 +111,7 @@
     <object-name>heliceDE</object-name>
 
     <!-- Objets transparents -->
-    
+    <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
@@ -155,8 +154,7 @@
     <object-name>bolDE</object-name>
     <object-name>tourelle</object-name>
     <object-name>antennes</object-name>
-    <object-name>cables</object-name>
-    
+    <object-name>cables</object-name>    
     <object-name>trous</object-name>
     <object-name>echappes</object-name>
     <object-name>axeA1</object-name>
@@ -179,14 +177,14 @@
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
     <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </specular>
     <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.15 </blue>
     </emission>
   </animation>
 
@@ -264,7 +262,7 @@
   
   <animation>
     <type>noshadow</type>
-    
+    <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
     <object-name>bosses</object-name>
     <object-name>propblurGE</object-name>
@@ -285,7 +283,7 @@
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
-    
+    <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
@@ -307,15 +305,15 @@
     </offsets>
   </model>
 
-    <animation>
+  <animation>
     <type>material</type>
-<object-name>glass</object-name>
-<object-name>vitreporte</object-name>
-<emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.8 </red>
-      <green> 0.8 </green>
-      <blue>  0.8 </blue>
+       <object-name>glass</object-name>
+       <object-name>vitreporte</object-name>
+  <emission>
+      <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.18 </red>
+      <green> 0.18 </green>
+      <blue>  0.38 </blue>
     </emission>
   </animation>
  

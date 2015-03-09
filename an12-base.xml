@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--Changes in various files for learning and understanding from HerbyW, Dec 2014- Feb 2015 -->
+<!--Changes in various files for learning and understanding from HerbyW, Dec 2014- March 2015 -->
 
 <PropertyList>
   
@@ -80,7 +80,7 @@
         <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="int" n="5" alias="/tu154/switches/gauge-light"> 0 </int>                                           <!--  5 immat -->
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
         <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
 	<int type="int" n="8" alias="/controls/lighting/nav-lights"/>
@@ -136,8 +136,8 @@
       <text>
 	Some instruments will show you metric values, some ft.
 	
-	There is a green panel in the middle console, the right switch makes the lights on.
-	The middle switch is for nav-lights. The switch right from this panel is for landing and taxi lights.
+	There is a green panel in the middle console, the right switch makes the instrument lights on.
+	The middle switch is for nav-lights. The left one is for cabin lights. The switch right from this panel is for landing and taxi lights.
 	
 	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation.
 	
@@ -170,7 +170,7 @@
 	 
 	The compasses are cleared of the magnetic variation.
 	
-	Paratroopers need a open back door to jump out, then use the switch on the panel to give the signal :)
+	Paratroopers can be sett up in the payload menue, each is 200 lb, they need a open back door to jump out, then use the switch on the panel to give the signal :)
 	
 	Maximal start weight is: 134481 lb = 61.000 kg
       </text>

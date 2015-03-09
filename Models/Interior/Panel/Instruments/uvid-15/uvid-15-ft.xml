@@ -43,7 +43,6 @@
       <blue>  0.35 </blue>
     </emission>
   </animation>
-
  
 <!--Warning lamp-->
 <animation>
@@ -73,7 +72,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>position/altitude-ft</property>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>    
     <axis>
       <x>-1.0</x>
@@ -86,7 +85,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_a_dec</object-name>  
-  <property>position/altitude-ft</property>
+  <property>instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>3.6</factor>
   <center>
     <x-m>-0.01985</x-m>
@@ -99,13 +98,14 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>dig_a_hund</object-name>  
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>1000</value>
       </mod>
       <entry><ind>	  0</ind>	<dep>	0</dep></entry>
@@ -150,7 +150,7 @@
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>10000</value>
       </mod>
       <entry><ind>	   0</ind>	<dep>	0</dep></entry>
@@ -195,7 +195,7 @@
   <expression>
     <table>
       <mod>
-        <property>position/altitude-ft</property>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <value>100000</value>
       </mod>
       <entry><ind>	    0</ind>	<dep>	0</dep></entry>
@@ -238,8 +238,8 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_ones</object-name>
-  <property>instrumentation/altimeter/inhg100</property>
-  <factor>360</factor>
+  <property>/instrumentation/altimeter/setting-inhg</property>
+  <factor>3600</factor>
   <center>
     <x-m>-0.01257</x-m>
     <y-m>0.0</y-m>
@@ -259,12 +259,12 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>100</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>1</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>10</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>0.10</value>
         </mod>
       </difference>
       <value>360</value>
@@ -289,12 +289,12 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>1000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>10</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>100</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>1</value>
         </mod>
       </difference>
       <value>36</value>
@@ -319,12 +319,12 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>10000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>100</value>
         </mod>
         <mod>
-          <property>instrumentation/altimeter/inhg100</property>
-          <value>1000</value>
+          <property>/instrumentation/altimeter/setting-inhg</property>
+          <value>10</value>
         </mod>
       </difference>
       <value>3.6</value>
@@ -351,11 +351,10 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>instrumentation/altimeter/inhg100</property>
-      <value>2992</value>
-      <factor>1</factor>
-      <min>2500</min>
-      <max>3400</max>
+      <property>/instrumentation/altimeter/setting-inhg</property>
+      <factor>0.01</factor>
+      <min>28.10</min>
+      <max>31.00</max>
     </binding>
   </action>
 </animation>
