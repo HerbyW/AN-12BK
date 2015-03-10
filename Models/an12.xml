@@ -1346,7 +1346,7 @@
     </offsets>
   </model>
     
-  <!-- PositionLights: white-steady -->
+  <!-- PositionLights: white-steady 2 on tail position, 2 on wing middle position-->
   <model>
    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
     <offsets>
@@ -1361,6 +1361,23 @@
       <x-m> 14.25 </x-m>
       <y-m>  5.98 </y-m>
       <z-m>  -0.4 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -2.7 </x-m>
+      <y-m> -13.58 </y-m>
+      <z-m>  -0.55 </z-m>
+    </offsets>
+  </model>  
+  <model>
+   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -2.7 </x-m>
+      <y-m>  13.58 </y-m>
+      <z-m>  -0.55 </z-m>
     </offsets>
   </model>
   
@@ -1396,14 +1413,14 @@
     <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
     
     <condition>
+       <and>
         <or>
 	  <property>sim/multiplay/generic/int[9]</property>
 	  <property>sim/multiplay/generic/int[10]</property>
-        </or>
-       </condition>    
-       <condition>
-	  <property>gear/gear[0]/position-norm</property>
-       </condition>
+        </or>       
+	  <property>gear/gear[0]/position-norm</property>       
+      </and>
+     </condition>
     
     <offsets>
       <x-m> -11.95 </x-m>

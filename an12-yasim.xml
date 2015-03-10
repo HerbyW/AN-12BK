@@ -36,7 +36,7 @@
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="361" alt="13500" fuel="0.7">
+  <cruise speed="341" alt="13500" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
     <control-setting axis="/controls/engines/engine[2]/throttle" value="0.7"/>
@@ -64,13 +64,13 @@
   <fuselage ax="-2.36458" ay="0" az="-2.61835" bx="-16.36991" by="0" bz="-0.28862" width="3.80" taper="0.3" midpoint="0.0"/>
   
   <!-- Engine exterior left -->
-  <fuselage ax="5.62769"  ay=" 9.56800" az="-0.93836" bx="0.55132" by=" 9.56800" bz="-0.93836" width="1.2" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="5.62769"  ay=" 9.56800" az="-0.93836" bx="0.55132" by=" 9.56800" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior left -->
-  <fuselage ax="6.50141"  ay=" 4.63488" az="-0.93836" bx="1.30862" by=" 4.63488" bz="-0.93836" width="1.2" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="6.50141"  ay=" 4.63488" az="-0.93836" bx="1.30862" by=" 4.63488" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior right -->
-  <fuselage ax="6.50141"  ay="-4.63488" az="-0.93836" bx="1.30862" by="-4.63488" bz="-0.93836" width="1.2" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="6.50141"  ay="-4.63488" az="-0.93836" bx="1.30862" by="-4.63488" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine exterior right -->
-  <fuselage ax="5.62769"  ay="-9.56800" az="-0.93836" bx="0.55132" by="-9.56800" bz="-0.93836" width="1.2" taper="0.8" midpoint="0.1"/>
+  <fuselage ax="5.62769"  ay="-9.56800" az="-0.93836" bx="0.55132" by="-9.56800" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
 
   <!-- Wing -->
   <wing x="2.240576" y="0" z="-0.43301"
@@ -145,9 +145,9 @@
   <!-- Engine left exterior-->
   <propeller x="4.4" y="9.56800" z="-0.93836"
              mass="2293"
-             moment="600"
+             moment="800"
              radius="2.189"
-             cruise-speed="361"
+             cruise-speed="341"
              cruise-rpm="800"
              cruise-power="3500"
              cruise-alt="15000"
@@ -157,10 +157,10 @@
              coarse-stop="4.0">
              <actionpt x="5.89102" y="9.568" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4250"
+             <turbine-engine eng-power="4000"
                              eng-rpm="900"
                              alt="10000" 
-                             flat-rating="4150"
+                             flat-rating="3800"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -173,9 +173,9 @@
   <!-- Engine left interior-->
   <propeller x="5.2" y="4.63488" z="-0.93836"
              mass="2293"
-             moment="600"
+             moment="800"
              radius="2.189"
-             cruise-speed="361"
+             cruise-speed="341"
              cruise-rpm="800"
              cruise-power="3500"
              cruise-alt="15000"
@@ -185,10 +185,10 @@
              coarse-stop="4.0">
              <actionpt x="6.76873" y="4.63488" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4250"
+             <turbine-engine eng-power="4000"
                              eng-rpm="900"
                              alt="10000" 
-                             flat-rating="4150"
+                             flat-rating="3800"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -201,9 +201,9 @@
   <!-- Engine right interior-->
   <propeller x="5.2" y="-4.63488" z="-0.93836"
              mass="2293"
-             moment="600"
+             moment="800"
              radius="2.189"
-             cruise-speed="361"
+             cruise-speed="341"
              cruise-rpm="800"
              cruise-power="3500"
              cruise-alt="15000"
@@ -213,10 +213,10 @@
              coarse-stop="4.0">
              <actionpt x="6.76873" y="-4.63488" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4250"
+             <turbine-engine eng-power="4000"
                              eng-rpm="900"
                              alt="10000" 
-                             flat-rating="4150"
+                             flat-rating="3800"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -229,9 +229,9 @@
   <!-- Engine right exterior-->
   <propeller x="4.4" y="-9.56800" z="-0.93836"
              mass="2293"
-             moment="600"
+             moment="800"
              radius="2.189"
-             cruise-speed="361"
+             cruise-speed="341"
              cruise-rpm="800"
              cruise-power="3500"
              cruise-alt="15000"
@@ -241,10 +241,10 @@
              coarse-stop="4.0">
              <actionpt x="5.89102" y="-9.568" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4250"
+             <turbine-engine eng-power="4000"
                              eng-rpm="900"
                              alt="10000" 
-                             flat-rating="4150"
+                             flat-rating="3800"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -330,10 +330,10 @@
         <control-speed control="EXTEND" transition-time="9"/>
   </gear>
 
-  <tank x="3" y=" 4.817" z="-0.4" capacity="8745"/>
-  <tank x="3" y="-4.817" z="-0.4" capacity="8745"/>
-  <tank x="3" y=" 6.817" z="-0.4" capacity="8745"/>
-  <tank x="3" y="-6.817" z="-0.4" capacity="8745"/>
+  <tank x="3" y=" 4.817" z="-0.4" capacity="7170"/>
+  <tank x="3" y="-4.817" z="-0.4" capacity="7170"/>
+  <tank x="3" y=" 6.817" z="-0.4" capacity="7170"/>
+  <tank x="3" y="-6.817" z="-0.4" capacity="7170"/>
 
   <!-- Mass distribution -->
   <ballast x="19" y="0" z="-4" mass="16000"/>
