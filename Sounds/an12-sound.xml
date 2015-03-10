@@ -355,6 +355,25 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </rain>
+ 
+ <!-- Warnings -->
+ 
+    <speedwarn>
+      <name>warn1</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/dinamik_pr.wav</path>
+       <condition>
+        <greater-than>
+	 <property>velocities/groundspeed-kt</property>
+	 <value>415</value>
+         </greater-than>
+        </condition> 
+      <volume>        
+        <max>1.0</max>
+      </volume>
+      <reference-dist>1</reference-dist>
+      <max-dist>10</max-dist>
+    </speedwarn>
 
   </fx>
 
