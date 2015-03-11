@@ -41,7 +41,7 @@
 
     <description>Antonov An 12 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM), HerbyW (Instrumentation+Animation), Firefly (3D interior and panel)</author>
-    <aircraft-version>0.3</aircraft-version>
+    <aircraft-version>0.4</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>0.6</fuel-fraction>
@@ -107,6 +107,7 @@
         <float n="15" alias="/controls/paratroopers/jump-signal" />
         <float n="16" alias="/controls/paratroopers/jump-signal-pos" />
         <float n="17" alias="/sim/time/elapsed-sec" />        -->
+         <string  alias="/sim/multiplay/callsign"/>
          <string n="9" type="string"/>                              <!-- string[9] reserved for bombable mode -->     
      </generic>
     </multiplay>  
@@ -166,11 +167,11 @@
 	
 	There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
 	 the upper one is in meter and mmHG, the lower one in ft and inHG,
-	 they are connected and you should set them to the ATIS information of the airport befor starting.
+	 they are connected and you should set them to the ATIS information of the airport befor starting or landing.
 	 
 	The compasses are cleared of the magnetic variation.
 	
-	Paratroopers can be sett up in the payload menue, each is 200 lb, they need a open back door to jump out, then use the switch on the panel to give the signal :)
+	Paratroopers can be set up in the payload menue, each is 200 lb, they need a open back door to jump out, then use the switch on the panel to give the signal :)
 	
 	Maximal start weight is: 134481 lb = 61.000 kg
       </text>
