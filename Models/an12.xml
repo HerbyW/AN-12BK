@@ -56,7 +56,7 @@
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <texture>Aircraft/Antonov-An-12/Models/glass_michat.png</texture>
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>

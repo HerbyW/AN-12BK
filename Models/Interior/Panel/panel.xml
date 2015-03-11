@@ -114,28 +114,7 @@
       <z-m>  0.024 </z-m>
     </offsets>
   </model>
-  
-  
-  <!-- UAP, AOA and G-meter -->
-      
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
-    <offsets>
-      <x-m>  0.009 </x-m>
-      <y-m> -0.737 </y-m>
-      <z-m>  0.098 </z-m>
-    </offsets>
-  </model>
     
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uap-12/uap-12.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.761 </y-m>
-      <z-m> -0.000 </z-m>
-    </offsets>
-  </model>
-  
   <!-- PNP, HSI Horizontal Situation Indicator -->
   
   <model>
@@ -620,21 +599,33 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
     <offsets>
-      <x-m> -0.00</x-m>
-      <y-m> -0.44 </y-m>
-      <z-m> -0.35 </z-m>
+      <x-m> 0.05</x-m>
+      <y-m> 0.17 </y-m>
+      <z-m> -0.30 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>0</pitch-deg>
+      <pitch-deg>-38</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ushdb/ushdb_selector.xml</path>
+    <offsets>
+      <x-m> 0.05</x-m>
+      <y-m> 0.06 </y-m>
+      <z-m> -0.30 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ush/ush.xml</path>
     <offsets>
-      <x-m> -0.00</x-m>
-      <y-m> -0.58 </y-m>
-      <z-m> -0.35 </z-m>
+      <x-m> 0.05</x-m>
+      <y-m> -0.05 </y-m>
+      <z-m> -0.30 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>0</pitch-deg>
+      <pitch-deg>-38</pitch-deg>
     </offsets>
   </model>
  

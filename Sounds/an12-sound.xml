@@ -59,7 +59,7 @@
         <property>/engines/engine[0]/rpm</property>
         <factor>0.0008</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.5</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
@@ -82,7 +82,7 @@
         <property>/engines/engine[1]/rpm</property>
         <factor>0.0008</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.5</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
@@ -105,7 +105,7 @@
         <property>/engines/engine[2]/rpm</property>
         <factor>0.0008</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.5</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
@@ -128,7 +128,7 @@
         <property>/engines/engine[3]/rpm</property>
         <factor>0.0008</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.5</max>
         <offset>0.0</offset>
       </volume>
       <pitch>
@@ -186,14 +186,11 @@
     </gear>
 
     <squeal>
-      <name>squeal</name>
+      <name>squeal1</name>
+      <mode>once</mode>
       <path>Aircraft/Antonov-An-12/Sounds/squeal.wav</path>
-      <condition>
-        <or>
-          <property>/gear/gear[0]/wow</property>
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
-        </or>
+      <condition>        
+          <property>/gear/gear[0]/wow</property>                 
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>
@@ -203,17 +200,43 @@
       <volume>
         <property>/velocities/airspeed-kt</property>
         <factor>0.01</factor>
+	<min>0.7</min>
         <max>1.0</max>
-      </volume>
-      <volume>
-        <internal>dt_stop</internal>
-        <factor>0.05</factor>
-        <max>1.0</max>
-      </volume>
+      </volume>      
       <pitch>
         <property>/velocities/airspeed-kt</property>
         <factor>0.0025</factor>
         <offset>0.5</offset>
+	<min>0.9</min>
+        <max>1.0</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </squeal>
+    
+    <squeal>
+      <name>squeal2</name>
+      <mode>once</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/squeal.wav</path>
+      <condition>        
+          <property>/gear/gear[3]/wow</property>          
+      </condition>
+      <volume>
+        <property>/velocities/speed-down-fps</property>
+        <factor>0.9</factor>
+        <max>1.0</max>
+      </volume>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+	<min>0.7</min>
+        <max>1.0</max>
+      </volume>      
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.0025</factor>
+        <offset>0.5</offset>
+	<min>0.9</min>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
@@ -226,7 +249,7 @@
       <path>Aircraft/Antonov-An-12/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>0.2</factor>
+        <factor>0.25</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -246,7 +269,7 @@
       <pitch>
         <property>/velocities/airspeed-kt</property>
         <factor>0.01</factor>
-        <offset>0.5</offset>
+        <offset>0.4</offset>
         <max>1.0</max>
       </pitch>
       <reference-dist>10</reference-dist>
@@ -268,15 +291,22 @@
   
     <door>
       <name>Crew doorT</name>
+      <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/door_close.wav</path>
       <condition>
-        <equals>
+       <and>
+	<greater-than>
           <property>sim/multiplay/generic/float[0]</property>
-          <value>0.0</value>
-        </equals>
+          <value>0.01</value>
+        </greater-than>
+	<less-than>
+          <property>sim/multiplay/generic/float[0]</property>
+          <value>0.99</value>
+        </less-than>
+       </and>
       </condition>
       <volume>
-        <factor>0.4</factor>
+        <factor>0.09</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -300,26 +330,33 @@
 
     <door>
       <name>Passenger doorT</name>
+      <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/door_close.wav</path>
       <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[1]</property>
-          <value>0.0</value>
-        </equals>
+       <and>
+	<greater-than>
+          <property>sim/multiplay/generic/float[12]</property>
+          <value>0.01</value>
+        </greater-than>
+	<less-than>
+          <property>sim/multiplay/generic/float[12]</property>
+          <value>0.99</value>
+        </less-than>
+       </and>
       </condition>
       <volume>
-        <factor>0.4</factor>
+        <factor>0.09</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </door>
     
     <door>
-      <name>Crew door</name>
+      <name>Passenger door</name>
       <path>Aircraft/Antonov-An-12/Sounds/door_closed.wav</path>
       <condition>
         <equals>
-          <property>sim/multiplay/generic/float[1]</property>
+          <property>sim/multiplay/generic/float[12]</property>
           <value>0.0</value>
         </equals>
       </condition>
@@ -370,6 +407,7 @@
         </condition> 
       <volume>
 	<offset>1.0</offset>
+	<min>1.0</min>
         <max>1.0</max>
       </volume>
       <reference-dist>100</reference-dist>
