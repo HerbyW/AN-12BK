@@ -57,16 +57,16 @@
            
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0008</factor>
+        <factor>0.0006</factor>
         <min>0.0</min>
-        <max>0.5</max>
-        <offset>0.0</offset>
+        <max>0.45</max>
+        <offset>0.10</offset>
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0004</factor>
+        <factor>0.0003</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -79,17 +79,17 @@
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
           
       <volume>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.0008</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0006</factor>
         <min>0.0</min>
-        <max>0.5</max>
-        <offset>0.0</offset>
+        <max>0.45</max>
+        <offset>0.10</offset>
       </volume>
       <pitch>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.0004</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0003</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -102,17 +102,17 @@
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
          
       <volume>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.0008</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0006</factor>
         <min>0.0</min>
-        <max>0.5</max>
-        <offset>0.0</offset>
+        <max>0.45</max>
+        <offset>0.10</offset>
       </volume>
       <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.0004</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0003</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -125,44 +125,66 @@
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
         
       <volume>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.0008</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0006</factor>
         <min>0.0</min>
-        <max>0.5</max>
-        <offset>0.0</offset>
+        <max>0.45</max>
+        <offset>0.10</offset>
       </volume>
       <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.0004</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.0003</factor>
         <min>0.0</min>
-        <max>1.0</max>
+        <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
       <delay-sec>68</delay-sec>
     </engine>
-      
+    
+    <!-- Rumble on runway -->
 
     <rumble>
-      <name>rumble</name>
+      <name>rumble1</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/rumble.wav</path>
       <condition>
-        <or>
           <property>/gear/gear[0]/wow</property>
+      </condition>
+      <volume>
+        <property>sim/multiplay/generic/float[13]</property>
+        <type>log</type>
+        <factor>0.35</factor>
+	<min>0.0</min>
+        <max>1.0</max>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </rumble>
+    
+    <rumble>
+      <name>rumble2</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/rumble.wav</path>
+      <condition>
+        <or>          
           <property>/gear/gear[1]/wow</property>
           <property>/gear/gear[2]/wow</property>
         </or>
       </condition>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.25</factor>
+        <factor>0.35</factor>
+	<min>0.0</min>
+        <max>1.0</max>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </rumble>
 
+    <!-- Gear in and out -->
+    
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
@@ -185,6 +207,8 @@
       <max-dist>100</max-dist>
     </gear>
 
+    <!-- Touchdown -->
+    
     <squeal>
       <name>squeal1</name>
       <mode>once</mode>
@@ -219,11 +243,11 @@
       <mode>once</mode>
       <path>Aircraft/Antonov-An-12/Sounds/squeal.wav</path>
       <condition>        
-          <property>/gear/gear[3]/wow</property>          
+          <property>/gear/gear[2]/wow</property>          
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>
-        <factor>0.9</factor>
+        <factor>0.5</factor>
         <max>1.0</max>
       </volume>
       <volume>
@@ -243,38 +267,45 @@
       <max-dist>100</max-dist>
     </squeal>
  
+ <!-- Flaps -->
+ 
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>0.25</factor>
+        <factor>0.35</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </flap>
+    
 
-    <wind>
-      <name>wind</name>
+
+     <!-- Speed Warning -->
+ 
+    <speedwarn>
+      <name>warn1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/wind.wav</path>
-      <property>/velocities/airspeed-kt</property>
+      <path>Aircraft/Antonov-An-12/Sounds/dinamik_pr2.wav</path>
+       <condition>
+        <greater-than>
+	 <property>velocities/groundspeed-kt</property>
+	 <value>419</value>
+         </greater-than>
+        </condition> 
       <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <min>0.00</min>
-        <max>0.25</max>
-      </volume>
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-        <offset>0.4</offset>
+	<offset>1.0</offset>
+	<min>1.0</min>
         <max>1.0</max>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </wind>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </speedwarn>
+
+    
+ <!-- Stall -->
  
     <stall>
       <name>stall</name>
@@ -288,6 +319,8 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </stall>
+  
+  <!-- Doors -->
   
     <door>
       <name>Crew doorT</name>
@@ -306,7 +339,7 @@
        </and>
       </condition>
       <volume>
-        <factor>0.09</factor>
+        <factor>0.11</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -345,7 +378,7 @@
        </and>
       </condition>
       <volume>
-        <factor>0.09</factor>
+        <factor>0.12</factor>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -367,6 +400,31 @@
       <max-dist>100</max-dist>
     </door>
 
+        <!-- Wind -->
+
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/wind.wav</path>
+      <property>/environment/wind-speed-kt</property>
+      <volume>
+        <property>/environment/wind-speed-kt</property>
+        <factor>0.0025</factor>
+        <min>0.00</min>
+        <max>0.20</max>
+      </volume>
+      <pitch>
+        <property>/environment/wind-speed-kt</property>
+        <factor>0.01</factor>
+        <offset>0.2</offset>
+        <max>0.70</max>
+      </pitch>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </wind>
+    
+    <!-- Rain -->
+    
     <rain>
       <name>rain</name>
       <mode>looped</mode>
@@ -380,39 +438,18 @@
       <volume>
         <property>/environment/metar/rain-norm</property>
         <factor>1.00</factor>
-        <offset>0.00</offset>
-        <min>0.4</min>
-        <max>0.9</max>
+        <offset>-0.2</offset>
+        <min>0.0</min>
+        <max>0.6</max>
       </volume>
       <pitch>
         <property>/velocities/airspeed-kt</property>
         <factor>0.001</factor>
-        <offset>1.0</offset>
+        <offset>0.50</offset>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-    </rain>
- 
- <!-- Warnings -->
- 
-    <speedwarn>
-      <name>warn1</name>
-      <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/dinamik_pr2.wav</path>
-       <condition>
-        <greater-than>
-	 <property>velocities/groundspeed-kt</property>
-	 <value>415</value>
-         </greater-than>
-        </condition> 
-      <volume>
-	<offset>1.0</offset>
-	<min>1.0</min>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </speedwarn>
+    </rain> 
 
   </fx>
 

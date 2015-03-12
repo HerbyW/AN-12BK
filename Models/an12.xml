@@ -38,8 +38,6 @@
    <z-m>-5.25</z-m>
   </offsets>
  </model>
- 
-
   
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
 <!--Working For ANY GLASS AND Rembrandt-->
@@ -109,7 +107,6 @@
     <object-name>heliceGI</object-name>
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
-
     <!-- Objets transparents -->
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
@@ -275,8 +272,6 @@
     <object-name>propdiscDE</object-name>
   </animation>
 
-
-
   <!-- working for Rembrandt -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
@@ -293,19 +288,9 @@
     <object-name>propdiscDI</object-name>
     <object-name>propblurDE</object-name>
     <object-name>propdiscDE</object-name>
-  </effect>
+  </effect>  
   
-  <!-- A shadow for OSG without Rembrandt  -->
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/shadow.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -5.000 </z-m>
-    </offsets>
-  </model>
-
-  <animation>
+    <animation>
     <type>material</type>
        <object-name>glass</object-name>
        <object-name>vitreporte</object-name>
@@ -317,6 +302,17 @@
     </emission>
   </animation>
  
+  <!-- A shadow for OSG without Rembrandt  -->
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -5.000 </z-m>
+    </offsets>
+  </model>
+
+
   
   <!-- Interior -->
   <model>
