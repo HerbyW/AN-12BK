@@ -2,42 +2,36 @@
 
 <PropertyList>
 
-<path>interior.ac</path>
-
-
-<!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
-<!--Working For ANY GLASS AND Rembrandt-->
+  <path>interior.ac</path>
 
 <animation>
     <object-name>windows</object-name>
     <object-name>intvitreporte</object-name>
 </animation>
 
-<animation>
-<type>noshadow</type>
+<!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Antonov-An-12/Models/Effects/Glass/glass</inherits-from>
     <object-name>windows</object-name>
     <object-name>intvitreporte</object-name>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+  </effect>
+
+  <animation>
+    <type>material</type>
+       <object-name>windows</object-name>
+       <object-name>intvitreporte</object-name>
+  <emission>
+    <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.60 </blue>
+    </emission>
 </animation>
 
 <animation>
-<type>shader</type>
-<shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitreporte</object-name>
-    <object-name>windows</object-name>
-</animation>
-
-<animation>
-<!-- Objets opaques -->
-<!-- <object-name>interieur</object-name>
-<object-name>inttour</object-name>
-<object-name>intportetour</object-name>
-<object-name>planchet</object-name>
-<object-name>intbaie</object-name>
-<object-name>intbaieG</object-name>
-<object-name>intbaieD</object-name> -->
-
-<!-- Objets transparents -->
 <object-name>windows</object-name>
 <object-name>intvitreporte</object-name>
 </animation>

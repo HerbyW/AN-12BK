@@ -32,9 +32,9 @@
     
     
     <rating>
-      <FDM type="int">     2 </FDM>
+      <FDM type="int">     3 </FDM>
       <systems type="int"> 1 </systems>
-      <cockpit type="int"> 1 </cockpit>
+      <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
    

@@ -46,20 +46,34 @@
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>
+
 <animation>
 <type>noshadow</type>
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>
+
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
-    <texture>Aircraft/Antonov-An-12/Models/glass_michat.png</texture>
+    <texture>Aircraft/Antonov-An-12/Models/glass_shader.png</texture>
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>
 
-  <animation>
+<animation>
+    <type>material</type>
+       <object-name>glass</object-name>
+       <object-name>vitreporte</object-name>       
+       <emission>
+    <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.60 </blue>
+    </emission>
+</animation>
+
+<animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>porte</object-name>
@@ -170,18 +184,11 @@
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
     
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
-    <specular>
-      <red>   0.25 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
-    </specular>
     <emission>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.15 </blue>
+      <factor-prop>sim/time/sun-angle-rad</factor-prop>
+      <red>   0.1 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
     </emission>
   </animation>
 
@@ -258,9 +265,9 @@
   </effect>
   
   <animation>
-    <type>noshadow</type>
+   <type>noshadow</type>
     <object-name>glass</object-name>
-    <object-name>vitreporte</object-name>
+    <object-name>vitreporte</object-name>    
     <object-name>bosses</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
@@ -273,6 +280,7 @@
   </animation>
 
   <!-- working for Rembrandt -->
+      
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <condition>
@@ -288,19 +296,12 @@
     <object-name>propdiscDI</object-name>
     <object-name>propblurDE</object-name>
     <object-name>propdiscDE</object-name>
-  </effect>  
+  </effect>
   
-    <animation>
-    <type>material</type>
-       <object-name>glass</object-name>
-       <object-name>vitreporte</object-name>
-  <emission>
-      <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
-      <red>   0.18 </red>
-      <green> 0.18 </green>
-      <blue>  0.38 </blue>
-    </emission>
-  </animation>
+  <animation>
+    <object-name>glass</object-name>
+    <object-name>vitreporte</object-name>
+</animation>
  
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
@@ -311,8 +312,6 @@
       <z-m> -5.000 </z-m>
     </offsets>
   </model>
-
-
   
   <!-- Interior -->
   <model>
@@ -320,11 +319,11 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/interior.xml</path>
   </model>
 
-  <!-- For Rembrandt -->
+  <!-- For Rembrandt
   <animation>
     <type>noshadow</type>
     <object-name>Interieur</object-name>
-  </animation>
+  </animation>                                 -->
   
   <!-- OSG particles -->
   <!-- Left exterior -->
