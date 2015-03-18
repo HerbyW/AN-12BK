@@ -29,6 +29,16 @@
       <value>true</value>
     </binding>
   </key>
+  
+  <key n="115">
+    <name>s</name>
+    <desc>Autostart</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/autostart</property>
+      <value>true</value>
+    </binding>
+  </key>
  
   
 </PropertyList>

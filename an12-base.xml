@@ -4,7 +4,8 @@
 
 <PropertyList>
   
- <controls> 
+ <controls>
+    <autostart type="int">0</autostart>
     <lighting>
        <nav-lights type="int">0</nav-lights>    
        <landing-lights type="int">0</landing-lights>
@@ -138,6 +139,10 @@
     <help>
       <title>Antonov An 12</title>
       <key>
+        <name>s</name>
+        <desc>Autostart</desc>
+      </key>
+      <key>
         <name>d</name>
         <desc>Open/Close fuselage door</desc>
       </key>
@@ -150,10 +155,12 @@
         <desc>Parachutist</desc>
       </key>
       <text>
+	Autostart: s
+	
 	Start up:
 	Turquoise panel: right switch up- Lights for Instruments on
 	                 middle switch - NAV lights on
-        Bottom middle knob for fuel in right position - activates the tanks
+        Bottom middle knob for fuel in right position - activates the tanks and pumps
 	Engines starter switches left from fuel knob - one to four in upper position - starting the engines
 	
 	Shut down:
@@ -265,6 +272,7 @@
     <an12>
       <file>Aircraft/Antonov-An-12/Nasal/liveries.nas</file>
       <file>Aircraft/Antonov-An-12/Nasal/light.nas</file>
+      <file>Aircraft/Antonov-An-12/Nasal/autostart.nas</file>
     </an12>
     <instruments>
       <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>
