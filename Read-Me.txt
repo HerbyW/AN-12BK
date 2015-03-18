@@ -1,10 +1,6 @@
-English/Français
 
-[English]
-----------
-
-Breda B.Z.308
-=============
+AN-12 for Flightgear
+====================
 
 Manufacturer                  :
 Type                          :
@@ -17,54 +13,23 @@ Empty weight                  :
 Cruise speed                  :
 Crew                          :
 
-Some useful keys:
-=================
+Some useful keys: (see at: aircraft help)
+=========================================
 
 Thanks
 ======
 
-===============
 BARANGER Emmanuel
 January, 02, 2013.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
+---------------------------------------------
+
 HerbyW
 Dec 2014
-https://github.com/HerbyW/an-12-flightgear
 
+https://www.github.com/HerbyW/an-12-flightgear
 
-[Français]
-----------
-
-Un peu d'histoire
-=================
-
-Breda B.Z.308
-==============
-
-Constructeur                  :
-Type                          :
-Année                         :
-Moteur                        :
-Envergure                     :
-Longueur                      :
-Hauteur                       :
-Masse à vide                  :
-Vitesse de croisière          :
-Equipage                      :
-
-
-Quelques touches utiles :
-=========================
-
-Remerciements
-=============
-
-===============
-BARANGER Emmanuel
-02 Janvier 2013.
-
-http://helijah.free.fr/flightgear/hangar.htm
-embaranger@free.fr
+----------------------------------------------

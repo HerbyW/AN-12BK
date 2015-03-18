@@ -32,7 +32,7 @@
  <animation>
   <type>rotate</type>
   <object-name>k1</object-name>
-  <property>systems/fuel/controls/F_ind</property>
+  <property>controls/switches/fuel</property>  
   <interpolation>
    <entry><ind>  0</ind><dep> 3</dep></entry> 
    <entry><ind> 1</ind><dep> 27</dep></entry>
@@ -56,34 +56,102 @@
  <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
-- <action>
+  <action>
   <button>3</button> 
   <repeatable>true/</repeatable> 
   <interval-sec>0.2</interval-sec>
-- <binding>
+  
+  <binding>
   <command>property-adjust</command> 
-  <property>systems/fuel/controls/F_ind</property>
+  <property>controls/switches/fuel</property>  
   <step>1</step>
   <min>0</min>
   <max>3</max> 
    </binding>
+  
+   <binding>
+  <command>property-adjust</command> 
+  <property>consumables/fuel/tank[0]/selected</property>  
+  <step>1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>  
+  <property>consumables/fuel/tank[1]/selected</property>  
+  <step>1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>  
+  <property>consumables/fuel/tank[2]/selected</property>
+  <step>1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>   
+  <property>consumables/fuel/tank[3]/selected</property>
+  <step>1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
   </action>
   </animation>
   
    <animation>
   <type>pick</type> 
   <object-name>k1</object-name> 
-- <action>
+  <action>
   <button>4</button> 
   <repeatable>true/</repeatable> 
   <interval-sec>0.2</interval-sec>
-- <binding>
+  
+  <binding>
   <command>property-adjust</command> 
-  <property>systems/fuel/controls/F_ind</property>
+  <property>controls/switches/fuel</property>  
   <step>-1</step>
   <min>0</min>
   <max>3</max> 
    </binding>
+  
+   <binding>
+  <command>property-adjust</command> 
+  <property>consumables/fuel/tank[0]/selected</property>  
+  <step>-1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>  
+  <property>consumables/fuel/tank[1]/selected</property>  
+  <step>-1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>  
+  <property>consumables/fuel/tank[2]/selected</property>
+  <step>-1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
+   <binding>
+  <command>property-adjust</command>   
+  <property>consumables/fuel/tank[3]/selected</property>
+  <step>-1</step>
+  <min>0</min>
+  <max>3</max> 
+   </binding>
+   
   </action>
   </animation>
 

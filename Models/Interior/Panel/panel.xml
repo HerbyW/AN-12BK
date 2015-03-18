@@ -24,14 +24,14 @@
 
   <!-- Section of instruments, needs more funktions-->
   
-  <!-- Warning Indicator: fuel-low and over-speed -->
+  <!-- Warning Indicator: fuel-low and over-speed and over-loading -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning31.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.503 </y-m>
-      <z-m>  0.19 </z-m>
+      <z-m>  0.185 </z-m>
     </offsets>
   </model>
   
@@ -40,7 +40,16 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.546 </y-m>
-      <z-m>  0.19 </z-m>
+      <z-m>  0.185 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning85.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  0.185 </z-m>
     </offsets>
   </model>
   
@@ -501,6 +510,16 @@
   </model>
   
   <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.23 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
@@ -539,6 +558,90 @@
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
+  
+    <!-- Engine Starter Panel Switches and Lamps -->
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/lamp-engine0.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.35 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/lamp-engine1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.32 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/lamp-engine2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.29 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/lamp-engine3.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.26 </y-m>
+      <z-m> -0.192 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/engine0.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.35 </y-m>
+      <z-m> -0.162 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/engine1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.32 </y-m>
+      <z-m> -0.162 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/engine2.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.29 </y-m>
+      <z-m> -0.162 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/engine3.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.26 </y-m>
+      <z-m> -0.162 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>  
+
+
   
 
    <!--Variometer, For Cabine and Outside pressure control--> 

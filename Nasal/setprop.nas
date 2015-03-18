@@ -53,8 +53,48 @@ setlistener("/tu154/switches/usvp-selector-trans", func
   );
  
 #Lights
-setprop("tu154/switches/headlight-mode", 1);     
+setprop("tu154/switches/headlight-mode", 1);
 
+
+#
+#Fuel and Condition Control
+#
+setprop("/consumables/fuel/tank[0]/selected", 0);
+setprop("/consumables/fuel/tank[1]/selected", 0);
+setprop("/consumables/fuel/tank[2]/selected", 0);
+setprop("/consumables/fuel/tank[3]/selected", 0);
+setprop("/controls/switches/fuel", 0);
+
+setlistener("/controls/switches/fuel", func 
+
+  { if(getprop("/controls/switches/fuel") > 0.5)
+      {
+        setprop("/consumables/fuel/tank[0]/selected", 1);
+        setprop("/consumables/fuel/tank[1]/selected", 1);
+        setprop("/consumables/fuel/tank[2]/selected", 1);
+        setprop("/consumables/fuel/tank[3]/selected", 1);
+      }
+      else
+      {
+        setprop("/consumables/fuel/tank[0]/selected", 0);
+        setprop("/consumables/fuel/tank[1]/selected", 0);
+        setprop("/consumables/fuel/tank[2]/selected", 0);
+        setprop("/consumables/fuel/tank[3]/selected", 0);
+	setprop("/controls/engines/engine[0]/condition", 0);
+	setprop("/controls/engines/engine[1]/condition", 0);
+	setprop("/controls/engines/engine[2]/condition", 0);
+	setprop("/controls/engines/engine[3]/condition", 0);
+      }
+  
+  }
+  );
+ 
+# /engines/engine[0]/running
+# /controls/switches/fuel
+# /controls/engines/engine[0]/condition
+#
+#
+#
 #   initialisieren:
 #
 #  var flaginfo = props.globals.initNode("/controls/flag-info",0,"INT");

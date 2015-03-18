@@ -7,7 +7,10 @@
   <!-- Engines 1 -4 starting up-->
     <crank>
       <name>engstart1</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+       <condition>       
+         <property>/engines/engine[0]/running</property>         
+        </condition>      
       <volume>
         <offset>-0.3</offset>
       </volume>
@@ -17,35 +20,44 @@
     
     <crank>
       <name>engstart2</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+       <condition>       
+         <property>/engines/engine[1]/running</property>         
+        </condition>      
       <volume>
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>15</delay-sec>
+      <delay-sec>0</delay-sec>
     </crank>
     
     <crank>
       <name>engstart3</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+       <condition>       
+         <property>/engines/engine[2]/running</property>         
+        </condition>      
       <volume>
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>30</delay-sec>
+      <delay-sec>0</delay-sec>
     </crank>
     
     <crank>
       <name>engstart4</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+       <condition>       
+         <property>/engines/engine[3]/running</property>         
+        </condition>      
       <volume>
         <offset>-0.3</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>45</delay-sec>
+      <delay-sec>0</delay-sec>
     </crank>
   
   <!-- Engines 1 -4 running -->
@@ -54,13 +66,14 @@
        <name>engine0</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
-           
+        <condition>       
+         <property>/engines/engine[0]/running</property>         
+        </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
         <factor>0.0006</factor>
-        <min>0.0</min>
-        <max>0.45</max>
-        <offset>0.10</offset>
+        <min>0.03</min>
+        <max>0.45</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -77,69 +90,72 @@
        <name>engine1</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
-          
+        <condition>       
+         <property>/engines/engine[1]/running</property>         
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[1]/rpm</property>
         <factor>0.0006</factor>
-        <min>0.0</min>
-        <max>0.45</max>
-        <offset>0.10</offset>
+        <min>0.03</min>
+        <max>0.45</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[1]/rpm</property>
         <factor>0.0003</factor>
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>34</delay-sec>
+      <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine2</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
-         
+        <condition>       
+         <property>/engines/engine[2]/running</property>         
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[2]/rpm</property>
         <factor>0.0006</factor>
-        <min>0.0</min>
-        <max>0.45</max>
-        <offset>0.10</offset>
+        <min>0.03</min>
+        <max>0.45</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[2]/rpm</property>
         <factor>0.0003</factor>
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>51</delay-sec>
+      <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine3</name>
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
-        
+        <condition>       
+         <property>/engines/engine[3]/running</property>         
+        </condition>  
       <volume>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[3]/rpm</property>
         <factor>0.0006</factor>
-        <min>0.0</min>
-        <max>0.45</max>
-        <offset>0.10</offset>
+        <min>0.03</min>
+        <max>0.45</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[0]/rpm</property>
+        <property>/engines/engine[3]/rpm</property>
         <factor>0.0003</factor>
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-      <delay-sec>68</delay-sec>
+      <delay-sec>17</delay-sec>
     </engine>
     
     <!-- Rumble on runway -->
