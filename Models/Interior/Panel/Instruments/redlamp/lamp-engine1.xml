@@ -40,8 +40,11 @@
   <type>select</type>
   <object-name>_d_2</object-name>
    <condition>
-    <property>/engines/engine[1]/running</property>
-   </condition>
+    <equals>
+     <property>/engines/engine[1]/running</property>    
+     <value>1</value>
+    </equals>
+  </condition>
 </animation>
 
 

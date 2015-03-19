@@ -5,7 +5,7 @@
 var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.8,0.8], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
 
 
-var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 200)},  0, 0);
+var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 120)},  0, 0);
 
 
 
@@ -17,7 +17,7 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
     if(getprop("sim/model/door-positions/baie/position-norm") < 0.75){						# Si la porte cargo n'est pas ouverte
       jumper.switch(0);													# On annule le larguage des parachutistes
       setprop("controls/paratroopers/trigger/state", 0);
-      setprop("sim/messages/copilot", "Paratroopers doors closed ! Paratroopers can't jump");				# On indique le problème
+      setprop("sim/messages/copilot", "Paratroopers door is closed ! Paratroopers can't jump");				# On indique le problème
     }else{														# Sinon si la porte est ouverte
       var nb_para = getprop("controls/paratroopers/paratroopers") - 1;							# On calcul combien il reste de parachutiste
       setprop("controls/paratroopers/paratroopers", nb_para);								# On attribut le nombre de parachutiste à la propriété
