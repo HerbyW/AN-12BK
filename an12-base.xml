@@ -281,6 +281,10 @@
     <para>
       <file>Aircraft/Antonov-An-12/Nasal/paratroopers.nas</file>
     </para>
+    <help>
+      <file>Aircraft/Antonov-An-12/Nasal/km-5-1.nas</file>
+    </help>
+    
   </nasal>
 
   

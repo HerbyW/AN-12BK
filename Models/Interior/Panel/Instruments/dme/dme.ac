@@ -2790,7 +2790,7 @@ kids 2
 OBJECT poly
 name "dig_f_hi"
 loc -0.0010000 0.0070000 0.0015000
-texture "digit_1.png"
+texture "digit_1r.png"
 texrep 1 1
 numvert 34
 -0.0004858 0.0041204 -0.0032680
@@ -3136,7 +3136,7 @@ kids 0
 OBJECT poly
 name "dig_f_low"
 loc 0.0000000 0.0000000 -0.0030000
-texture "digit_2.png"
+texture "digit_2r.png"
 texrep 1 1
 numvert 34
 -0.0317780 0.0061590 -0.0051550

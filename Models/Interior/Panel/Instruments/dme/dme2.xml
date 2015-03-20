@@ -9,7 +9,9 @@
 
 <!-- DME radio control
 3D instrument for Tu-154 -->
+
 <PropertyList>
+  
   <params>
     <freq>instrumentation/dme[1]/frequencies/selected-mhz</freq>
     <power>instrumentation/dme[1]/switch-position</power>
@@ -25,7 +27,20 @@
 
 <animation>
   <type>material</type>
-  <object-name>base</object-name>  
+  <object-name>base</object-name>
+  <object-name>box</object-name>
+  <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+</animation>
+
+<animation>
+  <type>material</type>  
+  <object-name>power</object-name>
+  <object-name>reserve</object-name>  
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -36,13 +51,10 @@
 
 <animation>
   <type>material</type>
-  <object-name>digits</object-name>
-  <object-name>power</object-name>
-  <object-name>reserve</object-name>
-  
-  
+  <object-name>dig_f_low</object-name>
+  <object-name>dig_f_hi</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>instrumentation/dme[1]/switch-position</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
