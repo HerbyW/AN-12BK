@@ -13,8 +13,8 @@
 <PropertyList>
   
   <params>
-    <freq>instrumentation/comm[0]/frequencies/selected-mhz</freq>
-    <volume>instrumentation/comm[0]/volume</volume>
+    <freq>instrumentation/comm[1]/frequencies/selected-mhz</freq>
+    <volume>instrumentation/comm[1]/volume</volume>
   </params>
 
  <path>radio.ac</path>

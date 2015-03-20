@@ -11,9 +11,9 @@
 3D instrument for Tu-154 -->
 <PropertyList>
   <params>
-    <freq>instrumentation/dme[0]/frequencies/selected-mhz</freq>
-    <power>tu154/switches/dme-1-power</power>
-    <reserve>tu154/switches/dme-1-reserve</reserve>
+    <freq>instrumentation/dme[1]/frequencies/selected-mhz</freq>
+    <power>instrumentation/dme[1]/switch-position</power>
+    <reserve>instrumentation/dme[1]/switch-position[1]</reserve>
   </params>
 
  <path>dme.ac</path>

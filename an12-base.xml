@@ -245,7 +245,7 @@
   <instrumentation>
     <dme>
         <frequencies>
-            <source type="string">/instrumentation/nav[0]/frequencies/selected-mhz</source>
+            <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
         </frequencies>
         <switch-position n="0" type="int">0</switch-position>
         <switch-position n="1" type="int">0</switch-position>
@@ -276,7 +276,8 @@
     </an12>
     <instruments>
       <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>
-      </instruments>
+      <file>Aircraft/Antonov-An-12/Nasal/kurs-mp.nas</file>
+    </instruments>
     <para>
       <file>Aircraft/Antonov-An-12/Nasal/paratroopers.nas</file>
     </para>

@@ -50,7 +50,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>instrumentation/nav[0]/power-btn</factor-prop>
+    <factor-prop>tu154/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
@@ -62,6 +62,7 @@
     <property>instrumentation/nav[0]/to-flag</property>
  </condition>
 </animation>
+
 <animation>
   <type>select</type>
   <object-name>ot</object-name>

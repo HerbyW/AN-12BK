@@ -14,8 +14,8 @@
 
   <params>
     <freq>instrumentation/dme[0]/frequencies/selected-mhz</freq>
-    <power>tu154/switches/dme-1-power</power>
-    <reserve>tu154/switches/dme-1-reserve</reserve>
+    <power>instrumentation/dme[0]/switch-position</power>
+    <reserve>instrumentation/dme[0]/switch-position[1]</reserve>
   </params>
 
  <path>dme.ac</path>
