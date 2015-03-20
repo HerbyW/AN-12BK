@@ -145,7 +145,7 @@
   <!-- Engine left exterior-->
   <propeller x="4.4" y="9.56800" z="-0.93836"
              mass="2293"
-             moment="800"
+             moment="3800"
              radius="2.189"
              cruise-speed="341"
              cruise-rpm="800"
@@ -173,7 +173,7 @@
   <!-- Engine left interior-->
   <propeller x="5.2" y="4.63488" z="-0.93836"
              mass="2293"
-             moment="800"
+             moment="3800"
              radius="2.189"
              cruise-speed="341"
              cruise-rpm="800"
@@ -201,7 +201,7 @@
   <!-- Engine right interior-->
   <propeller x="5.2" y="-4.63488" z="-0.93836"
              mass="2293"
-             moment="800"
+             moment="3800"
              radius="2.189"
              cruise-speed="341"
              cruise-rpm="800"
@@ -229,7 +229,7 @@
   <!-- Engine right exterior-->
   <propeller x="4.4" y="-9.56800" z="-0.93836"
              mass="2293"
-             moment="800"
+             moment="3800"
              radius="2.189"
              cruise-speed="341"
              cruise-rpm="800"

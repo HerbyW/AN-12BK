@@ -31,7 +31,7 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.503 </y-m>
-      <z-m>  0.185 </z-m>
+      <z-m>  0.18 </z-m>
     </offsets>
   </model>
   
@@ -40,7 +40,7 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.546 </y-m>
-      <z-m>  0.185 </z-m>
+      <z-m>  0.18 </z-m>
     </offsets>
   </model>
   
@@ -49,7 +49,16 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.46 </y-m>
-      <z-m>  0.185 </z-m>
+      <z-m>  0.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning86.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.417 </y-m>
+      <z-m>  0.18 </z-m>
     </offsets>
   </model>
   
