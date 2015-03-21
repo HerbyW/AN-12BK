@@ -12,14 +12,7 @@
 <PropertyList>
   
   <path>rv-5m.ac</path>
-  
-  <params>
-    <altitude>tu154/instrumentation/rv-5m[0]/altitude</altitude>
-    <blank>tu154/instrumentation/rv-5m[0]/blank</blank>
-    <warn>tu154/instrumentation/rv-5m[0]/warn</warn>
-    <dialed>tu154/instrumentation/rv-5m[0]/dialed</dialed>
-  </params>
- 
+   
 <!-- Internal instruments lighting -->
 
 <animation>  
@@ -33,8 +26,7 @@
     <type>material</type>
      <object-name>text</object-name>
      <object-name>needle</object-name>
-     <object-name>index</object-name>
-     <object-name>flag</object-name>
+     <object-name>index</object-name>     
      <object-name>base</object-name>
      <object-name>blank</object-name>
      <object-name>center</object-name>
@@ -47,26 +39,17 @@
     </emission>
   </animation>
 
-
 <!-- External instruments lighting -->
 <animation>
   <type>material</type>
-  <object-name>base</object-name>
-  <emission>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
-  </emission>
-</animation>
-
-
-<!--Blank-->
-<animation>
-  <type>select</type>
+  <object-name>lamp</object-name>
+  <object-name>hs</object-name>
   <object-name>flag</object-name>
-  <condition>
-    <property>tu154/instrumentation/rv-5m[0]/blank</property>
-  </condition>
+  <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+  </emission>
 </animation>
 
 <!--Warning lamp-->
@@ -77,18 +60,30 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>tu154/systems/electrical/checking-lamps/lamps-power</factor-prop>
+    <factor-prop>tu154/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
 <animation>
   <type>select</type>
-  <object-name>lamp</object-name>
+  <object-name>lamp</object-name>  
   <condition>
-    <or>
-      <property>tu154/instrumentation/rv-5m[0]/warn</property>
-      <property>tu154/systems/electrical/checking-lamps/main-panel</property>
-    </or>
+    <greater-than>
+      <property>instrumentation/altimeter/decision-height</property>
+      <value>10</value>
+      
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>  
+  <object-name>flag</object-name>
+  <condition>
+    <less-than>
+      <property>position/altitude-agl-ft</property>
+      <property>instrumentation/altimeter/decision-height</property>      
+    </less-than>
   </condition>
 </animation>
 
@@ -97,19 +92,19 @@
 <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>tu154/instrumentation/rv-5m[0]/altitude</property>
+    <property>position/altitude-agl-ft</property>
     <interpolation>
-      <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
-      <entry><ind>	50.0</ind>	<dep>	75.0</dep></entry>
-      <entry><ind>	60.0</ind>	<dep>	91.5</dep></entry>
-      <entry><ind>	80.0</ind>	<dep>	123.0</dep></entry>
-      <entry><ind>	100.0</ind>	<dep>	155.0</dep></entry>
-      <entry><ind>	200.0</ind>	<dep>	179.0</dep></entry>
-      <entry><ind>	300.0</ind>	<dep>	203.0</dep></entry>
-      <entry><ind>	400.0</ind>	<dep>	226.0</dep></entry>
-      <entry><ind>	500.0</ind>	<dep>	251.0</dep></entry>
-      <entry><ind>	700.0</ind>	<dep>	300.0</dep></entry>
-      <entry><ind>	800.0</ind>	<dep>	325.0</dep></entry>
+      <entry><ind>    0.000</ind>	<dep>	0.0</dep></entry>
+    <entry><ind>  164.000</ind>	<dep>	75.0</dep></entry>
+    <entry><ind>  186.850</ind>	<dep>	91.5</dep></entry>
+    <entry><ind>  262.467</ind>	<dep>	123.0</dep></entry>
+    <entry><ind>  328.084</ind>	<dep>	155.0</dep></entry>
+    <entry><ind>  656.168</ind>	<dep>	179.0</dep></entry>
+    <entry><ind>  984.252</ind>	<dep>	203.0</dep></entry>
+    <entry><ind> 1312.336</ind>	<dep>	226.0</dep></entry>
+    <entry><ind> 1640.420</ind>	<dep>	251.0</dep></entry>
+    <entry><ind> 2296.588</ind>	<dep>	300.0</dep></entry>
+    <entry><ind> 2624.672</ind>	<dep>	325.0</dep></entry>
     </interpolation>
     <axis>
       <x>-1.0</x>
@@ -121,19 +116,19 @@
 <animation>
   <type>rotate</type>
   <object-name>index</object-name>
-  <property>tu154/instrumentation/rv-5m[0]/dialed</property>
+  <property>instrumentation/altimeter/decision-height</property>
   <interpolation>
-    <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
-    <entry><ind>	50.0</ind>	<dep>	75.0</dep></entry>
-    <entry><ind>	60.0</ind>	<dep>	91.5</dep></entry>
-    <entry><ind>	80.0</ind>	<dep>	123.0</dep></entry>
-    <entry><ind>	100.0</ind>	<dep>	155.0</dep></entry>
-    <entry><ind>	200.0</ind>	<dep>	179.0</dep></entry>
-    <entry><ind>	300.0</ind>	<dep>	203.0</dep></entry>
-    <entry><ind>	400.0</ind>	<dep>	226.0</dep></entry>
-    <entry><ind>	500.0</ind>	<dep>	251.0</dep></entry>
-    <entry><ind>	700.0</ind>	<dep>	300.0</dep></entry>
-    <entry><ind>	800.0</ind>	<dep>	325.0</dep></entry>
+    <entry><ind>    0.000</ind>	<dep>	0.0</dep></entry>
+    <entry><ind>  164.000</ind>	<dep>	75.0</dep></entry>
+    <entry><ind>  186.850</ind>	<dep>	91.5</dep></entry>
+    <entry><ind>  262.467</ind>	<dep>	123.0</dep></entry>
+    <entry><ind>  328.084</ind>	<dep>	155.0</dep></entry>
+    <entry><ind>  656.168</ind>	<dep>	179.0</dep></entry>
+    <entry><ind>  984.252</ind>	<dep>	203.0</dep></entry>
+    <entry><ind> 1312.336</ind>	<dep>	226.0</dep></entry>
+    <entry><ind> 1640.420</ind>	<dep>	251.0</dep></entry>
+    <entry><ind> 2296.588</ind>	<dep>	300.0</dep></entry>
+    <entry><ind> 2624.672</ind>	<dep>	325.0</dep></entry>
   </interpolation>
   <axis>
     <x>-1.0</x>
@@ -151,10 +146,10 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/rv-5m[0]/dialed</property>
-      <factor>5</factor>
+      <property>instrumentation/altimeter/decision-height</property>
+      <factor>16.404199475</factor>
       <min>0</min>
-      <max>750</max>
+      <max>2500</max>
     </binding>
   </action>
 </animation>

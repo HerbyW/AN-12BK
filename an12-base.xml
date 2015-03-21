@@ -264,7 +264,7 @@
         <serviceable type="bool">1</serviceable>
     </inst-vertical-speed-indicator>
     <altimeter>
-        <decision-height type="double">200</decision-height>
+        <decision-height type="double">0</decision-height>
     </altimeter>
     <airspeed-indicator>
         <index-marker type="double">100</index-marker>

@@ -24,7 +24,7 @@
 
   <!-- Section of instruments, needs more funktions-->
   
-  <!-- Warning Indicator: fuel-low and over-speed and over-loading -->
+  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning31.xml</path>
@@ -59,6 +59,15 @@
       <x-m>  0.008 </x-m>
       <y-m> -0.417 </y-m>
       <z-m>  0.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning34.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m>  0.187 </z-m>
     </offsets>
   </model>
   
@@ -180,8 +189,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m> -0.837 </y-m>
-      <z-m>  0.045 </z-m>
+      <y-m> -0.73 </y-m>
+      <z-m>  0.09 </z-m>
     </offsets>
   </model>
      
@@ -241,7 +250,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  -0.00 </x-m>
       <y-m> -0.420 </y-m>
       <z-m>  0.098 </z-m>
     </offsets>
@@ -250,7 +259,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
-      <x-m> -0.000 </x-m>
+      <x-m> -0.00 </x-m>
       <y-m> 0.638 </y-m>
       <z-m> 0.098 </z-m>
     </offsets>
@@ -261,7 +270,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-75.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  -0.0 </x-m>
       <y-m> -0.737 </y-m>
       <z-m>  -0.009 </z-m>
     </offsets>
@@ -351,7 +360,8 @@
       <heading-deg>0.0</heading-deg>
     </offsets>
   </model>
-      
+  
+<!--      
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/RV_ind/RV_ind.xml</path>
     <offsets>
@@ -360,15 +370,16 @@
       <z-m> -0.11 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
-  </model>
+    </model>              -->
+
   <!-- Air- and Groundspeed Indicator in km/h -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.837 </y-m>
-      <z-m>  -0.040 </z-m>
+      <y-m> -0.825 </y-m>
+      <z-m>  0.045 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -659,8 +670,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvpd/uvpd.xml</path>
     <offsets>
       <x-m> 0.008 </x-m>
-      <y-m> -0.84 </y-m>
-      <z-m> -0.133 </z-m>
+      <y-m> -0.825 </y-m>
+      <z-m> -0.05 </z-m>
       <heading-deg>0</heading-deg>
     </offsets>
   </model>
@@ -1060,8 +1071,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/trim-neutral/ind_8.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.92 </y-m>
-      <z-m>  -0.10 </z-m>
+      <y-m> -0.895 </y-m>
+      <z-m>  -0.03 </z-m>
     </offsets>
   </model>
  

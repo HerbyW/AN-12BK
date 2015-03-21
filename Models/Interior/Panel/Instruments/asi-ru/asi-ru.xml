@@ -79,7 +79,7 @@
   <animation>
     <type>rotate</type>
     <object-name>index</object-name>
-    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <property>autopilot/settings/target-speed-kt</property>
    <interpolation>
       <entry><ind>   0.00 </ind><dep>   3 </dep></entry>
       <entry><ind>  81.00 </ind><dep>  12 </dep></entry>
