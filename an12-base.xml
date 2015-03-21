@@ -157,22 +157,27 @@
       <text>
 	Autostart: s
 	
-	Start up:
+	Or manual start up:
 	Turquoise panel: right switch up- Lights for Instruments on
 	                 middle switch - NAV lights on
-        Bottom middle knob for fuel in right position - activates the tanks and pumps
-	Engines starter switches left from fuel knob - one to four in upper position - starting the engines
+        Bottom middle panel: knob for fuel in right position - activates the tanks and pumps, a green lamp shows up
+	4 Engine starter switches left from fuel knob - one to four in upper position - starting the engines,
+	each engine needs 17 sec for running, throttle in idle position (10%).
 	
 	Shut down:
-	Fuel knob to left position or engine starter switches down
+	Fuel knob to left position or engine starter switches down.
+	
+	Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation
 	
 	Some instruments will show you metric values, some ft.
 	
 	There is a turquoise panel in the middle console, the right switch makes the instrument lights on.
 	The middle switch is for nav-lights. The left one is for cabin lights.
 	The switch right from this panel is for landing and taxi lights.
+	Then there is the switch for activating the parachuters.
+	Right from the Parachuters-switch is a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
 	
-	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation.
+	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation, used after Autopilot dissabled. 
 	
 	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
 	
@@ -185,8 +190,9 @@
 	- GPS for flying routes from the Route Manager,
 	- ALT is holding your attidude
 	
-	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it
-	gives you the indication that ILS and/or Glide Scope is intersepted.
+	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it gives you the indication
+	that ILS and/or Glide Scope is intersepted. ILS heading works even far out the stream, for the glidscope you should wait till the
+	indicator is in nearly horizontal position.
 	
 	Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side),
 	if the white strips are in the middle position (1-2 for starting, 2-4 for landing).
@@ -203,15 +209,19 @@
 	 
 	The compasses are cleared of the magnetic variation.
 	
-	On top of the compass there are three indicators for fuel low (below 2500 l),over speed warning and over-loading.
-	
+	On top of the compass there are 4 indicators for fuel low (below 2500 l),over speed warning, over-loading and parking brake.
 	
 	Paratroopers can be set up in the payload menue, each is 120 lb, they need a open back door to jump out,
-	then use the switch on the panel to give the signal :) From the tail cabin you may watch and control them.
+	then use the switch on the panel to give the signal :) From the tail cabin you may watch and control them also.
 	
 	In the tail cabin there is a additional panel, the middle instrument is for ground- and air-speed with a switch on the bottom.
 	
-	Maximal start weight is: 134481 lb = 61.000 kg. There is a warning light for overload on top of the compsses (BEC).
+	Maximal start weight is: 134481 lb = 61.000 kg. There is a warning light for overload on top of the compasses (sign: BEC).
+	
+	Radios, DMEs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
+	
+	Have fun and get the latest version at:
+	www.github.com/herbyw/antonov-aircrafts
       </text>
     </help>
 

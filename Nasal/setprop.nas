@@ -89,6 +89,51 @@ setlistener("/controls/switches/fuel", func
   }
   );
  
+##########################################################
+#      ALS Control by HerbyW 03/2015
+##########################################################
+
+setlistener("/controls/ALS/setting", func(v) {
+  if(v.getValue()){
+    interpolate("/controls/ALS/setting-pos", 1, 0.25);
+  }else{
+    interpolate("/controls/ALS/setting-pos", 0, 0.25);
+  }
+});
+
+
+setlistener("controls/ALS/setting", func
+
+ { 
+   if(getprop("sim/rendering/rembrandt/enabled") == 1)
+    {
+      setprop("sim/messages/copilot", "ALS is not working with Rembrandt");
+    }
+    else
+    { 
+      if(getprop("controls/ALS/setting") == 1)
+      {
+      setprop("sim/rendering/shaders/skydome", 1);
+      setprop("sim/rendering/als-secondary-lights/landing-light1-offset-deg", -12);
+      setprop("sim/rendering/als-secondary-lights/landing-light2-offset-deg", 12);
+      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 1);
+      setprop("sim/rendering/als-secondary-lights/use-landing-light", 1);
+      setprop("sim/rendering/als-secondary-lights/use-searchlight", 1);
+      }
+      else
+      {
+      setprop("sim/rendering/als-secondary-lights/use-alt-landing-light", 0);
+      setprop("sim/rendering/als-secondary-lights/use-landing-light", 0);
+      setprop("sim/rendering/als-secondary-lights/use-searchlight", 0);
+      }
+    }   
+
+ }
+);
+
+
+
+
 # /engines/engine[0]/running
 # /controls/switches/fuel
 # /controls/engines/engine[0]/condition

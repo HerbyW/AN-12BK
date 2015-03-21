@@ -2,13 +2,10 @@
 #      DE L'HAMAIDE Clément for Douglas DC-3 C47         # modified by HerbyW 01/2015
 ##########################################################
 
-var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.8,0.8], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
+var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.5,0.5], "controls/paratroopers/jump-signal");		# Création du signal qui larguera les parachutistes toutes les 3.5 secondes
 
 
 var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 120)},  0, 0);
-
-
-
 
 
 
@@ -27,7 +24,7 @@ setlistener("controls/paratroopers/trigger/state", func(state){								# On éco
         setprop("sim/messages/copilot", getprop("controls/paratroopers/paratroopers")~" Paratroopers remaining");	# On indique le nombre de parachutistes restant  
       }else{                                                     							# Sinon
         jumper.switch(0);                                            							# On arrête le signal de saut
-        setprop("sim/messages/copilot", "Paratroopers are all out");							# On indique qu'il n'y a plus de parachutistes
+        setprop("sim/messages/copilot", "There are no Paratroopers inside");							# On indique qu'il n'y a plus de parachutistes
       }
     }
   }
