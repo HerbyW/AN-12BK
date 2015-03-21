@@ -31,7 +31,7 @@
     </emission>
   </animation>
    
-<!--Indicators 26-fuel 31-speed-->
+<!--Indicator 34-decision height (H) -->
 
 
 <animation>
@@ -48,6 +48,21 @@
     <green>1.0</green>
     <blue>1.0</blue>    
   </emission>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>text_2</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>instrumentation/altimeter/decision-height</property>
+      <value>0.0</value>
+    </binding>
+  </action>
 </animation>
 
 </PropertyList>
