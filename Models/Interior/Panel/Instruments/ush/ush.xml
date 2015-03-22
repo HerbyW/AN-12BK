@@ -11,25 +11,27 @@
 3D instrument for Tu-154 -->
 <PropertyList>
  <path>ush.ac</path>
-<!-- Internal instruments lighting -->
-<animation>
-  <type>material</type>
+
+ <!-- Internal instruments lighting -->
+
+ <animation>
+  
   <object-name>index</object-name>
+  <object-name>base</object-name>
   <object-name>compass</object-name>
   <object-name>needle_1</object-name>
   <object-name>needle_2</object-name>
-  <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
-    </emission>
-</animation>
-
-<!--External panel lighting-->
-<animation>
+    
+</animation> 
+ 
+ <animation>
   <type>material</type>
+  <object-name>index</object-name>
   <object-name>base</object-name>
+  <object-name>compass</object-name>
+  <object-name>needle_1</object-name>
+  <object-name>needle_2</object-name>
+  
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -38,7 +40,6 @@
     </emission>
 </animation>
 
-  
 <!--Needles-->
 <animation>
     <type>rotate</type>
@@ -75,6 +76,18 @@
 </animation>
 
 <!--mk lamp-->
+
+<animation>
+  <type>material</type>
+  <object-name>mk</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
 <animation>
   <type>select</type>
   <object-name>mk</object-name>
@@ -85,7 +98,23 @@
      </equals>
   </condition>
 </animation>
+
+
+
 <!--gpk lamp-->
+
+<animation>
+  <type>material</type>
+  <object-name>gpk</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
+
 <animation>
   <type>select</type>
   <object-name>gpk</object-name>
@@ -96,7 +125,21 @@
     </equals>
   </condition>
 </animation>
-<!--ak lamp-->
+
+
+<!--ak lamp -->
+
+<animation>
+  <type>material</type>
+  <object-name>ak</object-name>  
+  <emission>      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+
+    </emission>
+</animation>
+
 <animation>
   <type>select</type>
   <object-name>ak</object-name>
@@ -107,6 +150,7 @@
     </equals>
   </condition>
 </animation>
+
 
 
 </PropertyList>
