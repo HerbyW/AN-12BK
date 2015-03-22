@@ -14,14 +14,12 @@
 
  <!-- Internal instruments lighting -->
 
- <animation>
-  
+ <animation>  
   <object-name>index</object-name>
   <object-name>base</object-name>
   <object-name>compass</object-name>
   <object-name>needle_1</object-name>
-  <object-name>needle_2</object-name>
-    
+  <object-name>needle_2</object-name>  
 </animation> 
  
  <animation>
@@ -77,6 +75,7 @@
 
 <!--mk lamp-->
 
+
 <animation>
   <type>material</type>
   <object-name>mk</object-name>  
@@ -125,6 +124,8 @@
     </equals>
   </condition>
 </animation>
+
+
 
 
 <!--ak lamp -->

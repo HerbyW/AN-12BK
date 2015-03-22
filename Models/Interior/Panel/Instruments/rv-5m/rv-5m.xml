@@ -13,7 +13,7 @@
   
   <path>rv-5m.ac</path>
    
-<!-- Internal instruments lighting -->
+<!-- Internal instruments lighting <object-name>center</object-name><object-name>blank</object-name>-->
 
 <animation>  
   <object-name>text</object-name>
@@ -28,8 +28,8 @@
      <object-name>needle</object-name>
      <object-name>index</object-name>     
      <object-name>base</object-name>
-     <object-name>blank</object-name>
-     <object-name>center</object-name>
+     
+     
      <object-name>flag</object-name>     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
