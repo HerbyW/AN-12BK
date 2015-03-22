@@ -9,7 +9,7 @@
 <!-- Altimeter UVID-15 feet
 3D instrument for Tu-154 -->
 <PropertyList>
- <path>uvid-15f.ac</path>
+ <path>uvid-15f3.ac</path>
 
  <animation>  
   <object-name>base</object-name>
@@ -255,20 +255,20 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_p_dec</object-name>
-  <expression>
+  <expression>    
     <product>
       <difference>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
+          <property>/instrumentation/altimeter/setting-inhgN</property>
           <value>1</value>
         </mod>
         <mod>
-          <property>/instrumentation/altimeter/setting-inhg</property>
-          <value>0.10</value>
-        </mod>
+          <property>/instrumentation/altimeter/setting-inhgN</property>
+          <value>0.1</value>
+        </mod>	
       </difference>
       <value>360</value>
-    </product>
+    </product>    
   </expression>
   <center>
     <x-m>-0.01257</x-m>

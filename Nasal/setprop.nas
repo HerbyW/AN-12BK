@@ -7,6 +7,7 @@ setlistener("/instrumentation/altimeter/setting-inhg", func(v)
   if(v.getValue())
   
     setprop("/instrumentation/altimeter/mmhg", getprop("/instrumentation/altimeter/setting-inhg") * 25.4);
+    setprop("/instrumentation/altimeter/setting-inhgN", getprop("/instrumentation/altimeter/setting-inhg") + 0.005);
 });
 
 
