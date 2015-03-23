@@ -360,17 +360,6 @@
       <heading-deg>0.0</heading-deg>
     </offsets>
   </model>
-  
-<!--      
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/RV_ind/RV_ind.xml</path>
-    <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.220 </y-m>
-      <z-m> -0.11 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-    </model>              -->
 
   <!-- Air- and Groundspeed Indicator in km/h -->
   
@@ -514,7 +503,7 @@
     </offsets>
   </model>
  
-  <!-- Fuel Control: Knob (no function jet)
+  <!-- Fuel Control: Knob (activates the fuel system)
                      Total Fuel Sum below 10 t for all tanks combined
                      Total Fuel in t and in percent for all tanks combined
                      Tank 1+2, Tank 3+4 Fuel Flow and Sum in t -->
@@ -661,9 +650,6 @@
     </offsets>
   </model>  
 
-
-  
-
    <!--Variometer, For Cabine and Outside pressure control--> 
   
   <model>
@@ -792,7 +778,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-1.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.90 </y-m>
+      <y-m>  1.00 </y-m>
       <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -802,7 +788,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/kurs-mp/kurs-mp-2.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.70 </y-m>
+      <y-m>  0.80 </y-m>
       <z-m>  -0.0 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -812,7 +798,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio1.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.9 </y-m>
+      <y-m>  1.0 </y-m>
       <z-m>  -0.1065 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -822,7 +808,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/dme/dme1.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.7 </y-m>
+      <y-m>  0.8 </y-m>
       <z-m> -0.1065 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -832,7 +818,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/radio/radio2.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.9 </y-m>
+      <y-m>  1.0 </y-m>
       <z-m>  -0.185 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -842,12 +828,32 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/dme/dme2.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.7 </y-m>
+      <y-m>  0.8 </y-m>
       <z-m> -0.185 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ark-15/ark-15-1.xml</path>
+    <offsets>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> -0.017 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ark-15/ark-15-2.xml</path>
+    <offsets>
+      <x-m>  2.47 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> -0.162 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
+  
  
    <!-- Fuel Control Ingineer Panel: Knob (no function jet)
                      Total Fuel Sum below 10 t for all tanks combined
