@@ -31,7 +31,7 @@
     <type>material</type>
      <object-name>text</object-name>
      <object-name>needle</object-name>
-     <object-name>index</object-name>  
+     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
@@ -40,6 +40,18 @@
     </emission>
   </animation>
 
+  <animation>
+    <type>material</type>
+     
+     <object-name>index</object-name>  
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   1 </red>
+      <green> 0.5 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
+  
   
 <!--Needles-->
 <animation>
