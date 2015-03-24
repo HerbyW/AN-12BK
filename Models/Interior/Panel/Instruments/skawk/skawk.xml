@@ -238,8 +238,8 @@
       <property>instrumentation/transponder/inputs/mode</property>
       <mapping>nasal</mapping>
       <script>
-        var modes = ['on', 'standby', 'altitude', 'ground'];
-        return modes[arg[0]];
+        var mode = ['on', 'standby', 'altitude', 'ground'];
+        return mode[arg[0]];
       </script>
     </binding>
   </hovered>

@@ -635,6 +635,16 @@
       <wrap>false</wrap>
     </binding>
   </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Kurs-MP-volume</tooltip-id>
+      <label>Volume: %d%%</label>
+      <property>instrumentation/nav[1]/volume</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
 </animation>
 <animation>
   <type>pick</type>
@@ -653,6 +663,16 @@
       <wrap>false</wrap>
     </binding>
   </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Kurs-MP-volume</tooltip-id>
+      <label>Volume: %d%%</label>
+      <property>instrumentation/nav[1]/volume</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
 </animation>
 
 

@@ -752,13 +752,23 @@
       <z-m>  0.140 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
-  </model>  
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/skawk-lamp-green.xml</path>
+    <offsets>
+      <x-m>  2.487 </x-m>
+      <y-m>  1.088 </y-m>
+      <z-m>  0.149 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model>
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/km-5/km-5-1.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.60  </y-m>
+      <y-m>  0.85  </y-m>
       <z-m>  0.130 </z-m>
       <heading-deg>180</heading-deg>
     </offsets>
@@ -768,7 +778,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pu-11/pu-11.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
-      <y-m>  0.80 </y-m>
+      <y-m>  0.65 </y-m>
       <z-m>  0.130 </z-m>
       <heading-deg>180</heading-deg>
      </offsets>

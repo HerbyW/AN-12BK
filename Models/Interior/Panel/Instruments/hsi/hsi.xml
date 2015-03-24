@@ -203,6 +203,10 @@
     </axis>
     </animation>
     
+    
+    
+    <!-- autopilot/settings/heading-bug-deg -->
+    
     <animation>
         <type>rotate</type>
         <object-name>HSI.hdgbug</object-name>
@@ -213,6 +217,20 @@
             <z>0.0</z>
         </axis>
     </animation>
+    
+    <!-- new-->
+    <animation>
+        <type>rotate</type>
+        <object-name>HSI.hdgbug</object-name>
+        <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+        <axis>
+            <x>1.0</x>
+            <y>0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    
 
     <animation>
         <type>rotate</type>
@@ -224,6 +242,8 @@
             <z>0.0</z>
         </axis>
     </animation>
+    
+
 
     <animation>
         <type>translate</type>

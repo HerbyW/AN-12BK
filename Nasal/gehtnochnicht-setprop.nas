@@ -151,11 +151,11 @@ setlistener("controls/ALS/setting", func
 # SKAWK support
 
 var skawk_handler = func{
-  var digit_1 = getprop( "/instrumentation/transponder/inputs/digit[0]" );
-  var digit_2 = getprop( "/instrumentation/transponder/inputs/digit[1]" );
-  var digit_3 = getprop( "/instrumentation/transponder/inputs/digit[2]" );
-  var digit_4 = getprop( "/instrumentation/transponder/inputs/digit[3]" );
-  var mode_handle = getprop("/instrumentation/transponder/inputs/mode" );
+  var digit_1 = getprop( "instrumentation/transponder/inputs/handle-1" );
+  var digit_2 = getprop( "instrumentation/transponder/inputs/handle-2" );
+  var digit_3 = getprop( "instrumentation/transponder/inputs/handle-3" );
+  var digit_4 = getprop( "instrumentation/transponder/inputs/handle-4" );
+  var mode_handle = getprop("instrumentation/transponder/inputs/handle-5" );
   var mode = 1;
 
   if( mode_handle == 0 ) mode = 4;
@@ -163,12 +163,30 @@ var skawk_handler = func{
   if( mode_handle == 1 ) mode = 1;
   if( mode_handle == 3 ) mode = 3;
 
-  setprop("/instrumentation/transponder/inputs/knob-mode", mode );
-  setprop("/instrumentation/transponder/inputs/digit[3]", digit_1 );
-  setprop("/instrumentation/transponder/inputs/digit[2]", digit_2 );
-  setprop("/instrumentation/transponder/inputs/digit[1]", digit_3 );
-  setprop("/instrumentation/transponder/inputs/digit", digit_4 );
-};
+  setprop("instrumentation/transponder/inputs/knob-mode", mode );
+  setprop("instrumentation/transponder/inputs/digit[3]", digit_1 );
+  setprop("instrumentation/transponder/inputs/digit[2]", digit_2 );
+  setprop("instrumentation/transponder/inputs/digit[1]", digit_3 );
+  setprop("instrumentation/transponder/inputs/digit", digit_4 );
+}
+
+# Load defaults at startup
+var skawk_init = func{
+setprop( "instrumentation/transponder/inputs/handle-1", getprop( "instrumentation/transponder/inputs/digit[3]" ) );
+setprop( "instrumentation/transponder/inputs/handle-2", getprop( "instrumentation/transponder/inputs/digit[2]" ) );
+setprop( "instrumentation/transponder/inputs/handle-3", getprop( "instrumentation/transponder/inputs/digit[1]" ) );
+setprop( "instrumentation/transponder/inputs/handle-4", getprop( "instrumentation/transponder/inputs/digit" ) );
+setprop( "instrumentation/transponder/inputs/handle-5", 1 );
+setprop( "instrumentation/transponder/inputs/knob-mode", 1 );
+
+setlistener("instrumentation/transponder/inputs/handle-1", skawk_handler,0,0 );
+setlistener("instrumentation/transponder/inputs/handle-2", skawk_handler,0,0 );
+setlistener("instrumentation/transponder/inputs/handle-3", skawk_handler,0,0 );
+setlistener("instrumentation/transponder/inputs/handle-4", skawk_handler,0,0 );
+setlistener("instrumentation/transponder/inputs/handle-5", skawk_handler,0,0 );
+}
+
+if( getprop( "instrumentation/transponder/inputs/digit" ) != nil ) skawk_init();
 
 
 
