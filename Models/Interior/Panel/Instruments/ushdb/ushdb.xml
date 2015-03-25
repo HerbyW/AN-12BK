@@ -46,7 +46,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>/orientation/heading-deg</property>
+    <property>instrumentation/adf[0]/indicated-bearing-deg</property>
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -57,7 +57,7 @@
 <animation>
   <type>rotate</type>
   <object-name>needle_2</object-name>
-  <property>instrumentation/adf/indicated-bearing-deg</property>
+  <property>instrumentation/adf[1]/indicated-bearing-deg</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
