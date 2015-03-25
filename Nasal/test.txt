@@ -1,0 +1,70 @@
+
+KM-5 from TKS compass system
+
+Nadel zum Einstellen der Variation:
+
+needle
+instrumentation/magnetic-compass/pitch-offset-deg
+
+Index-Marker, der die Variation anzeigt:
+
+index
+environment/magnetic-variation-deg
+########################################################################
+Heading indicator USH Nur Anzeigen, keine Einstellmöglichkeiten
+
+instrumentation/adf/indicated-bearing-deg
+instrumentation/magnetic-compass/indicated-heading-deg
+
+needle_1
+needle_2
+fdm/jsbsim/instrumentation/ga3-corrected-1
+    
+index
+fdm/jsbsim/instrumentation/ga3-corrected-2
+  
+needle_2
+fdm/jsbsim/instrumentation/nvu/drift-angle
+  
+MK, GPK und AK lampen
+  
+  tu154/switches/pu-11-gpk  
+#########################################################################
+ADF/VOR indicator USHDB  Einstellen der Kompass Richtung
+
+compass
+tu154/instrumentation/ushdb/compass
+  
+needle_1
+tu154/instrumentation/ushdb/heading-deg-1
+    
+needle_2
+tu154/instrumentation/ushdb/heading-deg-2
+  
+  
+Knob zum Einstellen
+hs
+tu154/instrumentation/ushdb/compass
+#########################################################################
+ARK-15 (ADF) control gauge
+
+lamp_1
+<not>tu154/switches/adf-1-selector</not>
+instrumentation/adf[0]/serviceable
+   
+lamp_2
+tu154/switches/adf-1-selector
+instrumentation/adf[0]/serviceable
+    
+<!--operate/standby selector-->
+<animation>
+<type>rotate</type>
+handle
+tu154/switches/adf-1-selector
+  
+  
+tu154/instrumentation/ark-15[0]/digit-2-1 
+1-3 1-2 1-1 2-3 2-2 2-1
+  
+instrumentation/adf[0]/volume
+##########################################################################

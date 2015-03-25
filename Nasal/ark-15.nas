@@ -158,3 +158,43 @@ setlistener( "tu154/instrumentation/ark-15[1]/digit-2-1", ark_2_2_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[1]/digit-2-2", ark_2_2_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[1]/digit-2-3", ark_2_2_handler ,0,0);
 
+#
+# UShDB
+#
+
+var ushdb_mode_update = func(b) {
+    var sel = getprop("tu154/switches/ushdb-sel-"~b);
+    if (int(sel) != sel) # The switch is in transition.
+        return;
+    var bearing = 90;
+    var j = b - 1;
+    if (sel) {
+        if (getprop("instrumentation/nav["~j~"]/in-range")
+            and !getprop("instrumentation/nav["~j~"]/nav-loc"))
+            bearing =
+                "instrumentation/nav["~j~"]/radials/reciprocal-radial-deg";
+    } else {
+        if (getprop("instrumentation/adf["~j~"]/in-range"))
+            bearing = "instrumentation/adf["~j~"]/indicated-bearing-deg";
+    }
+
+    
+}
+
+var ushdb_mode1_update = func {
+    ushdb_mode_update(1);
+}
+
+var ushdb_mode2_update = func {
+    ushdb_mode_update(2);
+}
+
+setlistener("instrumentation/adf[0]/in-range", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/nav[0]/in-range", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/nav[0]/nav-loc", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/adf[1]/in-range", ushdb_mode2_update, 0, 0);
+setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
+setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
+setlistener("tu154/switches/ushdb-sel-1", ushdb_mode1_update, 1);
+setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 1);
+

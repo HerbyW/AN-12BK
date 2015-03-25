@@ -46,7 +46,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>tu154/instrumentation/ushdb/heading-deg-1</property>
+    <property>/orientation/heading-deg</property>
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -57,7 +57,7 @@
 <animation>
   <type>rotate</type>
   <object-name>needle_2</object-name>
-  <property>tu154/instrumentation/ushdb/heading-deg-2</property>
+  <property>instrumentation/adf/indicated-bearing-deg</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>

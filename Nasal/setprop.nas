@@ -150,11 +150,10 @@ setlistener("controls/ALS/setting", func
 
 # SKAWK support
 
-var skawk_handler = func{
-  var digit_1 = getprop( "/instrumentation/transponder/inputs/digit[0]" );
-  var digit_2 = getprop( "/instrumentation/transponder/inputs/digit[1]" );
-  var digit_3 = getprop( "/instrumentation/transponder/inputs/digit[2]" );
-  var digit_4 = getprop( "/instrumentation/transponder/inputs/digit[3]" );
+setlistener("instrumentation/transponder/inputs/mode", func
+
+{
+  
   var mode_handle = getprop("/instrumentation/transponder/inputs/mode" );
   var mode = 1;
 
@@ -164,12 +163,8 @@ var skawk_handler = func{
   if( mode_handle == 3 ) mode = 3;
 
   setprop("/instrumentation/transponder/inputs/knob-mode", mode );
-  setprop("/instrumentation/transponder/inputs/digit[3]", digit_1 );
-  setprop("/instrumentation/transponder/inputs/digit[2]", digit_2 );
-  setprop("/instrumentation/transponder/inputs/digit[1]", digit_3 );
-  setprop("/instrumentation/transponder/inputs/digit", digit_4 );
-};
-
+  
+});
 
 
 

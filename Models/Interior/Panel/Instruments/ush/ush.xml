@@ -38,23 +38,11 @@
     </emission>
 </animation>
 
-<!--Needles-->
-<animation>
-    <type>rotate</type>
-    <object-name>needle_1</object-name>
-    <object-name>needle_2</object-name>
-    <property>fdm/jsbsim/instrumentation/ga3-corrected-1</property>
-    <axis>
-      <x>-1.0</x>
-      <y>0.0</y>
-      <z>0.0</z>
-    </axis>
-</animation>
 
 <animation>
   <type>rotate</type>
-  <object-name>index</object-name>
-  <property>fdm/jsbsim/instrumentation/ga3-corrected-2</property>
+  <object-name>compass</object-name>
+  <property>/orientation/heading-deg</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -62,10 +50,26 @@
   </axis>
 </animation>
 
+
+
+<!--Needles
+<animation>
+    <type>rotate</type>
+    <object-name>needle_1</object-name>
+    <object-name>needle_2</object-name>
+    <property>instrumentation/adf/indicated-bearing-deg</property>
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>-->
+
+
 <animation>
   <type>rotate</type>
   <object-name>needle_2</object-name>
-  <property>fdm/jsbsim/instrumentation/nvu/drift-angle</property>
+  <property>instrumentation/adf/indicated-bearing-deg</property>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>

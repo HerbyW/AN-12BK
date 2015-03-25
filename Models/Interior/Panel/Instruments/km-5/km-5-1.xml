@@ -92,10 +92,7 @@
       <max>180.0</max>
       <wrap>false</wrap>
     </binding>
-    <binding>
-      <command>nasal</command>
-      <script>help.km();</script>
-    </binding>
+    
    </action>
    
     <hovered>
@@ -126,10 +123,7 @@
       <max>180.0</max>
       <wrap>false</wrap>
     </binding>
-    <binding>
-      <command>nasal</command>
-      <script>help.km();</script>
-    </binding>
+    
    </action>
    
     <hovered>
@@ -159,10 +153,7 @@
       <max>180.0</max>
       <wrap>false</wrap>
     </binding>
-    <binding>
-      <command>nasal</command>
-      <script>help.km();</script>
-    </binding>
+    
    </action>
    
     <hovered>
@@ -192,10 +183,7 @@
       <max>180.0</max>
       <wrap>false</wrap>
     </binding>
-    <binding>
-      <command>nasal</command>
-      <script>help.km();</script>
-    </binding>
+    
    </action>
    
     <hovered>
