@@ -293,12 +293,13 @@
   <mode>adf</mode>  
   <serviceable type="bool">true</serviceable>
   <frequencies>
-    <selected-khz type="int">442</selected-khz>  <!-- EDNY near the lake of constance -->
-    <standby-khz type="int">473</standby-khz>    <!-- EDSN ancient military airbase -->
+    <selected-khz type="int">0</selected-khz>  <!--442 EDNY near the lake of constance -->
+    <standby-khz type="int">0</standby-khz>    <!-- 473 EDSN ancient military airbase -->
   </frequencies>
   <error-deg type="double">0</error-deg>
   <power-btn type="bool">true</power-btn>
   <operable type="bool">true</operable>
+  <indicated-bearing-deg type="double">90</indicated-bearing-deg>
 </adf>
     
     
