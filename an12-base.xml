@@ -45,10 +45,15 @@
     <switches>
       <fuel type="float">0</fuel>
     </switches>
+    <chokes>
+      <activ type="int">0</activ>
+    </chokes>
  </controls>
  <gear><gear><position-norm type="float">1</position-norm></gear></gear>
  
  <tu154><switches><gauge-light type="int">0</gauge-light></switches></tu154>
+ 
+ <services></services>
  
   <sim include="Systems/views.xml">
 
@@ -101,7 +106,7 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        
+        <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
 	<int type="int" n="5" alias="/tu154/switches/gauge-light"/>
         <int type="int" n="6" alias="/smoke/active"> 0 </int>                           <!--  6 start smoke -->
