@@ -111,6 +111,17 @@
     </offsets>
   </model>
 
+    <!-- IKU-1 Heading Indicator VOR/ADF -->
+    
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/iku-1/iku-1.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> -0.41 </y-m>
+      <z-m> -0.125 </z-m>
+    </offsets>
+  </model>
+  
   <!-- EUP Turn Coordinator -->
   
   <model>

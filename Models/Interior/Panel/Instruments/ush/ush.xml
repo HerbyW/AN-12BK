@@ -38,11 +38,11 @@
     </emission>
 </animation>
 
-
 <animation>
   <type>rotate</type>
   <object-name>compass</object-name>
-  <property>/orientation/heading-deg</property>
+   <property>tu154/switches/gauge-light</property>   
+   <factor> 180 </factor>  
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -50,7 +50,16 @@
   </axis>
 </animation>
 
-
+<animation>
+  <type>rotate</type>
+  <object-name>compass</object-name>
+  <property>/orientation/heading-deg</property>  
+  <axis>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
 
 <!--Needles
 <animation>
