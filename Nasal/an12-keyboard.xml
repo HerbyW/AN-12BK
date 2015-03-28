@@ -40,5 +40,16 @@
     </binding>
   </key>
  
+ <key n="60">
+  <name> > </name>
+  <desc>Change Pilot Engineer View</desc>
+  <binding>
+    <command>property-cycle</command>
+      <property>sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>9</value>
+  </binding>
+</key>
+
   
 </PropertyList>
