@@ -80,6 +80,24 @@
     </offsets>
   </model>
   
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning16.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.503 </y-m>
+      <z-m>  0.203 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning17.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.46 </y-m>
+      <z-m>  0.203 </z-m>
+    </offsets>
+  </model>
+  
   <!-- AI, FDI Flight Director Indicator -->
   
   <model>
