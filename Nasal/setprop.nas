@@ -10,23 +10,7 @@ setlistener("/instrumentation/altimeter/setting-inhg", func(v)
     setprop("/instrumentation/altimeter/setting-inhgN", getprop("/instrumentation/altimeter/setting-inhg") + 0.005);
 });
 
-
-
-
-
-
-
-#
-#var timerPressure = maketimer(0.10, func
-#
-#{     
-#    setprop("/instrumentation/altimeter/mmhg", getprop("/instrumentation/altimeter/setting-inhg") * 25.39999);    
-#  }
-#);
-#
-# start the timer (with 0.10 second inverval)
-#timerPressure.start();
-
+#####################################################################################################################
 
 #UVPD Control
 # create timer with 0.1 second interval
@@ -40,6 +24,8 @@ var timerDiff = maketimer(0.1, func
 # start the timer (with 0.1 second inverval)
 timerDiff.start();
 
+######################################################################################################################
+
 #
 #Paratroopers
 #
@@ -50,6 +36,8 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
     interpolate("/controls/paratroopers/jump-signal-pos", 0, 0.25);
   }
 });
+
+######################################################################################################################
 
 #
 # Air and Groundspeed selector for USVP-Instrument
@@ -68,9 +56,12 @@ setlistener("/tu154/switches/usvp-selector-trans", func
   }
   );
  
+#####################################################################################################################
+
 #Lights
 setprop("tu154/switches/headlight-mode", 1);
 
+######################################################################################################################
 
 #
 #Fuel and Condition Control
@@ -147,6 +138,7 @@ setlistener("controls/ALS/setting", func
  }
 );
 
+#######################################################################################################
 
 # SKAWK support
 
@@ -166,8 +158,9 @@ setlistener("instrumentation/transponder/inputs/mode", func
   
 });
 
+########################################################################################################
 
-# Parking Chokes Control
+# Parking Chokes and Brake Control
 
 setlistener("controls/gear/brake-parking", func
 
@@ -187,7 +180,15 @@ setlistener("controls/gear/brake-parking", func
      }
     else
      {
-      setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed !");
+       if (getprop("/position/gear-agl-m") > 2)
+        {
+	 setprop("sim/messages/copilot", "We are in the air, Brakes have no sense...");
+	 setprop("/controls/gear/brake-parking", 0);
+        }
+       else
+        {
+	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed !");
+	}
      } 
 });  
 
@@ -206,7 +207,7 @@ setlistener("/controls/chokes/activ", func
 	}
 });
 
-
+#############################################################################################################
 # /engines/engine[0]/running
 # /controls/switches/fuel
 # /controls/engines/engine[0]/condition

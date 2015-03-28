@@ -24,32 +24,32 @@
 
   <!-- Section of instruments, needs more funktions-->
   
-  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes -->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning31.xml</path>
-    <offsets>
-      <x-m>  0.008 </x-m>
-      <y-m> -0.503 </y-m>
-      <z-m>  0.18 </z-m>
-    </offsets>
-  </model>
+  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning26.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.546 </y-m>
-      <z-m>  0.18 </z-m>
+      <y-m> -0.526 </y-m>
+      <z-m>  0.174 </z-m>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning31.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.483 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>  
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning85.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.46 </y-m>
-      <z-m>  0.18 </z-m>
+      <y-m> -0.44 </y-m>
+      <z-m>  0.174 </z-m>
     </offsets>
   </model>
   
@@ -57,8 +57,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning86.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.417 </y-m>
-      <z-m>  0.18 </z-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.174 </z-m>
     </offsets>
   </model>
   
@@ -66,8 +66,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning34.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.37 </y-m>
-      <z-m>  0.187 </z-m>
+      <y-m> -0.35 </y-m>
+      <z-m>  0.18 </z-m>
     </offsets>
   </model>
   
@@ -75,8 +75,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning87.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.417 </y-m>
-      <z-m>  0.203 </z-m>
+      <y-m> -0.397 </y-m>
+      <z-m>  0.197 </z-m>
     </offsets>
   </model>
   
@@ -84,8 +84,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning16.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.503 </y-m>
-      <z-m>  0.203 </z-m>
+      <y-m> -0.526 </y-m>
+      <z-m>  0.197 </z-m>
     </offsets>
   </model>
   
@@ -93,8 +93,26 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning17.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.46 </y-m>
-      <z-m>  0.203 </z-m>
+      <y-m> -0.483 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning25.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.44 </y-m>
+      <z-m>  0.197 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/volume/volume.xml</path>
+    <offsets>
+      <x-m>  0.0015 </x-m>
+      <y-m> -0.885 </y-m>
+      <z-m>  -0.175 </z-m>
     </offsets>
   </model>
   
