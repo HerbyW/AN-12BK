@@ -10,7 +10,7 @@
 <!--ADF/VOR indicator USHDB
 3D instrument for Tu-154 -->
 <PropertyList>
- <path>ushdb.ac</path>
+ <path>ushdb2.ac</path>
 <!-- Internal instruments lighting -->
 <animation>
   <type>material</type>
@@ -34,7 +34,6 @@
   <type>rotate</type>
   <object-name>compass</object-name>
   <property>tu154/instrumentation/ushdb/compass</property>
-  <value>0</value>
   <axis>
    <x>-1.0</x>
    <y>0.0</y>
@@ -48,12 +47,6 @@
     <type>rotate</type>
     <object-name>needle_1</object-name>
     <property>instrumentation/adf[0]/indicated-bearing-deg</property>
-     <condition>
-      <equals>
-       <property>tu154/switches/ushdb-sel-1</property>
-       <value>0</value>
-      </equals>
-     </condition>    
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -62,57 +55,15 @@
 </animation>
 
 <animation>
-    <type>rotate</type>
-    <object-name>needle_1</object-name>
-    <property>instrumentation/nav[0]/radials/reciprocal-radial-deg</property>
-     <condition>
-      <equals>
-       <property>tu154/switches/ushdb-sel-1</property>
-       <value>1</value>
-      </equals>
-     </condition>    
-    <axis>
-      <x>-1.0</x>
-      <y>0.0</y>
-      <z>0.0</z>
-    </axis>
+  <type>rotate</type>
+  <object-name>needle_2</object-name>
+  <property>instrumentation/adf[1]/indicated-bearing-deg</property>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
 </animation>
-
-<animation>
-    <type>rotate</type>
-    <object-name>needle_2</object-name>
-    <property>instrumentation/adf[1]/indicated-bearing-deg</property>
-     <condition>
-      <equals>
-       <property>tu154/switches/ushdb-sel-2</property>
-       <value>0</value>
-      </equals>
-     </condition>    
-    <axis>
-      <x>-1.0</x>
-      <y>0.0</y>
-      <z>0.0</z>
-    </axis>
-</animation>
-
-<animation>
-    <type>rotate</type>
-    <object-name>needle_2</object-name>
-    <property>instrumentation/nav[1]/radials/reciprocal-radial-deg</property>
-     <condition>
-      <equals>
-       <property>tu154/switches/ushdb-sel-2</property>
-       <value>1</value>
-      </equals>
-     </condition>    
-    <axis>
-      <x>-1.0</x>
-      <y>0.0</y>
-      <z>0.0</z>
-    </axis>
-</animation>
-
-
 <!-- Controls -->
 
 <animation>
@@ -132,5 +83,3 @@
 
 
 </PropertyList>
-
-

@@ -49,11 +49,21 @@
       <activ type="int">0</activ>
     </chokes>
  </controls>
+ 
  <gear><gear><position-norm type="float">1</position-norm></gear></gear>
  
- <tu154><switches><gauge-light type="int">0</gauge-light></switches></tu154>
- 
- <services></services>
+ <tu154>
+   <switches>
+     <gauge-light type="int">0</gauge-light>
+     <adf-1-selector type="double">0</adf-1-selector>
+     <adf-2-selector type="double">0</adf-2-selector>
+     <ushdb-sel-1 type="double">0</ushdb-sel-1>
+     <ushdb-sel-2 type="double">0</ushdb-sel-2>
+   </switches>
+   <instrumentation>
+     <ushdb><compass type="double">0</compass></ushdb>
+   </instrumentation>
+ </tu154>
  
   <sim include="Systems/views.xml">
 
@@ -82,7 +92,7 @@
       </livery>
     </model>
     
-    <instrumentation>
+  <instrumentation>
     <path>Aircraft/Antonov-An-12/Systems/instrumentation.xml</path>
   </instrumentation>
     
@@ -166,6 +176,7 @@
         <name>=</name>
         <desc>Parachutist</desc>
       </key>
+      
       <text>
 	Autostart: s
 	
@@ -233,7 +244,7 @@
 	Radios, DMEs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
 	
 	Have fun and get the latest version at:
-	www.github.com/herbyw/antonov-aircrafts
+	github.com/HerbyW/antonov-aircrafts
       </text>
     </help>
 
@@ -307,6 +318,23 @@
   <indicated-bearing-deg type="double">90</indicated-bearing-deg>
 </adf>
     
+<nav n="0">
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
+  </radials>
+</nav>
+
+<nav n="1">
+  <radials>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
+  </radials>
+</nav>
+    
+    
+    
+    
+    
+    
     
   </instrumentation>
 
@@ -324,9 +352,7 @@
       <file>Aircraft/Antonov-An-12/Nasal/autostart.nas</file>
     </an12>
     <instruments>
-      <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>
-      <file>Aircraft/Antonov-An-12/Nasal/kurs-mp.nas</file>
-      <file>Aircraft/Antonov-An-12/Nasal/ark-15.nas</file>
+      <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>      
     </instruments>
     <para>
       <file>Aircraft/Antonov-An-12/Nasal/paratroopers.nas</file>

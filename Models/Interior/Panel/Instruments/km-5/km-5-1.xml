@@ -126,15 +126,14 @@
     
    </action>
    
-    <hovered>
+  <hovered>
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>heading-bug</tooltip-id>      
       <label>Heading Bug: %5.2f</label>
       <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
     </binding>
-  </hovered>
-    
+  </hovered>   
   
 </animation>
 

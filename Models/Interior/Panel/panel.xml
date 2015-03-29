@@ -759,13 +759,13 @@
     </offsets>
   </model>
   
-  <!--USH, USHDB DME and VOR Navigation Compasses -->
+  <!--USH, USHDB ADF and VOR Navigation Compasses -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ushdb/ushdb.xml</path>
     <offsets>
       <x-m> 0.05</x-m>
-      <y-m> 0.17 </y-m>
+      <y-m> 0.10 </y-m>
       <z-m> -0.30 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
@@ -775,13 +775,101 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ushdb/ushdb_selector.xml</path>
     <offsets>
-      <x-m> 0.05</x-m>
-      <y-m> 0.06 </y-m>
-      <z-m> -0.30 </z-m>
+      <x-m> 0.104</x-m>
+      <y-m> 0.10 </y-m>
+      <z-m> -0.383 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>-38</pitch-deg>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
+    <offsets>
+      <x-m> 0.102</x-m>
+      <y-m> 0.063 </y-m>
+      <z-m> -0.416 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
+    <offsets>
+      <x-m> 0.102</x-m>
+      <y-m> 0.139 </y-m>
+      <z-m> -0.416 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav1.xml</path>
+    <offsets>
+      <x-m> 0.075</x-m>
+      <y-m> 0.063 </y-m>
+      <z-m> -0.377 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-nav2.xml</path>
+    <offsets>
+      <x-m> 0.075</x-m>
+      <y-m> 0.139 </y-m>
+      <z-m> -0.377</z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </model>
+  
+  <text>
+    <name>NAV_ADF</name>
+    <type type="string">literal</type>
+    
+    <text type="string">
+      1 NAV/VOR 2
+      
+      
+      
+      
+      1 ADF/ARK 2</text>
+    
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.008</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.09</max-height>
+    <max-width>0.07</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> 0.104</x-m>
+      <y-m> 0.088 </y-m>
+      <z-m> -0.383 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-38</pitch-deg>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>NAV_ADF</object-name>    
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ush/ush.xml</path>
@@ -911,6 +999,16 @@
   </model>
   
   <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf1.xml</path>
+    <offsets>
+      <x-m>  2.49 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> -0.0 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ark-15/ark-15-2.xml</path>
     <offsets>
       <x-m>  2.47 </x-m>
@@ -919,6 +1017,16 @@
       <heading-deg>180</heading-deg>
     </offsets>
   </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-adf2.xml</path>
+    <offsets>
+      <x-m>  2.49 </x-m>
+      <y-m>  0.6 </y-m>
+      <z-m> -0.145 </z-m>
+      <heading-deg>180</heading-deg>
+    </offsets>
+  </model> 
   
  
    <!-- Fuel Control Ingineer Panel: Knob (no function jet)

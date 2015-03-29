@@ -425,7 +425,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        instruments.tks_adj(1);
+        help.tks_adj(1);
       </script>
     </binding>
     <mod-up>
@@ -455,7 +455,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        instruments.tks_adj(0);
+        help.tks_adj(0);
       </script>
     </binding>
     <mod-up>
@@ -481,7 +481,7 @@
       <command>nasal</command>
       <script>
         interpolate("tu154/switches/pu-11-button", 1.0, 0.1 );
-        instruments.tks_corr();
+        help.tks_corr();
       </script>
     </binding>
     <mod-up>
