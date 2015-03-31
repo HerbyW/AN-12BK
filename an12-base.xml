@@ -65,6 +65,12 @@
    </instrumentation>
  </tu154>
  
+ <yak-40><instrumentation><iku>  
+    <heading-deg-1 type="double">90</heading-deg-1>
+    <heading-deg-2 type="double">90</heading-deg-2>
+</iku></instrumentation></yak-40> 
+
+ 
   <sim include="Systems/views.xml">
 
    <description>Antonov An 12 (YASim)</description>
@@ -330,13 +336,8 @@
   </radials>
 </nav>
     
-    
-    
-    
-    
-    
-    
-  </instrumentation>
+</instrumentation>
+
 
   <input>
     <keyboard include="Nasal/an12-keyboard.xml"/>

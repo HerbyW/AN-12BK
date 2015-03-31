@@ -8,160 +8,6 @@
 
 ######################################################################
 
-
-#
-# UShDB
-#
-#
-# Utility classes and functions.
-#
-
-# Before anything else change random seed.
-srand();
-
-
-# Chase() works like interpolate(), but tracks value changes, supports
-# wraparound, and allows cancellation.
-var Chase = {
-    _active: {},
-    deactivate: func(src) {
-        var m = Chase._active[src];
-        if (m != nil)
-            m.del();
-    },
-    new: func(src, dst, delay, wrap=nil) {
-        var m = {
-            parents: [Chase],
-            src: src,
-            dst: dst,
-            left: delay,
-            wrap: wrap,
-            ts: systime()
-        };
-        Chase.deactivate(src);
-        Chase._active[src] = m;
-        m.t = maketimer(0, m, Chase._update);
-        m.t.start();
-        return m;
-    },
-    active: func {
-        return (Chase._active[me.src] == me);
-    },
-    del: func {
-        Chase._active[me.src] = nil;
-        me.t.stop();
-    },
-    _update: func {
-        var ts = systime();
-        var passed = ts - me.ts;
-        var dv = (num(me.dst) == nil ? getprop(me.dst) : me.dst);
-        if (me.left > passed) {
-            var sv = getprop(me.src);
-            if (dv == nil)
-                dv = sv;
-            var delta = dv - sv;
-            var w = (me.wrap != nil
-                     and abs(delta) > (me.wrap[1] - me.wrap[0]) / 2.0);
-            if (w) {
-                if (sv < dv)
-                    delta -= me.wrap[1] - me.wrap[0];
-                else
-                    delta += me.wrap[1] - me.wrap[0];
-            }
-            var nsv = sv + delta * passed / me.left;
-            if (w) {
-                if (sv < dv)
-                    nsv += (nsv < me.wrap[0] ? me.wrap[1] : 0);
-                else
-                    nsv -= (nsv >= me.wrap[1] ? me.wrap[1] : 0);
-            }
-            setprop(me.src, nsv);
-            me.ts = ts;
-            me.left -= passed;
-        } else {
-            setprop(me.src, dv);
-            me.t.stop();
-        }
-    }
-};
-
-# Smooth property re-aliasing.
-var realias = func(src, dst, delay, wrap=nil) {
-    if (src == dst)
-        return;
-
-    var obj = props.globals.getNode(src, 1);
-    var v = getprop(src);
-    obj.unalias();
-    if (v != nil and delay > 0) {
-        setprop(src, v);
-        var c = Chase.new(src, dst, delay, wrap);
-        settimer(func {
-            if (c.active()) {
-                c.del();
-                if (num(dst) == nil)
-                    obj.alias(dst);
-                else
-                    setprop(src, dst);
-            }
-        }, delay);
-    } else {
-        Chase.deactivate(src);
-        if (num(dst) == nil)
-            obj.alias(dst);
-        else
-            setprop(src, dst);
-    }
-}
-
-
-
-
-
-
-var ushdb_mode_update = func(b) {
-    var sel = getprop("tu154/switches/ushdb-sel-"~b);
-    if (int(sel) != sel) # The switch is in transition.
-        return;
-    var bearing = 90;
-    var j = b - 1;
-    if (sel) {
-        if (getprop("instrumentation/nav["~j~"]/in-range"))
-            bearing = "instrumentation/nav["~j~"]/radials/reciprocal-radial-deg";
-
-    } else {
-        if (getprop("instrumentation/adf["~j~"]/in-range"))
-            bearing = "instrumentation/adf["~j~"]/indicated-bearing-deg";
-
-    }
-
-    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.5, [0, 360]);
-    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.5, [0, 360]);
-}
-
-
-var ushdb_mode1_update = func {
-    ushdb_mode_update(1);
-}
-
-var ushdb_mode2_update = func {
-    ushdb_mode_update(2);
-}
-
-setlistener("instrumentation/adf[0]/in-range", ushdb_mode1_update, 0, 0);
-setlistener("instrumentation/nav[0]/in-range", ushdb_mode1_update, 0, 0);
-setlistener("instrumentation/nav[0]/nav-loc", ushdb_mode1_update, 0, 0);
-setlistener("instrumentation/adf[1]/in-range", ushdb_mode2_update, 0, 0);
-setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
-setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
-setlistener("tu154/switches/ushdb-sel-1", ushdb_mode1_update, 1);
-setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 1);
-
-
-
-
-
-
 # ************************* TKS staff ***********************************
 
 # TKS power support
@@ -565,4 +411,53 @@ setlistener( "tu154/instrumentation/ark-15[1]/digit-1-3", ark_2_1_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[1]/digit-2-1", ark_2_2_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[1]/digit-2-2", ark_2_2_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[1]/digit-2-3", ark_2_2_handler ,0,0);
+
+#
+# UShDB
+#
+
+var ushdb_mode_update = func(b) {
+    var sel = getprop("tu154/switches/ushdb-sel-"~b);
+    if (int(sel) != sel) # The switch is in transition.
+        return;
+    var bearing = 90;
+    var j = b - 1;
+    if (sel) {
+        if (getprop("instrumentation/nav["~j~"]/in-range")
+            and !getprop("instrumentation/nav["~j~"]/nav-loc"))
+            bearing =
+                "instrumentation/nav["~j~"]/radials/reciprocal-radial-deg";
+	else
+	{
+	   setprop("instrumentation/nav["~j~"]/radials/reciprocal-radial-deg", 90);
+	}
+
+    } else {
+        if (getprop("instrumentation/adf["~j~"]/in-range"))
+            bearing = "instrumentation/adf["~j~"]/indicated-bearing-deg";
+	else
+	{
+	   setprop("instrumentation/adf["~j~"]/indicated-bearing-deg", 90);
+	}
+    }
+
+    
+}
+
+var ushdb_mode1_update = func {
+    ushdb_mode_update(1);
+}
+
+var ushdb_mode2_update = func {
+    ushdb_mode_update(2);
+}
+
+setlistener("instrumentation/adf[0]/in-range", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/nav[0]/in-range", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/nav[0]/nav-loc", ushdb_mode1_update, 0, 0);
+setlistener("instrumentation/adf[1]/in-range", ushdb_mode2_update, 0, 0);
+setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
+setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
+setlistener("tu154/switches/ushdb-sel-1", ushdb_mode1_update, 0 , 0);
+setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 0 , 0);
 

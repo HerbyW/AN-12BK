@@ -118,7 +118,7 @@ The only reason it's here is to specify a second ADF.
         <name>mk-viii</name>
         <number>0</number>
     </mk-viii> 
-
+    
     <marker-beacon>
         <name>marker-beacon</name>
         <number>0</number>

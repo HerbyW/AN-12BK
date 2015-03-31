@@ -43,12 +43,12 @@
   </axis>
 </animation>
 
-
 <!--Needles-->
 <animation>
-    <type>rotate</type>
-    <object-name>white_needle</object-name>
-    <property>instrumentation/adf[1]/indicated-bearing-deg</property>
+  <type>rotate</type>
+  <object-name>white_needle</object-name>
+  <property>yak-40/instrumentation/iku/heading-deg-2</property>
+     
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -59,7 +59,8 @@
 <animation>
   <type>rotate</type>
   <object-name>yellow_needle</object-name>
-  <property>instrumentation/adf[0]/indicated-bearing-deg</property>
+  <property>yak-40/instrumentation/iku/heading-deg-1</property>
+     
   <axis>
     <x>-1.0</x>
     <y>0.0</y>

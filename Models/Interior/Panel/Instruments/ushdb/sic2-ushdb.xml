@@ -47,8 +47,13 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>tu154/instrumentation/ushdb/heading-deg-1</property>
-     
+    <property>instrumentation/adf[0]/indicated-bearing-deg</property>
+     <condition>
+      <equals>
+       <property>tu154/switches/ushdb-sel-1</property>
+       <value>0</value>
+      </equals>
+     </condition>    
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -56,13 +61,33 @@
     </axis>
 </animation>
 
-
+<animation>
+    <type>rotate</type>
+    <object-name>needle_1</object-name>
+    <property>instrumentation/nav[0]/radials/reciprocal-radial-deg</property>
+     <condition>
+      <equals>
+       <property>tu154/switches/ushdb-sel-1</property>
+       <value>1</value>
+      </equals>
+     </condition>    
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
 
 <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>tu154/instrumentation/ushdb/heading-deg-2</property>
-       
+    <property>instrumentation/adf[1]/indicated-bearing-deg</property>
+     <condition>
+      <equals>
+       <property>tu154/switches/ushdb-sel-2</property>
+       <value>0</value>
+      </equals>
+     </condition>    
     <axis>
       <x>-1.0</x>
       <y>0.0</y>
@@ -70,7 +95,22 @@
     </axis>
 </animation>
 
-
+<animation>
+    <type>rotate</type>
+    <object-name>needle_2</object-name>
+    <property>instrumentation/nav[1]/radials/reciprocal-radial-deg</property>
+     <condition>
+      <equals>
+       <property>tu154/switches/ushdb-sel-2</property>
+       <value>1</value>
+      </equals>
+     </condition>    
+    <axis>
+      <x>-1.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </axis>
+</animation>
 
 
 <!-- Controls -->

@@ -126,7 +126,8 @@ var ushdb_mode_update = func(b) {
     var bearing = 90;
     var j = b - 1;
     if (sel) {
-        if (getprop("instrumentation/nav["~j~"]/in-range"))
+        if (getprop("instrumentation/nav["~j~"]/in-range")
+            and !getprop("instrumentation/nav["~j~"]/nav-loc"))
             bearing = "instrumentation/nav["~j~"]/radials/reciprocal-radial-deg";
 
     } else {
