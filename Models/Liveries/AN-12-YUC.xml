@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">AN-12 YUC</name>
+            <texture>Liveries/AN-12-YUC.png</texture>
+        </livery>
+    </model>    
+</sim>
+</PropertyList>

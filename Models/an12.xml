@@ -184,6 +184,10 @@
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
     
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>AN-12.png</texture>
+    
     <emission>
       <factor-prop>sim/time/sun-angle-rad</factor-prop>
       <red>   0.1 </red>
@@ -193,7 +197,7 @@
   </animation>
 
   <effect>
-    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <inherits-from>Aircraft/Antonov-An-12/Models/Effects/skin-reflect</inherits-from>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -1660,57 +1664,4 @@
         </emission>        
     </animation>
 
-    <!-- Chokes -->
-
-<model>
-	<name>choke_nose</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_nose.xml</path>
-	<condition>
-		<equals>
-			<property>sim/multiplay/generic/int[3]</property>
-			<value>1</value>
-		</equals>
-	</condition>
-	<offsets>
-	 <x-m> 0.47 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -1.1 </z-m>
-	</offsets>
-	
-</model>
-
-<model>
-	<name>choke_left</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_left.xml</path>
-	<condition>
-		<equals>
-			<property>sim/multiplay/generic/int[3]</property>
-			<value>1</value>
-		</equals>
-	</condition>
-	<offsets>
-	 <x-m> -6.02 </x-m>
-         <y-m> 0.9 </y-m>
-         <z-m> -1.19 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>choke_right</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_right.xml</path>
-	<condition>
-		<equals>
-			<property>sim/multiplay/generic/int[3]</property>
-			<value>1</value>
-		</equals>
-	</condition>
-	<offsets>
-	 <x-m> -6.02 </x-m>
-         <y-m> -0.9 </y-m>
-         <z-m> -1.19 </z-m>
-	</offsets>
-</model>
-
-    
-    
 </PropertyList>

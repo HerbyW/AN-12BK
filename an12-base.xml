@@ -93,8 +93,8 @@
     <model>
       <path>Aircraft/Antonov-An-12/Models/an12.xml</path>
       <livery>
-        <file type="string">default</file>
-	<!--livery from: eagel 03/2015 -->
+        <file type="string">an12</file>
+	<!--liveries from: eagel 03/2015 -->
       </livery>
     </model>
     
@@ -248,6 +248,8 @@
 	Maximal start weight is: 134481 lb = 61.000 kg. There is a warning light for overload on top of the compasses (sign: BEC).
 	
 	Radios, DMEs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
+	
+	Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
 	
 	Have fun and get the latest version at:
 	github.com/HerbyW/antonov-aircrafts

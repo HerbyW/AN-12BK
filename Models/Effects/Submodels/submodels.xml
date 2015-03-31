@@ -25,7 +25,7 @@
     <pitch-offset> 0 </pitch-offset>
     <cd> 5 </cd>
     <eda> 100 </eda>
-    <weight> 200 </weight>
+    <weight> 120 </weight>
     <wind> true </wind>
     <buoyancy> -150 </buoyancy>
     <life> 600 </life>

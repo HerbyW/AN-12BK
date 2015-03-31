@@ -65,7 +65,7 @@
     <engine>
        <name>engine0</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
          <property>/engines/engine[0]/running</property>         
         </condition>  
@@ -81,15 +81,15 @@
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
          <property>/engines/engine[1]/running</property>         
         </condition>  
@@ -105,15 +105,15 @@
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
          <property>/engines/engine[2]/running</property>         
         </condition>  
@@ -129,15 +129,15 @@
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine3</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
          <property>/engines/engine[3]/running</property>         
         </condition>  
@@ -153,8 +153,8 @@
         <min>0.0</min>
         <max>0.75</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
@@ -163,7 +163,7 @@
     <rumble>
       <name>rumble1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/rumble.wav</path>
+      <path>Aircraft/Antonov-An-12/Sounds/24roll.wav</path>
       <condition>
           <property>/gear/gear[0]/wow</property>
       </condition>
@@ -174,14 +174,14 @@
 	<min>0.0</min>
         <max>1.0</max>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
     
     <rumble>
       <name>rumble2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/rumble.wav</path>
+      <path>Aircraft/Antonov-An-12/Sounds/24roll.wav</path>
       <condition>
         <or>          
           <property>/gear/gear[1]/wow</property>
@@ -195,8 +195,8 @@
 	<min>0.0</min>
         <max>1.0</max>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <!-- Gear in and out -->
@@ -335,27 +335,6 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </stall>
-  
-  <!-- Decision Height Warning -->
- 
-    <decision>
-      <name>decision</name>
-      <mode>once</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/omi_1.wav</path>
-      <condition>
-    <less-than>
-      <property>position/altitude-agl-ft</property>
-      <property>instrumentation/altimeter/decision-height</property>      
-    </less-than>
-  </condition>
-      <volume>
-	<min>1.0</min>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </decision>
-  
   
   <!-- Doors -->
   
