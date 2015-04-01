@@ -38,6 +38,10 @@
    <z-m>-5.25</z-m>
   </offsets>
  </model>
+ 
+ <sound>
+       <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
+ </sound> 
   
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
 <!--Working For ANY GLASS AND Rembrandt-->

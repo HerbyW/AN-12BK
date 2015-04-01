@@ -254,12 +254,20 @@
              </turbine-engine>
   </propeller>
 
-  <!-- Nose wheel -->
+  <!-- Nose wheel 
+  
+   sfric: Static (non-skidding) coefficient of friction. Defaults to 0.8. set to 1.6 to avoid turning with brakes on
+   dfric: Dynamic friction. Defaults to 0.7.
+  
+  
+  -->
   <gear x="11.51110" y="0" z="-5.26151"
         retract-time="7"
         compression="0.25"        
         spring="0.78"
-        damp="1.35">
+        damp="1.35"
+        sfric="1.6"
+        dfric="0.7">
 		<!-- <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-1.75" dst1="1.75"/> -->
         <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -275,7 +283,9 @@
         retract-time="7"
         compression="0.25"        
         spring="0.85"
-        damp="1.10">
+        damp="1.10"
+        sfric="1.6"
+        dfric="0.7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -290,7 +300,9 @@
         retract-time="7"
         compression="0.25"        
         spring="0.85"
-        damp="1.10">
+        damp="1.10"
+        sfric="1.6"
+        dfric="0.7">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -305,7 +317,9 @@
         retract-time="7"
         compression="0.25"        
         spring="0.85"
-        damp="1.10">
+        damp="1.10"
+        sfric="1.6"
+        dfric="0.7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -320,7 +334,9 @@
         retract-time="7"
         compression="0.25"        
         spring="0.85"
-        damp="1.10">
+        damp="1.10"
+        sfric="1.6"
+        dfric="0.7">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>

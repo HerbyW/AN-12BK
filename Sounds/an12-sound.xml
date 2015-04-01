@@ -9,7 +9,7 @@
       <name>engstart1</name>
       <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
        <condition>       
-         <property>/engines/engine[0]/running</property>         
+         <property>sim/multiplay/generic/int[12]</property>         
         </condition>      
       <volume>
         <offset>-0.3</offset>
@@ -22,7 +22,7 @@
       <name>engstart2</name>
       <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
        <condition>       
-         <property>/engines/engine[1]/running</property>         
+         <property>sim/multiplay/generic/int[13]</property>         
         </condition>      
       <volume>
         <offset>-0.3</offset>
@@ -36,7 +36,7 @@
       <name>engstart3</name>
       <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
        <condition>       
-         <property>/engines/engine[2]/running</property>         
+         <property>sim/multiplay/generic/int[14]</property>         
         </condition>      
       <volume>
         <offset>-0.3</offset>
@@ -50,7 +50,7 @@
       <name>engstart4</name>
       <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
        <condition>       
-         <property>/engines/engine[3]/running</property>         
+         <property>sim/multiplay/generic/int[15]</property>         
         </condition>      
       <volume>
         <offset>-0.3</offset>
@@ -67,7 +67,7 @@
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
-         <property>/engines/engine[0]/running</property>         
+         <property>sim/multiplay/generic/int[12]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
@@ -91,7 +91,7 @@
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
-         <property>/engines/engine[1]/running</property>         
+         <property>sim/multiplay/generic/int[13]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[1]/rpm</property>
@@ -115,7 +115,7 @@
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
-         <property>/engines/engine[2]/running</property>         
+         <property>sim/multiplay/generic/int[14]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[2]/rpm</property>
@@ -139,7 +139,7 @@
       <mode>looped</mode>
       <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
         <condition>       
-         <property>/engines/engine[3]/running</property>         
+         <property>sim/multiplay/generic/int[15]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[3]/rpm</property>
@@ -335,6 +335,26 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </stall>
+    
+    <!-- Decision Height Warning -->
+- 
+-    <decision>
+-      <name>decision</name>
+-      <mode>once</mode>
+-      <path>Aircraft/Antonov-An-12/Sounds/omi_1.wav</path>
+-      <condition>
+-    <less-than>
+-      <property>position/altitude-agl-ft</property>
+-      <property>instrumentation/altimeter/decision-height</property>      
+-    </less-than>
+-  </condition>
+-      <volume>
+-	<min>1.0</min>
+-        <max>1.0</max>
+-      </volume>
+-      <reference-dist>10</reference-dist>
+-      <max-dist>100</max-dist>
+-    </decision>
   
   <!-- Doors -->
   

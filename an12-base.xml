@@ -96,7 +96,12 @@
         <file type="string">an12</file>
 	<!--liveries from: eagel 03/2015 -->
       </livery>
+            
     </model>
+    
+  <sound>
+       <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
+  </sound>  
     
   <instrumentation>
     <path>Aircraft/Antonov-An-12/Systems/instrumentation.xml</path>
@@ -115,13 +120,12 @@
     </submodels>
 -->
 
-    <sound>
-      <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
-    </sound>
+    
 
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
+        
         <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
         <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
 	<int type="int" n="5" alias="/tu154/switches/gauge-light"/>
@@ -131,6 +135,11 @@
 	<int type="int" n="9" alias="/controls/lighting/landing-lights"/>
 	<int type="int" n="10" alias="/controls/lighting/taxi-lights"/>
         <int type="int" n="11" alias="/controls/armament/trigger">0</int> <!-- 10 reserved for bombable mode -->
+	<int type="int" n="12" alias="/engines/engine[0]/running">  0 </int>
+	<int type="int" n="13" alias="/engines/engine[1]/running">  0 </int>
+	<int type="int" n="14" alias="/engines/engine[2]/running">  0 </int>
+	<int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
+	
 	
         <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
@@ -140,15 +149,17 @@
         <float n="5" alias="/engines/engine[1]/n2" />
         <float n="6" alias="/engines/engine[2]/n2" />
         <float n="7" alias="/engines/engine[3]/n2" />
+        
         <float n="8" alias="/controls/engines/engine[0]/throttle" />
         <float n="9" alias="/controls/engines/engine[1]/throttle" />
         <float n="10" alias="/controls/engines/engine[2]/throttle" />
         <float n="11" alias="/controls/engines/engine[3]/throttle" />
+        
         <float n="12" alias="/sim/model/door-positions/baie/position-norm"/>
         <float n="13" alias="/gear/gear[2]/rollspeed-ms" />
         <float n="14" alias="/orientation/pitch-deg"/>
         <float n="15" alias="/orientation/roll-deg"/>
-        <float n="16" alias="/controls/engines/engine[0]/throttle" />
+        
 
          <string  alias="/sim/multiplay/callsign"/>
          <string n="9" type="string"/>                              <!-- string[9] reserved for bombable mode -->     
