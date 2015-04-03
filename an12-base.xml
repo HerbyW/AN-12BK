@@ -346,12 +346,14 @@
 </adf>
     
 <nav n="0">
+  <volume type="double">0.20</volume>
   <radials>
-    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
+    <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
   </radials>
 </nav>
 
 <nav n="1">
+  <volume type="double">0.20</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
   </radials>

@@ -160,6 +160,8 @@ setlistener("instrumentation/nav[0]/nav-loc", ushdb_mode1_update, 0, 0);
 setlistener("instrumentation/adf[1]/in-range", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
+setlistener("instrumentation/nav[0]/radials/reciprocal-radial-deg", ushdb_mode1_update, 1);
+setlistener("instrumentation/nav[1]/radials/reciprocal-radial-deg", ushdb_mode2_update, 1);
 setlistener("tu154/switches/ushdb-sel-1", ushdb_mode1_update, 1);
 setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 1);
 
