@@ -1563,7 +1563,7 @@
       <x-m> 115.95 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -3.5 </z-m>
-   <pitch-deg>0.1</pitch-deg>
+   <pitch-deg>0.02</pitch-deg>
   </offsets>
  </model>
  
@@ -1574,7 +1574,7 @@
       <x-m> 3.95 </x-m>
       <y-m>  0.0 </y-m>
       <z-m>  -3.6 </z-m>
-   <pitch-deg>0.1</pitch-deg>
+   <pitch-deg>0.02</pitch-deg>
   </offsets>
  </model>
   

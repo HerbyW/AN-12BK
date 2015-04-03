@@ -12,7 +12,7 @@
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>      
       <volume>
-        <offset>-0.3</offset>
+        <offset>-0.4</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -25,7 +25,7 @@
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>      
       <volume>
-        <offset>-0.3</offset>
+        <offset>-0.4</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -39,7 +39,7 @@
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>      
       <volume>
-        <offset>-0.3</offset>
+        <offset>-0.4</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -53,7 +53,7 @@
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>      
       <volume>
-        <offset>-0.3</offset>
+        <offset>-0.4</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -73,7 +73,7 @@
         <property>/engines/engine[0]/rpm</property>
         <factor>0.0006</factor>
         <min>0.03</min>
-        <max>0.45</max>        
+        <max>0.55</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -97,7 +97,7 @@
         <property>/engines/engine[1]/rpm</property>
         <factor>0.0006</factor>
         <min>0.03</min>
-        <max>0.45</max>        
+        <max>0.55</max>        
       </volume>
       <pitch>
         <property>/engines/engine[1]/rpm</property>
@@ -121,7 +121,7 @@
         <property>/engines/engine[2]/rpm</property>
         <factor>0.0006</factor>
         <min>0.03</min>
-        <max>0.45</max>        
+        <max>0.55</max>        
       </volume>
       <pitch>
         <property>/engines/engine[2]/rpm</property>
@@ -145,7 +145,7 @@
         <property>/engines/engine[3]/rpm</property>
         <factor>0.0006</factor>
         <min>0.03</min>
-        <max>0.45</max>        
+        <max>0.55</max>        
       </volume>
       <pitch>
         <property>/engines/engine[3]/rpm</property>
@@ -172,7 +172,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>1.0</max>
+        <max>0.85</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -193,7 +193,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>1.0</max>
+        <max>0.85</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -206,8 +206,8 @@
       <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -219,8 +219,8 @@
          <value>0.96</value>
        </greater-than>
      </condition>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <!-- Touchdown -->
@@ -250,8 +250,8 @@
 	<min>0.9</min>
         <max>1.0</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
     
     <squeal>
@@ -279,8 +279,8 @@
 	<min>0.9</min>
         <max>1.0</max>
       </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
  
  <!-- Flaps -->
@@ -293,8 +293,8 @@
       <volume>
         <factor>0.35</factor>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
     
 
@@ -316,8 +316,8 @@
 	<min>1.0</min>
         <max>1.0</max>
       </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
     </speedwarn>
 
     
@@ -377,8 +377,8 @@
       <volume>
         <factor>0.11</factor>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </door>
     
     <door>
@@ -393,8 +393,8 @@
       <volume>
         <factor>0.35</factor>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </door>
 
     <door>
@@ -416,8 +416,8 @@
       <volume>
         <factor>0.12</factor>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </door>
     
     <door>
@@ -432,8 +432,8 @@
       <volume>
         <factor>0.35</factor>
       </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </door>
 
         <!-- Wind -->
