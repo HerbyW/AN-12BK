@@ -214,6 +214,12 @@
       <property-base>sim/model/livery</property-base>
       <texture-prop>Propeller-Texture</texture-prop>
       <texture>prop.png</texture>
+      <emission>
+      
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
   </animation>
   
   
