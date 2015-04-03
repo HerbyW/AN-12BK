@@ -164,6 +164,8 @@ setlistener("instrumentation/transponder/inputs/mode", func
 
 setlistener("controls/gear/brake-parking", func
 
+{ if (getprop("/sim/replay/replay-state") == 0)
+
 {
    if (getprop("/controls/gear/brake-parking") == 0)
     {
@@ -190,9 +192,11 @@ setlistener("controls/gear/brake-parking", func
 	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed !");
 	}
      } 
-});  
+}});  
 
 setlistener("/controls/chokes/activ", func
+
+{ if (getprop("/sim/replay/replay-state") == 0)
 {
    if (getprop("/controls/chokes/activ") == 1)
    if (getprop("/controls/gear/brake-parking") == 0)
@@ -205,7 +209,7 @@ setlistener("/controls/chokes/activ", func
         {
 	  setprop("sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day !");
 	}
-});
+}});
 
 #############################################################################################################
 # /engines/engine[0]/running
