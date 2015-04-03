@@ -5,7 +5,7 @@
     <model>
         <livery>
             <name type="string">AN-12 UR-CZZ-blue</name>
-            <texture>Liveries/AN-12-UR-CZZ.png</texture>
+            <texture>Liveries/AN-12-UR-CZZ.png</texture>	    
         </livery>
     </model>    
 </sim>

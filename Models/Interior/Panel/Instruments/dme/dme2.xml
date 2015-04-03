@@ -88,6 +88,7 @@
     <z>0.0</z>
   </axis>
 </animation>
+
 <animation>
   <type>rotate</type>
   <object-name>dig_f_low</object-name>
@@ -121,6 +122,7 @@
     </binding>
   </action>
 </animation>
+
 <animation>
   <type>knob</type>
   <object-name>c2</object-name>
@@ -158,6 +160,7 @@
     <z>0</z>
   </axis>
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hs_1</object-name>
@@ -173,6 +176,7 @@
     </binding>
   </action>
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hs_2</object-name>
@@ -209,6 +213,7 @@
     <z>0</z>
   </axis>
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hs_3</object-name>
@@ -224,6 +229,7 @@
     </binding>
   </action>
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hs_4</object-name>

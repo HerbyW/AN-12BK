@@ -12,11 +12,11 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <x-offset-m archive="y">   0.52884 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  -1.59504 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -13.25107 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">   0.70 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.65 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.18 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 85 </default-field-of-view-deg>
+      <default-field-of-view-deg type="double"> 90 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -31,8 +31,8 @@
       <x-offset-m archive="y">   0.790 </x-offset-m> <!-- Right -->
       <y-offset-m archive="y">  -1.950 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> -12.060 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 105 </default-field-of-view-deg>
+      <pitch-offset-deg> -2 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 80 </default-field-of-view-deg>
       <heading-offset-deg type="double">180 </heading-offset-deg>
     </config>
   </view>
@@ -106,11 +106,11 @@
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y">  -0.45 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  -1.60 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -13.25 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">  -0.70 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  -1.65 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.18 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 85 </default-field-of-view-deg>
+      <default-field-of-view-deg type="double"> 90 </default-field-of-view-deg>
     </config>
   </view>
 

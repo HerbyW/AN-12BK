@@ -241,7 +241,7 @@
 	
 	Pushback car is now there. Do not use the brakes to stop backwards driving, use the pushback control please.
 	
-	Trails are now working only above 6000 ft, on ground it is not realistic.
+	Trails are now working only above 14000 ft, on ground it is not realistic.
 	
 	There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
 	the upper one is in meter and mmHG, the lower one in ft and inHG,
@@ -295,13 +295,21 @@
   </engines>
   
   <instrumentation>
-    <dme>
+    <dme n="0">
         <frequencies>
             <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
         </frequencies>
         <switch-position n="0" type="int">0</switch-position>
         <switch-position n="1" type="int">0</switch-position>
     </dme>
+    <dme n="1">
+        <frequencies>
+            <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+        </frequencies>
+        <switch-position n="0" type="int">0</switch-position>
+        <switch-position n="1" type="int">0</switch-position>
+    </dme>
+    
     <inst-vertical-speed-indicator>
         <serviceable type="bool">1</serviceable>
     </inst-vertical-speed-indicator>

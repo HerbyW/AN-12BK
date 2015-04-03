@@ -124,10 +124,16 @@ var ushdb_mode_update = func(b) {
     if (int(sel) != sel) # The switch is in transition.
         return;
     var bearing = 90;
+    
+    var bearing1 = 0;
+    var bearing2 = 0;
+    
     var j = b - 1;
     if (sel) {
         if (getprop("instrumentation/nav["~j~"]/in-range"))
-            bearing = "instrumentation/nav["~j~"]/radials/reciprocal-radial-deg";
+            var bearing1 = getprop("instrumentation/nav["~j~"]/radials/reciprocal-radial-deg");
+	    var bearing2 = getprop("orientation/heading-deg");
+	    bearing = bearing1 - bearing2;
 
     } else {
         if (getprop("instrumentation/adf["~j~"]/in-range"))

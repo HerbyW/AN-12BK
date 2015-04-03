@@ -170,7 +170,7 @@
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.35</factor>
+        <factor>0.25</factor>
 	<min>0.0</min>
         <max>1.0</max>
       </volume>
@@ -191,7 +191,7 @@
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.35</factor>
+        <factor>0.25</factor>
 	<min>0.0</min>
         <max>1.0</max>
       </volume>
