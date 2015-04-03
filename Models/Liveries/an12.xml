@@ -8,7 +8,7 @@
       <livery>
         <name type="string">Default</name>
         <texture>texture.png</texture>
-      
+        <Propeller-Texture>Liveries/prop.png</Propeller-Texture>
       </livery>
     </model>
 

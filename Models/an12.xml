@@ -200,6 +200,26 @@
     </emission>
   </animation>
 
+  
+  <animation>
+    <type>material</type>    
+    <object-name>propblurGE</object-name>
+    <object-name>propdiscGE</object-name>
+    <object-name>propblurGI</object-name>
+    <object-name>propdiscGI</object-name>
+    <object-name>propblurDI</object-name>
+    <object-name>propdiscDI</object-name>
+    <object-name>propblurDE</object-name>
+    <object-name>propdiscDE</object-name>  
+      <property-base>sim/model/livery</property-base>
+      <texture-prop>Propeller-Texture</texture-prop>
+      <texture>prop.png</texture>
+  </animation>
+  
+  
+  
+  
+  
   <effect>
     <inherits-from>Aircraft/Antonov-An-12/Models/Effects/skin-reflect</inherits-from>
     <condition>

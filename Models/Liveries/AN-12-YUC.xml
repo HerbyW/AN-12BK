@@ -6,6 +6,7 @@
         <livery>
             <name type="string">AN-12 YUC</name>
             <texture>Liveries/AN-12-YUC.png</texture>
+	    <Propeller-Texture>Liveries/Prop-YUC.png</Propeller-Texture>
         </livery>
     </model>    
 </sim>
