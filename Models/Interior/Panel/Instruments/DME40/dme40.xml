@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 
 <PropertyList>
 
@@ -320,9 +330,9 @@
                 <script>
 		var tst=getprop("instrumentation/dme/switch-position[0]");
 		if(tst==0){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/dme[0]/frequencies/selected-mhz")
 		}elsif(tst==2){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
+		setprop("instrumentation/dme[1]/frequencies/source","/instrumentation/dme[1]/frequencies/selected-mhz")
 		}</script>
             </binding>
 			</action>
@@ -346,9 +356,9 @@
                 <script>
 		var tst=getprop("instrumentation/dme/switch-position[0]");
 		if(tst==0){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[0]/frequencies/selected-mhz")
+		setprop("instrumentation/dme/frequencies/source","/instrumentation/dme[0]/frequencies/selected-mhz")
 		}elsif(tst==2){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/nav[1]/frequencies/selected-mhz")
+		setprop("instrumentation/dme[1]/frequencies/source","/instrumentation/dme[1]/frequencies/selected-mhz")
 		}</script>
             </binding>
         </action>

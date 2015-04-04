@@ -5,6 +5,15 @@
     #	2d & 3d instruments, animations, systems and over.		   	#
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
+
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
     -->
 
 <!-- ARK-15 (ADF) control gauge
@@ -211,6 +220,14 @@
       </script>
     </binding>
   </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>ADF-Ident2</tooltip-id>
+      <label>Ident: %s</label>
+      <property>instrumentation/adf[1]/ident</property>      
+    </binding>
+  </hovered>
 </animation>
 <animation>
   <type>pick</type>
@@ -226,6 +243,14 @@
       </script>
     </binding>
   </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>ADF-Ident2</tooltip-id>
+      <label>Ident: %s</label>
+      <property>instrumentation/adf[1]/ident</property>      
+    </binding>
+  </hovered>
 </animation>
 <!--Left half-->
 <animation>

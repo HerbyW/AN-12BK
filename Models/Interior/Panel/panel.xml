@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Instrumentation by HerbyW, dec 2014, status: not finished, lots of work to do
-     Panel and Interior redesign from "firefly" Dec/Jan 2014                          -->
-<!--Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc  -->
+<!--
 
-<!-- Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+
+
+     Panel and Interior redesign from "firefly" Dec/Jan 2014
+     Fotos from https://www.flickr.com/photos/raf_yyc/ added for visualisation of work to do, all rights belong to raf_yyc
+
+     Source : http://i41.photobucket.com/albums/e290/sovietjet/IMG_1739.jpg 
               this is not a AN-12, but for a start not bad                 -->
 
 <PropertyList>

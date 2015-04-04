@@ -12,7 +12,15 @@
      Max speed            : 777 km/h   (   419 kt      )
      Cruise speed         : 670 km/h   (   361 kt      )
 
-     adding some stuff in different files: HerbyW Jan2015                           -->
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 
 <airplane mass="62000" version="YASIM_VERSION_CURRENT">
 

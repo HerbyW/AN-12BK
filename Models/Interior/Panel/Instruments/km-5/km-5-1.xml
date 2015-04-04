@@ -6,7 +6,17 @@
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
     -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- KM-5 gauge from TKS compass system
 3D instrument for Tu-154 -->
 
@@ -73,7 +83,7 @@
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
-  </axis>
+  </axis>  
 </animation>
 
 <animation>
@@ -95,15 +105,22 @@
     
    </action>
    
-    <hovered>
+    <!--<hovered>
     <binding>
       <command>set-tooltip</command>
       <tooltip-id>heading-bug</tooltip-id>      
       <label>Heading Bug: %5.2f</label>
       <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
     </binding>
-  </hovered>
-    
+    </hovered>-->
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Variation</tooltip-id>
+      <label>Magnetic Variation: %5.2f</label>
+      <property>environment/magnetic-variation-deg</property>      
+    </binding>
+  </hovered>  
   
 </animation>
 

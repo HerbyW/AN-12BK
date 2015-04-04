@@ -6,7 +6,17 @@
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
     -->
+<!--
 
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+-->
 <!-- KURS-MP control gauge
 3D instrument for Tu-154 -->
 <PropertyList>
@@ -175,7 +185,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-hund</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>3.0</max>
       <wrap>false</wrap>
@@ -197,7 +207,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-hund</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>3.0</max>
       <wrap>false</wrap>
@@ -219,7 +229,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-dec</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -241,7 +251,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-dec</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -263,7 +273,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-ones</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -285,7 +295,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-ones</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>true</wrap>
@@ -310,7 +320,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-hund</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>3.0</max>
       <wrap>false</wrap>
@@ -332,7 +342,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-hund</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>3.0</max>
       <wrap>false</wrap>
@@ -354,7 +364,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-dec</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -377,7 +387,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-dec</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -400,7 +410,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-ones</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>false</wrap>
@@ -423,7 +433,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-h-ones</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
       <wrap>true</wrap>
@@ -447,7 +457,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-hi</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>108.0</min>
       <max>117.0</max>
       <wrap>false</wrap>
@@ -468,7 +478,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-hi</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>108.0</min>
       <max>117.0</max>
       <wrap>false</wrap>
@@ -489,7 +499,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-low</property>
-      <step>5.0</step>
+      <step>-5.0</step>
       <min>0.0</min>
       <max>95.0</max>
       <wrap>false</wrap>
@@ -510,7 +520,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-low</property>
-      <step>-5.0</step>
+      <step>5.0</step>
       <min>0.0</min>
       <max>95.0</max>
       <wrap>false</wrap>
@@ -535,7 +545,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-hi</property>
-      <step>1.0</step>
+      <step>-1.0</step>
       <min>108.0</min>
       <max>117.0</max>
       <wrap>false</wrap>
@@ -557,7 +567,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-hi</property>
-      <step>-1.0</step>
+      <step>1.0</step>
       <min>108.0</min>
       <max>117.0</max>
       <wrap>false</wrap>
@@ -579,7 +589,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-low</property>
-      <step>5.0</step>
+      <step>-5.0</step>
       <min>0.0</min>
       <max>95.0</max>
       <wrap>false</wrap>
@@ -601,7 +611,7 @@
     <binding>
       <command>property-adjust</command>
       <property>tu154/instrumentation/kurs-mp-1/digit-f-low</property>
-      <step>-5.0</step>
+      <step>5.0</step>
       <min>0.0</min>
       <max>95.0</max>
       <wrap>false</wrap>
@@ -626,7 +636,7 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/nav[0]/volume</property>
-      <step>0.2</step>
+      <step>-0.2</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>
@@ -654,7 +664,7 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/nav[0]/volume</property>
-      <step>-0.2</step>
+      <step>0.2</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>
