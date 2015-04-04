@@ -92,12 +92,15 @@
 
     <model>
       <path>Aircraft/Antonov-An-12/Models/an12.xml</path>
-      <livery>
+      <livery archive="y">
         <file type="string">an12</file>
 	<!--liveries from: eagel 03/2015 -->
       </livery>
             
     </model>
+    
+    <!--  <custom-settings type="bool" userarchive="y">false</custom-settings>   -->
+    
     
   <sound>
        <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
