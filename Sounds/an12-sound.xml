@@ -485,7 +485,41 @@
       </pitch>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
-    </rain> 
+    </rain>
+    
+            <!-- ADF-MorseCode, see txt file -->
+
+    <ADF>
+      <name>ADF1</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/Morse.wav</path>
+       <condition>        
+          <property>/instrumentation/adf[0]/in-range</property>         
+       </condition>
+      <volume>
+	<property>instrumentation/adf[0]/volume</property>	
+        <min>0.00</min>
+        <max>1.0</max>
+      </volume>      
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </ADF>
+    
+    <ADF>
+      <name>ADF2</name>
+      <mode>looped</mode>
+      <path>Aircraft/Antonov-An-12/Sounds/Morse.wav</path>
+       <condition>        
+          <property>/instrumentation/adf[1]/in-range</property>        
+       </condition>
+      <volume>	
+	<property>instrumentation/adf[1]/volume</property>
+        <min>0.00</min>
+        <max>1.0</max>
+      </volume>      
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </ADF>
 
   </fx>
 

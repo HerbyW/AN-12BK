@@ -671,13 +671,24 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/adf[0]/volume</property>
-      <step>0.2</step>
+      <step>-0.2</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>
     </binding>
-  </action>
+  </action>  
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>ADF-volume1</tooltip-id>
+      <label>Volume: %d%%</label>
+      <property>instrumentation/adf[0]/volume</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>  
 </animation>
+
 <animation>
   <type>pick</type>
   <object-name>hs_3</object-name>
@@ -689,12 +700,22 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/adf[0]/volume</property>
-      <step>-0.2</step>
+      <step>0.2</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>
     </binding>
   </action>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>ADF-volume1</tooltip-id>
+      <label>Volume: %d%%</label>
+      <property>instrumentation/adf[0]/volume</property>
+      <mapping>nasal</mapping>
+      <script>return int(arg[0] * 100)</script>
+    </binding>
+  </hovered>
 </animation>
 
 

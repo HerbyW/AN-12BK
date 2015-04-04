@@ -333,6 +333,7 @@
   <error-deg type="double">0</error-deg>
   <power-btn type="bool">true</power-btn>
   <operable type="bool">true</operable>
+  <volume type="double">0.40</volume>
 </adf>
 
 <adf n="1">  
@@ -345,18 +346,19 @@
   <error-deg type="double">0</error-deg>
   <power-btn type="bool">true</power-btn>
   <operable type="bool">true</operable>
+  <volume type="double">0.40</volume>
   <indicated-bearing-deg type="double">90</indicated-bearing-deg>
 </adf>
     
 <nav n="0">
-  <volume type="double">0.20</volume>
+  <volume type="double">0.40</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
   </radials>
 </nav>
 
 <nav n="1">
-  <volume type="double">0.20</volume>
+  <volume type="double">0.40</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
   </radials>
