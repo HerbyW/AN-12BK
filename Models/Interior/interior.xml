@@ -93,7 +93,7 @@
 <animation>
 <type>translate</type>
 <object-name>IntLaPorteduCote</object-name>
-<property>sim/model/door-positions/crew/position-norm</property>
+<property>sim/multiplay/generic/float[0]</property>
 <interpolation>
 <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
 <entry><ind> 0.2 </ind><dep> -0.2 </dep></entry>
@@ -109,7 +109,7 @@
 <animation>
 <type>rotate</type>
 <object-name>IntLaPorteduCote</object-name>
-<property>sim/model/door-positions/crew/position-norm</property>
+<property>sim/multiplay/generic/float[0]</property>
 <interpolation>
 <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
 <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
@@ -146,7 +146,7 @@
 <animation>
 <type>rotate</type>
 <object-name>intbaie</object-name>
-<property>sim/model/door-positions/baie/position-norm</property>
+<property>sim/multiplay/generic/float[12]</property>
 <factor> 30 </factor>
 <center>
 <x-m> 12.67527 </x-m>
@@ -163,7 +163,7 @@
 <animation>
 <type>rotate</type>
 <object-name>intbaieG</object-name>
-<property>sim/model/door-positions/baie/position-norm</property>
+<property>sim/multiplay/generic/float[12]</property>
 <factor> 95 </factor>
 <axis>
 <x1-m>  5.65958 </x1-m>
@@ -178,7 +178,7 @@
 <animation>
 <type>rotate</type>
 <object-name>intbaieD</object-name>
-<property>sim/model/door-positions/baie/position-norm</property>
+<property>sim/multiplay/generic/float[12]</property>
 <factor> -95 </factor>
 <axis>
 <x1-m>  5.65958 </x1-m>

@@ -1316,8 +1316,6 @@
       <z> 0 </z>
     </axis>
   </animation>
-
-  <!--MP amimation-->
   
   <animation>
     <type>rotate</type>
