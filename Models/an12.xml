@@ -348,6 +348,33 @@
     <object-name>vitreporte</object-name>
 </animation>
  
+ <!-- stairs for the crew door-->
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Pilot/stairs.xml</path>
+    <offsets>
+      <x-m>  -4.750 </x-m>
+      <y-m>  -2.75 </y-m>
+      <z-m> -5.95 </z-m>
+      <heading-deg>90.0</heading-deg>
+    </offsets>
+  </model>
+ 
+ <animation>
+    <type>translate</type>
+    <object-name>LaPorteduCote</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -0.2 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.2 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/shadow.xml</path>
