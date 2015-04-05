@@ -359,21 +359,6 @@
     </offsets>
   </model>
  
- <animation>
-    <type>translate</type>
-    <object-name>LaPorteduCote</object-name>
-    <property>sim/multiplay/generic/float[0]</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 0.2 </ind><dep> -0.2 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -0.2 </dep></entry>
-    </interpolation>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
  
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
