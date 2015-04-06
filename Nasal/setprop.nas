@@ -222,6 +222,27 @@ setlistener("/controls/chokes/activ", func
 	}
 }});
 
+########################################################################################################
+
+# Landing Gears Control
+
+# prevent retraction of the landing gear when any of the wheels are compressed
+setlistener("controls/gear/gear-down", func
+ {
+ var down = props.globals.getNode("controls/gear/gear-down").getBoolValue();
+ var crashed = getprop("sim/crashed") or 0;
+ if (!down and (getprop("gear/gear[0]/wow") or getprop("gear/gear[1]/wow") or getprop("gear/gear[2]/wow")))
+  {
+    if(!crashed){
+  		props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
+    }else{
+  		props.globals.getNode("controls/gear/gear-down").setBoolValue(0);
+    }
+  }
+ });
+ 
+
+
 #############################################################################################################
 # /engines/engine[0]/running
 # /controls/switches/fuel

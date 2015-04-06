@@ -148,8 +148,8 @@ var ushdb_mode_update = func(b) {
 
     }
 
-    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.5, [0, 360]);
-    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.5, [0, 360]);
+    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.1, [0, 360]);
+    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.1, [0, 360]);
 }
 
 
