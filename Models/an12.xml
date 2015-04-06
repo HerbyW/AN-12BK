@@ -353,8 +353,8 @@
     <path>Aircraft/Antonov-An-12/Models/Pilot/stairs.xml</path>
     <offsets>
       <x-m>  -4.750 </x-m>
-      <y-m>  -2.75 </y-m>
-      <z-m> -5.95 </z-m>
+      <y-m>  -2.05 </y-m>
+      <z-m> -5.0 </z-m>
       <heading-deg>90.0</heading-deg>
     </offsets>
   </model>
