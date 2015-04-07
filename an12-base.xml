@@ -297,23 +297,23 @@
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
-      <rpm>500</rpm>
-      <running>true</running>
+      <rpm>0</rpm>
+      <running>false</running>
     </engine>
     <engine n="1">
       <engine-num type="int">1</engine-num>
-      <rpm>500</rpm>
-      <running>true</running>
+      <rpm>0</rpm>
+      <running>false</running>
     </engine>
     <engine n="2">
       <engine-num type="int">2</engine-num>
-      <rpm>500</rpm>
-      <running>true</running>
+      <rpm>0</rpm>
+      <running>false</running>
     </engine>
     <engine n="3">
       <engine-num type="int">3</engine-num>
-      <rpm>500</rpm>
-      <running>true</running>
+      <rpm>0</rpm>
+      <running>false</running>
     </engine>
   </engines>
   

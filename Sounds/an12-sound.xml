@@ -77,21 +77,21 @@
     <engine>
        <name>engine0</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0006</factor>
+        <factor>0.00022</factor>
         <min>0.03</min>
         <max>0.55</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.0003</factor>
+        <factor>0.00008</factor>
         <min>0.0</min>
-        <max>0.75</max>
+        <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -101,21 +101,21 @@
     <engine>
        <name>engine1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.0006</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00022</factor>
         <min>0.03</min>
         <max>0.55</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.0003</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00008</factor>
         <min>0.0</min>
-        <max>0.75</max>
+        <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -125,21 +125,21 @@
     <engine>
        <name>engine2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.0006</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00022</factor>
         <min>0.03</min>
         <max>0.55</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.0003</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00008</factor>
         <min>0.0</min>
-        <max>0.75</max>
+        <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -149,21 +149,21 @@
     <engine>
        <name>engine3</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/AI-24_Prop1-1.wav</path>      
+      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.0006</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00022</factor>
         <min>0.03</min>
         <max>0.55</max>        
       </volume>
       <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.0003</factor>
+        <property>/engines/engine[0]/rpm</property>
+        <factor>0.00008</factor>
         <min>0.0</min>
-        <max>0.75</max>
+        <max>0.2</max>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>

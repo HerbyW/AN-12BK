@@ -594,6 +594,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteGI</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
