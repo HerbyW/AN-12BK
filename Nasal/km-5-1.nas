@@ -109,7 +109,8 @@ var realias = func(src, dst, delay, wrap=nil) {
                 if (num(dst) == nil)
                     obj.alias(dst);
                 else
-                    setprop(src, dst);
+                    setprop(src, dst);setprop("tu154/instrumentation/ushdb/heading-deg-"~b, bearing);
+                    setprop("yak-40/instrumentation/iku/heading-deg-"~b,  bearing);
             }
         }, delay);
     } else {
@@ -144,12 +145,15 @@ var ushdb_mode_update = func(b) {
 
     } else {
         if (getprop("instrumentation/adf["~j~"]/in-range"))
-            bearing = "instrumentation/adf["~j~"]/indicated-bearing-deg";
+            bearing = getprop("instrumentation/adf["~j~"]/indicated-bearing-deg");
 
     }
 
-    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.1, [0, 360]);
-    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.1, [0, 360]);
+    setprop("tu154/instrumentation/ushdb/heading-deg-"~b, bearing);
+    setprop("yak-40/instrumentation/iku/heading-deg-"~b,  bearing);
+    
+#    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.1, [0, 360]);
+#    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.1, [0, 360]);
 }
 
 
