@@ -24,7 +24,7 @@
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>      
       <volume>
-        <offset>-0.4</offset>
+        <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -37,7 +37,7 @@
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>      
       <volume>
-        <offset>-0.4</offset>
+        <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -51,7 +51,7 @@
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>      
       <volume>
-        <offset>-0.4</offset>
+        <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -65,7 +65,7 @@
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>      
       <volume>
-        <offset>-0.4</offset>
+        <offset>-0.45</offset>
       </volume>
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
@@ -84,7 +84,7 @@
       <volume>
         <property>/engines/engine[0]/rpm</property>
         <factor>0.00022</factor>
-        <min>0.03</min>
+        <min>0.06</min>
         <max>0.55</max>        
       </volume>
       <pitch>
@@ -108,7 +108,7 @@
       <volume>
         <property>/engines/engine[0]/rpm</property>
         <factor>0.00022</factor>
-        <min>0.03</min>
+        <min>0.06</min>
         <max>0.55</max>        
       </volume>
       <pitch>
@@ -132,7 +132,7 @@
       <volume>
         <property>/engines/engine[0]/rpm</property>
         <factor>0.00022</factor>
-        <min>0.03</min>
+        <min>0.06</min>
         <max>0.55</max>        
       </volume>
       <pitch>
@@ -156,7 +156,7 @@
       <volume>
         <property>/engines/engine[0]/rpm</property>
         <factor>0.00022</factor>
-        <min>0.03</min>
+        <min>0.06</min>
         <max>0.55</max>        
       </volume>
       <pitch>
