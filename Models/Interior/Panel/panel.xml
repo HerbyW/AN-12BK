@@ -209,17 +209,6 @@
     </offsets>
   </model>
     
-  <!-- PNP, HSI Horizontal Situation Indicator -->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.320 </y-m>
-      <z-m>  0.095 </z-m>
-    </offsets>
-  </model>
-  
   <!-- PNP, HSI Horizontal Situation Indicator from TU154b-->
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/pnp/pnp.xml</path>
@@ -421,10 +410,9 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rv-5m/rv-5m.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m> -0.220 </y-m>
-      <z-m> -0.009 </z-m>
-      <heading-deg>0.0</heading-deg>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m>  0.095 </z-m>
     </offsets>
   </model>
 

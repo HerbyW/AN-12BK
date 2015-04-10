@@ -636,7 +636,7 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/nav[0]/volume</property>
-      <step>-0.2</step>
+      <step>-0.1</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>
@@ -664,7 +664,7 @@
     <binding>
       <command>property-adjust</command>
       <property>instrumentation/nav[0]/volume</property>
-      <step>0.2</step>
+      <step>0.1</step>
       <min>0.0</min>
       <max>1.0</max>
       <wrap>false</wrap>

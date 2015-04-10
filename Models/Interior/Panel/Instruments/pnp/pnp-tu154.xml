@@ -84,9 +84,9 @@
     <object-name>heading_marker_270</object-name>
      <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-       <red>1.0</red>
+       <red>0.0</red>
        <green>1.0</green>
-       <blue>0.0</blue>
+       <blue>1.0</blue>
      </emission>
   </animation>
  
@@ -183,50 +183,45 @@
   <type>select</type>
   <object-name>blanker_dkm</object-name>
   <condition>
-	<not><property>systems/electrical/outputs/nav</property></not>
-			</condition>
+    <property alias="../../../params/blank-dist"/>
+  </condition>
 </animation>
 <animation>
   <type>select</type>
   <object-name>blanker_heading</object-name>
-<condition>
-	<not><property>systems/electrical/outputs/nav</property></not>
-			</condition>
+<!--  <condition>
+    <property>tu154/blankers</property>
+  </condition>-->
 </animation>
 <animation>
   <type>select</type>
   <object-name>blanker_k</object-name>
   <condition>
-    <property>instrumentation/nav/to-flag</property>
+    <property alias="../../../params/blank-course"/>
   </condition>
 </animation>
 <animation>
   <type>select</type>
   <object-name>blanker_g</object-name>
   <condition>
-    <property>instrumentation/nav/from-flag</property>
+    <property alias="../../../params/blank-gs"/>
   </condition>
 </animation>
 <animation>
   <type>select</type>
   <object-name>blanker_ks</object-name>
   <condition>
-    <not><property>instrumentation/nav/serviceable</property></not>
+    <not><property alias="../../../../params/serviceable"/></not>
   </condition>
 </animation>
 
 <!--Needles-->  
-
-
-
-
-
 <animation>
   <type>rotate</type>
   <object-name>needle</object-name>
   <object-name>kurs_plan</object-name>
   <object-name>kurs_planka</object-name>
-  <property>instrumentation/nav/radials/selected-deg</property>
+  <property alias="../../params/dir-plane"/>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -240,21 +235,7 @@
   <object-name>heading_marker_90</object-name>
   <object-name>heading_marker_180</object-name>
   <object-name>heading_marker_270</object-name>
-  <property>orientation/heading-deg</property>
-  <axis>
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-  </axis>
-</animation>
-
-<animation>
-  <type>rotate</type>
-  <object-name>heading_marker_main</object-name>
-  <object-name>heading_marker_90</object-name>
-  <object-name>heading_marker_180</object-name>
-  <object-name>heading_marker_270</object-name>
-  <property>autopilot/settings/heading-bug-deg</property>
+  <property alias="../../params/dir-course"/>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -262,30 +243,19 @@
   </axis>
 </animation>
 
-<animation>
-  <type>rotate</type>
-  <object-name>heading_marker_main</object-name>
-  <object-name>heading_marker_90</object-name>
-  <object-name>heading_marker_180</object-name>
-  <object-name>heading_marker_270</object-name>
-  <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
-  <axis>
-    <x>1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-  </axis>
-</animation>
 
 <!--Compass-->
   <animation>
     <type>rotate</type>
     <object-name>compass</object-name>
-    
     <object-name>needle</object-name>
     <object-name>kurs_plan</object-name>
     <object-name>kurs_planka</object-name>
-    
-    <property>orientation/heading-deg</property>
+    <object-name>heading_marker_main</object-name>
+    <object-name>heading_marker_90</object-name>
+    <object-name>heading_marker_180</object-name>
+    <object-name>heading_marker_270</object-name>
+    <property alias="../../params/compass"/>
     <axis>
       <x>1.0</x>
       <y>0.0</y>
@@ -293,7 +263,7 @@
     </axis>
   </animation>
   
-  <!--Drift indicator, I do not know how to get this value with yasim: help needed
+  <!--Drift indicator-->
   <animation>
     <type>rotate</type>
     <object-name>drift</object-name>
@@ -305,42 +275,25 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
-  </animation>                                                           -->
+  </animation>
 
   <!--ILS-->
   <animation>
     <type>translate</type>
     <object-name>kurs_planka</object-name>
-    <property>instrumentation/nav/heading-needle-deflection</property>
-			<interpolation>
-            <entry><ind>-5</ind><dep>-0.0117</dep></entry>
-            <entry><ind>0.0</ind><dep>0</dep></entry>
-            <entry><ind>5</ind><dep>0.0117</dep></entry>
-        </interpolation>
+    <property alias="../../params/defl-course"/>
+    <factor>0.019</factor>
     <axis>
       <x>0.0</x>
       <y>1.0</y>
       <z>0.0</z>
     </axis>
   </animation>
-  
-  <animation>
-        <type>select</type>
-        <object-name>gliss_planka</object-name>
-        <condition>
-		<property>instrumentation/nav/has-gs</property>
-	</condition>
-  </animation>
-  
   <animation>
     <type>translate</type>
     <object-name>gliss_planka</object-name>
-    <property>instrumentation/nav/gs-needle-deflection</property>
-    <interpolation>
-            <entry><ind>-2.0</ind><dep>-0.0133</dep></entry>
-            <entry><ind>0.0</ind><dep>0.0</dep></entry>
-            <entry><ind>2.0</ind><dep>0.0133</dep></entry>
-        </interpolation>
+    <property alias="../../params/defl-gs"/>
+    <factor>0.019</factor>
     <axis>
       <x>0.0</x>
       <y>0.0</y>
@@ -357,7 +310,7 @@
   <object-name>dig_heading_ones</object-name>
   <expression>
     <product>
-      <abs><property>instrumentation/nav/nav-distance</property></abs>
+      <abs><property alias="../../../../../params/distance"/></abs>
       <value>0.036</value>
     </product>
   </expression>
@@ -378,7 +331,7 @@
   <expression>
     <table>
       <mod>
-        <abs><property>instrumentation/nav/nav-distance</property></abs>
+        <abs><property alias="../../../../../../params/distance"/></abs>
         <value>100000</value>
       </mod>
       <entry><ind>	    0</ind>	<dep>	0</dep></entry>
@@ -421,7 +374,7 @@
   <expression>
     <table>
       <mod>
-        <abs><property>instrumentation/nav/nav-distance</property></abs>
+        <abs><property alias="../../../../../../params/distance"/></abs>
         <value>1000000</value>
       </mod>
       <entry><ind>	     0</ind>	<dep>	0</dep></entry>
@@ -463,7 +416,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_plane_ones</object-name>
-  <property>instrumentation/nav/radials/selected-deg</property>
+  <property alias="../../params/plane-dialed"/>
   <factor>36</factor>
   <center>
     <x-m>-0.01393</x-m>
@@ -483,11 +436,11 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/nav/radials/selected-deg</property>
+          <property alias="../../../../../../params/plane-dialed"/>
           <value>100</value>
         </mod>
         <mod>
-          <property>instrumentation/nav/radials/selected-deg</property>
+          <property alias="../../../../../../params/plane-dialed"/>
           <value>10</value>
         </mod>
       </difference>
@@ -512,11 +465,11 @@
     <product>
       <difference>
         <mod>
-          <property>instrumentation/nav/radials/selected-deg</property>
+          <property alias="../../../../../../params/plane-dialed"/>
           <value>1000</value>
         </mod>
         <mod>
-          <property>instrumentation/nav/radials/selected-deg</property>
+          <property alias="../../../../../../params/plane-dialed"/>
           <value>100</value>
         </mod>
       </difference>
@@ -538,176 +491,58 @@
 
 
 <!--Handles-->
-
-
 <animation>
-        <type>pick</type>
-        <object-name>plane_sym_handle</object-name>
-        <action>
-            <button>0</button>
-				<repeatable>true</repeatable>
-				<interval-sec>0.2</interval-sec>
-             <binding>
-                <command>property-adjust</command>
-                <property>instrumentation/nav/radials/selected-deg</property>
-                <step>-1</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>plane_sym_handle</object-name>
-        <action>
-            <button>1</button>
-				<repeatable>true</repeatable>
-				<interval-sec>0.2</interval-sec>
-             <binding>
-                <command>property-adjust</command>
-                <property>instrumentation/nav/radials/selected-deg</property>
-                <step>1</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>plane_sym_handle</object-name>
-        <action>
-            <button>3</button>
-             <binding>
-                <command>property-adjust</command>
-                <property>instrumentation/nav/radials/selected-deg</property>
-                <step>-10</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>plane_sym_handle</object-name>
-        <action>
-            <button>4</button>
-             <binding>
-                <command>property-adjust</command>
-                <property>instrumentation/nav/radials/selected-deg</property>
-                <step>10</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-<animation>
-        <type>rotate</type>
-        <object-name>plane_sym_handle</object-name>
-        <property>instrumentation/nav/radials/selected-deg</property>
-        <factor>2</factor>
-        <center>
-    <x-m>0.009809</x-m>
-    <y-m>0.05414</y-m>
-    <z-m>-0.05417</z-m>
+  <type>knob</type>
+  <object-name>plane_sym_handle</object-name>
+  <property alias="../../params/plane-dialed"/>
+  <factor>5.0</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.05358</y-m>
+    <z-m>-0.05518</z-m>
   </center>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
   </axis>
-    </animation>
-
-
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property alias="../../../../params/plane-dialed"/>
+      <factor>1</factor>
+      <min>0</min>
+      <max>360</max>
+      <wrap>true</wrap>
+    </binding>
+  </action>
+</animation>
 <animation>
-        <type>pick</type>
-        <object-name>heading_sym_handle</object-name>
-        <action>
-            <button>0</button>
-				<repeatable>true</repeatable>
-				<interval-sec>0.2</interval-sec>
-             <binding>
-                <command>property-adjust</command>
-                <property>autopilot/settings/heading-bug-deg</property>
-                <step>-1</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>heading_sym_handle</object-name>
-        <action>
-            <button>1</button>
-				<repeatable>true</repeatable>
-				<interval-sec>0.2</interval-sec>
-             <binding>
-                <command>property-adjust</command>
-                <property>autopilot/settings/heading-bug-deg</property>
-                <step>1</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>heading_sym_handle</object-name>
-        <action>
-            <button>3</button>
-             <binding>
-                <command>property-adjust</command>
-                <property>autopilot/settings/heading-bug-deg</property>
-                <step>-10</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>heading_sym_handle</object-name>
-        <action>
-            <button>4</button>
-             <binding>
-                <command>property-adjust</command>
-                <property>autopilot/settings/heading-bug-deg</property>
-                <step>10</step>
-                <min>0</min>
-                <max>360</max>
-                <wrap>true</wrap>
-            </binding>
-        </action>
-    </animation>
-    
-    <animation>
-    <type>rotate</type>
-    <object-name>heading_sym_handle</object-name>
-    <property>autopilot/settings/heading-bug-deg</property>
-    <center>
-    <x-m>0.009809</x-m>
-    <y-m>-0.05334</y-m>
-    <z-m>-0.05510</z-m>
+  <type>knob</type>
+  <object-name>heading_sym_handle</object-name>
+  <property alias="../../params/dir-course"/>
+  <factor>5.0</factor>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>-0.05386</y-m>
+    <z-m>-0.05461</z-m>
   </center>
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
   </axis>
-    </animation>
+  <action>
+    <binding>
+      <command>property-adjust</command>
+      <property alias="../../../../params/dir-course"/>
+      <factor>1</factor>
+      <min>0</min>
+      <max>360</max>
+      <wrap>true</wrap>
+    </binding>
+  </action>
+</animation>
+
 
 </PropertyList>
