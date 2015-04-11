@@ -182,37 +182,40 @@
 <animation>
   <type>select</type>
   <object-name>blanker_dkm</object-name>
-  <condition>
-	<not><property>systems/electrical/outputs/nav</property></not>
-			</condition>
+   <condition>
+    <not><property>systems/electrical/outputs/nav</property></not>
+   </condition>
 </animation>
 <animation>
   <type>select</type>
   <object-name>blanker_heading</object-name>
-<condition>
-	<not><property>systems/electrical/outputs/nav</property></not>
-			</condition>
+    <condition>
+     <not><property>systems/electrical/outputs/nav</property></not>
+    </condition>
 </animation>
-<animation>
-  <type>select</type>
-  <object-name>blanker_k</object-name>
-  <condition>
-    <property>instrumentation/nav/to-flag</property>
-  </condition>
-</animation>
+
 <animation>
   <type>select</type>
   <object-name>blanker_g</object-name>
-  <condition>
-    <property>instrumentation/nav/from-flag</property>
-  </condition>
+   <condition>
+    <not><property>instrumentation/nav/has-gs</property></not>
+   </condition>
 </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>blanker_k</object-name>
+   <condition>
+    <not><property>instrumentation/nav/in-range</property></not>
+   </condition>
+</animation>
+
 <animation>
   <type>select</type>
   <object-name>blanker_ks</object-name>
-  <condition>
-    <not><property>instrumentation/nav/serviceable</property></not>
-  </condition>
+   <condition>
+    <not><property>instrumentation/nav/operable</property></not>
+   </condition>
 </animation>
 
 <!--Needles-->  
@@ -293,11 +296,12 @@
     </axis>
   </animation>
   
-  <!--Drift indicator, I do not know how to get this value with yasim: help needed
+  <!--Drift indicator  -->
   <animation>
     <type>rotate</type>
     <object-name>drift</object-name>
-    <property>fdm/jsbsim/instrumentation/nvu/drift-angle</property>
+    <property>/instrumentation/drift</property>
+    <factor>0.0036</factor>
     <max-deg>20.0</max-deg>
     <min-deg>-20.0</min-deg>
     <axis>
@@ -305,7 +309,7 @@
       <y>0.0</y>
       <z>0.0</z>
     </axis>
-  </animation>                                                           -->
+  </animation>                                                          
 
   <!--ILS-->
   <animation>

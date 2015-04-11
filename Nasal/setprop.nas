@@ -244,6 +244,33 @@ setlistener("controls/gear/gear-down", func
 
 
 #############################################################################################################
+#
+# wind drift angle calculations
+#
+# wind direction:  environment/metar/base wind-dir-deg
+# wind speed:      environment/metar/base wind-speed-kt
+# heading:         orientation/heading-deg
+# speed:           instrumentation/airspeed-indicator/indicated-speed-kt
+
+# create timer with 0.7 second interval
+
+var driftangle = maketimer(0.7, func
+
+{ 
+  if (getprop("instrumentation/airspeed-indicator/indicated-speed-kt") > 50)
+  setprop("/instrumentation/drift", 1 / (math.sin (getprop("environment/metar/base-wind-dir-deg") * math.sin(getprop("orientation/heading-deg") - getprop("environment/metar/base-wind-dir-deg"))) 
+                                      / getprop("instrumentation/airspeed-indicator/indicated-speed-kt")));
+
+  else setprop("/instrumentation/drift", 0);
+}
+);
+
+# start the timer (with 0.7 second inverval)
+driftangle.start();
+
+
+
+#############################################################################################################
 # /engines/engine[0]/running
 # /controls/switches/fuel
 # /controls/engines/engine[0]/condition

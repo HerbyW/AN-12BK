@@ -122,8 +122,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/volume/volume.xml</path>
     <offsets>
       <x-m>  0.0015 </x-m>
-      <y-m> -0.875 </y-m>
-      <z-m>  -0.155 </z-m>
+      <y-m> -0.885 </y-m>
+      <z-m>  -0.175 </z-m>
     </offsets>
   </model>
   
@@ -133,7 +133,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m>  0.001 </x-m>
-      <y-m> -0.532 </y-m>
+      <y-m> -0.528 </y-m>
       <z-m>  0.092 </z-m>
     </offsets>
   </model>
@@ -153,8 +153,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
     <offsets>
       <x-m> 0.002 </x-m>
-      <y-m> -0.40 </y-m>
-      <z-m> -0.105 </z-m>
+      <y-m> -0.41 </y-m>
+      <z-m> -0.009 </z-m>
     </offsets>
   </model>
 
@@ -173,8 +173,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/iku-1/iku-1.xml</path>
     <offsets>
       <x-m> 0.002 </x-m>
-      <y-m> -0.40 </y-m>
-      <z-m> 0.018 </z-m>
+      <y-m> -0.41 </y-m>
+      <z-m> -0.125 </z-m>
     </offsets>
   </model>
   
@@ -184,7 +184,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.532 </y-m>
+      <y-m> -0.528 </y-m>
       <z-m>  -0.165 </z-m>
     </offsets>
   </model>
@@ -204,8 +204,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.825 </y-m>
-      <z-m>  0.032 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m>  0.024 </z-m>
     </offsets>
   </model>
     
@@ -225,8 +225,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.646 </y-m>
-      <z-m>  0.115 </z-m>
+      <y-m> -0.637 </y-m>
+      <z-m>  0.098 </z-m>
     </offsets>
   </model>
 
@@ -245,8 +245,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m> -0.737 </y-m>
-      <z-m>  0.082 </z-m>
+      <y-m> -0.73 </y-m>
+      <z-m>  0.09 </z-m>
     </offsets>
   </model>
      
@@ -257,8 +257,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvid-15/uvid-15-m.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.646 </y-m>
-      <z-m> -0.062 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m> -0.056 </z-m>
     </offsets>
   </model>
   
@@ -266,8 +266,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvid-15/uvid-15-ft.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.646 </y-m>
-      <z-m> -0.161 </z-m>
+      <y-m> -0.641 </y-m>
+      <z-m> -0.153 </z-m>
     </offsets>
   </model>
 
@@ -296,7 +296,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.737 </y-m>
-      <z-m>  -0.12 </z-m>
+      <z-m>  -0.110 </z-m>
     </offsets>
   </model>
  
@@ -307,8 +307,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
       <x-m>  -0.00 </x-m>
-      <y-m> -0.40 </y-m>
-      <z-m>  0.109 </z-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.098 </z-m>
     </offsets>
   </model>
 
@@ -328,7 +328,7 @@
     <offsets>
       <x-m>  -0.0 </x-m>
       <y-m> -0.737 </y-m>
-      <z-m>  -0.017 </z-m>
+      <z-m>  -0.009 </z-m>
     </offsets>
   </model>
  
@@ -341,7 +341,25 @@
     </offsets>
   </model>
     
+  <!-- VOR-IND, VOR Localizer and Glidescope Indicator -->
   
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.31 </y-m>
+      <z-m> -0.012 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/vor-ind/vor-ind.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.730 </y-m>
+      <z-m> 0.095 </z-m>
+    </offsets>
+  </model>
 
   <!-- DME40, NAV distance information in mi, kt and min for triangle navigation -->
   
@@ -393,8 +411,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rv-5m/rv-5m.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.30 </y-m>
-      <z-m> 0.018 </z-m>
+      <y-m> -0.320 </y-m>
+      <z-m>  0.095 </z-m>
     </offsets>
   </model>
 
@@ -404,8 +422,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/speed_ind/speed_ind.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
-      <y-m> -0.646 </y-m>
-      <z-m>  0.030 </z-m>
+      <y-m> -0.825 </y-m>
+      <z-m>  0.045 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -416,8 +434,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/achs-2/achs-2.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m> -0.30 </y-m>
-      <z-m>  0.109 </z-m>
+      <y-m>  0.105 </y-m>
+      <z-m>  0.096 </z-m>
     </offsets>
   </model>
 
@@ -1233,7 +1251,7 @@
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.895 </y-m>
-      <z-m>  -0.046 </z-m>
+      <z-m>  -0.03 </z-m>
     </offsets>
   </model>
  
