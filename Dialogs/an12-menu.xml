@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+    -->
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Antonov An 12</label>
+      <enabled type="bool">true</enabled>
+      <item>
+	<label>Select livery</label>
+	<binding>
+		<command>nasal</command>
+		<script>aircraft.livery.dialog.open()</script>
+	</binding>
+       </item>
+    </menu>
+    <menu n="10">
+    <item n="2">
+     <label>Pushback</label>
+     <name>pushback</name>
+     <binding>
+      <command>dialog-show</command>
+      <dialog-name>pushback</dialog-name>
+     </binding>
+    </item>
+   </menu>
+  </default>
+
+</PropertyList>
+

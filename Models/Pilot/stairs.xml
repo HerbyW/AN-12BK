@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    ###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Eagel: Liveries
+    ###################################################################################
+    -->
+
+<PropertyList>
+
+ <path>stairs.ac</path>
+ 
+ <animation>
+	  <type>select</type>	  
+	  <condition>
+		  <property>sim/multiplay/generic/float[0]</property>		  
+	  </condition>
+  </animation>
+
+
+ <animation>
+    <type>rotate</type>
+    <object-name>escalier_1</object-name>
+    <object-name>escalier_0</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  45.0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  45.0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>  45.0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  45.0 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>   0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <object-name>escalier_1</object-name>
+    <object-name>escalier_0</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -0.6 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.7 </ind><dep> -2.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+ <animation>
+    <type>translate</type>
+    <object-name>escalier_1</object-name>
+    <object-name>escalier_0</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  -1.7 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>  -2.0 </dep></entry>
+      <entry><ind> 0.3 </ind><dep>  -3.0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep>  -3.0 </dep></entry>
+      <entry><ind> 0.7 </ind><dep>  -2.7 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z>-1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
