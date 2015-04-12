@@ -350,7 +350,7 @@
  
  <!-- stairs for the crew door-->
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Pilot/stairs.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Effects/stairs/stairs.xml</path>
     <offsets>
       <x-m>  -4.750 </x-m>
       <y-m>  -2.05 </y-m>
@@ -1773,7 +1773,6 @@
 </model>
 
 
-    
 </PropertyList>
 
     
