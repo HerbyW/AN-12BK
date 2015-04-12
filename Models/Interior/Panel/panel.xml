@@ -160,8 +160,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ai2/ai2.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m>  0.40 </y-m>
-      <z-m>  -0.105 </z-m>
+      <y-m>  0.84 </y-m>
+      <z-m>  -0.16 </z-m>
     </offsets>
   </model>
 
@@ -172,15 +172,6 @@
     <offsets>
       <x-m> 0.002 </x-m>
       <y-m> -0.40 </y-m>
-      <z-m> 0.018 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/iku-1/iku-1.xml</path>
-    <offsets>
-      <x-m> 0.002 </x-m>
-      <y-m> 0.40 </y-m>
       <z-m> 0.018 </z-m>
     </offsets>
   </model>
@@ -220,8 +211,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
-      <y-m>  0.825 </y-m>
-      <z-m>  0.032 </z-m>
+      <y-m>  0.81 </y-m>
+      <z-m>  0.103 </z-m>
     </offsets>
   </model>
     
@@ -279,7 +270,7 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/asi-ru/asi-ru.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
-      <y-m>  0.737 </y-m>
+      <y-m>  0.734 </y-m>
       <z-m>  0.082 </z-m>
     </offsets>
   </model>
@@ -359,8 +350,8 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/var/var-30.xml</path>
     <offsets>
       <x-m> -0.00  </x-m>
-      <y-m>  0.40  </y-m>
-      <z-m>  0.109 </z-m>
+      <y-m>  0.822  </y-m>
+      <z-m>  0.026 </z-m>
     </offsets>
   </model>
 
@@ -562,7 +553,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.205 </y-m>
-      <z-m> -0.0 </z-m>
+      <z-m> -0.10 </z-m>
     </offsets>
   </model>
 
@@ -571,7 +562,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.27 </y-m>
-      <z-m> -0.0 </z-m>
+      <z-m> -0.10 </z-m>
     </offsets>
   </model>
 
@@ -580,7 +571,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.205 </y-m>
-      <z-m> -0.058 </z-m>
+      <z-m> -0.158 </z-m>
     </offsets>
   </model>
 
@@ -589,7 +580,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.27 </y-m>
-      <z-m> -0.058 </z-m>
+      <z-m> -0.158 </z-m>
     </offsets>
   </model>
  
@@ -757,7 +748,7 @@
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m>  0.825 </y-m>
-      <z-m> -0.05  </z-m>
+      <z-m> -0.055  </z-m>
       <heading-deg>0</heading-deg>
     </offsets>
   </model>
@@ -1536,7 +1527,54 @@ Lights</text>
       <blue>  0.6 </blue>
     </emission>
   </animation>
+  
+<!--Map case from TU-154B-->
 
+        <!-- Mapcase -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
+    <offsets>
+      <x-m>  -0.545 </x-m>
+      <y-m> 0.13 </y-m>
+      <z-m>  -0.54 </z-m>
+      <heading-deg>0.0</heading-deg>
+    </offsets>
+  </model>
+
+<animation>
+  <type>knob</type>
+  <object-name>mapcase_hs</object-name>
+  <visible>false</visible>
+  <increase>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(1)</script>
+    </binding>
+  </increase>
+  <decrease>
+    <binding>
+      <command>nasal</command>
+      <script>mapcase.switch_page(-1)</script>
+    </binding>
+  </decrease>
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mapcase-page</tooltip-id>
+      <label>Page %s</label>
+      <property>tu154/instrumentation/mapcase/page</property>
+      <mapping>nasal</mapping>
+      <script>
+        var page = arg[0];
+        var pages = size(mapcase.root.getChildren());
+        return sprintf("%d/%d", page, pages);
+      </script>
+    </binding>
+  </hovered>
+</animation>
+
+    
   <!-- rear panel -->
   
   <!-- TNV-15, OUtside Temperatur Indicator -->

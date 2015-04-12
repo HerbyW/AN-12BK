@@ -409,7 +409,9 @@
     <help>
       <file>Aircraft/Antonov-An-12/Nasal/km-5-1.nas</file>
     </help>
-    
+    <mapcase>
+      <file>Aircraft/Antonov-An-12/Nasal/mapcase.nas</file>
+    </mapcase>
   </nasal>
 
   
