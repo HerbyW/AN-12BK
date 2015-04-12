@@ -73,7 +73,9 @@
    </switches>
    <instrumentation>
      <ushdb><compass type="double">0</compass></ushdb>
+     <mapcase><page type="int">1</page></mapcase>
    </instrumentation>
+   
  </tu154>
  
  <yak-40><instrumentation><iku>  
