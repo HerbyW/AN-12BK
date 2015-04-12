@@ -1696,11 +1696,12 @@ Lights</text>
         <!-- Mapcase -->
   
   <model>
+    <name>MapCase</name>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
     <offsets>
       <x-m>  -0.545 </x-m>
       <y-m> 0.13 </y-m>
-      <z-m>  -0.54 </z-m>
+      <z-m>  -0.55 </z-m>
       <heading-deg>0.0</heading-deg>
     </offsets>
   </model>

@@ -9,7 +9,7 @@ var mapcase = canvas.new({
     view: [1024, 988],
     mipmapping: 1,
 });
-mapcase.addPlacement({"parent": "MapCase","node": "mapcase"});
+mapcase.addPlacement({ node: "mapcase" });
 mapcase.setColorBackground(0.082, 0.082, 0.082, 0);
 
 var root = mapcase.createGroup();

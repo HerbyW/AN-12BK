@@ -21,15 +21,15 @@
 -->
 <!-- Mapcase for AN-12 -->
 <PropertyList>
-  <name>MapCase</name>
-  <path>mapcase.ac</path>  
   
+  <path>mapcase2.ac</path>  
+ 
   <animation>
   <type>material</type>
   
   <object-name>MESH23.001</object-name>
   <object-name>mapcase</object-name>
-  <!--<object-name>mapcase_hs</object-name>-->
+  <object-name>mapcase_hs</object-name>
   
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
@@ -38,7 +38,6 @@
       <blue>  0.35 </blue>
     </emission>
 </animation>
-
 
 <animation>
   <type>knob</type>
