@@ -25,12 +25,10 @@
   <path>mapcase2.ac</path>  
  
   <animation>
-  <type>material</type>
-  
+  <type>material</type>  
   <object-name>MESH23.001</object-name>
   <object-name>mapcase</object-name>
-  <object-name>mapcase_hs</object-name>
-  
+  <object-name>mapcase_hs</object-name>  
   <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
       <red>   0.35 </red>

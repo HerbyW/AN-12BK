@@ -355,6 +355,16 @@
       <max>31.00</max>
     </binding>
   </action>
+  
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>mm-to-hPa</tooltip-id>      
+      <label>hPa: %6.2f</label>
+      <property>/instrumentation/altimeter/setting-hapa</property> 
+    </binding>
+  </hovered>
+  
 </animation>
 
 </PropertyList>

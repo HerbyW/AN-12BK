@@ -34,7 +34,17 @@
      <object-name>DME40.knob1</object-name>
      <object-name>DME40.dim</object-name>
      <object-name>DME</object-name>
-     <object-name>DME.invalid</object-name>
+     <object-name>DME.invalid</object-name>         
+    <emission>
+      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <red>   0.35 </red>
+      <green> 0.35 </green>
+      <blue>  0.35 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>     
      <object-name>NM.1</object-name>
      <object-name>NM1</object-name>
      <object-name>NM10</object-name>
@@ -47,9 +57,9 @@
      <object-name>kt100</object-name>     
     <emission>
       <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
+      <red>   0.55 </red>
+      <green> 0.55 </green>
+      <blue>  0.55 </blue>
     </emission>
   </animation>
 

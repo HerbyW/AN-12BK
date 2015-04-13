@@ -19,20 +19,21 @@ setlistener("/instrumentation/altimeter/setting-inhg", func(v)
   
     setprop("/instrumentation/altimeter/mmhg", getprop("/instrumentation/altimeter/setting-inhg") * 25.4);
     setprop("/instrumentation/altimeter/setting-inhgN", getprop("/instrumentation/altimeter/setting-inhg") + 0.005);
+    setprop("/instrumentation/altimeter/setting-hapa", getprop("/instrumentation/altimeter/setting-inhg") * 33.8682715);
 });
 
 #####################################################################################################################
 
 #UVPD Control
-# create timer with 0.1 second interval
-var timerDiff = maketimer(0.1, func
+# create timer with 0.5 second interval
+var timerDiff = maketimer(0.5, func
 
 { 
     setprop("/controls/pressurization/diffdruck", (1 / getprop("/environment/atmosphere/density-tropo-avg") - 1.58));    
   }
 );
 
-# start the timer (with 0.1 second inverval)
+# start the timer (with 0.5 second inverval)
 timerDiff.start();
 
 ######################################################################################################################
@@ -252,23 +253,39 @@ setlistener("controls/gear/gear-down", func
 # heading:         orientation/heading-deg
 # speed:           instrumentation/airspeed-indicator/indicated-speed-kt
 
+#
+#Calculate Ground Speed, Course & Wind Correction Angle
 # create timer with 0.7 second interval
+setprop("/autopilot/settings/heading-bug-deg", 0.001);
 
-var driftangle = maketimer(0.7, func
+var TODEG = 180/math.pi;
+var TORAD = math.pi/180;
+var deg = func(rad){ return rad*TODEG; }
+var rad = func(deg){ return deg*TORAD; }
+
+var calc = maketimer(0.7, func
 
 { 
-  if (getprop("instrumentation/airspeed-indicator/indicated-speed-kt") > 50)
-  setprop("/instrumentation/drift", 1 / (math.sin (getprop("environment/metar/base-wind-dir-deg") * math.sin(getprop("orientation/heading-deg") - getprop("environment/metar/base-wind-dir-deg"))) 
-                                      / getprop("instrumentation/airspeed-indicator/indicated-speed-kt")));
+ 
+  var TWD 	= rad(getprop("/environment/wind-from-heading-deg"));
+  var WS 	= getprop("/environment/wind-speed-kt");
+  var TC 	= rad(getprop("/autopilot/settings/heading-bug-deg"));
 
-  else setprop("/instrumentation/drift", 0);
+  var TAS	= getprop("/instrumentation/airspeed-indicator/true-speed-kt");
+  var MD 	= rad(getprop("/environment/magnetic-variation-deg"));  
+  
+  var x = WS * math.sin((TC-TWD));
+  var y = TAS - (WS * math.cos((TC-TWD))); 
+  
+  DA = math.atan2(x,y);  
+    
+  setprop("/instrumentation/drift",deg(DA));
+  
 }
 );
 
 # start the timer (with 0.7 second inverval)
-driftangle.start();
-
-
+calc.start();
 
 #############################################################################################################
 # /engines/engine[0]/running
