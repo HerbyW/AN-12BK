@@ -26,11 +26,11 @@
   <type>material</type>
   <object-name>_c_1</object-name>
   <object-name>_c_2</object-name>
-  <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
+  <object-name>_d_1</object-name>
+  <emission>           
+      <red>   0.235 </red>
+      <green> 0.235 </green>
+      <blue>  0.235 </blue>
     </emission>
 </animation>
 <!--Brightness-->
@@ -62,7 +62,8 @@
 <object-name>_c_1</object-name>
   <object-name>_c_2</object-name>
   <object-name>_d_2</object-name>
-<property>tu154/switches/gauge-light</property>
+  <object-name>_d_1</object-name>
+<property>controls/electric/battery-switch</property>
 <x-min>1.0</x-min>
 <y-min>1.0</y-min>
 <z-min>1.0</z-min>

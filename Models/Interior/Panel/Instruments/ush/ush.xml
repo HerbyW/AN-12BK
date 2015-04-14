@@ -98,6 +98,17 @@
   </axis>
 </animation>
 
+<animation>
+  <type>rotate</type>
+  <object-name>needle_2</object-name>  
+  <property>/instrumentation/drift</property>
+  <axis>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
 <!--mk lamp-->
 
 
