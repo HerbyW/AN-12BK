@@ -103,16 +103,8 @@
       <wrap>false</wrap>
     </binding>
     
-   </action>
-   
-    <!--<hovered>
-    <binding>
-      <command>set-tooltip</command>
-      <tooltip-id>heading-bug</tooltip-id>      
-      <label>Heading Bug: %5.2f</label>
-      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
-    </binding>
-    </hovered>-->
+   </action>   
+    
   <hovered>
     <binding>
       <command>set-tooltip</command>
@@ -146,11 +138,11 @@
   <hovered>
     <binding>
       <command>set-tooltip</command>
-      <tooltip-id>heading-bug</tooltip-id>      
-      <label>Heading Bug: %5.2f</label>
-      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+      <tooltip-id>Variation</tooltip-id>
+      <label>Magnetic Variation: %5.2f</label>
+      <property>environment/magnetic-variation-deg</property>      
     </binding>
-  </hovered>   
+  </hovered>    
   
 </animation>
 
@@ -175,11 +167,11 @@
     <hovered>
     <binding>
       <command>set-tooltip</command>
-      <tooltip-id>heading-bug</tooltip-id>      
-      <label>Heading Bug: %5.2f</label>
-      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+      <tooltip-id>Variation</tooltip-id>
+      <label>Magnetic Variation: %5.2f</label>
+      <property>environment/magnetic-variation-deg</property>      
     </binding>
-  </hovered>
+  </hovered> 
     
   
 </animation>
@@ -205,11 +197,11 @@
     <hovered>
     <binding>
       <command>set-tooltip</command>
-      <tooltip-id>heading-bug</tooltip-id>      
-      <label>Heading Bug: %5.2f</label>
-      <property>instrumentation/magnetic-compass/pitch-offset-deg</property>
+      <tooltip-id>Variation</tooltip-id>
+      <label>Magnetic Variation: %5.2f</label>
+      <property>environment/magnetic-variation-deg</property>      
     </binding>
-  </hovered>
+  </hovered> 
     
   
 </animation>

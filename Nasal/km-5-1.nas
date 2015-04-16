@@ -479,7 +479,7 @@ ark_2_1_handler = func {
 
 
 ark_1_power = func{
-    if( getprop("tu154/switches/gauge-light") == 1 )
+    if( getprop("instrumentation/adf[0]/power-btn") == 1 )
 	{
     	if( getprop("tu154/switches/gauge-light") == 1 )
 		{
@@ -498,7 +498,7 @@ ark_1_power = func{
 }
 
 ark_2_power = func{
-    if( getprop("tu154/switches/gauge-light") == 1 )
+    if( getprop("instrumentation/adf[1]/power-btn") == 1 )
 	{
     	if( getprop("tu154/switches/gauge-light") == 1 )
 		{
@@ -562,6 +562,8 @@ ark_init();
 
 setlistener("tu154/switches/gauge-light", ark_1_power ,0,0);
 setlistener("tu154/switches/gauge-light", ark_2_power ,0,0);
+setlistener("instrumentation/adf[0]/power-btn", ark_1_power ,0,0);
+setlistener("instrumentation/adf[1]/power-btn", ark_2_power ,0,0);
 
 setlistener( "tu154/switches/adf-1-selector", ark_1_1_handler ,0,0);
 setlistener( "tu154/switches/adf-1-selector", ark_1_2_handler ,0,0);

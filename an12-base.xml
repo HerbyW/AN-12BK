@@ -349,42 +349,46 @@
     
     <drift type="double">0</drift>
     
+    <heading-indicator n="0">
+      <serviceable type="int">0</serviceable>
+    </heading-indicator>
+    
 <adf n="0">
   <mode>adf</mode>
-  <serviceable type="bool">true</serviceable>
+  <serviceable type="bool">false</serviceable>
   <frequencies>
     <selected-khz type="int">490</selected-khz>  <!-- NDB "DVI" (Donaueschingen) -->
     <standby-khz type="int">401</standby-khz>    <!-- EDTM ancient military airbase -->
   </frequencies>
   <error-deg type="double">0</error-deg>
-  <power-btn type="bool">true</power-btn>
+  <power-btn type="bool">false</power-btn>
   <operable type="bool">true</operable>
-  <volume type="double">0.40</volume>
+  <volume type="double">0.10</volume>
 </adf>
 
 <adf n="1">  
   <mode>adf</mode>  
-  <serviceable type="bool">true</serviceable>
+  <serviceable type="bool">false</serviceable>
   <frequencies>
     <selected-khz type="int">0</selected-khz>  <!--442 EDNY near the lake of constance -->
     <standby-khz type="int">0</standby-khz>    <!-- 473 EDSN ancient military airbase -->
   </frequencies>
   <error-deg type="double">0</error-deg>
-  <power-btn type="bool">true</power-btn>
+  <power-btn type="bool">false</power-btn>
   <operable type="bool">true</operable>
-  <volume type="double">0.40</volume>
+  <volume type="double">0.10</volume>
   <indicated-bearing-deg type="double">90</indicated-bearing-deg>
 </adf>
     
 <nav n="0">
-  <volume type="double">0.40</volume>
+  <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
   </radials>
 </nav>
 
 <nav n="1">
-  <volume type="double">0.40</volume>
+  <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
   </radials>
