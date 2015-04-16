@@ -17,6 +17,15 @@ setlistener("/controls/autostart", func
       {
         setprop("/tu154/switches/gauge-light", 1);
         setprop("/controls/lighting/nav-lights", 1);
+	
+	setprop("sim/messages/copilot", "Main power and lights are on");
+	
+	setprop("/instrumentation/adf[0]/power-btn", 1);
+	setprop("/instrumentation/adf[1]/power-btn", 1);
+	setprop("/instrumentation/heading-indicator[0]/serviceable", 1);
+	
+	setprop("sim/messages/copilot", "Instruments are powered");
+	
         setprop("/controls/switches/fuel", 1);
         setprop("/consumables/fuel/tank[0]/selected", 1);
         setprop("/consumables/fuel/tank[1]/selected", 1);
@@ -37,6 +46,8 @@ setlistener("/controls/autostart", func
 	interpolate("/engines/engine[1]/running", 1, 17);
 	interpolate("/engines/engine[2]/running", 1, 34);
 	interpolate("/engines/engine[3]/running", 1, 51);
+	
+	setprop("sim/messages/copilot", "Engines 1-4 starting up, wait 70 seconds till idle position");
       }  
   }
   );

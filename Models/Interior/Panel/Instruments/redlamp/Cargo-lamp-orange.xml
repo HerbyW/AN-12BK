@@ -73,7 +73,7 @@
   <object-name>_c_2</object-name>
   <object-name>_d_2</object-name>
   <object-name>_d_1</object-name>
-<property>controls/electric/battery-switch</property>
+<property>sim/signals/fdm-initialized</property>
 <x-min>1.0</x-min>
 <y-min>1.0</y-min>
 <z-min>1.0</z-min>

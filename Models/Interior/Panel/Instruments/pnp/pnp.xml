@@ -214,7 +214,7 @@
   <type>select</type>
   <object-name>blanker_ks</object-name>
    <condition>
-    <not><property>instrumentation/nav/operable</property></not>
+    <not><property>instrumentation/heading-indicator[0]/serviceable</property></not>
    </condition>
 </animation>
 
@@ -230,6 +230,13 @@
   <object-name>kurs_plan</object-name>
   <object-name>kurs_planka</object-name>
   <property>instrumentation/nav/radials/selected-deg</property>
+  
+  
+      <condition>
+       <property>instrumentation/heading-indicator[0]/serviceable</property>
+      </condition>
+    
+  
   <axis>
     <x>-1.0</x>
     <y>0.0</y>
@@ -289,6 +296,11 @@
     <object-name>kurs_planka</object-name>
     
     <property>orientation/heading-deg</property>
+    
+      <condition>
+       <property>instrumentation/heading-indicator[0]/serviceable</property>
+      </condition>
+    
     <axis>
       <x>1.0</x>
       <y>0.0</y>

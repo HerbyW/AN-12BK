@@ -183,12 +183,12 @@ setlistener("controls/gear/brake-parking", func
     {
       if (getprop("/controls/chokes/activ") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Chokes are at the wheels ! Parking Brake can not be lift");
+	  setprop("sim/messages/copilot", "Parking Chokes are at the wheels! Parking Brake can not be lift");
           setprop("/controls/gear/brake-parking", 1);
         }
       else
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, aircraft is moving !");
+	  setprop("sim/messages/copilot", "Parking Brake off, aircraft is moving!");
 	  setprop("/controls/gear/brake-parking", 0);  
 	}
      }
@@ -201,7 +201,7 @@ setlistener("controls/gear/brake-parking", func
         }
        else
         {
-	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed !");
+	  setprop("sim/messages/copilot", "Parking Brake on, check if chokes are needed!");
 	}
      } 
 }});  
@@ -213,13 +213,13 @@ setlistener("/controls/chokes/activ", func
    if (getprop("/controls/chokes/activ") == 1)
    if (getprop("/controls/gear/brake-parking") == 0)
         {
-	  setprop("sim/messages/copilot", "Parking Brake off, Chokes can not be set !");
+	  setprop("sim/messages/copilot", "Parking Brake off, Chokes can not be set!");
 	  setprop("/controls/chokes/activ", 0);  
 	}
     if (getprop("/controls/chokes/activ") == 1)
     if (getprop("/controls/gear/brake-parking") == 1)
         {
-	  setprop("sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day !");
+	  setprop("sim/messages/copilot", "Parking Brake and Chokes are set, enjoy your day!");
 	}
 }});
 
@@ -279,7 +279,11 @@ var calc = maketimer(0.7, func
   
   DA = math.atan2(x,y);  
     
-  setprop("/instrumentation/drift",deg(DA));
+  if  
+    (getprop("/instrumentation/airspeed-indicator/true-speed-kt") < 25 )
+    { setprop("/instrumentation/drift",0 );}
+  else
+  { setprop("/instrumentation/drift",deg(DA)); }
   
 }
 );
