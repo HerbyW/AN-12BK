@@ -25,7 +25,7 @@
   <type>material</type>
   <object-name>base</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -35,7 +35,7 @@
   <type>material</type>
   <object-name>base_switch</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.25 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -47,7 +47,7 @@
   <type>material</type>
   <object-name>digits</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -67,7 +67,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>tu154/switches/gauge-light</factor-prop>
+    <factor-prop>controls/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
@@ -76,7 +76,7 @@
   <type>select</type>
   <object-name>lamp_1</object-name>
   <condition>
-    <not><property>tu154/switches/adf-2-selector</property></not>
+    <not><property>controls/switches/adf-2-selector</property></not>
     <property>instrumentation/adf[1]/serviceable</property>
  </condition>
 </animation>
@@ -84,7 +84,7 @@
   <type>select</type>
   <object-name>lamp_2</object-name>
   <condition>
-    <property>tu154/switches/adf-2-selector</property>
+    <property>controls/switches/adf-2-selector</property>
     <property>instrumentation/adf[1]/serviceable</property>
   </condition>
 </animation>
@@ -94,7 +94,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle</object-name>
-  <property>tu154/switches/adf-2-selector</property>
+  <property>controls/switches/adf-2-selector</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	-60.0</dep></entry>
@@ -216,7 +216,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/adf-2-selector", 0.0, 0.1 );
+        interpolate("controls/switches/adf-2-selector", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -239,7 +239,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/adf-2-selector", 1.0, 0.1 );
+        interpolate("controls/switches/adf-2-selector", 1.0, 0.1 );
       </script>
     </binding>
   </action>

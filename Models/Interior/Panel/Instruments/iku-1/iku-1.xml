@@ -34,7 +34,7 @@
   <object-name>white_needle</object-name>
   <object-name>yellow_needle</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -57,7 +57,7 @@
 <animation>
   <type>rotate</type>
   <object-name>white_needle</object-name>
-  <property>yak-40/instrumentation/iku/heading-deg-2</property>
+  <property>instrumentation/iku/heading-deg-2</property>
      
     <axis>
       <x>-1.0</x>
@@ -69,7 +69,7 @@
 <animation>
   <type>rotate</type>
   <object-name>yellow_needle</object-name>
-  <property>yak-40/instrumentation/iku/heading-deg-1</property>
+  <property>instrumentation/iku/heading-deg-1</property>
      
   <axis>
     <x>-1.0</x>
@@ -84,7 +84,7 @@
 <animation>
   <type>rotate</type>
   <object-name>l_handle</object-name>
-  <property>yak-40/instrumentation/iku/l-mode</property>
+  <property>instrumentation/iku/l-mode</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	90.0</dep></entry>
@@ -103,7 +103,7 @@
 <animation>
   <type>rotate</type>
   <object-name>r_handle</object-name>
-  <property>yak-40/instrumentation/iku/r-mode</property>
+  <property>instrumentation/iku/r-mode</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	90.0</dep></entry>
@@ -124,7 +124,7 @@
 <animation>
   <type>rotate</type>
   <object-name>l_src</object-name>
-  <property>yak-40/instrumentation/iku/l-mode</property>
+  <property>instrumentation/iku/l-mode</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	120.0</dep></entry>
@@ -143,7 +143,7 @@
 <animation>
   <type>rotate</type>
   <object-name>r_src</object-name>
-  <property>yak-40/instrumentation/iku/r-mode</property>
+  <property>instrumentation/iku/r-mode</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	120.0</dep></entry>
@@ -172,9 +172,9 @@
     <binding>
       <command>nasal</command>
       <script>
-        if( getprop("yak-40/instrumentation/iku/l-mode") == 0.0 )
-        	{interpolate("yak-40/instrumentation/iku/l-mode", 1.0, 0.1 );}
-        else { interpolate("yak-40/instrumentation/iku/l-mode", 0.0, 0.1 );}
+        if( getprop("instrumentation/iku/l-mode") == 0.0 )
+        	{interpolate("instrumentation/iku/l-mode", 1.0, 0.1 );}
+        else { interpolate("instrumentation/iku/l-mode", 0.0, 0.1 );}
       </script>
     </binding>
   </action>
@@ -188,7 +188,7 @@
     <repeatable>false</repeatable>  
     <binding>
       <command>nasal</command>
-      <script>interpolate("yak-40/instrumentation/iku/l-mode", 1.0, 0.1 );</script>
+      <script>interpolate("instrumentation/iku/l-mode", 1.0, 0.1 );</script>
     </binding>
     </action>
 </animation>
@@ -201,7 +201,7 @@
     <repeatable>false</repeatable>  
     <binding>
       <command>nasal</command>
-      <script>interpolate("yak-40/instrumentation/iku/l-mode", 0.0, 0.1 );</script>
+      <script>interpolate("instrumentation/iku/l-mode", 0.0, 0.1 );</script>
     </binding>
   </action>
 </animation>
@@ -217,9 +217,9 @@
     <binding>
       <command>nasal</command>
       <script>
-        if( getprop("yak-40/instrumentation/iku/r-mode") == 0.0 ){
-        interpolate("yak-40/instrumentation/iku/r-mode", 1.0, 0.1 );}
-        else {interpolate("yak-40/instrumentation/iku/r-mode", 0.0, 0.1 );}
+        if( getprop("instrumentation/iku/r-mode") == 0.0 ){
+        interpolate("instrumentation/iku/r-mode", 1.0, 0.1 );}
+        else {interpolate("instrumentation/iku/r-mode", 0.0, 0.1 );}
       </script>
     </binding>
   </action>
@@ -233,7 +233,7 @@
     <repeatable>false</repeatable>  
     <binding>
       <command>nasal</command>
-      <script>interpolate("yak-40/instrumentation/iku/r-mode", 1.0, 0.1 );</script>
+      <script>interpolate("instrumentation/iku/r-mode", 1.0, 0.1 );</script>
     </binding>
   </action>
 </animation>
@@ -246,7 +246,7 @@
     <repeatable>false</repeatable>  
     <binding>
       <command>nasal</command>
-      <script>interpolate("yak-40/instrumentation/iku/r-mode", 0.0, 0.1 );</script>
+      <script>interpolate("instrumentation/iku/r-mode", 0.0, 0.1 );</script>
     </binding>
   </action>
 </animation>

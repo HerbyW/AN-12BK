@@ -66,7 +66,7 @@
     <object-name>blanker_g</object-name>
     <object-name>blanker_ks</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -83,7 +83,7 @@
     <object-name>heading_marker_180</object-name>
     <object-name>heading_marker_270</object-name>
      <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
        <red>1.0</red>
        <green>1.0</green>
        <blue>0.0</blue>
@@ -97,7 +97,7 @@
     <object-name>blanker_dkm</object-name>
     <object-name>blanker_heading</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
        <red>1.0</red>
        <green>0.0</green>
        <blue>0.0</blue>
@@ -111,7 +111,7 @@
 	  <object-name>nv_on</object-name>
 	  <object-name>rsbn_on</object-name>
 	   <emission>
-            <factor-prop>tu154/switches/gauge-light</factor-prop>
+            <factor-prop>controls/switches/gauge-light</factor-prop>
              <red>1.0</red>
              <green>0.0</green>
              <blue>0.0</blue>
@@ -170,13 +170,13 @@
   </condition>
 </animation>
 <!--Not in use-->
-<animation>
+<!--  <animation>
   <type>select</type>
   <object-name>rsbn_on</object-name>
-<!--  <condition>
+<condition>
     <property>tu154/rsbn_on</property>
-  </condition>-->
-</animation>
+  </condition>
+</animation>-->
 
 <!--Blankers-->
 <animation>

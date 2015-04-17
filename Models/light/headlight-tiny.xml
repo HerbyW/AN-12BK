@@ -45,7 +45,7 @@
     <type>material</type>
     <object-name>lightcone-tiny</object-name>
     <emission>
-      <factor-prop>tu154/switches/cabin</factor-prop>
+      <factor-prop>controls/switches/cabin</factor-prop>
       <red>   0.5 </red>
       <green> 0.5 </green>
       <blue>  0.5 </blue>
@@ -95,7 +95,7 @@
      <a>1.00</a>
    </specular>
    <dim-factor>
-	<property>tu154/switches/cabin</property>
+	<property>controls/switches/cabin</property>
 	<factor>1</factor>
 	<offset>0</offset>
 	<min>0</min>
@@ -115,7 +115,7 @@
  <animation>
 	  <type>select</type>	  
 	  <condition>
-		  <property>tu154/switches/cabin</property>		  
+		  <property>controls/switches/cabin</property>		  
 	  </condition>
   </animation>
 

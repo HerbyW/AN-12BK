@@ -36,7 +36,7 @@
      <object-name>DME</object-name>
      <object-name>DME.invalid</object-name>         
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -56,7 +56,7 @@
      <object-name>kt10</object-name>
      <object-name>kt100</object-name>     
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.55 </red>
       <green> 0.55 </green>
       <blue>  0.55 </blue>

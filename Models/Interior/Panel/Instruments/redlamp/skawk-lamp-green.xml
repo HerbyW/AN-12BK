@@ -28,7 +28,7 @@
   <object-name>_c_1</object-name>
   <object-name>_c_2</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -39,7 +39,7 @@
   <type>material</type>
   <object-name>_d_2</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>instrumentation/transponder/serviceable</factor-prop>
       <red>   1 </red>
       <green> 1 </green>
       <blue>  1 </blue>
@@ -51,7 +51,7 @@
   <type>select</type>
   <object-name>_d_2</object-name>
   <condition>
-    <factor-prop>tu154/switches/gauge-light</factor-prop>
+    <factor-prop>instrumentation/transponder/serviceable</factor-prop>
   </condition>
 </animation>
 

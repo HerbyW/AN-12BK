@@ -27,7 +27,7 @@
   <object-name>base_1</object-name>
   <object-name>base_2</object-name>
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -40,7 +40,7 @@
   <object-name>digits</object-name>
   <object-name>mhz</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -60,7 +60,7 @@
     <red>1.0</red>
     <green>1.0</green>
     <blue>1.0</blue>
-    <factor-prop>tu154/switches/gauge-light</factor-prop>
+    <factor-prop>controls/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 

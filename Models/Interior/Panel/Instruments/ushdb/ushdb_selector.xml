@@ -28,7 +28,7 @@
   <object-name>handle_1</object-name>
   <object-name>handle_2</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -38,7 +38,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>tu154/switches/ushdb-sel-1</property>  
+  <property>controls/switches/ushdb-sel-1</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -52,7 +52,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>tu154/switches/ushdb-sel-2</property>  
+  <property>controls/switches/ushdb-sel-2</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -75,7 +75,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/ushdb-sel-1", 1.0, 0.1 );
+        interpolate("controls/switches/ushdb-sel-1", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -90,7 +90,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/ushdb-sel-1", 0.0, 0.1 );
+        interpolate("controls/switches/ushdb-sel-1", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -105,7 +105,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/ushdb-sel-2", 1.0, 0.1 );
+        interpolate("controls/switches/ushdb-sel-2", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -120,7 +120,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/ushdb-sel-2", 0.0, 0.1 );
+        interpolate("controls/switches/ushdb-sel-2", 0.0, 0.1 );
       </script>
     </binding>
   </action>

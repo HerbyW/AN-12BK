@@ -32,7 +32,7 @@
   <object-name>base_3</object-name>
   <object-name>base_4</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <offset>0.1</offset>
       <red>   0.11 </red>
       <green> 0.11 </green>
@@ -44,7 +44,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>sim/multiplay/generic/float[12]</property>  
+  <property>instrumentation/nav[0]/serviceable</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -58,7 +58,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>controls/paratroopers/jump-signal-pos</property> 
+  <property>instrumentation/nav[1]/serviceable</property> 
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -72,7 +72,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_3</object-name>
-  <property>controls/ALS/setting-pos</property>  
+  <property>instrumentation/transponder/serviceable</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -93,11 +93,9 @@
     <button>0</button>
     <repeatable>false</repeatable>
     <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("sim/multiplay/generic/float[12]", 1.0, 2.0 );
-      </script>
-    </binding>
+        <command>property-toggle</command>
+        <property>instrumentation/nav[0]/serviceable</property>
+      </binding>
   </action>
 </animation>
 <animation>
@@ -108,11 +106,9 @@
     <button>0</button>
     <repeatable>false</repeatable>
     <binding>
-      <command>nasal</command>
-      <script>
-        interpolate("sim/multiplay/generic/float[12]", 0.0, 2.0 );
-      </script>
-    </binding>
+        <command>property-toggle</command>
+        <property>instrumentation/nav[0]/serviceable</property>
+      </binding>
   </action>
 </animation>
 
@@ -125,7 +121,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>controls/paratroopers/jump-signal</property>
+        <property>instrumentation/nav[1]/serviceable</property>
       </binding>
   </action>
 </animation>
@@ -138,7 +134,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>controls/paratroopers/jump-signal</property>
+        <property>instrumentation/nav[1]/serviceable</property>
       </binding>
   </action>
 </animation>
@@ -153,7 +149,7 @@
     <repeatable>false</repeatable>     
      <binding>
         <command>property-toggle</command>
-        <property>controls/ALS/setting</property>
+        <property>instrumentation/transponder/serviceable</property>
       </binding>
   </action>
 </animation>
@@ -167,7 +163,7 @@
     <repeatable>false</repeatable>     
      <binding>
         <command>property-toggle</command>
-        <property>controls/ALS/setting</property>
+        <property>instrumentation/transponder/serviceable</property>
       </binding>
   </action>
 </animation>

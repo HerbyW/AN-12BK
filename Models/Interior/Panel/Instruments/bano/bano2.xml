@@ -32,7 +32,7 @@
   <object-name>base_3</object-name>
   <object-name>base_4</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <offset>0.1</offset>
       <red>   0.11 </red>
       <green> 0.11 </green>

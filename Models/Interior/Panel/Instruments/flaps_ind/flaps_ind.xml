@@ -25,7 +25,7 @@
      <object-name>block3</object-name>
      <object-name>block4</object-name>     
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -39,7 +39,7 @@
 		<red>   0.15</red>
 		<green> 0.15</green>
 		<blue>  0.15</blue>
-		<factor-prop>tu154/switches/gauge-light</factor-prop>
+		<factor-prop>controls/switches/gauge-light</factor-prop>
 	</emission>
    </animation>
 
@@ -50,7 +50,7 @@
 		<red>   0.35 </red>
                 <green> 0.35 </green>
                 <blue>  0.35 </blue>
-		<factor-prop>tu154/switches/gauge-light</factor-prop>
+		<factor-prop>controls/switches/gauge-light</factor-prop>
        </emission>
     </animation>
 

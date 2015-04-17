@@ -54,9 +54,9 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 #
 # Air and Groundspeed selector for USVP-Instrument
 #
-setlistener("/tu154/switches/usvp-selector-trans", func 
+setlistener("/controls/switches/usvp-selector-trans", func 
 
-  { if(getprop("/tu154/switches/usvp-selector-trans") > 0.5)
+  { if(getprop("/controls/switches/usvp-selector-trans") > 0.5)
       {
         setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/groundspeed-kt"));
       }
@@ -71,7 +71,7 @@ setlistener("/tu154/switches/usvp-selector-trans", func
 #####################################################################################################################
 
 #Lights
-setprop("tu154/switches/headlight-mode", 1);
+setprop("controls/switches/headlight-mode", 1);
 
 ######################################################################################################################
 
@@ -170,6 +170,7 @@ setlistener("instrumentation/transponder/inputs/mode", func
   
 });
 
+setprop("/instrumentation/transponder/serviceable", 0);
 ########################################################################################################
 
 # Parking Chokes and Brake Control

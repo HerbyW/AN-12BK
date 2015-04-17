@@ -1,7 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
     #############################################################################
-    #    (C) 2006 by Yurik V. Nikiforoff - port for FGFS,  FDM,   	#
+    #    (C) 2008 by Yurik V. Nikiforoff - port for FGFS,  FDM, 	  	#
     #	2d & 3d instruments, animations, systems and over.		   	#
     #    	yurik@megasignal.com					   	#
     #############################################################################	  
@@ -17,47 +17,26 @@
     Eagel: Liveries
     ###################################################################################
 -->
-<!-- indicators on captain panel
+<!-- Light switches block -AN-12
 3D instrument for Tu-154 -->
 <PropertyList>
- <path>warning31.ac</path>
- 
-  <!-- Internal instruments lighting -->
-
-  <effect>
- <inherits-from>Effects/model-transparent</inherits-from>
-  <object-name>cover</object-name>
-</effect>
-  
-  <animation>
-    <type>material</type>
-    <object-name>cover</object-name>    
-    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.35 </red>
-      <green> 0.35 </green>
-      <blue>  0.35 </blue>
-    </emission>
-  </animation>
-   
-<!--Indicators 26-fuel 31-speed-->
-
-
+ <path>ikone.ac</path>
+<!--External panel lighting-->
 <animation>
   <type>material</type>
-  <object-name>text</object-name>
-   <condition>
-     <greater-than>
-	<property>velocities/groundspeed-kt</property>
-	<value>415</value>
-     </greater-than>
-    </condition>  
-  <emission>
-    <red>1.0</red>
-    <green>1.0</green>
-    <blue>1.0</blue>    
-  </emission>
+  
+  <object-name>base_4</object-name>  
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <offset>0.1</offset>
+      <red>   0.11 </red>
+      <green> 0.11 </green>
+      <blue>  0.11 </blue>
+    </emission>
 </animation>
 
+
+
+
 </PropertyList>
+

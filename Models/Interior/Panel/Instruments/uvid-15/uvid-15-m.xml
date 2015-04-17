@@ -48,7 +48,7 @@
   <object-name>dig_p_hund</object-name>
   <object-name>needle</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>

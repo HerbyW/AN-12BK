@@ -110,7 +110,7 @@ var realias = func(src, dst, delay, wrap=nil) {
                     obj.alias(dst);
                 else
                     setprop(src, dst);setprop("tu154/instrumentation/ushdb/heading-deg-"~b, bearing);
-                    setprop("yak-40/instrumentation/iku/heading-deg-"~b,  bearing);
+                    setprop("instrumentation/iku/heading-deg-"~b,  bearing);
             }
         }, delay);
     } else {
@@ -128,7 +128,7 @@ var realias = func(src, dst, delay, wrap=nil) {
 
 
 var ushdb_mode_update = func(b) {
-    var sel = getprop("tu154/switches/ushdb-sel-"~b);
+    var sel = getprop("controls/switches/ushdb-sel-"~b);
     if (int(sel) != sel) # The switch is in transition.
         return;
     var bearing = 90;
@@ -150,10 +150,10 @@ var ushdb_mode_update = func(b) {
     }
 
     setprop("tu154/instrumentation/ushdb/heading-deg-"~b, bearing);
-    setprop("yak-40/instrumentation/iku/heading-deg-"~b,  bearing);
+    setprop("instrumentation/iku/heading-deg-"~b,  bearing);
     
 #    realias("tu154/instrumentation/ushdb/heading-deg-"~b, bearing, 0.1, [0, 360]);
-#    realias("yak-40/instrumentation/iku/heading-deg-"~b, bearing, 0.1, [0, 360]);
+#    realias("instrumentation/iku/heading-deg-"~b, bearing, 0.1, [0, 360]);
 }
 
 
@@ -173,8 +173,8 @@ setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[0]/radials/reciprocal-radial-deg", ushdb_mode1_update, 1);
 setlistener("instrumentation/nav[1]/radials/reciprocal-radial-deg", ushdb_mode2_update, 1);
-setlistener("tu154/switches/ushdb-sel-1", ushdb_mode1_update, 1);
-setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 1);
+setlistener("controls/switches/ushdb-sel-1", ushdb_mode1_update, 1);
+setlistener("controls/switches/ushdb-sel-2", ushdb_mode2_update, 1);
 
 
 
@@ -185,10 +185,10 @@ setlistener("tu154/switches/ushdb-sel-2", ushdb_mode2_update, 1);
 
 # TKS power support
 
-setprop("tu154/switches/TKC-power-1", 1);
-setprop("tu154/switches/TKC-power-2", 1);
-setprop("tu154/switches/TKC-BGMK-1", 1);
-setprop("tu154/switches/TKC-BGMK-2", 1);
+setprop("controls/switches/TKC-power-1", 1);
+setprop("controls/switches/TKC-power-2", 1);
+setprop("controls/switches/TKC-BGMK-1", 1);
+setprop("controls/switches/TKC-BGMK-2", 1);
 
 # auto corrector for GA-3 and BGMK
 var tks_corr = func{
@@ -197,13 +197,13 @@ if( mk1 == nil ) return;
 var mk2 = getprop("fdm/jsbsim/instrumentation/km-5-2");
 if( mk2 == nil ) return;
 help.tks();	# show help string
-if( getprop("tu154/switches/pu-11-gpk") == 1 ) { # GA-3 correction
+if( getprop("controls/switches/pu-11-gpk") == 1 ) { # GA-3 correction
 # parameters GA-3
    var gpk_1 = getprop("fdm/jsbsim/instrumentation/ga3-corrected-1");
    var gpk_2 = getprop("fdm/jsbsim/instrumentation/ga3-corrected-2");
    if( gpk_1 == nil ) return;
    if( gpk_2 == nil ) return;
-   if( getprop("tu154/switches/pu-11-corr") == 0 ) # kontr
+   if( getprop("controls/switches/pu-11-corr") == 0 ) # kontr
 	{
 	if( getprop("instrumentation/heading-indicator[1]/serviceable" ) != 1 ) return;
 	var delta = gpk_2 - mk2;
@@ -229,9 +229,9 @@ else	{ # osn
 	return;
 	}
    } # end GA-3 correction
-   if( getprop("tu154/switches/pu-11-gpk") == 0 ) { # BGMK correction
+   if( getprop("controls/switches/pu-11-gpk") == 0 ) { # BGMK correction
 # parameters BGMK
-   if( getprop("tu154/switches/pu-11-corr") == 0 ) # BGMK-2
+   if( getprop("controls/switches/pu-11-corr") == 0 ) # BGMK-2
 	{
         setprop("fdm/jsbsim/instrumentation/bgmk-corrector-2",1);
 	}
@@ -243,10 +243,10 @@ else	{ # BGMK-1
 
 # manually adjust gyro heading - GA-3 only
 tks_adj = func{
-if( getprop("tu154/switches/pu-11-gpk") != 0 ) return;
+if( getprop("controls/switches/pu-11-gpk") != 0 ) return;
 help.tks();	# show help string
 var delta = 0.1;
-if( getprop("tu154/switches/pu-11-corr") == 0 ) # kontr
+if( getprop("controls/switches/pu-11-corr") == 0 ) # kontr
 	{
 	if( getprop("instrumentation/heading-indicator[1]/serviceable" ) != 1 ) return;
 	if( arg[0] == 1 ) # to right
@@ -320,8 +320,8 @@ settimer(tks_az_handler, 60.0 );
 #  KURS-MP frequency support
 #
 
-setprop("tu154/switches/KURS-MP-1", 1);
-setprop("tu154/switches/KURS-MP-2", 1);
+setprop("controls/switches/KURS-MP-1", 1);
+setprop("controls/switches/KURS-MP-2", 1);
 
 var kursmp_sync = func{
 var frequency = 0.0;
@@ -437,7 +437,7 @@ ark_1_2_handler = func {
 	var hund = getprop("tu154/instrumentation/ark-15[0]/digit-2-3");
 	if( hund == nil ) hund = 0.0;
 	var freq = hund * 100 + dec * 10 + ones;
-	if( getprop("tu154/switches/adf-1-selector") == 1 )
+	if( getprop("controls/switches/adf-1-selector") == 1 )
 		setprop("instrumentation/adf[0]/frequencies/selected-khz", freq );
 }
 
@@ -449,7 +449,7 @@ ark_1_1_handler = func {
 	var hund = getprop("tu154/instrumentation/ark-15[0]/digit-1-3");
 	if( hund == nil ) hund = 0.0;
 	var freq = hund * 100 + dec * 10 + ones;
-	if( getprop("tu154/switches/adf-1-selector") == 0 )
+	if( getprop("controls/switches/adf-1-selector") == 0 )
 		setprop("instrumentation/adf[0]/frequencies/selected-khz", freq );
 }
 
@@ -461,7 +461,7 @@ ark_2_2_handler = func {
 	var hund = getprop("tu154/instrumentation/ark-15[1]/digit-2-3");
 	if( hund == nil ) hund = 0.0;
 	var freq = hund * 100 + dec * 10 + ones;
-	if( getprop("tu154/switches/adf-2-selector") == 1 )
+	if( getprop("controls/switches/adf-2-selector") == 1 )
 		setprop("instrumentation/adf[1]/frequencies/selected-khz", freq );
 }
 
@@ -473,7 +473,7 @@ ark_2_1_handler = func {
 	var hund = getprop("tu154/instrumentation/ark-15[1]/digit-1-3");
 	if( hund == nil ) hund = 0.0;
 	var freq = hund * 100 + dec * 10 + ones;
-	if( getprop("tu154/switches/adf-2-selector") == 0 )
+	if( getprop("controls/switches/adf-2-selector") == 0 )
 		setprop("instrumentation/adf[1]/frequencies/selected-khz", freq );
 }
 
@@ -481,7 +481,7 @@ ark_2_1_handler = func {
 ark_1_power = func{
     if( getprop("instrumentation/adf[0]/power-btn") == 1 )
 	{
-    	if( getprop("tu154/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") == 1 )
 		{
 	     
 	     setprop("instrumentation/adf[0]/serviceable", 1 );
@@ -500,7 +500,7 @@ ark_1_power = func{
 ark_2_power = func{
     if( getprop("instrumentation/adf[1]/power-btn") == 1 )
 	{
-    	if( getprop("tu154/switches/gauge-light") == 1 )
+    	if( getprop("controls/switches/gauge-light") == 1 )
 		{
 	     
 	     setprop("instrumentation/adf[1]/serviceable", 1 );
@@ -560,16 +560,16 @@ int( freq - int( freq/10.0 )*10.0 ) );
 
 ark_init();
 
-setlistener("tu154/switches/gauge-light", ark_1_power ,0,0);
-setlistener("tu154/switches/gauge-light", ark_2_power ,0,0);
+setlistener("controls/switches/gauge-light", ark_1_power ,0,0);
+setlistener("controls/switches/gauge-light", ark_2_power ,0,0);
 setlistener("instrumentation/adf[0]/power-btn", ark_1_power ,0,0);
 setlistener("instrumentation/adf[1]/power-btn", ark_2_power ,0,0);
 
-setlistener( "tu154/switches/adf-1-selector", ark_1_1_handler ,0,0);
-setlistener( "tu154/switches/adf-1-selector", ark_1_2_handler ,0,0);
+setlistener( "controls/switches/adf-1-selector", ark_1_1_handler ,0,0);
+setlistener( "controls/switches/adf-1-selector", ark_1_2_handler ,0,0);
 
-setlistener( "tu154/switches/adf-2-selector", ark_2_1_handler ,0,0);
-setlistener( "tu154/switches/adf-2-selector", ark_2_2_handler ,0,0);
+setlistener( "controls/switches/adf-2-selector", ark_2_1_handler ,0,0);
+setlistener( "controls/switches/adf-2-selector", ark_2_2_handler ,0,0);
 
 setlistener( "tu154/instrumentation/ark-15[0]/digit-1-1", ark_1_1_handler ,0,0);
 setlistener( "tu154/instrumentation/ark-15[0]/digit-1-2", ark_1_1_handler ,0,0);
