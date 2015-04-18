@@ -57,8 +57,25 @@
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
-  </axis>
+  </axis>  
 </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>compass</object-name>
+  <visible>true</visible>   
+    
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Drift</tooltip-id>
+      <label>Wind Drift: %5.2f</label>
+      <property>/instrumentation/drift</property>      
+    </binding>
+  </hovered> 
+  
+</animation>
+
 
 <!--Needles
 <animation>
@@ -106,7 +123,7 @@
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
-  </axis>
+  </axis>  
 </animation>
 
 <!--mk lamp-->

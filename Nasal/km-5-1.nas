@@ -165,6 +165,7 @@ var ushdb_mode2_update = func {
     ushdb_mode_update(2);
 }
 
+
 setlistener("instrumentation/adf[0]/in-range", ushdb_mode1_update, 0, 0);
 setlistener("instrumentation/nav[0]/in-range", ushdb_mode1_update, 0, 0);
 setlistener("instrumentation/nav[0]/nav-loc", ushdb_mode1_update, 0, 0);
@@ -173,6 +174,8 @@ setlistener("instrumentation/nav[1]/in-range", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[1]/nav-loc", ushdb_mode2_update, 0, 0);
 setlistener("instrumentation/nav[0]/radials/reciprocal-radial-deg", ushdb_mode1_update, 1);
 setlistener("instrumentation/nav[1]/radials/reciprocal-radial-deg", ushdb_mode2_update, 1);
+setlistener("instrumentation/adf[0]/indicated-bearing-deg", ushdb_mode1_update, 1);
+setlistener("instrumentation/adf[1]/indicated-bearing-deg", ushdb_mode2_update, 1);
 setlistener("controls/switches/ushdb-sel-1", ushdb_mode1_update, 1);
 setlistener("controls/switches/ushdb-sel-2", ushdb_mode2_update, 1);
 
@@ -185,10 +188,10 @@ setlistener("controls/switches/ushdb-sel-2", ushdb_mode2_update, 1);
 
 # TKS power support
 
-setprop("controls/switches/TKC-power-1", 1);
-setprop("controls/switches/TKC-power-2", 1);
-setprop("controls/switches/TKC-BGMK-1", 1);
-setprop("controls/switches/TKC-BGMK-2", 1);
+# setprop("controls/switches/TKC-power-1", 1);
+# setprop("controls/switches/TKC-power-2", 1);
+# setprop("controls/switches/TKC-BGMK-1", 1);
+# setprop("controls/switches/TKC-BGMK-2", 1);
 
 # auto corrector for GA-3 and BGMK
 var tks_corr = func{
@@ -320,8 +323,11 @@ settimer(tks_az_handler, 60.0 );
 #  KURS-MP frequency support
 #
 
-setprop("controls/switches/KURS-MP-1", 1);
-setprop("controls/switches/KURS-MP-2", 1);
+# setprop("controls/switches/KURS-MP-1", 1);
+# setprop("controls/switches/KURS-MP-2", 1);
+setprop("/instrumentation/nav[0]/power-btn", 0);
+setprop("/instrumentation/nav[1]/power-btn", 0);
+
 
 var kursmp_sync = func{
 var frequency = 0.0;
@@ -516,6 +522,44 @@ ark_2_power = func{
 	}
 }
 
+nav_1_power = func{
+    if( getprop("instrumentation/nav[0]/power-btn") == 1 )
+	{
+    	if( getprop("controls/switches/gauge-light") == 1 )
+		{
+	     
+	     setprop("instrumentation/nav[0]/serviceable", 1 );
+		}
+ 	else {
+	     
+	     setprop("instrumentation/nav[0]/serviceable", 0 );
+	     }
+	} 
+   else {
+	
+	setprop("instrumentation/nav[0]/serviceable", 0 );
+	}
+}
+
+nav_2_power = func{
+    if( getprop("instrumentation/nav[1]/power-btn") == 1 )
+	{
+    	if( getprop("controls/switches/gauge-light") == 1 )
+		{
+	     
+	     setprop("instrumentation/nav[1]/serviceable", 1 );
+		}
+ 	else {
+	     
+	     setprop("instrumentation/nav[1]/serviceable", 0 );
+		}
+	} 
+   else {
+	
+	setprop("instrumentation/nav[1]/serviceable", 0 );
+	}
+}
+
 
 
 # read selected and standby ADF frequencies and copy it to ARK
@@ -562,8 +606,12 @@ ark_init();
 
 setlistener("controls/switches/gauge-light", ark_1_power ,0,0);
 setlistener("controls/switches/gauge-light", ark_2_power ,0,0);
+setlistener("controls/switches/gauge-light", nav_1_power ,0,0);
+setlistener("controls/switches/gauge-light", nav_2_power ,0,0);
 setlistener("instrumentation/adf[0]/power-btn", ark_1_power ,0,0);
 setlistener("instrumentation/adf[1]/power-btn", ark_2_power ,0,0);
+setlistener("instrumentation/nav[0]/power-btn", nav_1_power ,0,0);
+setlistener("instrumentation/nav[1]/power-btn", nav_2_power ,0,0);
 
 setlistener( "controls/switches/adf-1-selector", ark_1_1_handler ,0,0);
 setlistener( "controls/switches/adf-1-selector", ark_1_2_handler ,0,0);

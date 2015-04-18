@@ -44,7 +44,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_1</object-name>
-  <property>instrumentation/nav[0]/serviceable</property>  
+  <property>instrumentation/nav[0]/power-btn</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -58,7 +58,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle_2</object-name>
-  <property>instrumentation/nav[1]/serviceable</property> 
+  <property>instrumentation/nav[1]/power-btn</property> 
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	60.0</dep></entry>
@@ -94,7 +94,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>instrumentation/nav[0]/serviceable</property>
+        <property>instrumentation/nav[0]/power-btn</property>
       </binding>
   </action>
 </animation>
@@ -107,7 +107,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>instrumentation/nav[0]/serviceable</property>
+        <property>instrumentation/nav[0]/power-btn</property>
       </binding>
   </action>
 </animation>
@@ -121,7 +121,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>instrumentation/nav[1]/serviceable</property>
+        <property>instrumentation/nav[1]/power-btn</property>
       </binding>
   </action>
 </animation>
@@ -134,7 +134,7 @@
     <repeatable>false</repeatable>
     <binding>
         <command>property-toggle</command>
-        <property>instrumentation/nav[1]/serviceable</property>
+        <property>instrumentation/nav[1]/power-btn</property>
       </binding>
   </action>
 </animation>

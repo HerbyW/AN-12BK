@@ -376,23 +376,25 @@
 </adf>
     
 <nav n="0">
+  
   <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
   </radials>
-  <!--<power-btn type="bool">false</power-btn>
-  <operable type="bool">false</operable>-->
+  <power-btn type="bool">false</power-btn>
   <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
 </nav>
 
 <nav n="1">
+  
   <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
   </radials>
-  <!--<power-btn type="bool">false</power-btn>
-  <operable type="bool">false</operable>-->
+  <power-btn type="bool">false</power-btn>
   <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
 </nav>
 
 <iku>  

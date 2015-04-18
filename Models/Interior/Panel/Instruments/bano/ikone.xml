@@ -23,8 +23,7 @@
  <path>ikone.ac</path>
 <!--External panel lighting-->
 <animation>
-  <type>material</type>
-  
+  <type>material</type>  
   <object-name>base_4</object-name>  
     <emission>
       <factor-prop>controls/switches/gauge-light</factor-prop>
@@ -35,8 +34,12 @@
     </emission>
 </animation>
 
-
-
+<animation>
+ <type>select</type>	  
+  <condition>
+    <property>sim/initialized</property>
+  </condition>
+</animation>
 
 </PropertyList>
 

@@ -1965,12 +1965,12 @@ SKAWK</text>
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/ikone.xml</path>
     <offsets>
-      <x-m>  0.485 </x-m>
-      <y-m>  -0.49 </y-m>
-      <z-m>  0.565 </z-m>
-      <pitch-deg>66</pitch-deg>
+      <x-m>  0.473 </x-m>
+      <y-m>  -0.493 </y-m>
+      <z-m>  0.554 </z-m>
+      <pitch-deg>68</pitch-deg>
     </offsets>
   </model>
  
- 
+
 </PropertyList>
