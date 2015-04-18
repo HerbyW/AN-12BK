@@ -28,7 +28,7 @@
   <object-name>handle</object-name>
   <object-name>base_1</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.21 </red>
       <green> 0.21 </green>
       <blue>  0.21 </blue>
@@ -39,7 +39,7 @@
 <animation>
   <type>rotate</type>
   <object-name>handle</object-name>
-  <property>tu154/switches/headlight-mode</property>  
+  <property>controls/switches/headlight-mode</property>  
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-60.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	0.0</dep></entry>
@@ -63,7 +63,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/headlight-mode", 2.0, 0.1 );
+        interpolate("controls/switches/headlight-mode", 2.0, 0.1 );
       </script>
     </binding>
     <binding> 
@@ -88,7 +88,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/headlight-mode", 1.0, 0.1 );
+        interpolate("controls/switches/headlight-mode", 1.0, 0.1 );
       </script>
     </binding>
     <binding> 
@@ -113,7 +113,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/headlight-mode", 0.0, 0.1 );
+        interpolate("controls/switches/headlight-mode", 0.0, 0.1 );
       </script>
     </binding>
     <binding> 

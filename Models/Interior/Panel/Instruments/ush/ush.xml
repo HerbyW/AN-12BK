@@ -41,7 +41,7 @@
   <object-name>needle_2</object-name>
   
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -51,7 +51,7 @@
 <animation>
   <type>rotate</type>
   <object-name>compass</object-name>
-   <property>tu154/switches/gauge-light</property>   
+   <property>controls/switches/gauge-light</property>   
    <factor> 180 </factor>  
   <axis>
     <x>-1.0</x>
@@ -128,7 +128,7 @@
   <object-name>mk</object-name>
     <condition>
      <equals>
-      <property>tu154/switches/pu-11-gpk</property>
+      <property>controls/switches/pu-11-gpk</property>
       <value>1.0</value>
      </equals>
   </condition>
@@ -155,7 +155,7 @@
   <object-name>gpk</object-name>
   <condition>
     <equals>
-      <property>tu154/switches/pu-11-gpk</property>
+      <property>controls/switches/pu-11-gpk</property>
       <value>0.0</value>
     </equals>
   </condition>
@@ -182,7 +182,7 @@
   <object-name>ak</object-name>
   <condition>
     <equals>
-      <property>tu154/switches/pu-11-gpk</property>
+      <property>controls/switches/pu-11-gpk</property>
       <value>-1.0</value>
     </equals>
   </condition>

@@ -910,7 +910,7 @@
     <type>material</type>    
     <object-name>NAV_ADF</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.5 </red>
       <green> 0.5 </green>
       <blue>  0.5 </blue>
@@ -1275,7 +1275,7 @@ Battery</text>
     <type>material</type>    
     <object-name>Main</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1313,7 +1313,7 @@ Lights</text>
     <type>material</type>    
     <object-name>Navlights</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1350,7 +1350,7 @@ Lights</text>
     <type>material</type>    
     <object-name>Instrulights</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1399,7 +1399,7 @@ Lights</text>
     <type>material</type>    
     <object-name>LandingTaxi</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1447,7 +1447,7 @@ Door</text>
     <type>material</type>    
     <object-name>CargoDoor</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1484,7 +1484,7 @@ Door</text>
     <type>material</type>    
     <object-name>parachute_signal</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1521,7 +1521,7 @@ Lights</text>
     <type>material</type>    
     <object-name>ALS</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1750,7 +1750,7 @@ ADF 1</text>
     <type>material</type>    
     <object-name>text1</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1788,7 +1788,7 @@ ADF 2</text>
     <type>material</type>    
     <object-name>text2</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1826,7 +1826,7 @@ HSI</text>
     <type>material</type>    
     <object-name>text3</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1851,8 +1851,8 @@ HSI</text>
   <text>
     <name>text4</name>
     <type type="string">literal</type>
-    <text type="string">Text
-4</text>
+    <text type="string">Power
+Kurs-MP1</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
@@ -1877,7 +1877,7 @@ HSI</text>
     <type>material</type>    
     <object-name>text4</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1889,8 +1889,8 @@ HSI</text>
   <text>
     <name>text5</name>
     <type type="string">literal</type>
-    <text type="string">Text
-5</text>
+    <text type="string">Power
+Kurs-MP2</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
@@ -1915,7 +1915,7 @@ HSI</text>
     <type>material</type>    
     <object-name>text5</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
@@ -1927,8 +1927,8 @@ HSI</text>
     <text>
     <name>text6</name>
     <type type="string">literal</type>
-    <text type="string">Text
-6</text>
+    <text type="string">Power
+SKAWK</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.008</character-size>
@@ -1953,13 +1953,24 @@ HSI</text>
     <type>material</type>    
     <object-name>text6</object-name>    
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.6 </red>
       <green> 0.6 </green>
       <blue>  0.6 </blue>
     </emission>
   </animation>
   
+    <!-- Ikone Picture -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/bano/ikone.xml</path>
+    <offsets>
+      <x-m>  0.485 </x-m>
+      <y-m>  -0.49 </y-m>
+      <z-m>  0.565 </z-m>
+      <pitch-deg>66</pitch-deg>
+    </offsets>
+  </model>
  
  
 </PropertyList>

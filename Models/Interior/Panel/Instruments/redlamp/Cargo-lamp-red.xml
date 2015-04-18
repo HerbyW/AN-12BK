@@ -38,7 +38,7 @@
   <type>material</type>
   <object-name>_d_2</object-name>
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   1 </red>
       <green> 1 </green>
       <blue>  1 </blue>

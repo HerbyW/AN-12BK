@@ -28,7 +28,7 @@
    <object-name>base</object-name>
    <object-name>box</object-name>   
   <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -42,7 +42,7 @@
     <object-name>c2</object-name>
     <object-name>c3</object-name>
    <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -89,7 +89,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/switches/cabin</property>
+      <property>controls/switches/cabin</property>
       <factor>0.1</factor>
       <min>0</min>
       <max>1</max>
@@ -100,7 +100,7 @@
       <command>set-tooltip</command>
       <tooltip-id>Cabin-Light</tooltip-id>
       <label>Cabin-Light: %d%%</label>
-      <property>tu154/switches/cabin</property>
+      <property>controls/switches/cabin</property>
       <mapping>nasal</mapping>
       <script>return int(arg[0] * 100)</script>
     </binding>
@@ -114,7 +114,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/switches/gauge-light</property>
+      <property>controls/switches/gauge-light</property>
       <factor>1</factor>
       <min>0</min>
       <max>1</max>
@@ -125,7 +125,7 @@
       <command>set-tooltip</command>
       <tooltip-id>Instrument-Lights</tooltip-id>
       <label>Instrument-Lights: %d%%</label>
-      <property>tu154/switches/gauge-light</property>
+      <property>controls/switches/gauge-light</property>
       <mapping>nasal</mapping>
       <script>return int(arg[0] * 100)</script>
     </binding>

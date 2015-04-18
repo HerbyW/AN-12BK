@@ -35,7 +35,7 @@
      <object-name>switches</object-name>
      <object-name>button</object-name> 
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -50,7 +50,7 @@
      <object-name>text</object-name>     
      <object-name>base</object-name>  
     <emission>
-      <factor-prop>tu154/switches/gauge-light</factor-prop>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -69,7 +69,7 @@
       <red>   0.55 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
-    <factor-prop>tu154/switches/gauge-light</factor-prop>
+    <factor-prop>controls/switches/gauge-light</factor-prop>
   </emission>
 </animation>
 
@@ -92,7 +92,7 @@
 <animation>
   <type>rotate</type>
   <object-name>potr_handle</object-name>
-  <property>tu154/switches/pu-11-consumers</property>
+  <property>controls/switches/pu-11-consumers</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-45.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	45.0</dep></entry>
@@ -112,7 +112,7 @@
 <animation>
   <type>rotate</type>
   <object-name>korr_handle</object-name>
-  <property>tu154/switches/pu-11-corr</property> 
+  <property>controls/switches/pu-11-corr</property> 
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-45.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	45.0</dep></entry>
@@ -132,7 +132,7 @@
 <animation>
   <type>rotate</type>
   <object-name>auto_handle</object-name>
-  <property>tu154/switches/pu-11-auto</property>
+  <property>controls/switches/pu-11-auto</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	-45.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	45.0</dep></entry>
@@ -152,7 +152,7 @@
 <animation>
   <type>rotate</type>
   <object-name>gpk_handle</object-name>
-  <property>tu154/switches/pu-11-gpk</property>
+  <property>controls/switches/pu-11-gpk</property>
   <interpolation>
     <entry><ind>	-1.0</ind>	<dep>	-45.0</dep></entry>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
@@ -173,7 +173,7 @@
 <animation>
   <type>rotate</type>
   <object-name>kurs_handle</object-name>
-  <property>tu154/switches/pu-11-kurs</property>
+  <property>controls/switches/pu-11-kurs</property>
   <interpolation>
     <entry><ind>	-1.0</ind>	<dep>	-45.0</dep></entry>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
@@ -248,7 +248,7 @@
 <animation>
   <type>translate</type>
   <object-name>button</object-name>
-  <property>tu154/switches/pu-11-button</property>
+  <property>controls/switches/pu-11-button</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	0.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	0.003</dep></entry>
@@ -272,7 +272,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-consumers", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-consumers", 1.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -292,7 +292,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-consumers", 0.0, 0.1 );
+        interpolate("controls/switches/pu-11-consumers", 0.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -312,7 +312,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-corr", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-corr", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -327,7 +327,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-corr", 0.0, 0.1 );
+        interpolate("controls/switches/pu-11-corr", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -342,7 +342,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-auto", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-auto", 1.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -362,7 +362,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-auto", 0.0, 0.1 );
+        interpolate("controls/switches/pu-11-auto", 0.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -382,7 +382,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-gpk", -1.0, 0.1 );
+        interpolate("controls/switches/pu-11-gpk", -1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -397,7 +397,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-gpk", 0.0, 0.1 );
+        interpolate("controls/switches/pu-11-gpk", 0.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -412,7 +412,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-gpk", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-gpk", 1.0, 0.1 );
       </script>
     </binding>
   </action>
@@ -429,7 +429,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-kurs", -1.0, 0.1 );
+        interpolate("controls/switches/pu-11-kurs", -1.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -442,7 +442,7 @@
       <binding>
         <command>nasal</command>
         <script>
-          interpolate("tu154/switches/pu-11-kurs", 0.0, 0.1 );
+          interpolate("controls/switches/pu-11-kurs", 0.0, 0.1 );
         </script>
       </binding>      
     </mod-up>
@@ -459,7 +459,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-kurs", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-kurs", 1.0, 0.1 );
       </script>
     </binding>
     <binding>
@@ -472,7 +472,7 @@
       <binding>
         <command>nasal</command>
         <script>
-          interpolate("tu154/switches/pu-11-kurs", 0.0, 0.1 );
+          interpolate("controls/switches/pu-11-kurs", 0.0, 0.1 );
         </script>
       </binding>      
     </mod-up>
@@ -490,7 +490,7 @@
     <binding>
       <command>nasal</command>
       <script>
-        interpolate("tu154/switches/pu-11-button", 1.0, 0.1 );
+        interpolate("controls/switches/pu-11-button", 1.0, 0.1 );
         help.tks_corr();
       </script>
     </binding>
@@ -498,7 +498,7 @@
       <binding>
         <command>nasal</command>
         <script>
-          interpolate("tu154/switches/pu-11-button", 0.0, 0.1 );
+          interpolate("controls/switches/pu-11-button", 0.0, 0.1 );
           setprop("fdm/jsbsim/instrumentation/bgmk-corrector-1",0);
           setprop("fdm/jsbsim/instrumentation/bgmk-corrector-2",0);
         </script>
