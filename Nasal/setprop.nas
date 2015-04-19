@@ -331,6 +331,11 @@ setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/eng
 setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[1]/throttle"));
 setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[2]/throttle"));
 setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[3]/throttle"));
+
+setprop("/controls/engines/engine[0]/throttle-r", 0);
+setprop("/controls/engines/engine[1]/throttle-r", 0);
+setprop("/controls/engines/engine[2]/throttle-r", 0);
+setprop("/controls/engines/engine[3]/throttle-r", 0);
 }
 else
 {  
@@ -338,6 +343,11 @@ setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/eng
 setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[1]/throttle"));
 setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[2]/throttle"));
 setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[3]/throttle"));
+
+setprop("/controls/engines/engine[0]/throttle-v", 0);
+setprop("/controls/engines/engine[1]/throttle-v", 0);
+setprop("/controls/engines/engine[2]/throttle-v", 0);
+setprop("/controls/engines/engine[3]/throttle-v", 0);
 }
  }
 );

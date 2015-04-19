@@ -574,7 +574,7 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  -0.015 </x-m>
       <y-m> -0.23 </y-m>
       <z-m> -0.192 </z-m>
       <heading-deg>0.0</heading-deg>
