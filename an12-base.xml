@@ -5,7 +5,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -68,14 +68,9 @@
  
  <gear><gear><position-norm type="float">1</position-norm></gear></gear>
  
- <tu154>
+ 
+     
    
-   <instrumentation>
-     <ushdb><compass type="double">0</compass></ushdb>
-     <mapcase><page type="int">1</page></mapcase>
-   </instrumentation>
-   
- </tu154>
  
 
  
@@ -284,7 +279,7 @@
 	Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
 	
 	Have fun and get the latest version at:
-	github.com/HerbyW/antonov-aircrafts
+	github.com/HerbyW
       </text>
     </help>
 
@@ -315,38 +310,39 @@
     </engine>
   </engines>
   
-  <instrumentation>
-    <dme n="0">
-        <frequencies>
-            <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
-        </frequencies>
-        <switch-position n="0" type="int">0</switch-position>
-        <switch-position n="1" type="int">0</switch-position>
-    </dme>
-    <dme n="1">
-        <frequencies>
-            <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
-        </frequencies>
-        <switch-position n="0" type="int">0</switch-position>
-        <switch-position n="1" type="int">0</switch-position>
-    </dme>
+<instrumentation>
+
+<dme n="0">
+    <frequencies>
+       <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+</dme>
+<dme n="1">
+    <frequencies>
+       <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+</dme>
     
-    <inst-vertical-speed-indicator>
+<inst-vertical-speed-indicator>
         <serviceable type="bool">true</serviceable>
-    </inst-vertical-speed-indicator>
-    <altimeter>
+</inst-vertical-speed-indicator>
+<altimeter>
         <decision-height type="double">0</decision-height>
 	<setting-hapa type="double">0</setting-hapa>
-    </altimeter>
-    <airspeed-indicator>
+</altimeter>
+<airspeed-indicator>
         <index-marker type="double">100</index-marker>
-    </airspeed-indicator>
+</airspeed-indicator>
     
-    <drift type="double">0</drift>
+<drift type="double">0</drift>
     
-    <heading-indicator n="0">
+<heading-indicator n="0">
       <serviceable type="int">0</serviceable>
-    </heading-indicator>
+</heading-indicator>
     
 <adf n="0">
   <mode>adf</mode>
@@ -405,6 +401,9 @@
 <transponder>  
   <serviceable type="bool">false</serviceable>
 </transponder>
+
+<ushdb><compass type="double">0</compass></ushdb>
+<mapcase><page type="int">1</page></mapcase>
 
 </instrumentation>
 
