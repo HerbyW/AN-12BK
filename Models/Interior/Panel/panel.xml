@@ -36,6 +36,15 @@
   <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
   <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning88.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m> -0.5435 </y-m>
+      <z-m>  0.18 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning26.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
@@ -801,10 +810,32 @@
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/quadrant/quadrant.xml</path>
     <offsets>
       <x-m> -0.00</x-m>
-      <y-m> -0.26 </y-m>
+      <y-m> -0.28 </y-m>
       <z-m> -0.35 </z-m>
       <heading-deg>0</heading-deg>
       <pitch-deg>43</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/reverser.xml</path>
+    <offsets>
+      <x-m> 0.08</x-m>
+      <y-m> -0.35 </y-m>
+      <z-m> -0.285 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-43</pitch-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/red-lamp-reverser.xml</path>
+    <offsets>
+      <x-m> 0.05</x-m>
+      <y-m> -0.35 </y-m>
+      <z-m> -0.285 </z-m>
+      <heading-deg>0</heading-deg>
+      <pitch-deg>-43</pitch-deg>
     </offsets>
   </model>
   

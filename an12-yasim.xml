@@ -25,10 +25,10 @@
 <airplane mass="62000" version="YASIM_VERSION_CURRENT">
 
   <approach speed="98" aoa="8" fuel="0.3">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[2]/throttle" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[3]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.3"/>
 
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
@@ -45,10 +45,10 @@
   </approach>
 
   <cruise speed="341" alt="13500" fuel="0.7">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[2]/throttle" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[3]/throttle" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.7"/>
 
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
     <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.8"/>
@@ -174,7 +174,7 @@
                              n2-max="100"
                              bsfc="0.65"> 
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
-                             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+                             <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
@@ -202,7 +202,7 @@
                              n2-max="100"
                              bsfc="0.65"> 
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
-                             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+                             <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
@@ -230,7 +230,7 @@
                              n2-max="100"
                              bsfc="0.65"> 
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
-                             <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
+                             <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
@@ -258,7 +258,7 @@
                              n2-max="100"
                              bsfc="0.65"> 
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
-                             <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
+                             <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
   </propeller>
 
@@ -368,8 +368,11 @@
   
   <!-- Thruster for Pushback action -->
   
-  <thruster x="-11.51110" y="0" z="-5.26151" vx="1" vy="0" vz="0" thrust="8000">
-  <control-input axis="/sim/model/pushback/target-speed-fps" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+  <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="8000">
+  <control-input axis="/controls/engines/engine[0]/throttle-r" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[1]/throttle-r" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[2]/throttle-r" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[3]/throttle-r" control="THROTTLE"/>
   </thruster>
 
 </airplane>

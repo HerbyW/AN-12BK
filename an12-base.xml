@@ -64,6 +64,7 @@
     <chokes>
       <activ type="int">0</activ>
     </chokes>
+    <reverser type="bool">0</reverser>
  </controls>
  
  <gear><gear><position-norm type="float">1</position-norm></gear></gear>
