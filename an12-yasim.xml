@@ -368,7 +368,7 @@
   
   <!-- Thruster for Pushback action -->
   
-  <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="8000">
+  <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="24000">
   <control-input axis="/controls/engines/engine[0]/throttle-r" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/throttle-r" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[2]/throttle-r" control="THROTTLE"/>

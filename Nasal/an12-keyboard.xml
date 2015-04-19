@@ -64,5 +64,15 @@
   </binding>
 </key>
 
+<key n="127">
+	<name>Delete</name>
+	<desc>Toggle Reversers</desc>
+  <binding>
+      <command>property-cycle</command>
+      <property>controls/reverser</property>
+      <value>true</value>
+      <value>false</value>
+  </binding>
+</key>
   
 </PropertyList>
