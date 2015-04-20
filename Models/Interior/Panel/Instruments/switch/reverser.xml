@@ -62,5 +62,17 @@
     </axis>
   </animation>
 
+  <animation>
+<type>scale</type>
+  <object-name>fond</object-name>
+  <object-name>switch</object-name>
+<property>sim/signals/fdm-initialized</property>
+<x-min>1.0</x-min>
+<y-min>1.0</y-min>
+<z-min>1.0</z-min>
+<x-factor>2.0</x-factor>
+<y-factor>2.0</y-factor>
+<z-factor>2.0</z-factor>
+</animation>
 
 </PropertyList>

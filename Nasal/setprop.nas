@@ -226,7 +226,7 @@ setlistener("/controls/chokes/activ", func
 
 ########################################################################################################
 
-# Landing Gears Control
+# Landing Gears Control with help from: 707 Hangar of Constance
 
 # prevent retraction of the landing gear when any of the wheels are compressed
 setlistener("controls/gear/gear-down", func
@@ -247,7 +247,7 @@ setlistener("controls/gear/gear-down", func
 
 #############################################################################################################
 #
-# wind drift angle calculations
+# wind drift angle calculations, with help from: D-LEON
 #
 # wind direction:  environment/metar/base wind-dir-deg
 # wind speed:      environment/metar/base wind-speed-kt
@@ -293,7 +293,7 @@ var calc = maketimer(0.7, func
 calc.start();
 
 #############################################################################################################
- var oilPressTimer = maketimer(5.0, func { 
+ var oilPressTimer = maketimer(15.0, func { 
 var factor = 0.0051;
 
 if (getprop("/controls/switches/fuel") > 0.5)
@@ -322,6 +322,11 @@ setprop("sim/messages/copilot", "For Autostart hit the s key!");
 
 
 ####################################################################################################################
+
+#
+# Reverser
+#
+
 setlistener("controls/engines/engine[0]/throttle", func
  {
 if
@@ -351,15 +356,6 @@ setprop("/controls/engines/engine[3]/throttle-v", 0);
 }
  }
 );
-
-
-
-
-
-
-
-
-
 
 # /engines/engine[0]/running
 # /controls/switches/fuel

@@ -820,11 +820,11 @@
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/reverser.xml</path>
     <offsets>
-      <x-m> 0.08</x-m>
+      <x-m> 0.078</x-m>
       <y-m> -0.35 </y-m>
-      <z-m> -0.285 </z-m>
+      <z-m> -0.292 </z-m>
       <heading-deg>0</heading-deg>
-      <pitch-deg>-43</pitch-deg>
+      <pitch-deg>-47</pitch-deg>
     </offsets>
   </model> 
   
@@ -1169,6 +1169,56 @@
   </model>
   
   <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel-lamp-green.xml</path>
+    <offsets>
+      <x-m>  2.145 </x-m>
+      <y-m>  1.295 </y-m>
+      <z-m> -0.264 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel1-green.xml</path>
+    <offsets>
+      <x-m>  2.065 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.22 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel2-green.xml</path>
+    <offsets>
+      <x-m>  2.085 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.22 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel3-green.xml</path>
+    <offsets>
+      <x-m>  2.105 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.22 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/fuel4-green.xml</path>
+    <offsets>
+      <x-m>  2.125 </x-m>
+      <y-m>  1.285 </y-m>
+      <z-m> -0.22 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel_sum.xml</path>
     <offsets>
       <x-m>  2.0 </x-m>
@@ -1189,7 +1239,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R1.xml</path>
     <offsets>
       <x-m>  1.80 </x-m>
       <y-m>  1.275 </y-m>
@@ -1199,7 +1249,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R1.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R.xml</path>
     <offsets>
       <x-m>  1.70 </x-m>
       <y-m>  1.275 </y-m>
@@ -1209,7 +1259,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R1.xml</path>
     <offsets>
       <x-m>  1.60 </x-m>
       <y-m>  1.275 </y-m>
@@ -1219,7 +1269,7 @@
   </model>
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel3_R1.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/fuel/fuel2_R.xml</path>
     <offsets>
       <x-m>  1.50 </x-m>
       <y-m>  1.275 </y-m>
@@ -1437,7 +1487,58 @@
     </offsets>
   </model>
   
+  <!--engineur panel: electrics from TU-154b-->
   
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/electrics/hz-200.xml</path>
+    <offsets>
+      <x-m>  1.26 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/electrics/v-200.xml</path>
+    <offsets>
+      <x-m>  1.33 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/electrics/a-200.xml</path>
+    <offsets>
+      <x-m>  1.40 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> -0.17 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/electrics/v-27.xml</path>
+    <offsets>
+      <x-m>  1.29 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> -0.30 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/electrics/a-27.xml</path>
+    <offsets>
+      <x-m>  1.37 </x-m>
+      <y-m>  1.277 </y-m>
+      <z-m> -0.30 </z-m>
+      <heading-deg>270.0</heading-deg>
+    </offsets>
+  </model>
+    
   <!-- Switches and Buttons -->
   
    <!-- Light switches block 1 -->

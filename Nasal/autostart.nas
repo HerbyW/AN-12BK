@@ -15,6 +15,8 @@ setlistener("/controls/autostart", func
 
   { if(getprop("/controls/autostart") > 0.5)
       {
+	
+	setprop("/controls/electric/battery-switch", 1);
         setprop("/controls/switches/gauge-light", 1);
         setprop("/controls/lighting/nav-lights", 1);
 	
@@ -29,7 +31,7 @@ setlistener("/controls/autostart", func
 	
 	setprop("sim/messages/copilot", "Instruments are powered");
 	
-        setprop("/controls/switches/fuel", 1);
+	setprop("/controls/switches/fuel", 1);
         setprop("/consumables/fuel/tank[0]/selected", 1);
         setprop("/consumables/fuel/tank[1]/selected", 1);
         setprop("/consumables/fuel/tank[2]/selected", 1);
