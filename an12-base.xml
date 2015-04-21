@@ -318,6 +318,9 @@
     </frequencies>
     <switch-position n="0" type="int">0</switch-position>
     <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
 </dme>
 <dme n="1">
     <frequencies>
@@ -325,6 +328,9 @@
     </frequencies>
     <switch-position n="0" type="int">0</switch-position>
     <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
 </dme>
     
 <inst-vertical-speed-indicator>
@@ -432,7 +438,7 @@
     </help>
     <mapcase>
       <file>Aircraft/Antonov-An-12/Nasal/mapcase.nas</file>
-    </mapcase>    
+    </mapcase>
   </nasal>
 
   

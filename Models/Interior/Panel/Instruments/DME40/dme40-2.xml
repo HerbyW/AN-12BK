@@ -82,7 +82,7 @@
 		  <object-name>NM100</object-name>
 		  <condition>
 			<and>
-				<property>instrumentation/dme/in-range</property>
+				<property>instrumentation/dme[1]/in-range</property>
 				<greater-than>
 					<property>systems/electrical/outputs/dme</property>
 					<value>1</value>
@@ -98,13 +98,13 @@
 		  <object-name>min100</object-name>
 		  <condition>
 			<and>
-				<property>instrumentation/dme/in-range</property>
+				<property>instrumentation/dme[1]/in-range</property>
 				<greater-than>
 					<property>systems/electrical/outputs/dme</property>
 					<value>1</value>
 				</greater-than>
 				<equals>
-					<property>instrumentation/dme/switch-position[1]</property>
+					<property>instrumentation/dme[1]/switch-position[1]</property>
 					<value>1</value>
 				</equals>
 			</and>
@@ -118,13 +118,13 @@
 		  <object-name>kt100</object-name>
 		  <condition>
 			<and>
-				<property>instrumentation/dme/in-range</property>
+				<property>instrumentation/dme[1]/in-range</property>
 				<greater-than>
 					<property>systems/electrical/outputs/dme</property>
 					<value>1</value>
 				</greater-than>
 				<equals>
-					<property>instrumentation/dme/switch-position[1]</property>
+					<property>instrumentation/dme[1]/switch-position[1]</property>
 					<value>2</value>
 				</equals>
 			</and>
@@ -134,7 +134,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>NM100</object-name>
-        <property>instrumentation/dme/indicated-distance-nm</property>
+        <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.001</factor>
 			<step>100</step>
 			<bias>0.05</bias>
@@ -148,7 +148,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>NM10</object-name>
-        <property>instrumentation/dme/indicated-distance-nm</property>
+        <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.01</factor>
 			<step>10</step>
 			<bias>0.05</bias>
@@ -162,7 +162,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>NM1</object-name>
-        <property>instrumentation/dme/indicated-distance-nm</property>
+        <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>0.1</factor>
 			<step>1</step>
 			<bias>0.05</bias>
@@ -176,7 +176,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>NM.1</object-name>
-        <property>instrumentation/dme/indicated-distance-nm</property>
+        <property>instrumentation/dme[1]/indicated-distance-nm</property>
         <factor>1.0</factor>
 			<step>0.1</step>
 			<bias>0.05</bias>
@@ -191,7 +191,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>min100</object-name>
-        <property>instrumentation/dme/indicated-time-min</property>
+        <property>instrumentation/dme[1]/indicated-time-min</property>
         <factor>0.001</factor>
 			<step>100</step>
 			<bias>0.5</bias>
@@ -205,7 +205,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>min10</object-name>
-        <property>instrumentation/dme/indicated-time-min</property>
+        <property>instrumentation/dme[1]/indicated-time-min</property>
         <factor>0.01</factor>
 			<step>10</step>
 			<bias>0.5</bias>
@@ -219,7 +219,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>min1</object-name>
-        <property>instrumentation/dme/indicated-time-min</property>
+        <property>instrumentation/dme[1]/indicated-time-min</property>
         <factor>0.1</factor>
 			<step>1</step>
 			<bias>0.5</bias>
@@ -234,7 +234,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>kt100</object-name>
-        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <property>instrumentation/dme[1]/indicated-ground-speed-kt</property>
         <factor>0.001</factor>
 			<step>100</step>
 			<bias>0.5</bias>
@@ -248,7 +248,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>kt10</object-name>
-        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <property>instrumentation/dme[1]/indicated-ground-speed-kt</property>
         <factor>0.01</factor>
 			<step>10</step>
 			<bias>0.5</bias>
@@ -262,7 +262,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>kt1</object-name>
-        <property>instrumentation/dme/indicated-ground-speed-kt</property>
+        <property>instrumentation/dme[1]/indicated-ground-speed-kt</property>
         <factor>0.1</factor>
 			<step>1</step>
 			<bias>0.5</bias>
@@ -277,7 +277,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DME40.knob1</object-name>
-        <property>instrumentation/dme/switch-position[0]</property>
+        <property>instrumentation/dme[1]/switch-position[0]</property>
         <min>0</min>
         <max>3</max>
         <interpolation>
@@ -300,7 +300,7 @@
     <animation>
         <type>rotate</type>
         <object-name>DME40.knob2</object-name>
-        <property>instrumentation/dme/switch-position[1]</property>
+        <property>instrumentation/dme[1]/switch-position[1]</property>
         <min>0</min>
         <max>2</max>
         <interpolation>
@@ -330,20 +330,20 @@
 	    <button>3</button>
              <binding>
                 <command>property-adjust</command>
-                <property>instrumentation/dme/switch-position[0]</property>
+                <property>instrumentation/dme[1]/switch-position[0]</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>
-            </binding>            
+            </binding>             
 	</action>
 	<hovered>
-             <binding>
-               <command>set-tooltip</command>
-               <tooltip-id>DME1</tooltip-id>
-               <label>DME 1 only</label>            
+	     <binding>
+              <command>set-tooltip</command>
+              <tooltip-id>DME2</tooltip-id>
+              <label>DME 2 only</label>            
              </binding>
-         </hovered> 
+	 </hovered>
     </animation>
 
     <animation>
@@ -354,7 +354,7 @@
 	    <button>4</button>
              <binding>
                 <command>property-adjust</command>
-                <property>instrumentation/dme/switch-position[0]</property>
+                <property>instrumentation/dme[1]/switch-position[0]</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>
@@ -364,8 +364,8 @@
 	<hovered>
 	     <binding>
               <command>set-tooltip</command>
-              <tooltip-id>DME1</tooltip-id>
-              <label>DME 1 only</label>            
+              <tooltip-id>DME2</tooltip-id>
+              <label>DME 2 only</label>            
              </binding>
 	 </hovered>
     </animation>
@@ -378,13 +378,13 @@
 	    <button>3</button>
              <binding>
                 <command>property-adjust</command>
-                <property>instrumentation/dme/switch-position[1]</property>
+                <property>instrumentation/dme[1]/switch-position[1]</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>
             </binding>
-        </action>
+        </action>	
     </animation>
 
     <animation>
@@ -395,7 +395,7 @@
 	    <button>4</button>
              <binding>
                 <command>property-adjust</command>
-                <property>instrumentation/dme/switch-position[1]</property>
+                <property>instrumentation/dme[1]/switch-position[1]</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
