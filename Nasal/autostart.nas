@@ -3,7 +3,7 @@
 #
 #    ###################################################################################
 #    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-#    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+#    Development is ongoing, see latest version: www.github.com/HerbyW
 #    This file is licenced under the terms of the GNU General Public Licence V3 or later
 #    
 #    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -15,6 +15,8 @@ setlistener("/controls/autostart", func
 
   { if(getprop("/controls/autostart") > 0.5)
       {
+	
+	setprop("/controls/electric/battery-switch", 1);
         setprop("/controls/switches/gauge-light", 1);
         setprop("/controls/lighting/nav-lights", 1);
 	
@@ -23,13 +25,13 @@ setlistener("/controls/autostart", func
 	setprop("/instrumentation/adf[0]/power-btn", 1);
 	setprop("/instrumentation/adf[1]/power-btn", 1);
 	setprop("/instrumentation/heading-indicator[0]/serviceable", 1);
-	setprop("/instrumentation/nav[0]/serviceable", 1);
-	setprop("/instrumentation/nav[1]/serviceable", 1);
+	setprop("/instrumentation/nav[0]/power-btn", 1);
+	setprop("/instrumentation/nav[1]/power-btn", 1);
 	setprop("/instrumentation/transponder/serviceable", 1);
 	
 	setprop("sim/messages/copilot", "Instruments are powered");
 	
-        setprop("/controls/switches/fuel", 1);
+	setprop("/controls/switches/fuel", 1);
         setprop("/consumables/fuel/tank[0]/selected", 1);
         setprop("/consumables/fuel/tank[1]/selected", 1);
         setprop("/consumables/fuel/tank[2]/selected", 1);

@@ -10,7 +10,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -43,7 +43,7 @@
 <animation>
   <type>rotate</type>
   <object-name>compass</object-name>
-  <property>tu154/instrumentation/ushdb/compass</property>
+  <property>instrumentation/ushdb/compass</property>
   <value>0</value>
   <axis>
    <x>-1.0</x>
@@ -57,7 +57,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_1</object-name>
-    <property>tu154/instrumentation/ushdb/heading-deg-1</property>
+    <property>instrumentation/ushdb/heading-deg-1</property>
      
     <axis>
       <x>-1.0</x>
@@ -71,7 +71,7 @@
 <animation>
     <type>rotate</type>
     <object-name>needle_2</object-name>
-    <property>tu154/instrumentation/ushdb/heading-deg-2</property>
+    <property>instrumentation/ushdb/heading-deg-2</property>
        
     <axis>
       <x>-1.0</x>
@@ -92,7 +92,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ushdb/compass</property>
+      <property>instrumentation/ushdb/compass</property>
       <min>0</min>
       <max>360</max>
       <wrap>true</wrap>

@@ -3,7 +3,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -40,7 +40,7 @@
  <animation>
   <type>rotate</type>
   <object-name>n2</object-name>
- <property>/instrumentation/fuel_press/B/press1</property>
+ <property>instrumentation/fuel_press/A1/press1</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>0</dep></entry> 
 
@@ -62,7 +62,7 @@
    <animation>
   <type>rotate</type>
   <object-name>n1</object-name>
- <property>/instrumentation/fuel_press/B/press2</property>
+ <property>instrumentation/fuel_press/A1/press2</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>0</dep></entry> 
 

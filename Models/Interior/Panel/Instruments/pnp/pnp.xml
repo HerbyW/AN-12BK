@@ -11,7 +11,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -26,18 +26,18 @@
   <path>pnp.ac</path>
 
   <params>
-    <mode>tu154/instrumentation/pnp[0]/mode</mode>
-    <distance>tu154/instrumentation/pnp[0]/distance</distance>
+    <mode>instrumentation/pnp[0]/mode</mode>
+    <distance>instrumentation/pnp[0]/distance</distance>
     <compass>fdm/jsbsim/instrumentation/pnp-heading-left</compass>
-    <plane-dialed>tu154/instrumentation/pnp[0]/plane-dialed</plane-dialed>
-    <dir-course>tu154/instrumentation/pnp[0]/heading-deg</dir-course>
-    <dir-plane>tu154/instrumentation/pnp[0]/plane-deg</dir-plane>
-    <defl-course>tu154/instrumentation/pnp[0]/defl-course</defl-course>
-    <defl-gs>tu154/instrumentation/pnp[0]/defl-gs</defl-gs>
+    <plane-dialed>instrumentation/pnp[0]/plane-dialed</plane-dialed>
+    <dir-course>instrumentation/pnp[0]/heading-deg</dir-course>
+    <dir-plane>instrumentation/pnp[0]/plane-deg</dir-plane>
+    <defl-course>instrumentation/pnp[0]/defl-course</defl-course>
+    <defl-gs>instrumentation/pnp[0]/defl-gs</defl-gs>
     <serviceable>instrumentation/heading-indicator[0]/serviceable</serviceable>
-    <blank-course>tu154/instrumentation/pnp[0]/blank-course</blank-course>
-    <blank-gs>tu154/instrumentation/pnp[0]/blank-gs</blank-gs>
-    <blank-dist>tu154/instrumentation/pnp[0]/blank-dist</blank-dist>
+    <blank-course>instrumentation/pnp[0]/blank-course</blank-course>
+    <blank-gs>instrumentation/pnp[0]/blank-gs</blank-gs>
+    <blank-dist>instrumentation/pnp[0]/blank-dist</blank-dist>
   </params>
   
   <!--External panel lighting-->
@@ -174,7 +174,7 @@
   <type>select</type>
   <object-name>rsbn_on</object-name>
 <condition>
-    <property>tu154/rsbn_on</property>
+    <property>rsbn_on</property>
   </condition>
 </animation>-->
 

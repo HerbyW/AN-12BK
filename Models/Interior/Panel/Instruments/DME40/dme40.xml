@@ -3,7 +3,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -335,18 +335,15 @@
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>
-            </binding>
+            </binding>            
+	</action>
+	<hovered>
              <binding>
-                <command>nasal</command>
-                <script>
-		var tst=getprop("instrumentation/dme/switch-position[0]");
-		if(tst==0){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/dme[0]/frequencies/selected-mhz")
-		}elsif(tst==2){
-		setprop("instrumentation/dme[1]/frequencies/source","/instrumentation/dme[1]/frequencies/selected-mhz")
-		}</script>
-            </binding>
-			</action>
+               <command>set-tooltip</command>
+               <tooltip-id>DME1</tooltip-id>
+               <label>DME 1 only</label>            
+             </binding>
+         </hovered> 
     </animation>
 
     <animation>
@@ -362,18 +359,15 @@
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>
-            </binding>
-             <binding>
-                <command>nasal</command>
-                <script>
-		var tst=getprop("instrumentation/dme/switch-position[0]");
-		if(tst==0){
-		setprop("instrumentation/dme/frequencies/source","/instrumentation/dme[0]/frequencies/selected-mhz")
-		}elsif(tst==2){
-		setprop("instrumentation/dme[1]/frequencies/source","/instrumentation/dme[1]/frequencies/selected-mhz")
-		}</script>
-            </binding>
+            </binding>             
         </action>
+	<hovered>
+	     <binding>
+              <command>set-tooltip</command>
+              <tooltip-id>DME1</tooltip-id>
+              <label>DME 1 only</label>            
+             </binding>
+	 </hovered>
     </animation>
 
     <animation>
@@ -381,10 +375,11 @@
         <object-name>DME40.knob2</object-name>
         <action>
             <button>0</button>
+	    <button>3</button>
              <binding>
                 <command>property-adjust</command>
                 <property>instrumentation/dme/switch-position[1]</property>
-                <step>1</step>
+                <step>-1</step>
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>
@@ -397,10 +392,11 @@
         <object-name>DME40.knob2</object-name>
         <action>
             <button>1</button>
+	    <button>4</button>
              <binding>
                 <command>property-adjust</command>
                 <property>instrumentation/dme/switch-position[1]</property>
-                <step>-1</step>
+                <step>1</step>
                 <min>0</min>
                 <max>2</max>
                 <wrap>false</wrap>

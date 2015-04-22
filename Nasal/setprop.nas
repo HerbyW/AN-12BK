@@ -2,7 +2,7 @@
 
 #    ###################################################################################
 #    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-#    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+#    Development is ongoing, see latest version: www.github.com/HerbyW
 #    This file is licenced under the terms of the GNU General Public Licence V3 or later
 #    
 #    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -58,11 +58,11 @@ setlistener("/controls/switches/usvp-selector-trans", func
 
   { if(getprop("/controls/switches/usvp-selector-trans") > 0.5)
       {
-        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/groundspeed-kt"));
+        setprop("/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/groundspeed-kt"));
       }
       else
       {
-        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/airspeed-kt"));
+        setprop("/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/airspeed-kt"));
       }
   
   }
@@ -226,7 +226,7 @@ setlistener("/controls/chokes/activ", func
 
 ########################################################################################################
 
-# Landing Gears Control
+# Landing Gears Control with help from: 707 Hangar of Constance
 
 # prevent retraction of the landing gear when any of the wheels are compressed
 setlistener("controls/gear/gear-down", func
@@ -247,7 +247,7 @@ setlistener("controls/gear/gear-down", func
 
 #############################################################################################################
 #
-# wind drift angle calculations
+# wind drift angle calculations, with help from: D-LEON
 #
 # wind direction:  environment/metar/base wind-dir-deg
 # wind speed:      environment/metar/base wind-speed-kt
@@ -293,6 +293,70 @@ var calc = maketimer(0.7, func
 calc.start();
 
 #############################################################################################################
+ var oilPressTimer = maketimer(15.0, func { 
+var factor = 0.0051;
+
+if (getprop("/controls/switches/fuel") > 0.5)
+{
+interpolate("instrumentation/fuel_press/A0/press1", getprop("engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A0/press2", getprop("engines/engine[0]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A1/press1", getprop("engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A1/press2", getprop("engines/engine[1]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A2/press1", getprop("engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A2/press2", getprop("engines/engine[2]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A3/press1", getprop("engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
+interpolate("instrumentation/fuel_press/A3/press2", getprop("engines/engine[3]/fuel-flow-gph")*factor + 0.1  , 5.0);
+}
+}
+);
+
+oilPressTimer.start(); 
+
+#################################################################################################################
+
+
+setprop("sim/messages/copilot", "Hello");
+setprop("sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
+setprop("sim/messages/copilot", "Have fun with the Antonov-12");
+setprop("sim/messages/copilot", "For Autostart hit the s key!");
+
+
+####################################################################################################################
+
+#
+# Reverser
+#
+
+setlistener("controls/engines/engine[0]/throttle", func
+ {
+if
+(  getprop("/controls/reverser") == 0) 
+{
+setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[1]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[2]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[3]/throttle"));
+
+setprop("/controls/engines/engine[0]/throttle-r", 0);
+setprop("/controls/engines/engine[1]/throttle-r", 0);
+setprop("/controls/engines/engine[2]/throttle-r", 0);
+setprop("/controls/engines/engine[3]/throttle-r", 0);
+}
+else
+{  
+setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[1]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[2]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[3]/throttle"));
+
+setprop("/controls/engines/engine[0]/throttle-v", 0);
+setprop("/controls/engines/engine[1]/throttle-v", 0);
+setprop("/controls/engines/engine[2]/throttle-v", 0);
+setprop("/controls/engines/engine[3]/throttle-v", 0);
+}
+ }
+);
+
 # /engines/engine[0]/running
 # /controls/switches/fuel
 # /controls/engines/engine[0]/condition

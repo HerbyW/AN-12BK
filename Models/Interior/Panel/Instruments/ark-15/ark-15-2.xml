@@ -8,7 +8,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -109,7 +109,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_1_3</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-1-3</property>
+  <property>instrumentation/ark-15[1]/digit-1-3</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -125,7 +125,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_1_2</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-1-2</property>
+  <property>instrumentation/ark-15[1]/digit-1-2</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -141,7 +141,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_1_1</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-1-1</property>
+  <property>instrumentation/ark-15[1]/digit-1-1</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -159,7 +159,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_2_3</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-2-3</property>
+  <property>instrumentation/ark-15[1]/digit-2-3</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -175,7 +175,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_2_2</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-2-2</property>
+  <property>instrumentation/ark-15[1]/digit-2-2</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -191,7 +191,7 @@
 <animation>
   <type>rotate</type>
   <object-name>digit_2_1</object-name>
-  <property>tu154/instrumentation/ark-15[1]/digit-2-1</property>
+  <property>instrumentation/ark-15[1]/digit-2-1</property>
   <factor>21.1765</factor>
   <center>
     <x-m>-0.04073</x-m>
@@ -262,7 +262,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-3</property>
+      <property>instrumentation/ark-15[1]/digit-1-3</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -280,7 +280,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-3</property>
+      <property>instrumentation/ark-15[1]/digit-1-3</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -297,7 +297,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-2</property>
+      <property>instrumentation/ark-15[1]/digit-1-2</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -314,7 +314,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-2</property>
+      <property>instrumentation/ark-15[1]/digit-1-2</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -331,7 +331,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-1</property>
+      <property>instrumentation/ark-15[1]/digit-1-1</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -348,7 +348,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-1</property>
+      <property>instrumentation/ark-15[1]/digit-1-1</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -366,7 +366,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-3</property>
+      <property>instrumentation/ark-15[1]/digit-2-3</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -383,7 +383,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-3</property>
+      <property>instrumentation/ark-15[1]/digit-2-3</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -400,7 +400,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-2</property>
+      <property>instrumentation/ark-15[1]/digit-2-2</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -417,7 +417,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-2</property>
+      <property>instrumentation/ark-15[1]/digit-2-2</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -434,7 +434,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-1</property>
+      <property>instrumentation/ark-15[1]/digit-2-1</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -451,7 +451,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-1</property>
+      <property>instrumentation/ark-15[1]/digit-2-1</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -473,7 +473,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-3</property>
+      <property>instrumentation/ark-15[1]/digit-1-3</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -492,7 +492,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-3</property>
+      <property>instrumentation/ark-15[1]/digit-1-3</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -510,7 +510,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-2</property>
+      <property>instrumentation/ark-15[1]/digit-1-2</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -528,7 +528,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-2</property>
+      <property>instrumentation/ark-15[1]/digit-1-2</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -546,7 +546,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-1</property>
+      <property>instrumentation/ark-15[1]/digit-1-1</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -564,7 +564,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-1-1</property>
+      <property>instrumentation/ark-15[1]/digit-1-1</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -583,7 +583,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-3</property>
+      <property>instrumentation/ark-15[1]/digit-2-3</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -601,7 +601,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-3</property>
+      <property>instrumentation/ark-15[1]/digit-2-3</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>16.0</max>
@@ -619,7 +619,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-2</property>
+      <property>instrumentation/ark-15[1]/digit-2-2</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -637,7 +637,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-2</property>
+      <property>instrumentation/ark-15[1]/digit-2-2</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -655,7 +655,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-1</property>
+      <property>instrumentation/ark-15[1]/digit-2-1</property>
       <step>-1.0</step>
       <min>0.0</min>
       <max>9.0</max>
@@ -673,7 +673,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>tu154/instrumentation/ark-15[1]/digit-2-1</property>
+      <property>instrumentation/ark-15[1]/digit-2-1</property>
       <step>1.0</step>
       <min>0.0</min>
       <max>9.0</max>

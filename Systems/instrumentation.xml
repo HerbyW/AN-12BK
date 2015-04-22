@@ -113,11 +113,6 @@ The only reason it's here is to specify a second ADF.
       <range-factor type="double" archive="n">20</range-factor>
       <minimized type="bool" archive="y">false</minimized>
     </radar>
-
-    <mk-viii>
-        <name>mk-viii</name>
-        <number>0</number>
-    </mk-viii> 
     
     <marker-beacon>
         <name>marker-beacon</name>

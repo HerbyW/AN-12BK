@@ -5,7 +5,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -64,19 +64,10 @@
     <chokes>
       <activ type="int">0</activ>
     </chokes>
+    <reverser type="bool">0</reverser>
  </controls>
  
  <gear><gear><position-norm type="float">1</position-norm></gear></gear>
- 
- <tu154>
-   
-   <instrumentation>
-     <ushdb><compass type="double">0</compass></ushdb>
-     <mapcase><page type="int">1</page></mapcase>
-   </instrumentation>
-   
- </tu154>
- 
 
  
   <sim include="Systems/views.xml">
@@ -204,39 +195,46 @@
         <name>=</name>
         <desc>Parachutist</desc>
       </key>
-      
+      <key>
+        <name>Delete</name>
+        <desc>Reverser on/off</desc>
+      </key>
       <text>
 	Wellcome to version 3.4.6 of Antonov-AN-12-B/BK
 	
 	Autostart: s
 	
 	Manual start up:
-	Turquoise panel: right switch up- Lights for Instruments on
-	                 middle switch - NAV lights on
-        Bottom middle panel: knob for fuel in right position - activates the tanks and pumps, a green lamp shows up.
-	4 Engine starter switches left from fuel knob - one to four in upper position - starting the engines,
-	each engine needs 17 sec for running, throttle in idle position (10%).
+	
+	- Middle top panel: right switch up- Lights for Instruments on
+	                    middle switch - NAV lights on
+        - Bottom middle panel: round knob for fuel in any right position - activates the tanks and pumps, a green lamp shows up.
+	- 4 Engine starter switches above the fuel knob - one to four in upper position - starting the engines, each engine
+	  needs 17 sec for running, put throttle in idle position (10%).
+	- Red lamps showing running engines, green lamps showing rpm greater than 660.	
+	- Overhead panel: all switches in up position, power for navigation radios (ADF and VOR), compass and skawk.
 	
 	Additional Settings:
-	Reference Compass at engineeur panel, magnetic variation is shown as tooltip, set needle to marker position
-	Altitude and/or pressure settings in the Altimeters
 	
-	Shut down:
-	Fuel knob to left position or engine starter switches down.
+	Reference Compass at engineer panel, magnetic variation is shown as tooltip, set needle to marker position.
+	Altitude and/or pressure settings in the Altimeters in inHG, mmHG or hPa (as tooltip).
+	
+	Shut down: Fuel knob to left position or engine starter switches down.
 	
 	Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation.
 	
 	Some instruments will show you metric values, some ft/knots.
 	
-	There is a turquoise panel in the middle console, the right switch makes the instrument lights on.
-	The middle switch is for nav-lights. The left one is for cabin lights.
-	The switch right from this panel is for landing and taxi lights.
-	Then there is the switch for activating the parachuters.
+	There is a 3 knob panel at the left side, marker volume, instrument lights and for rembrandt cabin lights.
+	
+	The switch right from the Lights panel is for landing and taxi lights.
+	Then there is the switch for activating the parachuters and a switch for the cargo door.
 	Right from the Parachuters-switch is a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
 	
-	On the very left side you have a panel with 5 lamps, the lower 3 are for trim-neutralisation, used after Autopilot dissabled. 
+	On the very left side you have a panel with 5 green lamps, the lower 3 are for trim-neutralisation, used after the Autopilot is dissabled. 
 	
-	The Key F2 is prepared for reverse, but unfortunatly it is not working (any help to get it working is wellcome).
+	Reverser is activated by the switch at the throttle or key "Delete", a red lamp shows the activ reverser. Also a placecard "R" is comming up
+	at top of the panel, the switch and the placecard can be used to deactivate the reverser. Throttle has to be at 0 when you change to reverser.
 	
 	The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values
 	- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator),
@@ -247,31 +245,28 @@
 	- GPS for flying routes from the Route Manager,
 	- ALT is holding your attidude
 	
-	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it gives you the indication
-	that ILS and/or Glide Scope is intersepted. ILS heading works even far out the stream, for the glidscope you should wait till the
-	indicator is in nearly horizontal position.
+	For ILS Landing you may use the little Instrument with the yellow and blue strips, the NAV Indicator, it gives you the indication that ILS and/or
+	Glide Scope is intersepted. ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position.
 	
-	Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side),
-	if the white strips are in the middle position (1-2 for starting, 2-4 for landing).
+	Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side), if the white strips are in the
+	middle position (1-2 for starting, 2-4 for landing).
 	
 	Open the backdoor during flight if you get to hot :) and take a look from the navigator view backwards.
-	
-	Pushback car is now there. Do not use the brakes to stop backwards driving, use the pushback control please.
 	
 	Trails are now working only above 14000 ft, on ground it is not realistic.
 	
 	There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
 	                        the upper one is in meter and mmHG, a tooltip shows you the Value in hPa
 	                        the lower one is in ft and inHG,
-	they are connected and you should set them to the ATIS information of the airport befor starting or landing.
+	                        they are connected and you should set them to the ATIS information of the airport befor starting or landing.
 	 
 	The compasses are cleared of the magnetic variation if you set the reference compass in the engineer panel to the orange marker position.
 	
-	On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning,
-	over-loading, parking brake, outer, middle and inner marker, brake-chokes and decission hight.
+	On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning, over-loading, parking brake,
+	outer, middle and inner marker, brake-chokes, decission hight and reverser.
 	
-	Paratroopers can be set up in the payload menue, each is 120 lb, they need a open back door to jump out,
-	then use the switch on the panel to give the signal :) From the tail cabin you may watch and control them also.
+	Paratroopers can be set up in the payload menue, each is 120 lb, they need a open back door to jump out, then use the switch on the panel to give
+	the signal :) From the tail cabin you may watch and control them also.
 	
 	In the tail cabin there is a additional panel, the middle instrument is for ground- and air-speed with a switch on the bottom.
 	
@@ -284,7 +279,7 @@
 	Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
 	
 	Have fun and get the latest version at:
-	github.com/HerbyW/antonov-aircrafts
+	github.com/HerbyW
       </text>
     </help>
 
@@ -315,38 +310,45 @@
     </engine>
   </engines>
   
-  <instrumentation>
-    <dme n="0">
-        <frequencies>
-            <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
-        </frequencies>
-        <switch-position n="0" type="int">0</switch-position>
-        <switch-position n="1" type="int">0</switch-position>
-    </dme>
-    <dme n="1">
-        <frequencies>
-            <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
-        </frequencies>
-        <switch-position n="0" type="int">0</switch-position>
-        <switch-position n="1" type="int">0</switch-position>
-    </dme>
+<instrumentation>
+
+<dme n="0">
+    <frequencies>
+       <source type="string">/instrumentation/dme[0]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
+<dme n="1">
+    <frequencies>
+       <source type="string">/instrumentation/dme[1]/frequencies/selected-mhz</source>
+    </frequencies>
+    <switch-position n="0" type="int">0</switch-position>
+    <switch-position n="1" type="int">0</switch-position>
+    <switch-position n="2" type="int">0</switch-position>
+    <switch-position n="3" type="int">0</switch-position>
+    <serviceable type="bool">true</serviceable>
+</dme>
     
-    <inst-vertical-speed-indicator>
+<inst-vertical-speed-indicator>
         <serviceable type="bool">true</serviceable>
-    </inst-vertical-speed-indicator>
-    <altimeter>
+</inst-vertical-speed-indicator>
+<altimeter>
         <decision-height type="double">0</decision-height>
 	<setting-hapa type="double">0</setting-hapa>
-    </altimeter>
-    <airspeed-indicator>
+</altimeter>
+<airspeed-indicator>
         <index-marker type="double">100</index-marker>
-    </airspeed-indicator>
+</airspeed-indicator>
     
-    <drift type="double">0</drift>
+<drift type="double">0</drift>
     
-    <heading-indicator n="0">
+<heading-indicator n="0">
       <serviceable type="int">0</serviceable>
-    </heading-indicator>
+</heading-indicator>
     
 <adf n="0">
   <mode>adf</mode>
@@ -376,23 +378,25 @@
 </adf>
     
 <nav n="0">
+  
   <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>    
   </radials>
-  <!--<power-btn type="bool">false</power-btn>
-  <operable type="bool">false</operable>-->
+  <power-btn type="bool">false</power-btn>
   <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
 </nav>
 
 <nav n="1">
+  
   <volume type="double">0.10</volume>
   <radials>
     <reciprocal-radial-deg type="double">90</reciprocal-radial-deg>
   </radials>
-  <!--<power-btn type="bool">false</power-btn>
-  <operable type="bool">false</operable>-->
+  <power-btn type="bool">false</power-btn>
   <serviceable type="bool">false</serviceable>
+  <operable type="bool">false</operable>  
 </nav>
 
 <iku>  
@@ -403,6 +407,9 @@
 <transponder>  
   <serviceable type="bool">false</serviceable>
 </transponder>
+
+<ushdb><compass type="double">0</compass></ushdb>
+<mapcase><page type="int">1</page></mapcase>
 
 </instrumentation>
 
@@ -431,7 +438,7 @@
     </help>
     <mapcase>
       <file>Aircraft/Antonov-An-12/Nasal/mapcase.nas</file>
-    </mapcase>    
+    </mapcase>
   </nasal>
 
   

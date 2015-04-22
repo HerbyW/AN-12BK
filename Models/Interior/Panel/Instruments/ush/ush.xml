@@ -10,7 +10,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -57,8 +57,25 @@
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
-  </axis>
+  </axis>  
 </animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>compass</object-name>
+  <visible>true</visible>   
+    
+  <hovered>
+    <binding>
+      <command>set-tooltip</command>
+      <tooltip-id>Drift</tooltip-id>
+      <label>Wind Drift: %5.2f</label>
+      <property>/instrumentation/drift</property>      
+    </binding>
+  </hovered> 
+  
+</animation>
+
 
 <!--Needles
 <animation>
@@ -106,7 +123,7 @@
     <x>-1.0</x>
     <y>0.0</y>
     <z>0.0</z>
-  </axis>
+  </axis>  
 </animation>
 
 <!--mk lamp-->

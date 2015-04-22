@@ -10,7 +10,7 @@
 
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
     Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
@@ -21,12 +21,6 @@
 3D instrument for Tu-154 -->
 
 <PropertyList>
-  
-  <params>
-    <freq>instrumentation/dme[1]/frequencies/selected-mhz</freq>
-    <power>instrumentation/dme[1]/switch-position</power>
-    <reserve>instrumentation/dme[1]/switch-position[1]</reserve>
-  </params>
 
  <path>dme.ac</path>
 
@@ -34,7 +28,7 @@
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>base</object-name>
  </effect>
-
+ 
 <animation>
   <type>material</type>
   <object-name>base</object-name>
@@ -64,7 +58,7 @@
   <object-name>dig_f_low</object-name>
   <object-name>dig_f_hi</object-name>
   <emission>
-      <factor-prop>instrumentation/dme[1]/switch-position</factor-prop>
+      <factor-prop>instrumentation/dme[1]/switch-position[2]</factor-prop>
       <red>   0.35 </red>
       <green> 0.35 </green>
       <blue>  0.35 </blue>
@@ -77,9 +71,9 @@
   <expression>
     <table>
       <difference>
-        <property alias="../../../../../params/freq"/>
+        <property>instrumentation/dme[1]/frequencies/selected-mhz</property>
         <mod>
-          <property alias="../../../../../../params/freq"/>
+          <property>instrumentation/dme[1]/frequencies/selected-mhz</property>
           <value>1</value>
         </mod>
       </difference>
@@ -102,7 +96,7 @@
 <animation>
   <type>rotate</type>
   <object-name>dig_f_low</object-name>
-  <property alias="../../params/freq"/>
+  <property>instrumentation/dme[1]/frequencies/selected-mhz</property>
   <factor>360</factor>
   <center>
     <x-m>-0.03178</x-m>
@@ -124,7 +118,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property alias="../../../../params/freq"/>
+      <property>instrumentation/dme[1]/frequencies/selected-mhz</property>
       <mask>integer</mask>
       <min>108</min>
       <max>118</max>
@@ -140,7 +134,7 @@
   <action>
     <binding>
       <command>property-adjust</command>
-      <property alias="../../../../params/freq"/>
+      <property>instrumentation/dme[1]/frequencies/selected-mhz</property>
       <mask>decimal</mask>
       <factor>0.05</factor>
       <min>0</min>
@@ -154,7 +148,7 @@
 <animation>
   <type>rotate</type>
   <object-name>power</object-name>
-  <property alias="../../params/power"/>
+  <property>instrumentation/dme[1]/switch-position[2]</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	45.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	-45.0</dep></entry>
@@ -180,7 +174,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-interpolate</command>
-      <property alias="../../../../params/power"/>
+      <property>instrumentation/dme[1]/switch-position[2]</property>
       <value type="double">1</value>
       <time>0.1</time>
     </binding>
@@ -196,7 +190,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-interpolate</command>
-      <property alias="../../../../params/power"/>
+      <property>instrumentation/dme[1]/switch-position[2]</property>
       <value type="double">0</value>
       <time>0.1</time>
     </binding>
@@ -207,7 +201,7 @@
 <animation>
   <type>rotate</type>
   <object-name>reserve</object-name>
-  <property alias="../../params/reserve"/>
+  <property>instrumentation/dme[1]/switch-position[3]</property>
   <interpolation>
     <entry><ind>	0.0</ind>	<dep>	45.0</dep></entry>
     <entry><ind>	1.0</ind>	<dep>	-45.0</dep></entry>
@@ -233,7 +227,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-interpolate</command>
-      <property alias="../../../../params/reserve"/>
+      <property>instrumentation/dme[1]/switch-position[3]</property>
       <value type="double">0</value>
       <time>0.1</time>
     </binding>
@@ -249,7 +243,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>property-interpolate</command>
-      <property alias="../../../../params/reserve"/>
+      <property>instrumentation/dme[1]/switch-position[3]</property>
       <value type="double">1</value>
       <time>0.1</time>
     </binding>
