@@ -19,14 +19,7 @@
 		<texture>paratrooper-trans.png</texture>
 		
 		<condition>
-		  
-		   
-		        <equals>
-					<property>controls/paratroopers/nosmoke</property>
-					<value></value>
-		        </equals>
-		   
-		 
+		       
 		  <and>
 		           
 		           <greater-than>
@@ -35,7 +28,7 @@
 			   </greater-than>
                            <less-than>
 					<property>sim/multiplay/generic/float[17]</property>
-					<value>50</value>
+					<value>105</value>
 			   </less-than>
 		   </and>
 		    

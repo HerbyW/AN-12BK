@@ -52,7 +52,7 @@
     <paratroopers>
       <paratroopers type="int">0</paratroopers>
       <weight type="float">0</weight>
-      <nosmoke type="string">nosmoke</nosmoke>
+      
     </paratroopers>
     <switches>
       <fuel type="float">0</fuel>

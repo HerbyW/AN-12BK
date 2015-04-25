@@ -17,14 +17,7 @@
   <submodel> 
     <name>parachutist</name>
     <model>Aircraft/Antonov-An-12/Models/Effects/Submodels/parachuter.xml</model>
-    <!--
-    <condition>
-      <equals>
-        <property>instrumentation/doors/passenger/position-norm</property>
-        <value>1</value>
-      </equals>
-    </condition>
-    -->
+    
     <trigger>controls/paratroopers/trigger/state</trigger>
     <speed> 0 </speed>
     <repeat> true </repeat>
@@ -45,7 +38,3 @@
   </submodel>
 
 </PropertyList>
-
-<!--
-controls/paratroopers/trigger/state
--->
