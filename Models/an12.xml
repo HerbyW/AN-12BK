@@ -39,16 +39,6 @@
       passenger_door.unalias();
     </unload>
   </nasal>
-
-  <model>
-  <name>Pushback</name>
-  <path>Models\Airport\Pushback\Goldhofert.xml</path>
-  <offsets>
-   <x-m>-13.15</x-m>
-   <y-m>0</y-m>
-   <z-m>-5.25</z-m>
-  </offsets>
- </model>
  
  <sound>
        <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
@@ -1772,7 +1762,14 @@
 	</offsets>
 </model>
 
-
+<model>
+	<path>Aircraft/Antonov-An-12/Models/Effects/smoke/paratroopers-smoke.xml</path>
+		<offsets>
+			<x-m> 12 </x-m>
+                        <y-m> 0 </y-m>
+                        <z-m> -5 </z-m>
+		</offsets>
+	</model>
 
 
 </PropertyList>
