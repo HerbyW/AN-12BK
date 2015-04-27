@@ -77,10 +77,10 @@
 				</size>
 			</end>
 			<life-sec>
-				<value>120</value>
+				<value>280</value>
 			</life-sec>
-			<mass-kg>240</mass-kg>
-			<radius-m>1.95</radius-m>
+			<mass-kg>150</mass-kg>
+			<radius-m>1.85</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>
