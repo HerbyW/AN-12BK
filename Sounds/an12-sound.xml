@@ -184,7 +184,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.85</max>
+        <max>0.80</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -205,7 +205,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.85</max>
+        <max>0.80</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -218,6 +218,9 @@
       <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
+      <volume>
+        <factor>0.85</factor>
+      </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
@@ -231,6 +234,9 @@
          <value>0.96</value>
        </greater-than>
      </condition>
+     <volume>
+        <factor>0.85</factor>
+      </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
