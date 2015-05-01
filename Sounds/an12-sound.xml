@@ -83,9 +83,9 @@
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
-        <min>0.06</min>
-        <max>0.55</max>        
+        <factor>0.00032</factor>
+        <min>0.12</min>
+        <max>0.75</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -107,9 +107,9 @@
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
-        <min>0.06</min>
-        <max>0.55</max>        
+        <factor>0.00032</factor>
+        <min>0.12</min>
+        <max>0.75</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -131,9 +131,9 @@
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
-        <min>0.06</min>
-        <max>0.55</max>        
+        <factor>0.00032</factor>
+        <min>0.12</min>
+        <max>0.75</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -155,9 +155,9 @@
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00022</factor>
-        <min>0.06</min>
-        <max>0.55</max>        
+        <factor>0.00032</factor>
+        <min>0.12</min>
+        <max>0.75</max>        
       </volume>
       <pitch>
         <property>/engines/engine[0]/rpm</property>
@@ -184,7 +184,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.85</max>
+        <max>0.80</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -205,7 +205,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.85</max>
+        <max>0.80</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -218,6 +218,9 @@
       <mode>in-transit</mode>
       <path>Aircraft/Antonov-An-12/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
+      <volume>
+        <factor>0.55</factor>
+      </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
@@ -231,6 +234,9 @@
          <value>0.96</value>
        </greater-than>
      </condition>
+     <volume>
+        <factor>0.55</factor>
+      </volume>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
