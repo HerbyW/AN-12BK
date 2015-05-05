@@ -349,7 +349,6 @@
     </offsets>
   </model>
  
- 
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
     <path>Aircraft/Antonov-An-12/Models/shadow.xml</path>

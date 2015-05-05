@@ -66,6 +66,7 @@
 	<activ type="int">0</activ>
       </chokes>
       <reverser type="bool">0</reverser>
+      
     </controls>
     
     <gear><gear><position-norm type="float">1</position-norm></gear></gear>
@@ -87,11 +88,11 @@
       <fuel-fraction>0.6</fuel-fraction>
       
       <startup>
-	<splash-texture>Aircraft/Antonov-An-12/an12-splash.png</splash-texture>
+	<splash-texture>Aircraft/Antonov-An-12/AN-12BK-splash.png</splash-texture>
       </startup>
       
       <model>
-	<path>Aircraft/Antonov-An-12/Models/an12.xml</path>
+	<path>Aircraft/Antonov-An-12/Models/AN-12BK.xml</path>
 	<livery archive="y">
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->

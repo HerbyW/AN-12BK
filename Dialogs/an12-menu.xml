@@ -14,7 +14,7 @@
 
   <default>
     <menu n="10">
-      <label>Antonov An 12</label>
+      <label>Antonov AN-12BK</label>
       <enabled type="bool">true</enabled>
       <item>
 	<label>Select livery</label>
