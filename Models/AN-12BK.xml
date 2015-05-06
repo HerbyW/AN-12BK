@@ -1871,7 +1871,7 @@
 <!--loading and unloading with standing on ground -->
 
 <model>
-	<name>Storage1</name>
+	<name>Storage1b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage1b.xml</path>
 	<condition>
 	  <and>
@@ -1883,6 +1883,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>
@@ -1893,7 +1897,7 @@
 </model>
 
 <model>
-	<name>Storage2</name>
+	<name>Storage2b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage2b.xml</path>
 	<condition>
 	  <and>
@@ -1905,6 +1909,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>
@@ -1915,7 +1923,7 @@
 </model>
 
 <model>
-	<name>Storage3</name>
+	<name>Storage3b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage3b.xml</path>
 	<condition>
 	  <and>
@@ -1927,6 +1935,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>
@@ -1937,7 +1949,7 @@
 </model>
 
 <model>
-	<name>Storage4</name>
+	<name>Storage4b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage4b.xml</path>
 	<condition>
 	  <and>
@@ -1949,6 +1961,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>
@@ -1959,7 +1975,7 @@
 </model>
 
 <model>
-	<name>Storage5</name>
+	<name>Storage5b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage5b.xml</path>
 	<condition>
 	  <and>
@@ -1971,6 +1987,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>
@@ -1981,7 +2001,7 @@
 </model>
 
 <model>
-	<name>Storage6</name>
+	<name>Storage6b</name>
 	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage6b.xml</path>
 	<condition>
 	  <and>
@@ -1993,6 +2013,10 @@
 			<property>sim/multiplay/generic/float[13]</property>
 			<value>0.2</value>
 		</less-than>
+		<equals>
+			<property>sim/multiplay/generic/int[16]</property>
+			<value>1</value>
+		</equals>
 	  </and>
 	</condition>
 	<offsets>

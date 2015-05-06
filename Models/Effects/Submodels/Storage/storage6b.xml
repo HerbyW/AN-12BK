@@ -27,7 +27,7 @@
 <animation>
   <type>scale</type>
   <object-name>blah</object-name>
-  <property>sim/signals/fdm-initialized</property>
+  <property>sim/multiplay/generic/int[17]</property>
   <offset>1</offset>
   <x-max>0.71</x-max>
   <y-max>0.71</y-max>
@@ -40,7 +40,7 @@
   
   <animation>
     <type>translate</type>
-    <name>storage2</name>
+    <name>storage6b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
       <entry><ind> 36000 </ind><dep> -16.5 </dep></entry>
@@ -62,7 +62,7 @@
 
  <animation>
     <type>translate</type>
-    <name>storage2</name>
+    <name>storage6b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
       <entry><ind> 36000 </ind><dep> -0.80 </dep></entry>
@@ -85,7 +85,7 @@
   
   <animation>
     <type>translate</type>
-    <name>storage2</name>
+    <name>storage6b</name>
     <property>sim/multiplay/generic/float[16]</property>
     <interpolation>
       <entry><ind> 36000 </ind><dep> 1.0 </dep></entry>
