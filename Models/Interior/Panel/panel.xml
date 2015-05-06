@@ -1980,6 +1980,109 @@ Lights</text>
     </offsets>
   </model>
  
+    <!-- Storage Signal Switch-->
+ 
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_signal.xml</path>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.3 </y-m>
+      <z-m> -0.7 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <text>
+    <name>storage_signal</name>
+    <type type="string">literal</type>
+    <text type="string">Storage Signal</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.09</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.3 </y-m>
+      <z-m>  -0.65 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>storage_signal</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
+  
+      <!-- Storage Load Switch-->
+ 
+ <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_load.xml</path>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.23 </y-m>
+      <z-m> -0.7 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>  
+  
+  <text>
+    <name>storage_load</name>
+    <type type="string">literal</type>
+    <text type="string">
+      Storage
+      Loading
+      
+      
+      
+            
+      
+      
+      
+      Unloading</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.20</max-height>
+    <max-width>0.09</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.25 </y-m>
+      <z-m> -0.7 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>    
+    <object-name>storage_load</object-name>    
+    <emission>
+      <factor-prop>controls/switches/gauge-light</factor-prop>
+      <red>   0.6 </red>
+      <green> 0.6 </green>
+      <blue>  0.6 </blue>
+    </emission>
+  </animation>
 
   
   <!--Map case from TU-154B-->

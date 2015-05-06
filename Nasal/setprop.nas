@@ -52,6 +52,31 @@ setlistener("/controls/paratroopers/jump-signal", func(v) {
 ######################################################################################################################
 
 #
+#Storage roll out and jump
+#
+setlistener("/controls/storage/jump-signal", func(v) {
+ if(v.getValue()){
+    interpolate("/controls/storage/jump-signal-pos", 1, 0.25);
+    
+  }else{
+    interpolate("/controls/storage/jump-signal-pos", 0, 0.25);
+  }
+});
+
+#
+#Storage loading 7 containers
+#
+setlistener("/controls/storage/load-signal", func(v) {
+  if(v.getValue()){
+    interpolate("/sim/weight[3]/weight-lb", 36000, 25);
+  }else{
+    interpolate("/sim/weight[3]/weight-lb", 0, 25);
+  }
+});
+
+######################################################################################################################
+
+#
 # Air and Groundspeed selector for USVP-Instrument
 #
 setlistener("/controls/switches/usvp-selector-trans", func 
@@ -333,9 +358,9 @@ if
 (  getprop("/controls/reverser") == 0) 
 {
 setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[1]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[2]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[3]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
 
 setprop("/controls/engines/engine[0]/throttle-r", 0);
 setprop("/controls/engines/engine[1]/throttle-r", 0);
@@ -345,9 +370,9 @@ setprop("/controls/engines/engine[3]/throttle-r", 0);
 else
 {  
 setprop("/controls/engines/engine[0]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
-setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[1]/throttle"));
-setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[2]/throttle"));
-setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[3]/throttle"));
+setprop("/controls/engines/engine[1]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[2]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
+setprop("/controls/engines/engine[3]/throttle-r", getprop("/controls/engines/engine[0]/throttle"));
 
 setprop("/controls/engines/engine[0]/throttle-v", 0);
 setprop("/controls/engines/engine[1]/throttle-v", 0);
