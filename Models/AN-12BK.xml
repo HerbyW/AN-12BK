@@ -1778,7 +1778,7 @@
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
+			<value>1</value>
 		</greater-than>
 	</condition>
 	<offsets>
@@ -1860,6 +1860,140 @@
 			<property>sim/multiplay/generic/float[16]</property>
 			<value>30000</value>
 		</greater-than>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<!--loading and unloading with standing on ground -->
+
+<model>
+	<name>Storage1</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage1b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>Storage2</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage2b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>Storage3</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage3b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>Storage4</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage4b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>Storage5</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage5b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
+	</condition>
+	<offsets>
+	 <x-m> -17 </x-m>
+         <y-m> 0.0 </y-m>
+         <z-m> -3.9 </z-m>
+	</offsets>
+</model>
+
+<model>
+	<name>Storage6</name>
+	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage6b.xml</path>
+	<condition>
+	  <and>
+		<greater-than>
+			<property>sim/multiplay/generic/float[16]</property>
+			<value>0</value>
+		</greater-than>
+		<less-than>
+			<property>sim/multiplay/generic/float[13]</property>
+			<value>0.2</value>
+		</less-than>
+	  </and>
 	</condition>
 	<offsets>
 	 <x-m> -17 </x-m>
