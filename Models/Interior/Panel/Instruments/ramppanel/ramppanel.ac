@@ -31,7 +31,7 @@ kids 2
 OBJECT poly
 name "c_1"
 loc 0.0000000 0.0000000 0.0000000
-texture "startpanel2.png"
+texture "startpanel2b.png"
 texrep 1 1
 numvert 33
 0.0178010 -0.0665131 0.0358820
@@ -280,7 +280,7 @@ kids 0
 OBJECT poly
 name "c_2"
 loc 0.0000000 0.0000000 0.0000000
-texture "startpanel2.png"
+texture "startpanel2b.png"
 texrep 1 1
 numvert 33
 0.0005870 -0.0731406 -0.0458520
