@@ -1966,8 +1966,6 @@ Lights</text>
     </offsets>
   </model>
   
-
-  
       <!-- UVO, Altimeter Electric -->
   
   <model>
@@ -1982,14 +1980,25 @@ Lights</text>
  
     <!-- Ramp Control Panel-->
     
+    <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
+    <offsets>
+      <x-m>  18.005 </x-m>
+      <y-m> 1.60</y-m>
+      <z-m> -0.7 </z-m>
+      <heading-deg>0.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+    
     <!-- Storage Signal Switch-->
  
  <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_signal.xml</path>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.7 </y-m>
-      <z-m> -0.7 </z-m>
+      <y-m> 1.65 </y-m>
+      <z-m> -0.68 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>  
@@ -2012,8 +2021,8 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.7 </y-m>
-      <z-m>  -0.65 </z-m>
+      <y-m> 1.65 </y-m>
+      <z-m>  -0.635 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </text>
@@ -2035,8 +2044,8 @@ Lights</text>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_load.xml</path>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.63 </y-m>
-      <z-m> -0.7 </z-m>
+      <y-m> 1.58 </y-m>
+      <z-m> -0.68 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>  
@@ -2046,12 +2055,7 @@ Lights</text>
     <type type="string">literal</type>
     <text type="string">
       Storage
-      Loading
-      
-      
-      
-      
-      
+      Loading     
       
       
       Unloading</text>
@@ -2069,8 +2073,8 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.65 </y-m>
-      <z-m> -0.7 </z-m>
+      <y-m> 1.550 </y-m>
+      <z-m> -0.68 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </text>
@@ -2089,11 +2093,11 @@ Lights</text>
     <!-- Paratroopers Switch-->
  
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal.xml</path>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal-big.xml</path>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.58 </y-m>
-      <z-m> -0.7 </z-m>
+      <y-m> 1.542 </y-m>
+      <z-m> -0.8 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>  
@@ -2104,11 +2108,11 @@ Lights</text>
     <text type="string">Parachuter Signal</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
-    <character-size type="double">0.008</character-size>
+    <character-size type="double">0.012</character-size>
     <character-aspect-ratio type="double">1.0</character-aspect-ratio>
     <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.06</max-height>
-    <max-width>0.035</max-width>
+    <max-height>0.09</max-height>
+    <max-width>0.05</max-width>
     <font-resolution>
       <width type="int">32</width>
       <height type="int">32</height>
@@ -2116,12 +2120,35 @@ Lights</text>
     <alignment>center-center</alignment>
     <offsets>
       <x-m>  18.0 </x-m>
-      <y-m> 1.58 </y-m>
-      <z-m> -0.68 </z-m>
+      <y-m> 1.542 </y-m>
+      <z-m> -0.755 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </text>
   
+  <!-- Cargo Check Placecard-->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning18.xml</path>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.59 </y-m>
+      <z-m> -0.59 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Loading 100 Paratroopers-->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning19.xml</path>
+    <offsets>
+      <x-m>  18.0 </x-m>
+      <y-m> 1.625 </y-m>
+      <z-m> -0.8 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
   
   <!--Map case from TU-154B-->
 
