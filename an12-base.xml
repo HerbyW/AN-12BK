@@ -209,6 +209,14 @@
 		<name>Delete</name>
 		<desc>Reverser on/off</desc>
 	      </key>
+	      <key>
+		<name>&lt;</name>
+		<desc>Change Pilot Engineer View</desc>
+	      </key>
+	      <key>
+		<name>y</name>
+		<desc>Change Pilot Ramp View</desc>
+	      </key>
 	      <text>
 		Wellcome to version 3.4.8 of Antonov-AN-12-B/BK
 		

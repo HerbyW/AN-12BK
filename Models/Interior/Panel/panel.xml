@@ -1844,7 +1844,53 @@ Lights</text>
     </emission>
   </animation>
   
+  <!--Map case from TU-154B-->
 
+        <!-- Mapcase -->
+  
+  <model>
+    <name>MapCase</name>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
+    <offsets>
+      <x-m>  -0.545 </x-m>
+      <y-m> 0.13 </y-m>
+      <z-m>  -0.55 </z-m>      
+    </offsets>
+  </model> 
+
+    <!--Parachuter/Cargo Signal Lamps -->
+
+<model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.7 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+<model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.8 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.9 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+
+  
     
   <!-- rear panel -->
   
@@ -1896,39 +1942,7 @@ Lights</text>
     </offsets>
   </text>
   
-  <!--Parachuter/Cargo Signal Lamps -->
 
-<model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.7 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-<model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.8 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model> 
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.9 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-
-  
    <!--Variometer, For Cabine and Outside pressure control--> 
   
   <model>
@@ -1983,189 +1997,14 @@ Lights</text>
     <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
     <offsets>
-      <x-m>  18.005 </x-m>
-      <y-m> 1.60</y-m>
-      <z-m> -0.7 </z-m>
-      <heading-deg>0.0</heading-deg>
+      <x-m>  18.10 </x-m>
+      <y-m> 1.73</y-m>
+      <z-m> -0.40 </z-m>
+      <heading-deg>70.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
-  </model>
-    
-    <!-- Storage Signal Switch-->
- 
- <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_signal.xml</path>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.65 </y-m>
-      <z-m> -0.68 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>storage_signal</name>
-    <type type="string">literal</type>
-    <text type="string">Storage Signal</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.012</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.09</max-height>
-    <max-width>0.05</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.65 </y-m>
-      <z-m>  -0.645 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-  <animation>
-    <type>material</type>    
-    <object-name>storage_signal</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-  
-      <!-- Storage Load Switch-->
- 
- <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_load.xml</path>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.58 </y-m>
-      <z-m> -0.68 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>storage_load</name>
-    <type type="string">literal</type>
-    <text type="string">
-      Storage
-      Loading     
-      
-      
-      
-      
-      Unloading</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.012</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.20</max-height>
-    <max-width>0.09</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.595 </y-m>
-      <z-m> -0.675 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-  <animation>
-    <type>material</type>    
-    <object-name>storage_load</object-name>    
-    <emission>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-      <red>   0.6 </red>
-      <green> 0.6 </green>
-      <blue>  0.6 </blue>
-    </emission>
-  </animation>
-
-    <!-- Paratroopers Switch-->
- 
- <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal-big.xml</path>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.542 </y-m>
-      <z-m> -0.8 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>  
-  
-  <text>
-    <name>parachute_signal</name>
-    <type type="string">literal</type>
-    <text type="string">Parachuter Signal</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.012</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.09</max-height>
-    <max-width>0.05</max-width>
-    <font-resolution>
-      <width type="int">32</width>
-      <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.542 </y-m>
-      <z-m> -0.755 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </text>
-  
-  <!-- Cargo Check Placecard-->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning18.xml</path>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.61 </y-m>
-      <z-m> -0.59 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Loading 100 Paratroopers-->
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning19.xml</path>
-    <offsets>
-      <x-m>  18.0 </x-m>
-      <y-m> 1.625 </y-m>
-      <z-m> -0.8 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-  <!--Map case from TU-154B-->
-
-        <!-- Mapcase -->
-  
-  <model>
-    <name>MapCase</name>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
-    <offsets>
-      <x-m>  -0.545 </x-m>
-      <y-m> 0.13 </y-m>
-      <z-m>  -0.55 </z-m>      
-    </offsets>
   </model> 
-
+ 
     <!-- Overhead Panel -->
   
    <!-- Switches block 3 -->

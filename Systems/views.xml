@@ -87,7 +87,7 @@
   </view>
   
   <view n="105">
-    <name>Passenger Middle Cabin</name>
+    <name>Ramp Control</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
     <config>
@@ -97,7 +97,7 @@
       <x-offset-m archive="y">  1.30 </x-offset-m> <!--Right-->
       <y-offset-m archive="y">  -2.250 </y-offset-m> <!--Up-->
       <z-offset-m archive="y"> 2.90 </z-offset-m> <!--Back-->
-      <pitch-offset-deg> 0 </pitch-offset-deg>
+      <pitch-offset-deg> -3 </pitch-offset-deg>
       <default-field-of-view-deg type="double"> 85 </default-field-of-view-deg>
       <heading-offset-deg type="double"> 185 </heading-offset-deg>
     </config>

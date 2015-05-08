@@ -6,7 +6,7 @@ OBJECT world
 name "Blender_export__ramppanel.ac"
 kids 3
 OBJECT poly
-name "base"
+name "RCbase"
 loc 0.0000000 0.0000000 0.0000000
 texture "startpanel1.png"
 texrep 1 1
@@ -25,7 +25,7 @@ refs 4
 3 0.000000 1.000000
 kids 0
 OBJECT group
-name "cover"
+name "RCcover"
 loc 0.0000000 0.0000000 0.0000000
 kids 2
 OBJECT poly
@@ -280,7 +280,7 @@ kids 0
 OBJECT poly
 name "c_2"
 loc 0.0000000 0.0000000 0.0000000
-texture "startpanel2b.png"
+texture "startpanel2.png"
 texrep 1 1
 numvert 33
 0.0005870 -0.0731406 -0.0458520
