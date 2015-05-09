@@ -360,11 +360,13 @@
   <tank x="3" y="-6.817" z="-0.4" capacity="7170"/>
 
   <!-- Mass distribution -->
-  <ballast x="19" y="0" z="-4" mass="16000"/>
+  <ballast x="11" y="0" z="-2.05" mass="30000"/>
+  <ballast x="-1.5" y="0" z="-2.05" mass="16000"/>
   
   <weight x="15.0" y="0" z="2.97" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="7" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="7" y="0" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
+  <weight x="7" y="0" z="0" mass-prop="/sim/weight[3]/weight-lb"/>
   
   <!-- Thruster for Pushback action -->
   

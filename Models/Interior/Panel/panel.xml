@@ -1844,7 +1844,53 @@ Lights</text>
     </emission>
   </animation>
   
+  <!--Map case from TU-154B-->
 
+        <!-- Mapcase -->
+  
+  <model>
+    <name>MapCase</name>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
+    <offsets>
+      <x-m>  -0.545 </x-m>
+      <y-m> 0.13 </y-m>
+      <z-m>  -0.55 </z-m>      
+    </offsets>
+  </model> 
+
+    <!--Parachuter/Cargo Signal Lamps -->
+
+<model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.7 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+  
+<model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.8 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model> 
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
+    <offsets>
+      <x-m>  25.3 </x-m>
+      <y-m> -1.0 </y-m>
+      <z-m> 0.9 </z-m>
+      <heading-deg>180.0</heading-deg>
+    </offsets>
+  </model>
+
+  
     
   <!-- rear panel -->
   
@@ -1896,39 +1942,7 @@ Lights</text>
     </offsets>
   </text>
   
-  <!--Parachuter/Cargo Signal Lamps -->
 
-<model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-green.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.7 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-  
-<model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-orange.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.8 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model> 
-  
-  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/redlamp/Cargo-lamp-red.xml</path>
-    <offsets>
-      <x-m>  25.3 </x-m>
-      <y-m> -1.0 </y-m>
-      <z-m> 0.9 </z-m>
-      <heading-deg>180.0</heading-deg>
-    </offsets>
-  </model>
-
-  
    <!--Variometer, For Cabine and Outside pressure control--> 
   
   <model>
@@ -1966,8 +1980,6 @@ Lights</text>
     </offsets>
   </model>
   
-
-  
       <!-- UVO, Altimeter Electric -->
   
   <model>
@@ -1980,22 +1992,19 @@ Lights</text>
     </offsets>
   </model>
  
-
-  
-  <!--Map case from TU-154B-->
-
-        <!-- Mapcase -->
-  
-  <model>
-    <name>MapCase</name>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/mapcase/mapcase.xml</path>
+    <!-- Ramp Control Panel (red box at ramp)-->
+    
+    <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/ramppanel/ramppanel.xml</path>
     <offsets>
-      <x-m>  -0.545 </x-m>
-      <y-m> 0.13 </y-m>
-      <z-m>  -0.55 </z-m>      
+      <x-m>  18.10 </x-m>
+      <y-m> 1.73</y-m>
+      <z-m> -0.40 </z-m>
+      <heading-deg>70.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
     </offsets>
   </model> 
-
+ 
     <!-- Overhead Panel -->
   
    <!-- Switches block 3 -->

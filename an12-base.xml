@@ -51,9 +51,13 @@
     </gear>
     <paratroopers>
       <paratroopers type="int">0</paratroopers>
-      <weight type="float">0</weight>
-      
-      </paratroopers>
+      <weight type="float">0</weight>      
+    </paratroopers>
+    <storage>
+	<storage type="int">0</storage>
+	<weight type="float">6000</weight>
+	<nosmoke type="string">nosmoke</nosmoke>
+    </storage>
       <switches>
 	<fuel type="float">0</fuel>
 	<gauge-light type="int">0</gauge-light>
@@ -66,6 +70,7 @@
 	<activ type="int">0</activ>
       </chokes>
       <reverser type="bool">0</reverser>
+      
     </controls>
     
     <gear><gear><position-norm type="float">1</position-norm></gear></gear>
@@ -75,10 +80,10 @@
       
       <description>Antonov An 12 (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>3.4.7</aircraft-version>    
+      <aircraft-version>3.4.8</aircraft-version>    
       <status>advanced production</status>
       <rating>
-	<FDM type="int">4</FDM>
+	<FDM type="int">5</FDM>
 	<systems type="int">4</systems>
 	<cockpit type="int">4</cockpit>
 	<model type="int">5</model>
@@ -87,11 +92,11 @@
       <fuel-fraction>0.6</fuel-fraction>
       
       <startup>
-	<splash-texture>Aircraft/Antonov-An-12/an12-splash.png</splash-texture>
+	<splash-texture>Aircraft/Antonov-An-12/AN-12BK-splash.png</splash-texture>
       </startup>
       
       <model>
-	<path>Aircraft/Antonov-An-12/Models/an12.xml</path>
+	<path>Aircraft/Antonov-An-12/Models/AN-12BK.xml</path>
 	<livery archive="y">
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
@@ -128,7 +133,8 @@
 	  <multiplay>
 	    <chat_display>1</chat_display>
 	    <generic> 
-	      
+	      <int type="int" n="0" alias="/controls/storage/trigger/state">  0 </int>
+	      <int type="int" n="1" alias="/controls/storage/storage">  0 </int>
 	      <int type="int" n="2" alias="/controls/paratroopers/jump-signal">  0 </int>
 	      <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
 	      <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
@@ -143,7 +149,8 @@
 	      <int type="int" n="13" alias="/engines/engine[1]/running">  0 </int>
 	      <int type="int" n="14" alias="/engines/engine[2]/running">  0 </int>
 	      <int type="int" n="15" alias="/engines/engine[3]/running">  0 </int>
-	      
+	      <int type="int" n="16" alias="/gear/gear[0]/wow">  1 </int>
+	      <int type="int" n="17" alias="/sim/signals/fdm-initialized" />
 	      
 	      <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
 	      <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
@@ -163,7 +170,7 @@
 	      <float n="13" alias="/gear/gear[2]/rollspeed-ms" />
 	      <float n="14" alias="/orientation/pitch-deg"/>
 	      <float n="15" alias="/orientation/roll-deg"/>
-	      
+	      <float n="16" alias="/sim/weight[3]/weight-lb"/>
 	      <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
 	      
 	      <string  alias="/sim/multiplay/callsign"/>
@@ -202,8 +209,16 @@
 		<name>Delete</name>
 		<desc>Reverser on/off</desc>
 	      </key>
+	      <key>
+		<name>&lt;</name>
+		<desc>Change Pilot Engineer View</desc>
+	      </key>
+	      <key>
+		<name>y</name>
+		<desc>Change Pilot Ramp View</desc>
+	      </key>
 	      <text>
-		Wellcome to version 3.4.6 of Antonov-AN-12-B/BK
+		Wellcome to version 3.4.8 of Antonov-AN-12-B/BK
 		
 		Autostart: s
 		

@@ -12,53 +12,60 @@
     ###################################################################################
 -->
 <PropertyList include="an12-yasim-cnf.xml">
-
+  
   <sim>
-
+    
     <description>Antonov An 12 (YASim)</description>
     <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-
+    
     
     <weight n="0">
-        	    <name>Crew</name>
-        	    <weight-lb type="double">600</weight-lb>
-        	    <max-lb type="double">1000</max-lb>
-        	    <min-lb type="double">600</min-lb>
+      <name>Crew</name>
+      <weight-lb type="double">600</weight-lb>
+      <max-lb type="double">1000</max-lb>
+      <min-lb type="double">600</min-lb>
     </weight>
     
     <weight n="1">
-		    <name>Cargo</name>
-		    <weight-lb type="double">16000.0</weight-lb>
-		    <max-lb type="double">44090.0</max-lb>
-		    <min-lb type="double">0.0</min-lb>
-		</weight>
-		
+      <name>Cargo</name>
+      <weight-lb type="double">16000.0</weight-lb>
+      <max-lb type="double">44090.0</max-lb>
+      <min-lb type="double">0.0</min-lb>
+    </weight>
+    
     <weight n="2">
-		    <name>Parachuters a 120 lb</name>
-		    <weight-lb type="double">0.0</weight-lb>
-		    <max-lb type="double">12000.0</max-lb>
-		    <min-lb type="double">0.0</min-lb>
-		</weight>
+      <name>Parachuters a 120 lb</name>
+      <weight-lb type="double">0.0</weight-lb>
+      <max-lb type="double">12000.0</max-lb>
+      <min-lb type="double">0.0</min-lb>
+    </weight>
+    
+    <weight n="3">
+      <name>Storage a 6000 lb</name>
+      <weight-lb type="double">0.0</weight-lb>
+      <max-lb type="double">36000.0</max-lb>
+      <min-lb type="double">0.0</min-lb>
+    </weight>
     
     
     <rating>
-      <FDM type="int">     4 </FDM>
+      <FDM type="int">     5 </FDM>
       <systems type="int"> 4 </systems>
       <cockpit type="int"> 4 </cockpit>
       <model type="int">   5 </model>
     </rating>
-   
-   <systems>
-          <autopilot>
-	    <name>Autopilot</name>
-               <path>Nasal/An-12-autopilot.xml</path>
-         </autopilot>
-   </systems>
-   
-   
-   
-  </sim>
-  
-  
-  
-</PropertyList>
+    
+    <systems>
+      <autopilot>
+	<name>Autopilot</name>
+	<path>Nasal/An-12-autopilot.xml</path>
+      </autopilot>
+    </systems>
+    
+    
+    
+    </sim>
+    
+    
+    
+    </PropertyList>
