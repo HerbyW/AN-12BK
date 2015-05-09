@@ -33,7 +33,7 @@
     <!-- Objets transparents -->
   </animation>  
   
-  <!-- Warning Indicator: fuel-low and over-speed,over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
+  <!-- Warning Indicator: Reverser (yellow),fuel-low, over-speed, over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
   <model>
     <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning88.xml</path>

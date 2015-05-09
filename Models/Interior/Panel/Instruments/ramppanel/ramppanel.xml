@@ -102,7 +102,7 @@
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.05 </y-m>
-      <z-m> 0.02 </z-m>
+      <z-m> 0.0 </z-m>
       <heading-deg>180.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
@@ -127,7 +127,7 @@
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.05 </y-m>
-      <z-m> -0.015 </z-m>
+      <z-m> -0.035 </z-m>
       <heading-deg>180.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
@@ -151,7 +151,7 @@
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.10 </y-m>
-      <z-m> 0.02 </z-m>
+      <z-m> 0.0 </z-m>
       <heading-deg>180.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
@@ -183,7 +183,7 @@
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.083 </y-m>
-      <z-m> 0.016 </z-m>
+      <z-m> -0.004 </z-m>
       <heading-deg>180.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
@@ -256,12 +256,26 @@
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.04 </y-m>
-      <z-m> 0.02 </z-m>
+      <z-m> 0.0 </z-m>
       <heading-deg>180.0</heading-deg>
       <pitch-deg>180</pitch-deg>
     </offsets>
   </model>
 
+    <!-- Cargo Overload Warning -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning85b.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.04 </y-m>
+      <z-m> 0.057 </z-m>
+      <heading-deg>180.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+
+  
   <!-- Loading 100 Paratroopers-->
   
   <model>
@@ -314,7 +328,19 @@
     </offsets>
   </model>
  
- 
+    <!-- Weight Indicator -->
+  
+  <model>
+    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/weight.xml</path>
+    <offsets>
+      <x-m> 0.005 </x-m>
+      <y-m> -0.055 </y-m>
+      <z-m> 0.057 </z-m>
+      <heading-deg>0.0</heading-deg>
+      <pitch-deg>180</pitch-deg>
+    </offsets>
+  </model>
+  
  
  
 </PropertyList>
