@@ -98,7 +98,7 @@
     <!-- Storage Signal Switch-->
  
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_signal.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/switch/storage_signal.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.05 </y-m>
@@ -147,7 +147,7 @@
       <!-- Storage Load Switch-->
  
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/storage_load.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/switch/storage_load.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.10 </y-m>
@@ -203,7 +203,7 @@
     <!-- Paratroopers Switch-->
  
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/switch/parachute_signal-big.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/switch/parachute_signal-big.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.05 </y-m>
@@ -252,7 +252,7 @@
   <!-- Cargo Check Placecard-->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning18.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning18.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.04 </y-m>
@@ -265,7 +265,7 @@
     <!-- Cargo Overload Warning -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning85b.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning85b.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.04 </y-m>
@@ -279,7 +279,7 @@
   <!-- Loading 100 Paratroopers-->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/warning/warning19.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning19.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.04 </y-m>
@@ -292,7 +292,7 @@
    <!-- TNV-15, OUtside Temperatur Indicator -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/tnv-15/tnv-15.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.10 </y-m>
@@ -305,7 +305,7 @@
     <!-- IAS/groundspeed indicator USVP -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/usvp/usvp.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/usvp/usvp.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> 0.02 </y-m>
@@ -318,7 +318,7 @@
         <!-- UVO, Altimeter Electric -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/uvo/uvo.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.075 </y-m>
@@ -331,7 +331,7 @@
     <!-- Weight Indicator -->
   
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Interior/Panel/Instruments/rpm/weight.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/rpm/weight.xml</path>
     <offsets>
       <x-m> 0.005 </x-m>
       <y-m> -0.055 </y-m>

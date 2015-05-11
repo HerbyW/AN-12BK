@@ -16,7 +16,7 @@
 
   <submodel> 
     <name>parachutist</name>
-    <model>Aircraft/Antonov-An-12/Models/Effects/Submodels/parachuter.xml</model>
+    <model>Aircraft/AN-12BK/Models/Effects/Submodels/parachuter.xml</model>
     
     <trigger>controls/paratroopers/trigger/state</trigger>
     <speed> 0 </speed>

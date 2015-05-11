@@ -23,7 +23,7 @@
 
 <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Antonov-An-12/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/AN-12BK/Models/Effects/Glass/glass</inherits-from>
     <object-name>windows</object-name>
     <object-name>intvitreporte</object-name>
     <condition>
@@ -50,7 +50,7 @@
 
 <!-- Pilote, for what? I am the pilot
 <model>
-<path>Aircraft/Antonov-An-12/Models/Pilot/pilot.xml</path>
+<path>Aircraft/AN-12BK/Models/Pilot/pilot.xml</path>
 <offsets>
 <x-m> -13.35934 </x-m>
 <y-m>  -0.54728 </y-m>
@@ -60,7 +60,7 @@
 
 <!-- Planche de bord -->
 <model>
-<path>Aircraft/Antonov-An-12/Models/Interior/Panel/panel.xml</path>
+<path>Aircraft/AN-12BK/Models/Interior/Panel/panel.xml</path>
 <offsets>
 <x-m> -14.00613 </x-m>
 <y-m>   0.00000 </y-m>

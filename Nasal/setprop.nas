@@ -342,7 +342,7 @@ oilPressTimer.start();
 
 setprop("sim/messages/copilot", "Hello");
 setprop("sim/messages/copilot", getprop("sim/multiplay/generic/string[0]"));
-setprop("sim/messages/copilot", "Have fun with the Antonov-12");
+setprop("sim/messages/copilot", "Have fun with the Antonov-12BK");
 setprop("sim/messages/copilot", "For Autostart hit the s key!");
 
 

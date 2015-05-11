@@ -8,7 +8,7 @@
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Firefly: 3D model improvment
     Eagel: Liveries
     ###################################################################################
 -->
@@ -78,9 +78,9 @@
     
     <sim include="Systems/views.xml">
       
-      <description>Antonov An 12 (YASim)</description>
+      <description>Antonov An 12 BK (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>3.4.8</aircraft-version>    
+      <aircraft-version>3.4.9</aircraft-version>    
       <status>advanced production</status>
       <rating>
 	<FDM type="int">5</FDM>
@@ -92,11 +92,11 @@
       <fuel-fraction>0.6</fuel-fraction>
       
       <startup>
-	<splash-texture>Aircraft/Antonov-An-12/AN-12BK-splash.png</splash-texture>
+	<splash-texture>Aircraft/AN-12BK/AN-12BK-splash.png</splash-texture>
       </startup>
       
       <model>
-	<path>Aircraft/Antonov-An-12/Models/AN-12BK.xml</path>
+	<path>Aircraft/AN-12BK/Models/AN-12BK.xml</path>
 	<livery archive="y">
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
@@ -108,23 +108,23 @@
 	  
 	  
 	  <sound>
-	    <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
+	    <path>Aircraft/AN-12BK/Sounds/an12-sound.xml</path>
 	  </sound>  
 	  
 	  <instrumentation>
-	    <path>Aircraft/Antonov-An-12/Systems/instrumentation.xml</path>
+	    <path>Aircraft/AN-12BK/Systems/instrumentation.xml</path>
 	  </instrumentation>
 	  
 	  
 	  <submodels>
 	    <serviceable type="bool">true</serviceable>
-	    <path>Aircraft/Antonov-An-12/Models/Effects/Submodels/submodels.xml</path>
+	    <path>Aircraft/AN-12BK/Models/Effects/Submodels/submodels.xml</path>
 	  </submodels>
 	  
 	  <!--Weapons are not supported for now
 	  <submodels>
 	  <serviceable type="bool">true</serviceable>
-	  <path>Aircraft/Antonov-An-12/Models/weapons/release.xml</path>
+	  <path>Aircraft/AN-12BK/Models/weapons/release.xml</path>
 	  </submodels>
 	  -->
 	  
@@ -188,7 +188,7 @@
 	    </flaps>
 	    
 	    <help>
-	      <title>Antonov An 12</title>
+	      <title>Antonov An 12BK</title>
 	      <key>
 		<name>s</name>
 		<desc>Autostart</desc>
@@ -218,7 +218,7 @@
 		<desc>Change Pilot Ramp View</desc>
 	      </key>
 	      <text>
-		Wellcome to version 3.4.8 of Antonov-AN-12-B/BK
+		Wellcome to version 3.4.9 of AN-12BK-B/BK
 		
 		Autostart: s
 		
@@ -301,7 +301,7 @@
 	      </text>
 	    </help>
 	    
-	    <menubar include="Dialogs/an12-menu.xml"/>
+	    <menubar include="Dialogs/AN-12BK-menu.xml"/>
 	    
 	    </sim>  
 	    
@@ -449,29 +449,29 @@
 	      
 	      
 	      <input>
-		<keyboard include="Nasal/an12-keyboard.xml"/>
+		<keyboard include="Nasal/AN-12BK-keyboard.xml"/>
 		</input>
 		
 		<nasal>
 		  <doors>
-		    <file>Aircraft/Antonov-An-12/Nasal/doors.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/doors.nas</file>
 		  </doors>
 		  <an12>
-		    <file>Aircraft/Antonov-An-12/Nasal/liveries.nas</file>
-		    <file>Aircraft/Antonov-An-12/Nasal/light.nas</file>
-		    <file>Aircraft/Antonov-An-12/Nasal/autostart.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/liveries.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/light.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/autostart.nas</file>
 		  </an12>
 		  <instruments>
-		    <file>Aircraft/Antonov-An-12/Nasal/setprop.nas</file>      
+		    <file>Aircraft/AN-12BK/Nasal/setprop.nas</file>      
 		  </instruments>
 		  <para>
-		    <file>Aircraft/Antonov-An-12/Nasal/paratroopers.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/paratroopers.nas</file>
 		  </para>
 		  <help>
-		    <file>Aircraft/Antonov-An-12/Nasal/km-5-1.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/km-5-1.nas</file>
 		  </help>
 		  <mapcase>
-		    <file>Aircraft/Antonov-An-12/Nasal/mapcase.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/mapcase.nas</file>
 		  </mapcase>
 		</nasal>
 		

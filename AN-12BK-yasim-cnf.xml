@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<PropertyList include="an12-base.xml">
+<PropertyList include="AN-12BK-base.xml">
 
 
     ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
     Development is ongoing, see latest version: www.github.com/HerbyW
     This file is licenced under the terms of the GNU General Public Licence V3 or later
     
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    Firefly: 3D model improvment
     Eagel: Liveries
     ###################################################################################
 
   <sim>
 
-    <description>Antonov An 12 (YASim)</description>
+    <description>Antonov An-12-BK (YASim)</description>
     <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
     <flight-model>yasim</flight-model>
-    <aero>an12-yasim</aero>
+    <aero>AN-12BK-yasim</aero>
 
   </sim>
 

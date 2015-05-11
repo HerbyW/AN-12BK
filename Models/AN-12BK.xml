@@ -19,7 +19,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Antonov-An-12/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/AN-12BK/Models/Liveries", 10);
 
       var self = cmdarg();
 
@@ -41,7 +41,7 @@
   </nasal>
  
  <sound>
-       <path>Aircraft/Antonov-An-12/Sounds/an12-sound.xml</path>
+       <path>Aircraft/AN-12BK/Sounds/an12-sound.xml</path>
  </sound> 
   
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
@@ -61,7 +61,7 @@
 <animation>
 <type>shader</type>
 <shader>chrome</shader>
-    <texture>Aircraft/Antonov-An-12/Models/glass_shader.png</texture>
+    <texture>Aircraft/AN-12BK/Models/glass_shader.png</texture>
     <object-name>glass</object-name>
     <object-name>vitreporte</object-name>
 </animation>
@@ -228,7 +228,7 @@
   
   
   <effect>
-    <inherits-from>Aircraft/Antonov-An-12/Models/Effects/skin-reflect</inherits-from>
+    <inherits-from>Aircraft/AN-12BK/Models/Effects/skin-reflect</inherits-from>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -340,7 +340,7 @@
  
  <!-- stairs for the crew door-->
  <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/stairs/stairs.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/stairs/stairs.xml</path>
     <offsets>
       <x-m>  -4.750 </x-m>
       <y-m>  -2.05 </y-m>
@@ -351,7 +351,7 @@
  
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/shadow.xml</path>
+    <path>Aircraft/AN-12BK/Models/shadow.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
@@ -362,7 +362,7 @@
   <!-- Interior -->
   <model>
     <name>Interieur</name>
-    <path>Aircraft/Antonov-An-12/Models/Interior/interior.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/interior.xml</path>
   </model>
 
   <!-- For Rembrandt
@@ -374,7 +374,7 @@
   <!-- OSG particles -->
   <!-- Left exterior -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/trail/trail1.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/trail/trail1.xml</path>
     <offsets>
       <x-m> -1.27771 </x-m>
       <y-m> -9.56800 </y-m>
@@ -384,7 +384,7 @@
   
   <!-- Left interio -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/trail/trail2.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/trail/trail2.xml</path>
     <offsets>
       <x-m> -2.15143 </x-m>
       <y-m> -4.63488 </y-m>
@@ -394,7 +394,7 @@
   
   <!-- Right interior -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/trail/trail3.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/trail/trail3.xml</path>
     <offsets>
       <x-m> -2.15143 </x-m>
       <y-m>  4.63488 </y-m>
@@ -404,7 +404,7 @@
   
   <!-- Right exterior -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/trail/trail4.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/trail/trail4.xml</path>
     <offsets>
       <x-m> -1.27771 </x-m>
       <y-m>  9.56800 </y-m>
@@ -415,7 +415,7 @@
   <!-- Ground effects -->
   <!-- Noze wheel -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/ground/ground0.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/ground/ground0.xml</path>
     <offsets>
       <x-m> -11.51110 </x-m>
       <y-m>   0.00000 </y-m>
@@ -425,7 +425,7 @@
 
   <!-- Left wheel 1 -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/ground/ground1.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -2.56503 </x-m>
       <y-m> -2.48467 </y-m>
@@ -435,7 +435,7 @@
 
   <!-- Left wheel 2 -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/ground/ground1.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/ground/ground1.xml</path>
     <offsets>
       <x-m> -1.30503 </x-m>
       <y-m> -2.48467 </y-m>
@@ -445,7 +445,7 @@
   
   <!-- Right wheel 1 -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m> -2.56503 </x-m>
       <y-m>  2.48467 </y-m>
@@ -455,7 +455,7 @@
 
   <!-- Right wheel 2 -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/AN-12BK/Models/Effects/ground/ground2.xml</path>
     <offsets>
       <x-m> -1.30503 </x-m>
       <y-m>  2.48467 </y-m>
@@ -1357,7 +1357,7 @@
   <!-- Lighting effects -->
   <!-- Beacon: red-orange at top and bottom of fuselage -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/beacon.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/beacon.xml</path>
     <offsets>
       <x-m> -3.12209 </x-m>
       <y-m>  0.00000 </y-m>
@@ -1365,7 +1365,7 @@
     </offsets>
   </model>
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/beacon.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/beacon.xml</path>
     <offsets>
       <x-m> -3.28209 </x-m>
       <y-m>  0.00000 </y-m>
@@ -1375,7 +1375,7 @@
   
   <!-- VavLights: green-right, red-left -->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/RedLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/RedLight.xml</path>
     <offsets>
       <x-m>  -1.26900 </x-m>
       <y-m> -18.89128 </y-m>
@@ -1383,7 +1383,7 @@
     </offsets>
   </model>  
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/GreenLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/GreenLight.xml</path>
     <offsets>
       <x-m> -1.26900 </x-m>
       <y-m> 18.89128 </y-m>
@@ -1393,7 +1393,7 @@
     
   <!-- PositionLights: white-steady 2 on tail position, 2 on wing middle position-->
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> 14.25 </x-m>
       <y-m> -5.98 </y-m>
@@ -1401,7 +1401,7 @@
     </offsets>
   </model>  
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> 14.25 </x-m>
       <y-m>  5.98 </y-m>
@@ -1410,7 +1410,7 @@
   </model>
   
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> -2.7 </x-m>
       <y-m> -13.58 </y-m>
@@ -1418,7 +1418,7 @@
     </offsets>
   </model>  
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> -2.7 </x-m>
       <y-m>  13.58 </y-m>
@@ -1429,7 +1429,7 @@
     
   <!-- StrobeLights: white-pulse, left-right-back-->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m>  -1.0700 </x-m>
       <y-m> -18.89128 </y-m>
@@ -1437,7 +1437,7 @@
     </offsets>
   </model>
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.0700 </x-m>
       <y-m> 18.89128 </y-m>
@@ -1445,7 +1445,7 @@
     </offsets>
   </model>  
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/StrobeLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m>  13.27 </x-m>
       <y-m>   0.00 </y-m>
@@ -1455,7 +1455,7 @@
   
   <!-- Lighting Landing frontgear-->
   <model>
-    <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     
     <condition>
        <and>
@@ -1476,7 +1476,7 @@
   
   <!-- Lighting Landing sidegear-->
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
    <condition>
     
       <or>
@@ -1492,7 +1492,7 @@
     </offsets>
   </model>  
   <model>
-   <path>Aircraft/Antonov-An-12/Models/light/WhiteLight.xml</path>
+   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
    <condition>
     
       <or>
@@ -1512,7 +1512,7 @@
   
    <!--External lights for Rembrand-->
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1526,7 +1526,7 @@
  </model> 
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-landing.xml</path>
   <name>headlight_l</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1540,7 +1540,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-landing.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-landing.xml</path>
   <name>headlight_r</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1554,7 +1554,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-taxi.xml</path>
   <name>taxilight_c</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1568,7 +1568,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-taxi.xml</path>
   <name>taxilight_l</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1582,7 +1582,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-taxi.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-taxi.xml</path>
   <name>taxilight_r</name>
   <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1599,7 +1599,7 @@
   
   <!-- Lighting Landing without Rembrand -->
   <model>
-  <path>Aircraft/Antonov-An-12/Models/light/light-cone-707.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/light-cone-707.xml</path>
   <name>landinglight</name>
   <offsets>
       <x-m> 115.95 </x-m>
@@ -1610,7 +1610,7 @@
  </model>
  
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/light-cone-taxi-12.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/light-cone-taxi-12.xml</path>
   <name>taxilight</name>
   <offsets>
       <x-m> 3.95 </x-m>
@@ -1622,7 +1622,7 @@
   
     <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>
-  <path>Aircraft/Antonov-An-12/Models/light/headlight-tiny.xml</path>
+  <path>Aircraft/AN-12BK/Models/light/headlight-tiny.xml</path>
   <name>tiny</name>
    <condition>
       <property>/sim/rendering/rembrandt/enabled</property>
@@ -1639,7 +1639,7 @@
   <!-- smoke -->
   
         <model>
-		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_1.xml</path>
+		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_1.xml</path>
 		<offsets>
       <x-m> -0.0 </x-m>
       <y-m> -9.56800 </y-m>
@@ -1648,7 +1648,7 @@
 	</model>
 	
 	<model>
-		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_2.xml</path>
+		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_2.xml</path>
 		<offsets>
       <x-m> -0.60 </x-m>
       <y-m> -4.63488 </y-m>
@@ -1657,7 +1657,7 @@
 	</model>
 	
 	<model>
-		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_3.xml</path>
+		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_3.xml</path>
 		<offsets>
       <x-m> -0.60 </x-m>
       <y-m>  4.63488 </y-m>
@@ -1667,7 +1667,7 @@
 	
 	
 	<model>
-		<path>Aircraft/Antonov-An-12/Models/Effects/smoke/smoke_4.xml</path>
+		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_4.xml</path>
 		<offsets>
       <x-m> -0.0 </x-m>
       <y-m>  9.56800 </y-m>
@@ -1714,7 +1714,7 @@
 
 <model>
 	<name>choke_nose</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_nose.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/ground/choke_nose.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -1731,7 +1731,7 @@
 
 <model>
 	<name>choke_left</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_left.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/ground/choke_left.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -1747,7 +1747,7 @@
 
 <model>
 	<name>choke_right</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_right.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/ground/choke_right.xml</path>
 	<condition>
 		<equals>
 			<property>sim/multiplay/generic/int[3]</property>
@@ -1762,7 +1762,7 @@
 </model>
 
 <model>
-	<path>Aircraft/Antonov-An-12/Models/Effects/smoke/paratroopers-smoke.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/smoke/paratroopers-smoke.xml</path>
 		<offsets>
 			<x-m> 12 </x-m>
                         <y-m> 0 </y-m>
@@ -1774,7 +1774,7 @@
 
 <model>
 	<name>Storage1</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage1.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1790,7 +1790,7 @@
 
 <model>
 	<name>Storage2</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage2.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1806,7 +1806,7 @@
 
 <model>
 	<name>Storage3</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage3.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1822,7 +1822,7 @@
 
 <model>
 	<name>Storage4</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage4.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1838,7 +1838,7 @@
 
 <model>
 	<name>Storage5</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage5.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1854,7 +1854,7 @@
 
 <model>
 	<name>Storage6</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage6.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6.xml</path>
 	<condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[16]</property>
@@ -1872,7 +1872,7 @@
 
 <model>
 	<name>Storage1b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage1b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -1898,7 +1898,7 @@
 
 <model>
 	<name>Storage2b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage2b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -1924,7 +1924,7 @@
 
 <model>
 	<name>Storage3b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage3b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -1950,7 +1950,7 @@
 
 <model>
 	<name>Storage4b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage4b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -1976,7 +1976,7 @@
 
 <model>
 	<name>Storage5b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage5b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -2002,7 +2002,7 @@
 
 <model>
 	<name>Storage6b</name>
-	<path>Aircraft/Antonov-An-12/Models/Effects/Submodels/Storage/storage6b.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6b.xml</path>
 	<condition>
 	  <and>
 		<greater-than>
@@ -2027,7 +2027,7 @@
 </model>
 
 <model>
-	<path>Aircraft/Antonov-An-12/Models/Effects/smoke/storage-smoke.xml</path>
+	<path>Aircraft/AN-12BK/Models/Effects/smoke/storage-smoke.xml</path>
 		<offsets>
 			<x-m> 30 </x-m>
                         <y-m> 0 </y-m>

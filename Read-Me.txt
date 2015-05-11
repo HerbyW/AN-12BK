@@ -1,20 +1,6 @@
 
-AN-12 for Flightgear
+AN-12BK for Flightgear
 ====================
-
-Manufacturer                  :
-Type                          :
-Year                          :
-Powerplant                    :
-Wingspan                      :
-Length                        :
-Height                        :
-Empty weight                  :
-Cruise speed                  :
-Crew                          :
-
-Some useful keys: (see at: aircraft help)
-=========================================
 
 Thanks
 ======
@@ -22,13 +8,8 @@ Thanks
 BARANGER Emmanuel
 January, 02, 2013.
 
-http://helijah.free.fr/flightgear/hangar.htm
-embaranger@free.fr
-
----------------------------------------------
-
 HerbyW
-Dec-April 2015
+Dec2014-2015
 
 https://www.github.com/HerbyW/
 

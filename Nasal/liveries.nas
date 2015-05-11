@@ -1,2 +1,2 @@
-aircraft.livery.init("Aircraft/Antonov-An-12/Models/Liveries");
+aircraft.livery.init("Aircraft/AN-12BK/Models/Liveries");
 

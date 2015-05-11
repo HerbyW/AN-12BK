@@ -13,7 +13,7 @@
 -->
 
 <PropertyList>
- <path>Aircraft/Antonov-An-12/Models/Effects/ground/choke_left.ac</path>
+ <path>Aircraft/AN-12BK/Models/Effects/ground/choke_left.ac</path>
  
  <animation>
   <type>scale</type>

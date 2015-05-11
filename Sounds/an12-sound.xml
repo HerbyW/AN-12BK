@@ -19,7 +19,7 @@
   <!-- Engines 1 -4 starting up-->
     <crank>
       <name>engstart1</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/starter.wav</path>
        <condition>       
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>      
@@ -32,7 +32,7 @@
     
     <crank>
       <name>engstart2</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/starter.wav</path>
        <condition>       
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>      
@@ -46,7 +46,7 @@
     
     <crank>
       <name>engstart3</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/starter.wav</path>
        <condition>       
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>      
@@ -60,7 +60,7 @@
     
     <crank>
       <name>engstart4</name>
-      <path>Aircraft/Antonov-An-12/Sounds/starter.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/starter.wav</path>
        <condition>       
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>      
@@ -77,7 +77,7 @@
     <engine>
        <name>engine0</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>  
@@ -101,7 +101,7 @@
     <engine>
        <name>engine1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>  
@@ -125,7 +125,7 @@
     <engine>
        <name>engine2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>  
@@ -149,7 +149,7 @@
     <engine>
        <name>engine3</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>  
@@ -175,7 +175,7 @@
     <rumble>
       <name>rumble1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/24roll.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
           <property>/gear/gear[0]/wow</property>
       </condition>
@@ -193,7 +193,7 @@
     <rumble>
       <name>rumble2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/24roll.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
         <or>          
           <property>/gear/gear[1]/wow</property>
@@ -216,7 +216,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/gear.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
       <volume>
         <factor>0.55</factor>
@@ -227,7 +227,7 @@
 
     <gear>
      <name>gear-lock</name>
-     <path>Aircraft/Antonov-An-12/Sounds/gear-lck.wav</path>
+     <path>Aircraft/AN-12BK/Sounds/gear-lck.wav</path>
      <condition>
        <greater-than>
          <property>/gear/gear[0]/position-norm</property>
@@ -246,7 +246,7 @@
     <squeal>
       <name>squeal1</name>
       <mode>once</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/squeal.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/squeal.wav</path>
       <condition>        
           <property>/gear/gear[0]/wow</property>                 
       </condition>
@@ -275,7 +275,7 @@
     <squeal>
       <name>squeal2</name>
       <mode>once</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/squeal.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/squeal.wav</path>
       <condition>        
           <property>/gear/gear[2]/wow</property>          
       </condition>
@@ -306,7 +306,7 @@
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/flaps.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
         <factor>0.35</factor>
@@ -322,7 +322,7 @@
     <speedwarn>
       <name>warn1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/dinamik_pr2.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/dinamik_pr2.wav</path>
        <condition>
         <greater-than>
 	 <property>velocities/groundspeed-kt</property>
@@ -344,7 +344,7 @@
     <stall>
       <name>stall</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/stall.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/stall.wav</path>
       <property>/sim/alarms/stall-warning</property>
       <volume>
         <property>/sim/alarms/stall-warning</property>
@@ -359,7 +359,7 @@
 -    <decision>
 -      <name>decision</name>
 -      <mode>once</mode>
--      <path>Aircraft/Antonov-An-12/Sounds/omi_1.wav</path>
+-      <path>Aircraft/AN-12BK/Sounds/omi_1.wav</path>
 -      <condition>
 -    <less-than>
 -      <property>position/altitude-agl-ft</property>
@@ -379,7 +379,7 @@
     <door>
       <name>Crew doorT</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/door_close.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/door_close.wav</path>
       <condition>
        <and>
 	<greater-than>
@@ -401,7 +401,7 @@
     
     <door>
       <name>Crew door</name>
-      <path>Aircraft/Antonov-An-12/Sounds/door_closed.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/door_closed.wav</path>
       <condition>
         <equals>
           <property>sim/multiplay/generic/float[0]</property>
@@ -418,7 +418,7 @@
     <door>
       <name>Passenger doorT</name>
       <mode>in-transit</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/door_close.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/door_close.wav</path>
       <condition>
        <and>
 	<greater-than>
@@ -440,7 +440,7 @@
     
     <door>
       <name>Passenger door</name>
-      <path>Aircraft/Antonov-An-12/Sounds/door_closed.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/door_closed.wav</path>
       <condition>
         <equals>
           <property>sim/multiplay/generic/float[12]</property>
@@ -459,7 +459,7 @@
     <wind>
       <name>wind</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/wind.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/wind.wav</path>
       <property>/environment/wind-speed-kt</property>
       <volume>
         <property>/environment/wind-speed-kt</property>
@@ -482,7 +482,7 @@
     <rain>
       <name>rain</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/rain_canopy.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/rain_canopy.wav</path>
       <condition>
         <greater-than>
           <property>/environment/metar/rain-norm</property>
@@ -510,7 +510,7 @@
     <ADF>
       <name>ADF1</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/Morse.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/Morse.wav</path>
        <condition>        
           <property>/instrumentation/adf[0]/in-range</property>         
        </condition>
@@ -526,7 +526,7 @@
     <ADF>
       <name>ADF2</name>
       <mode>looped</mode>
-      <path>Aircraft/Antonov-An-12/Sounds/Morse.wav</path>
+      <path>Aircraft/AN-12BK/Sounds/Morse.wav</path>
        <condition>        
           <property>/instrumentation/adf[1]/in-range</property>        
        </condition>
