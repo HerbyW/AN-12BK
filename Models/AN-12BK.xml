@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--Pushback, lights added, HerbyW-->
-
 <!--
     ###################################################################################
     Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
@@ -1633,48 +1631,47 @@
     <z-m>-2.3</z-m>
    <pitch-deg>90</pitch-deg>
   </offsets>
- </model> 
-  
+ </model>  
   
   <!-- smoke -->
   
-        <model>
-		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_1.xml</path>
-		<offsets>
+  <model>
+    <path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_1.xml</path>
+    <offsets>
       <x-m> -0.0 </x-m>
       <y-m> -9.56800 </y-m>
       <z-m> -1.3 </z-m>
-		</offsets>
-	</model>
-	
-	<model>
-		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_2.xml</path>
-		<offsets>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_2.xml</path>
+    <offsets>
       <x-m> -0.60 </x-m>
       <y-m> -4.63488 </y-m>
       <z-m> -1.3 </z-m>
-		</offsets>
-	</model>
-	
-	<model>
-		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_3.xml</path>
-		<offsets>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_3.xml</path>
+    <offsets>
       <x-m> -0.60 </x-m>
       <y-m>  4.63488 </y-m>
       <z-m> -1.3 </z-m>
-		</offsets>
-	</model>
-	
-	
-	<model>
-		<path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_4.xml</path>
-		<offsets>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/AN-12BK/Models/Effects/smoke/smoke_4.xml</path>
+    <offsets>
       <x-m> -0.0 </x-m>
       <y-m>  9.56800 </y-m>
       <z-m> -1.3 </z-m>
-		</offsets>
-	</model>
-	
+    </offsets>
+  </model>
+  
 
   <text>
         <name>Callsign</name>
@@ -1762,277 +1759,277 @@
 </model>
 
 <model>
-	<path>Aircraft/AN-12BK/Models/Effects/smoke/paratroopers-smoke.xml</path>
-		<offsets>
-			<x-m> 12 </x-m>
-                        <y-m> 0 </y-m>
-                        <z-m> -5 </z-m>
-		</offsets>
-	</model>
+  <path>Aircraft/AN-12BK/Models/Effects/smoke/paratroopers-smoke.xml</path>
+  <offsets>
+    <x-m> 12 </x-m>
+    <y-m> 0 </y-m>
+    <z-m> -5 </z-m>
+  </offsets>
+</model>
 
 <!--Storage in payload cabin-->
-
-<model>
-	<name>Storage1</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>1</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage2</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>6000</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage3</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>12000</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage4</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>18000</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage5</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>24000</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage6</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6.xml</path>
-	<condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>30000</value>
-		</greater-than>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<!--loading and unloading with standing on ground -->
-
-<model>
-	<name>Storage1b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage2b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage3b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage4b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage5b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<name>Storage6b</name>
-	<path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6b.xml</path>
-	<condition>
-	  <and>
-		<greater-than>
-			<property>sim/multiplay/generic/float[16]</property>
-			<value>0</value>
-		</greater-than>
-		<less-than>
-			<property>sim/multiplay/generic/float[13]</property>
-			<value>0.2</value>
-		</less-than>
-		<equals>
-			<property>sim/multiplay/generic/int[16]</property>
-			<value>1</value>
-		</equals>
-	  </and>
-	</condition>
-	<offsets>
-	 <x-m> -17 </x-m>
-         <y-m> 0.0 </y-m>
-         <z-m> -3.9 </z-m>
-	</offsets>
-</model>
-
-<model>
-	<path>Aircraft/AN-12BK/Models/Effects/smoke/storage-smoke.xml</path>
-		<offsets>
-			<x-m> 30 </x-m>
-                        <y-m> 0 </y-m>
-                        <z-m> -10 </z-m>
-		</offsets>
+	
+	<model>
+	  <name>Storage1</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>1</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage2</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>6000</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage3</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>12000</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage4</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>18000</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage5</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>24000</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage6</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6.xml</path>
+	  <condition>
+	    <greater-than>
+	      <property>sim/multiplay/generic/float[16]</property>
+	      <value>30000</value>
+	    </greater-than>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<!--loading and unloading with standing on ground -->
+	
+	<model>
+	  <name>Storage1b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage1b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage2b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage2b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage3b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage3b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage4b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage4b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage5b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage5b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <name>Storage6b</name>
+	  <path>Aircraft/AN-12BK/Models/Effects/Submodels/Storage/storage6b.xml</path>
+	  <condition>
+	    <and>
+	      <greater-than>
+		<property>sim/multiplay/generic/float[16]</property>
+		<value>0</value>
+	      </greater-than>
+	      <less-than>
+		<property>sim/multiplay/generic/float[13]</property>
+		<value>0.2</value>
+	      </less-than>
+	      <equals>
+		<property>sim/multiplay/generic/int[16]</property>
+		<value>1</value>
+	      </equals>
+	    </and>
+	  </condition>
+	  <offsets>
+	    <x-m> -17 </x-m>
+	    <y-m> 0.0 </y-m>
+	    <z-m> -3.9 </z-m>
+	  </offsets>
+	</model>
+	
+	<model>
+	  <path>Aircraft/AN-12BK/Models/Effects/smoke/storage-smoke.xml</path>
+	  <offsets>
+	    <x-m> 30 </x-m>
+	    <y-m> 0 </y-m>
+	    <z-m> -10 </z-m>
+	  </offsets>
 	</model>
 	
 </PropertyList>

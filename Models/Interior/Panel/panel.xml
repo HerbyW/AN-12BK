@@ -33,7 +33,8 @@
     <!-- Objets transparents -->
   </animation>  
   
-  <!-- Warning Indicator: Reverser (yellow),fuel-low, over-speed, over-loading, Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
+  <!-- Warning Indicator: Reverser (yellow),fuel-low, over-speed, over-loading,
+       Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
   
   <model>
     <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning88.xml</path>
@@ -124,6 +125,8 @@
       <z-m>  0.197 </z-m>
     </offsets>
   </model>
+  
+  <!-- Volume Control: Marker, Instruments, Cabin -->
   
   <model>
     <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/volume/volume.xml</path>
@@ -382,9 +385,7 @@
       <y-m>  0.737 </y-m>
       <z-m> -0.017 </z-m>
     </offsets>
-  </model>
-    
-  
+  </model>  
 
   <!-- DME40, VOR-DME and DME distance information in mi, kt and min -->
   
@@ -563,7 +564,6 @@
       <z-m> -0.089 </z-m>
     </offsets>
   </model>
-
 
   <!-- Fuel Control: Knob (activates the fuel system)
                      Total Fuel Sum below 10 t for all tanks combined
@@ -1158,9 +1158,7 @@
       <z-m> -0.173 </z-m>
       <heading-deg>90.0</heading-deg>
     </offsets>
-  </model>
-    
-  
+  </model>  
  
    <!-- Fuel Control Ingineer Panel: Knob, activating the fuel system 
                      Total Fuel Sum below 10 t for all tanks combined
@@ -1845,8 +1843,6 @@ Lights</text>
   </animation>
   
   <!--Map case from TU-154B-->
-
-        <!-- Mapcase -->
   
   <model>
     <name>MapCase</name>
@@ -1888,11 +1884,9 @@ Lights</text>
       <z-m> 0.9 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
-  </model>
-
-  
+  </model>  
     
-  <!-- rear panel -->
+  <!-- rear panel, tail view position -->
   
   <!-- TNV-15, OUtside Temperatur Indicator -->
   
@@ -1940,8 +1934,7 @@ Lights</text>
       <z-m>  2.91 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
-  </text>
-  
+  </text>  
 
    <!--Variometer, For Cabine and Outside pressure control--> 
   
@@ -1965,8 +1958,7 @@ Lights</text>
       <z-m>  2.94 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
-  </model>
-  
+  </model>  
   
   <!-- Air- and Groundspeed Indicator in km/h -->
   
