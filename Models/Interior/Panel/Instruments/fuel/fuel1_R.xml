@@ -49,11 +49,16 @@
  <animation>
   <type>rotate</type>
   <object-name>fr2</object-name>
-  <property>consumables/fuel/tank[1]/level-kg</property>
-  <interpolation>
-   <entry><ind>  0.0</ind><dep>/0</dep></entry> 
-   <entry><ind> 12500</ind><dep>  246</dep></entry>
-  </interpolation>
+  <expression>
+     <table>
+     <sum>
+       <property>/consumables/fuel/tank[0]/level-kg</property>
+       <property>/consumables/fuel/tank[1]/level-kg</property>
+     </sum>
+     <entry><ind>  0</ind><dep>0</dep></entry> 
+     <entry><ind> 21700</ind><dep>  263</dep></entry>
+     </table>
+   </expression>
   <center>
    <x-m>0.0</x-m>
    <y-m>0.0</y-m>
@@ -71,12 +76,17 @@
  <animation>
   <type>rotate</type>
   <object-name>fr1</object-name>
-  <property>engines/engine[1]/fuel-flow-gph</property>
-  <interpolation>
-    <entry><ind>  0.0</ind><dep>  0   </dep></entry>
-    <entry><ind> 220</ind><dep> 90</dep></entry>
-    <entry><ind> 470</ind><dep> 205</dep></entry>
-  </interpolation>
+  <expression>
+     <table>
+     <sum>
+       <property>engines/engine[0]/fuel-flow-gph</property>
+       <property>engines/engine[1]/fuel-flow-gph</property>
+     </sum>
+     <entry><ind>  0</ind><dep>0</dep></entry> 
+     <entry><ind> 1600</ind><dep>  265</dep></entry>
+     <entry><ind> 3200</ind><dep>  335</dep></entry>
+     </table>
+   </expression>
   <center>
    <x-m>0.0</x-m>
    <y-m>0.0</y-m>
