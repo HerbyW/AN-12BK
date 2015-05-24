@@ -67,7 +67,7 @@
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="341" alt="13500" fuel="0.7">
+  <cruise speed="420" alt="23500" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.7"/>
     <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.7"/>
@@ -111,13 +111,10 @@
         sweep="4.2"
         camber="0.001">
         <stall aoa="24" width="3" peak="3.5"/>
-        <flap0 start="0.15" end="1" lift="1.8" drag="1.6"/>
-
-        <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
-
+        <flap0 start="0.15" end="1" lift="1.5" drag="1.3"/>
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
-
-        <control-speed control="FLAP0" transition-time="5"/>
+        <control-speed control="FLAP0" transition-time="10"/>
   </wing>
 
   <mstab x="1.25977" y="13.35604" z="-0.43301"
@@ -128,10 +125,8 @@
          dihedral="-3">
          <stall aoa="24" width="1" peak="1.4"/>
          <flap1 start="0" end="1" lift="1.2" drag="1.1"/>
-
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
-
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
          <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
   </mstab>
@@ -143,11 +138,9 @@
          sweep="3.5"
          taper="0.45">
          <stall aoa="18" width="1" peak="1.4"/>
-         <flap0 start="0" end="1" lift="1.4" drag="1.5"/>
-
+         <flap0 start="0" end="1" lift="2.0" drag="1.1"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
-
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
 
@@ -159,10 +152,8 @@
          taper="0.3">
          <stall aoa="22" width="1.5" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
-
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
-
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
   </vstab>
 
@@ -175,11 +166,11 @@
   -->
   <!-- Engine left exterior-->
   <propeller x="4.4" y="9.56800" z="-0.93836"
-             mass="2293"
-             moment="3350"
+             mass="2593"
+             moment="1050"
              radius="2.189"
              cruise-speed="341"
-             cruise-rpm="2000"
+             cruise-rpm="2200"
              cruise-power="3500"
              cruise-alt="15000"
              min-rpm="600"
@@ -188,10 +179,10 @@
              coarse-stop="4.0">
              <actionpt x="5.89102" y="9.568" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4000"
+             <turbine-engine eng-power="4400"
                              eng-rpm="2500"
                              alt="15000" 
-                             flat-rating="4000"
+                             flat-rating="4400"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -203,11 +194,11 @@
 
   <!-- Engine left interior-->
   <propeller x="5.2" y="4.63488" z="-0.93836"
-             mass="2293"
-             moment="3350"
+             mass="2593"
+             moment="1050"
              radius="2.189"
              cruise-speed="341"
-             cruise-rpm="2000"
+             cruise-rpm="2200"
              cruise-power="3500"
              cruise-alt="15000"
              min-rpm="600"
@@ -216,10 +207,10 @@
              coarse-stop="4.0">
              <actionpt x="6.76873" y="4.63488" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4000"
+             <turbine-engine eng-power="4400"
                              eng-rpm="2500"
                              alt="15000" 
-                             flat-rating="4000"
+                             flat-rating="4400"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -231,11 +222,11 @@
 
   <!-- Engine right interior-->
   <propeller x="5.2" y="-4.63488" z="-0.93836"
-             mass="2293"
-             moment="3350"
+             mass="2593"
+             moment="1050"
              radius="2.189"
              cruise-speed="341"
-             cruise-rpm="2000"
+             cruise-rpm="2200"
              cruise-power="3500"
              cruise-alt="15000"
              min-rpm="600"
@@ -244,10 +235,10 @@
              coarse-stop="4.0">
              <actionpt x="6.76873" y="-4.63488" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4000"
+             <turbine-engine eng-power="4400"
                              eng-rpm="2500"
                              alt="15000" 
-                             flat-rating="4000"
+                             flat-rating="4400"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -259,11 +250,11 @@
 
   <!-- Engine right exterior-->
   <propeller x="4.4" y="-9.56800" z="-0.93836"
-             mass="2293"
-             moment="3350"
+             mass="2593"
+             moment="1050"
              radius="2.189"
              cruise-speed="341"
-             cruise-rpm="2000"
+             cruise-rpm="2200"
              cruise-power="3500"
              cruise-alt="15000"
              min-rpm="600"
@@ -272,10 +263,10 @@
              coarse-stop="4.0">
              <actionpt x="5.89102" y="-9.568" z="-0.93836"/>
              <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
-             <turbine-engine eng-power="4000"
+             <turbine-engine eng-power="4400"
                              eng-rpm="2500"
                              alt="15000" 
-                             flat-rating="4000"
+                             flat-rating="4400"
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
@@ -383,8 +374,8 @@
   <tank x="3" y="-6.817" z="-0.4" capacity="7170"/>
 
   <!-- Mass distribution -->
-  <ballast x="11" y="0" z="-2.05" mass="30000"/>
-  <ballast x="-1.5" y="0" z="-2.05" mass="16000"/>
+  <ballast x="11.8" y="0" z="-2.05" mass="30000"/>
+  <ballast x="-1.0" y="0" z="-2.05" mass="16000"/>
   
   <weight x="15.0" y="0" z="2.97" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="7" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>

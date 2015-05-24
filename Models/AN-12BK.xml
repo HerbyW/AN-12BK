@@ -801,7 +801,7 @@
     <type>rotate</type>
     <object-name>voletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -45 </factor>
+    <factor> 45 </factor>
     <axis>
       <x1-m>  -0.52767 </x1-m>
       <y1-m> -13.39796 </y1-m>
@@ -816,7 +816,7 @@
     <type>rotate</type>
     <object-name>voletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor> -45 </factor>
+    <factor> 45 </factor>
     <axis>
       <x1-m> -0.72944 </x1-m>
       <y1-m>  2.03411 </y1-m>
