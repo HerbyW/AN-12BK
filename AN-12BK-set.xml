@@ -2,14 +2,14 @@
 
 <!-- <PropertyList include="an12-jsbsim-cnf.xml">
 
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
-    Eagel: Liveries
-    ###################################################################################
+###################################################################################
+Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+Development is ongoing, see latest version: www.github.com/HerbyW
+This file is licenced under the terms of the GNU General Public Licence V3 or later
+
+Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+Eagel: Liveries
+###################################################################################
 -->
 <PropertyList include="AN-12BK-yasim-cnf.xml">
   
@@ -18,6 +18,12 @@
     <description>Antonov An 12 BK (YASim)</description>
     <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
     
+    <rating>
+      <FDM type="int">     3</FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
     
     <weight n="0">
       <name>Crew</name>
@@ -45,27 +51,21 @@
       <weight-lb type="double">0.0</weight-lb>
       <max-lb type="double">36000.0</max-lb>
       <min-lb type="double">0.0</min-lb>
-    </weight>
-    
-    
-    <rating>
-      <FDM type="int">     5 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   5 </model>
-    </rating>
+    </weight>    
     
     <systems>
       <autopilot>
 	<name>Autopilot</name>
 	<path>Nasal/AN-12BK-autopilot.xml</path>
       </autopilot>
-    </systems>
+    </systems>  
     
+    <import>
+      <path>Huds/Sets/controls.xml</path>
+      <x-offset>-100</x-offset>
+      <y-offset>70</y-offset>
+    </import> 
     
-    
-    </sim>
-    
-    
+    </sim>   
     
     </PropertyList>

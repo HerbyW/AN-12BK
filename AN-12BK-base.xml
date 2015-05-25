@@ -3,14 +3,14 @@
 <!--
 
 
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    ###################################################################################
+###################################################################################
+Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+Development is ongoing, see latest version: www.github.com/HerbyW
+This file is licenced under the terms of the GNU General Public Licence V3 or later
+
+Firefly: 3D model improvment
+Eagel: Liveries
+###################################################################################
 -->
 
 <PropertyList>
@@ -54,23 +54,23 @@
       <weight type="float">0</weight>      
     </paratroopers>
     <storage>
-	<storage type="int">0</storage>
-	<weight type="float">6000</weight>
-	<nosmoke type="string">nosmoke</nosmoke>
+      <storage type="int">0</storage>
+      <weight type="float">6000</weight>
+      <nosmoke type="string">nosmoke</nosmoke>
     </storage>
-      <switches>
-	<fuel type="float">0</fuel>
-	<gauge-light type="int">0</gauge-light>
-	<adf-1-selector type="double">0</adf-1-selector>
-	<adf-2-selector type="double">0</adf-2-selector>
-	<ushdb-sel-1 type="double">0</ushdb-sel-1>
-	<ushdb-sel-2 type="double">0</ushdb-sel-2>
-      </switches>
-      <chokes>
-	<activ type="int">0</activ>
-      </chokes>
-      <reverser type="bool">0</reverser>
-      
+    <switches>
+      <fuel type="float">0</fuel>
+      <gauge-light type="int">0</gauge-light>
+      <adf-1-selector type="double">0</adf-1-selector>
+      <adf-2-selector type="double">0</adf-2-selector>
+      <ushdb-sel-1 type="double">0</ushdb-sel-1>
+      <ushdb-sel-2 type="double">0</ushdb-sel-2>
+    </switches>
+    <chokes>
+      <activ type="int">0</activ>
+    </chokes>
+    <reverser type="bool">0</reverser>
+    
     </controls>
     
     <gear><gear><position-norm type="float">1</position-norm></gear></gear>
@@ -477,3 +477,4 @@
 		
 		
 		</PropertyList>
+		
