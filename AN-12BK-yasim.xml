@@ -285,7 +285,7 @@
   -->
   <gear x="11.51110" y="0" z="-5.26151"
         retract-time="7"
-        compression="0.25"        
+        compression="0.35"        
         spring="0.78"
         damp="1.35"
         sfric="1.6"
@@ -303,7 +303,7 @@
   <!-- Left wheel 1 -->
   <gear x="2.56503" y=" 2.48467" z="-5.14901"
         retract-time="7"
-        compression="0.25"        
+        compression="0.35"        
         spring="0.85"
         damp="1.10"
         sfric="1.6"
@@ -320,7 +320,7 @@
   <!-- Left wheel 2 -->
   <gear x="1.30503" y=" 2.48467" z="-5.12901"
         retract-time="7"
-        compression="0.25"        
+        compression="0.35"        
         spring="0.85"
         damp="1.10"
         sfric="1.6"
@@ -337,7 +337,7 @@
   <!-- Right wheel 1 -->
   <gear x="2.56503" y="-2.48467" z="-5.14901"
         retract-time="7"
-        compression="0.25"        
+        compression="0.35"        
         spring="0.85"
         damp="1.10"
         sfric="1.6"
@@ -354,7 +354,7 @@
   <!-- Right wheel 2 -->
   <gear x="1.30503" y="-2.48467" z="-5.12901"
         retract-time="7"
-        compression="0.25"        
+        compression="0.35"        
         spring="0.85"
         damp="1.10"
         sfric="1.4"
