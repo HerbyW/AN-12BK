@@ -184,7 +184,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.5</max>
+        <max>0.15</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>3000</max-dist>
@@ -205,7 +205,7 @@
         <type>log</type>
         <factor>0.25</factor>
 	<min>0.0</min>
-        <max>0.5</max>
+        <max>0.15</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>3000</max-dist>
@@ -250,24 +250,9 @@
       <condition>        
           <property>sim/multiplay/generic/int[16]</property>                 
       </condition>
-      <volume>
-        <property>/velocities/speed-down-fps</property>
-        <factor>0.5</factor>
-        <max>1.0</max>
+        <volume>
+        <factor>0.15</factor>
       </volume>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-	<min>0.7</min>
-        <max>1.0</max>
-      </volume>      
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <offset>0.5</offset>
-	<min>0.9</min>
-        <max>1.0</max>
-      </pitch>
       <reference-dist>1000</reference-dist>
       <max-dist>5000</max-dist>
     </squeal>
@@ -279,24 +264,9 @@
       <condition>        
           <property>sim/multiplay/generic/int[18]</property>          
       </condition>
-      <volume>
-        <property>/velocities/speed-down-fps</property>
-        <factor>0.5</factor>
-        <max>1.0</max>
+        <volume>
+        <factor>0.15</factor>
       </volume>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.01</factor>
-	<min>0.7</min>
-        <max>1.0</max>
-      </volume>      
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.0025</factor>
-        <offset>0.5</offset>
-	<min>0.9</min>
-        <max>1.0</max>
-      </pitch>
       <reference-dist>1000</reference-dist>
       <max-dist>5000</max-dist>
     </squeal>
@@ -315,65 +285,6 @@
       <max-dist>2000</max-dist>
     </flap>
     
-
-
-     <!-- Speed Warning -->
- 
-    <speedwarn>
-      <name>warn1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/dinamik_pr2.wav</path>
-       <condition>
-        <greater-than>
-	 <property>velocities/groundspeed-kt</property>
-	 <value>419</value>
-         </greater-than>
-        </condition> 
-      <volume>
-	<offset>1.0</offset>
-	<min>1.0</min>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </speedwarn>
-
-    
- <!-- Stall -->
- 
-    <stall>
-      <name>stall</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/stall.wav</path>
-      <property>/sim/alarms/stall-warning</property>
-      <volume>
-        <property>/sim/alarms/stall-warning</property>
-        <max>1.0</max>
-      </volume>
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </stall>
-    
-    <!-- Decision Height Warning -->
-- 
--    <decision>
--      <name>decision</name>
--      <mode>once</mode>
--      <path>Aircraft/AN-12BK/Sounds/omi_1.wav</path>
--      <condition>
--    <less-than>
--      <property>position/altitude-agl-ft</property>
--      <property>instrumentation/altimeter/decision-height</property>      
--    </less-than>
--  </condition>
--      <volume>
--	<min>1.0</min>
--        <max>1.0</max>
--      </volume>
--      <reference-dist>10</reference-dist>
--      <max-dist>100</max-dist>
--    </decision>
-  
   <!-- Doors -->
   
     <door>
@@ -456,88 +367,7 @@
 
         <!-- Wind -->
 
-    <wind>
-      <name>wind</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/wind.wav</path>
-      <property>/environment/wind-speed-kt</property>
-      <volume>
-        <property>/environment/wind-speed-kt</property>
-        <factor>0.0025</factor>
-        <min>0.00</min>
-        <max>0.20</max>
-      </volume>
-      <pitch>
-        <property>/environment/wind-speed-kt</property>
-        <factor>0.01</factor>
-        <offset>0.2</offset>
-        <max>0.70</max>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>300</max-dist>
-    </wind>
-    
-    <!-- Rain -->
-    
-    <rain>
-      <name>rain</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/rain_canopy.wav</path>
-      <condition>
-        <greater-than>
-          <property>/environment/metar/rain-norm</property>
-          <value>0.2</value>
-        </greater-than>
-      </condition>
-      <volume>
-        <property>/environment/metar/rain-norm</property>
-        <factor>1.00</factor>
-        <offset>-0.2</offset>
-        <min>0.0</min>
-        <max>0.6</max>
-      </volume>
-      <pitch>
-        <property>/velocities/airspeed-kt</property>
-        <factor>0.001</factor>
-        <offset>0.50</offset>
-      </pitch>
-      <reference-dist>10</reference-dist>
-      <max-dist>300</max-dist>
-    </rain>
-    
-            <!-- ADF-MorseCode, see txt file -->
 
-    <ADF>
-      <name>ADF1</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/Morse.wav</path>
-       <condition>        
-          <property>/instrumentation/adf[0]/in-range</property>         
-       </condition>
-      <volume>
-	<property>instrumentation/adf[0]/volume</property>	
-        <min>0.00</min>
-        <max>1.0</max>
-      </volume>      
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </ADF>
-    
-    <ADF>
-      <name>ADF2</name>
-      <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/Morse.wav</path>
-       <condition>        
-          <property>/instrumentation/adf[1]/in-range</property>        
-       </condition>
-      <volume>	
-	<property>instrumentation/adf[1]/volume</property>
-        <min>0.00</min>
-        <max>1.0</max>
-      </volume>      
-      <reference-dist>10</reference-dist>
-      <max-dist>100</max-dist>
-    </ADF>
 
   </fx>
 

@@ -39,7 +39,7 @@
   </nasal>
  
  <sound>
-       <path>Aircraft/AN-12BK/Sounds/an12-sound.xml</path>
+       <path>Aircraft/AN-12BK/Sounds/an12-sound-MP.xml</path>
  </sound> 
   
 <!-- ALL-GLASS-GUAGES-AND-WINDSHIELD -->
