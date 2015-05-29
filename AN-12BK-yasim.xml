@@ -286,7 +286,7 @@
   <gear x="11.51110" y="0" z="-5.26151"
         retract-time="7"
         compression="0.35"        
-        spring="0.78"
+        spring="1.1"
         damp="1.35"
         sfric="1.6"
         dfric="0.6">
