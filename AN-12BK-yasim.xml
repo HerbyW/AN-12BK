@@ -289,7 +289,7 @@
         spring="0.78"
         damp="1.35"
         sfric="1.6"
-        dfric="0.4">
+        dfric="0.6">
 		<!-- <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-1.75" dst1="1.75"/> -->
         <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -307,7 +307,7 @@
         spring="0.85"
         damp="1.10"
         sfric="1.6"
-        dfric="0.4">
+        dfric="0.6">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -324,7 +324,7 @@
         spring="0.85"
         damp="1.10"
         sfric="1.6"
-        dfric="0.4">
+        dfric="0.6">
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -341,7 +341,7 @@
         spring="0.85"
         damp="1.10"
         sfric="1.6"
-        dfric="0.4">
+        dfric="0.6">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -358,7 +358,7 @@
         spring="0.85"
         damp="1.10"
         sfric="1.4"
-        dfric="0.7">
+        dfric="0.6">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
@@ -374,7 +374,7 @@
   <tank x="3" y="-6.817" z="-0.4" capacity="7170"/>
 
   <!-- Mass distribution -->
-  <ballast x="11.8" y="0" z="-2.05" mass="30000"/>
+  <ballast x="9.8" y="0" z="-2.05" mass="30000"/>
   <ballast x="-1.0" y="0" z="-2.05" mass="16000"/>
   
   <weight x="15.0" y="0" z="2.97" mass-prop="/sim/weight[0]/weight-lb"/>
