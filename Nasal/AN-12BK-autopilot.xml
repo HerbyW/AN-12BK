@@ -330,13 +330,20 @@
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>0.3</Kp>          <!-- proportional gain -->
+      <Kp>0.075</Kp>          <!-- proportional gain 0.3-->
       <Ki>0.0</Ki>          <!-- integral gain -->
-      <u_min>-16.67</u_min> <!-- minimum output clamp -->
-      <u_max>8.33</u_max>   <!-- maximum output clamp -->
+      <u_min>-25.0</u_min> <!-- minimum output clamp -16.67-->
+      <u_max>25.0</u_max>   <!-- maximum output clamp 8.33-->
     </config>
   </pi-simple-controller>
 
+  <filter>
+   <type>noise-spike</type>
+     <max-rate-of-change>3.0</max-rate-of-change>
+     <input>/autopilot/internal/target-climb-rate-fps</input>
+     <output>/autopilot/internal/target-climb-rate-fps-limited</output>
+  </filter>
+  
   <!-- Stage #2 drives the elevator-trim to achieve the desired climb rate. -->
   <pid-controller>
     <name>Altitude Hold (Altimeter based) Stage 2</name>
@@ -349,19 +356,19 @@
       <prop>/velocities/vertical-speed-fps</prop>
     </input>
     <reference>
-      <prop>/autopilot/internal/target-climb-rate-fps</prop>
+      <prop>/autopilot/internal/target-climb-rate-fps-limited</prop>
     </reference>
     <output>
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.003</Kp>      <!-- proportional gain -->
+      <Kp>-0.005</Kp>      <!-- proportional gain -0.003-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
-      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <alpha>0.001</alpha>  <!-- low pass filter weighing factor 0.1-->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>       <!-- integrator time -->
-      <Td>0.00001</Td>    <!-- derivator time -->
+      <Ti>1.0</Ti>       <!-- integrator time 10.0-->
+      <Td>0.000005</Td>    <!-- derivator time 0.00001-->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
     </config>
@@ -476,7 +483,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.01</Kp>      <!-- proportional gain -->
+      <Kp>-0.001</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->

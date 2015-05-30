@@ -129,6 +129,7 @@
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
          <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
          <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+         <control-speed control="FLAP1" transition-time="7"/>
   </mstab>
 
    <!-- Elevator -->
@@ -142,6 +143,7 @@
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+         <control-speed control="FLAP0" transition-time="3.0"/>
   </hstab>
 
   <!-- Ruder -->
@@ -155,6 +157,7 @@
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+         <control-speed control="FLAP0" transition-time="7.0"/>
   </vstab>
 
   <!-- Engines   source            : http://en.wikipedia.org/wiki/Progress_AI-20
