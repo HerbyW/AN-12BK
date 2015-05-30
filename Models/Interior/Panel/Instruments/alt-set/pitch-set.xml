@@ -58,6 +58,20 @@
   <object-name>pitch_wheel</object-name>
   <visible>true</visible>
   <action>
+    <button>0</button>
+    <binding>
+      <command>property-assign</command>
+      <property>/autopilot/settings/vertical-speed-fpm</property>
+      <value>0.0</value>
+    </binding> 
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>pitch_wheel</object-name>
+  <visible>true</visible>
+  <action>
     <button>3</button>
     <repeatable>true</repeatable>
     <binding>
