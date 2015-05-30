@@ -205,13 +205,30 @@
   <action>
     <button>0</button>
     <repeatable>false</repeatable>
-    
-    <binding>
-      
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Latest Metar-Data:");</script>
+    </binding>
+    <binding>      
       <command>nasal</command>
       <script>setprop("sim/messages/copilot",getprop("/environment/metar/data"));</script>
     </binding>
-    
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Minimal ground visibility in meter:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/min-visibility-m"));</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot","Closest Airport:");</script>
+    </binding>
+    <binding>      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/sim/airport/closest-airport-id"));</script>
+    </binding>
     
     
     </action>
