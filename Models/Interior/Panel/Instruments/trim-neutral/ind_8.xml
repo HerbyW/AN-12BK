@@ -198,5 +198,23 @@
   </action>
 </animation>
 
+<animation>
+  <type>pick</type>
+  <object-name>text_1</object-name>
+  <visible>true</visible>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    
+    <binding>
+      
+      <command>nasal</command>
+      <script>setprop("sim/messages/copilot",getprop("/environment/metar/data"));</script>
+    </binding>
+    
+    
+    
+    </action>
+  </animation>
 
 </PropertyList>
