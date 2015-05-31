@@ -65,6 +65,7 @@ Eagel: Liveries
       <adf-2-selector type="double">0</adf-2-selector>
       <ushdb-sel-1 type="double">0</ushdb-sel-1>
       <ushdb-sel-2 type="double">0</ushdb-sel-2>
+      <metar type="bool">0</metar>
     </switches>
     <chokes>
       <activ type="int">0</activ>

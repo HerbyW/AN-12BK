@@ -143,7 +143,7 @@
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="3.0"/>
+         <control-speed control="FLAP0" transition-time="6.0"/>
   </hstab>
 
   <!-- Ruder -->

@@ -56,6 +56,10 @@
 <animation>
   <type>material</type>
   <object-name>text_1</object-name>
+   <condition>    
+      <property>controls/switches/metar</property>
+      <value>1</value>     
+   </condition>
   <emission>
     <red>1.0</red>
     <green>1.0</green>
@@ -229,7 +233,11 @@
       <command>nasal</command>
       <script>setprop("sim/messages/copilot",getprop("/sim/airport/closest-airport-id"));</script>
     </binding>
-    
+    <binding>
+      <command>property-assign</command>
+      <property>controls/switches/metar</property>
+      <value>0</value>
+    </binding>  
     
     </action>
   </animation>

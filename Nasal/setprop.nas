@@ -479,3 +479,12 @@ setprop("/autopilot/settings/vertical-speed-fpm",value);
 
 
 };
+
+##############################################################################################################
+
+
+setlistener("/sim/airport/closest-airport-id", func
+{
+  setprop("/controls/switches/metar",1);  
+}
+);
