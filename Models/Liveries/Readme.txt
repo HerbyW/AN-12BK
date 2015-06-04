@@ -5,13 +5,16 @@ The new liveries were made by: eagel  03/2015
 Thanks to him
 
 <!--
-
-    ###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
-    Development is ongoing, see latest version: www.github.com/HerbyW/antonov-aircrafts
+    #########################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
+    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
+    all with full Multiplayer Support.
+    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
     This file is licenced under the terms of the GNU General Public Licence V3 or later
-    
-    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    D-Leon: technical assistance
+    Firefly: 3D model improvment
     Eagel: Liveries
-    ###################################################################################
+    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
+    Instruments from; Tu-154b, Il-76D, 707
+    ##########################################################################################
 -->
