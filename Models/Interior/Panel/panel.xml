@@ -35,9 +35,21 @@
     <!-- Objets transparents -->
   </animation>  
   
+  <model>
+    <path>Aircraft/AN-12BK/Models/Effects/stairs/cat.xml</path>
+    <offsets>
+      <x-m>  0.72 </x-m>
+      <y-m> 0.5 </y-m>
+      <z-m>  -0.30 </z-m>
+      <heading-deg>-90.0</heading-deg>
+      <pitch-deg>-0.0</pitch-deg>
+    </offsets>
+  </model>
+  
+  
   <!-- Warning Indicator: Reverser (yellow),fuel-low, over-speed, over-loading,
        Decision-Height, Parking Chokes, Marker (outer, middle, inner) -->
-  
+    
   <model>
     <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning88.xml</path>
     <offsets>

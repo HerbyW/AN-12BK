@@ -59,7 +59,7 @@
       <storage type="int">0</storage>
       <weight type="float">6000</weight>
       <nosmoke type="string">nosmoke</nosmoke>
-    </storage>
+    </storage>    
     <switches>
       <fuel type="float">0</fuel>
       <gauge-light type="int">0</gauge-light>
