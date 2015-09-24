@@ -21,11 +21,13 @@ Added by: Edusoft Studios
 Resource: Free 3d models
 Additional Info: Cat N260515 - 3D model (*.gsm+*.3ds+*.max) for 3d visualization. 
     http://archive3d.net/?a=download&id=c8d12545
+    
+    livery adjustment by: m.herweg 09-2015
 -->
 
 <PropertyList>
   
-  <path>cat.ac</path>
+  <path>katze.ac</path>
   
   <animation>
     <type>select</type>	  
@@ -41,12 +43,12 @@ Additional Info: Cat N260515 - 3D model (*.gsm+*.3ds+*.max) for 3d visualization
     <type>scale</type>	
     <property>sim/multiplay/generic/int[17]</property>
     <offset>1</offset>
-    <x-max>0.5</x-max>
-    <y-max>0.5</y-max>
-    <z-max>0.5</z-max>
-    <x-factor>0.5</x-factor>
-    <y-factor>0.5</y-factor>
-    <z-factor>0.5</z-factor>
+    <x-max>10</x-max>
+    <y-max>10</y-max>
+    <z-max>10</z-max>
+    <x-factor>10</x-factor>
+    <y-factor>10</y-factor>
+    <z-factor>10</z-factor>
   </animation>
   
   
