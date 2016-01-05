@@ -1378,16 +1378,16 @@
   <model>
     <path>Aircraft/AN-12BK/Models/light/RedLight.xml</path>
     <offsets>
-      <x-m>  -1.26900 </x-m>
-      <y-m> -18.89128 </y-m>
+      <x-m>  -1.66 </x-m>
+      <y-m> -18.84 </y-m>
       <z-m>  -0.69819 </z-m>
     </offsets>
   </model>  
   <model>
     <path>Aircraft/AN-12BK/Models/light/GreenLight.xml</path>
     <offsets>
-      <x-m> -1.26900 </x-m>
-      <y-m> 18.89128 </y-m>
+      <x-m> -1.66 </x-m>
+      <y-m> 18.84 </y-m>
       <z-m> -0.69819 </z-m>
     </offsets>
   </model>
@@ -1413,17 +1413,17 @@
   <model>
    <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
-      <x-m> -2.7 </x-m>
+      <x-m> -2.67 </x-m>
       <y-m> -13.58 </y-m>
-      <z-m>  -0.55 </z-m>
+      <z-m>  -0.50 </z-m>
     </offsets>
   </model>  
   <model>
    <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     <offsets>
-      <x-m> -2.7 </x-m>
+      <x-m> -2.67 </x-m>
       <y-m>  13.58 </y-m>
-      <z-m>  -0.55 </z-m>
+      <z-m>  -0.50 </z-m>
     </offsets>
   </model>
   
@@ -1448,13 +1448,13 @@
   <model>
     <path>Aircraft/AN-12BK/Models/light/StrobeLight.xml</path>
     <offsets>
-      <x-m>  13.27 </x-m>
+      <x-m>  14.32 </x-m>
       <y-m>   0.00 </y-m>
-      <z-m>   5.18 </z-m>
+      <z-m>   5.10 </z-m>
     </offsets>
   </model>
   
-  <!-- Lighting Landing frontgear-->
+  <!-- Lighting Landing frontgear
   <model>
     <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
     
@@ -1473,9 +1473,9 @@
       <y-m>  0.0 </y-m>
       <z-m>  -4.4 </z-m>
     </offsets>
-  </model>
+  </model>-->
   
-  <!-- Lighting Landing sidegear-->
+  <!-- Lighting Landing sidegear
   <model>
    <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
    <condition>
@@ -1507,11 +1507,11 @@
       <y-m>  1.73 </y-m>
       <z-m>  -3.58 </z-m>
     </offsets>
-  </model>
+  </model>-->
   
   <!-- Lighting Landing beginn -->
   
-   <!--External lights for Rembrand-->
+   <!--External lights for Rembrand
  <model>
   <path>Aircraft/AN-12BK/Models/light/headlight-landing.xml</path>
   <name>headlight_c</name>
@@ -1596,9 +1596,39 @@
   </offsets>v
  </model>
  
-  <!-- Lighting Landing end -->
+  Lighting Landing end -->
   
-  <!-- Lighting Landing without Rembrand -->
+    <!-- NEW   Taxi lamps on front wheel-->
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/landinglightstaxi.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+  <!-- Landing lamps on top -->
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/landinglights.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/TU-160-lights.xml</path>
+    <offsets>
+      <x-m> 4.20</x-m>
+      <y-m>   0.0 </y-m>
+      <z-m>  -2.9 </z-m>
+    </offsets>
+  </model>
+  
+  
+  
+  <!-- Lighting Landing without Rembrand
   <model>
   <path>Aircraft/AN-12BK/Models/light/light-cone-707.xml</path>
   <name>landinglight</name>
@@ -1619,7 +1649,7 @@
       <z-m>  -3.6 </z-m>
    <pitch-deg>0.02</pitch-deg>
   </offsets>
- </model>
+ </model> -->
   
     <!--Internal Cabin lights for Rembrand, switch: bano-->
  <model>

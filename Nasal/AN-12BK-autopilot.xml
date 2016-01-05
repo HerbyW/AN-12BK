@@ -23,6 +23,13 @@
 
 
 <PropertyList>
+  
+  <predict-simple>
+     <input>/autopilot/internal/nav1-heading-error-deg</input>
+     <output>/autopilot/internal/nav1-heading-error-lookahead-deg</output>
+     <seconds>8.0</seconds>
+     <filter-gain>0.0</filter-gain>
+  </predict-simple>
 
   <!-- =============================================================== -->
   <!-- Roll Axis Modes                                                 -->
@@ -43,7 +50,7 @@
       <value>0.0</value>
     </reference>
     <output>
-      <prop>/controls/flight/aileron</prop>
+      <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
       <Kp>0.025</Kp>        <!-- proportional gain -->
@@ -106,7 +113,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron</prop>
+      <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
@@ -169,7 +176,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron</prop>
+      <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
@@ -196,7 +203,7 @@
       <value>nav1-hold</value>
     </enable>
     <input>
-      <prop>/autopilot/internal/nav1-heading-error-deg</prop>
+      <prop>/autopilot/internal/nav1-heading-error-lookahead-deg</prop>
     </input>
     <reference>
       <value>0.0</value>
@@ -212,8 +219,8 @@
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-20.0</u_min> <!-- minimum output clamp -->
-      <u_max>20.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-18.0</u_min> <!-- minimum output clamp -->
+      <u_max>18.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -232,7 +239,7 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron</prop>
+      <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
@@ -367,7 +374,7 @@
     <config>
       <Kp>-0.005</Kp>      <!-- proportional gain -0.003-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
-      <alpha>0.001</alpha>  <!-- low pass filter weighing factor 0.1-->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor 0.1-->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
       <Ti>5.0</Ti>       <!-- integrator time 10.0-->
@@ -437,7 +444,6 @@
 
   <!-- Glideslope hold. -->
 
-  <!-- Stage #2 drives the elevator-trim to achieve the desired climb rate. -->
   <pid-controller>
     <name>Glideslop Hold</name>
     <debug>false</debug>
@@ -455,7 +461,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.01</Kp>      <!-- proportional gain -->
+      <Kp>-0.005</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -486,12 +492,12 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.003</Kp>      <!-- proportional gain -->
+      <Kp>-0.0005</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>1.0</Ti>       <!-- integrator time 10.0-->
+      <Ti>10.0</Ti>       <!-- integrator time 10.0-->
       <Td>0.00001</Td>    <!-- derivator time -->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->

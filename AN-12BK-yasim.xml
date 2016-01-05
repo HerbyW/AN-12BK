@@ -366,7 +366,7 @@
         compression="0.35"        
         spring="0.85"
         damp="1.10"
-        sfric="1.4"
+        sfric="1.6"
         dfric="0.6">
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>

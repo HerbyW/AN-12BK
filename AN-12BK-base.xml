@@ -83,7 +83,7 @@
       
       <description>Antonov An 12 BK (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>3.4.10</aircraft-version>    
+      <aircraft-version>3.5.1</aircraft-version>    
       <status>early production</status>
       <rating>
 	<FDM type="int">3</FDM>
@@ -104,7 +104,7 @@
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
 	  </livery>
-	  
+	  <AN-12BK><version type="string">3.5.1</version></AN-12BK>
 	  </model>
 	  
 	  <!--  <custom-settings type="bool" userarchive="y">false</custom-settings>   -->
@@ -178,6 +178,7 @@
 	      <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
 	      
 	      <string  alias="/sim/multiplay/callsign"/>
+	      <string n="1" type="string" alias="/sim/model/AN-12BK/version"/>
 	      <string n="9" type="string"/>                              <!-- string[9] reserved for bombable mode -->     
 	      
 	      </generic>
@@ -189,6 +190,7 @@
 	      <setting> 0.40 </setting>
 	      <setting> 0.60 </setting>
 	      <setting> 0.80 </setting>
+	      <setting> 1.0 </setting>
 	    </flaps>
 	    
 	    <help>
@@ -271,8 +273,7 @@
 		For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
 		ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
 		
-		Flaps Controll Panel will give you the right level for landing (on the right side) and starting (on the left side), if the white strips are in the
-		middle position (1-2 for starting, 2-4 for landing).
+		Flaps Controll Panel with 5 Steps (1-2 for starting, 2-4 for landing without payload).
 		
 		Open the backdoor during flight if you get to hot :) and take a look from the navigator view backwards.
 		
@@ -333,6 +334,8 @@
 	    </engines>
 	    
 	    <instrumentation>
+	      
+	      <alerts><stall type="bool">false</stall></alerts>
 	      
 	      <dme n="0">
 		<frequencies>
@@ -464,6 +467,7 @@
 		    <file>Aircraft/AN-12BK/Nasal/liveries.nas</file>
 		    <file>Aircraft/AN-12BK/Nasal/light.nas</file>
 		    <file>Aircraft/AN-12BK/Nasal/autostart.nas</file>
+		    <file>Aircraft/AN-12BK/Nasal/autopilot.nas</file>
 		  </an12>
 		  <instruments>
 		    <file>Aircraft/AN-12BK/Nasal/setprop.nas</file>      
@@ -477,6 +481,9 @@
 		  <mapcase>
 		    <file>Aircraft/AN-12BK/Nasal/mapcase.nas</file>
 		  </mapcase>
+		  <warning>
+	            <file>Aircraft/AN-12BK/Nasal/AN-12BK-stall.nas</file>
+	          </warning>
 		</nasal>
 		
 		
