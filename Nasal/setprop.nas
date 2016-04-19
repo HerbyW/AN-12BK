@@ -16,6 +16,8 @@
 #UVID-15 Control for Pressure in mmhg and inhg
 # create listener
 
+setprop("/instrumentation/altimeter/setting-hapa", getprop("/instrumentation/altimeter/setting-hpa"));
+
 setlistener("/instrumentation/altimeter/setting-inhg", func(v)
 {
   if(v.getValue())
@@ -517,10 +519,11 @@ setlistener("/sim/airport/closest-airport-id", func
 
 setlistener("controls/flight/flaps", func
  { 
- if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 260  ))
+ if ((getprop("controls/flight/flaps") > 0  ) and (getprop("velocities/groundspeed-kt") > 250  ))
   {
     setprop("controls/flight/flaps", 0);
-    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed????");    
+    setprop("sim/flaps/current-setting", 0);
+    setprop("sim/messages/copilot", "Do you want to destroy the flaps due to overspeed (max 250)????");    
   }
 });
  

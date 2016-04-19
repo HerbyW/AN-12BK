@@ -77,7 +77,7 @@
     </controls>
     
     <gear><gear><position-norm type="float">1</position-norm></gear></gear>
-    
+    <scenery><share-events type="bool">true</share-events></scenery>
     
     <sim include="Systems/views.xml">
       

@@ -53,16 +53,16 @@
 
 <airplane mass="62000" version="YASIM_VERSION_CURRENT">
 
-  <approach speed="98" aoa="8" fuel="0.3">
-    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.3"/>
-    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.3"/>
+  <approach speed="98" aoa="5" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.7"/>
 
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0"/>
     
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
@@ -73,16 +73,16 @@
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
-  <cruise speed="420" alt="23500" fuel="0.7">
-    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="0.7"/>
-    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="0.7"/>
+  <cruise speed="420" alt="23500" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle-v" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle-v" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/throttle-v" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/throttle-v" value="1"/>
 
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
-    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.8"/>
-    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="0.8"/>
-    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
     
     <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
     <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
@@ -97,17 +97,17 @@
 
   <!-- Fuselage -->
   <fuselage ax="16.54576" ay="0" az="-2.82296" bx=" 12.85562" by="0" bz="-2.61835" width="3.80" taper="0.5" midpoint="1.0"/>
-  <fuselage ax="12.85562" ay="0" az="-2.61835" bx=" -2.36458" by="0" bz="-2.61835" width="3.80" taper="1.0" midpoint="0.0"/>
-  <fuselage ax="-2.36458" ay="0" az="-2.61835" bx="-16.36991" by="0" bz="-0.28862" width="3.80" taper="0.3" midpoint="0.0"/>
+  <fuselage ax="12.85562" ay="0" az="-2.61835" bx=" -2.36458" by="0" bz="-2.61835" cx="0.60" width="3.80" taper="1.0" midpoint="0.0"/>
+  <fuselage ax="-2.36458" ay="0" az="-2.61835" bx="-16.36991" by="0" bz="-0.28862" cx="0.60" width="3.80" taper="0.3" midpoint="0.0"/>
   
   <!-- Engine exterior left -->
-  <fuselage ax="5.62769"  ay=" 9.56800" az="-0.93836" bx="0.55132" by=" 9.56800" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="5.62769"  ay=" 9.56800" az="-0.93836" bx="0.55132" by=" 9.56800" bz="-0.93836" cx="0.60" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior left -->
-  <fuselage ax="6.50141"  ay=" 4.63488" az="-0.93836" bx="1.30862" by=" 4.63488" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="6.50141"  ay=" 4.63488" az="-0.93836" bx="1.30862" by=" 4.63488" bz="-0.93836" cx="0.60" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine interior right -->
-  <fuselage ax="6.50141"  ay="-4.63488" az="-0.93836" bx="1.30862" by="-4.63488" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="6.50141"  ay="-4.63488" az="-0.93836" bx="1.30862" by="-4.63488" bz="-0.93836" cx="0.60" width="1.2" taper="0.98" midpoint="0.5"/>
   <!-- Engine exterior right -->
-  <fuselage ax="5.62769"  ay="-9.56800" az="-0.93836" bx="0.55132" by="-9.56800" bz="-0.93836" cx="0.10" width="1.2" taper="0.98" midpoint="0.5"/>
+  <fuselage ax="5.62769"  ay="-9.56800" az="-0.93836" bx="0.55132" by="-9.56800" bz="-0.93836" cx="0.60" width="1.2" taper="0.98" midpoint="0.5"/>
 
   <!-- Wing -->
   <wing x="2.240576" y="0" z="-0.43301"
@@ -115,9 +115,9 @@
         length="13.392"
         taper="0.54"
         sweep="4.2"
-        camber="0.001">
-        <stall aoa="24" width="3" peak="3.5"/>
-        <flap0 start="0.15" end="1" lift="1.6" drag="1.3"/>
+        camber="0.1">
+        <stall aoa="18" width="8" peak="1.5"/>
+        <flap0 start="0.15" end="1" lift="1.3" drag="1.6"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-speed control="FLAP0" transition-time="10"/>
@@ -129,7 +129,7 @@
          taper="0.6"
          sweep="4"
          dihedral="-3">
-         <stall aoa="24" width="1" peak="1.4"/>
+         <stall aoa="24" width="8" peak="1.5"/>
          <flap1 start="0" end="1" lift="1.2" drag="1.1"/>
          <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
          <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
@@ -144,8 +144,8 @@
          length="5.976"
          sweep="3.5"
          taper="0.45">
-         <stall aoa="18" width="1" peak="1.4"/>
-         <flap0 start="0" end="1" lift="2.0" drag="1.1"/>
+         <stall aoa="18" width="8" peak="1.5"/>
+         <flap0 start="0" end="1" lift="2.3" drag="1.2"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>

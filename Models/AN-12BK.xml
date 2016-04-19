@@ -128,8 +128,6 @@
     <object-name>heliceDI</object-name>
     <object-name>heliceDE</object-name>
     <!-- Objets transparents -->
-    <object-name>glass</object-name>
-    <object-name>vitreporte</object-name>
     <object-name>propblurGE</object-name>
     <object-name>propdiscGE</object-name>
     <object-name>propblurGI</object-name>
@@ -299,6 +297,12 @@
     <object-name>antennes</object-name>
     <object-name>cables</object-name>
   </effect>
+  
+  
+  <animation>
+    <object-name>glass</object-name>
+    <object-name>vitreporte</object-name>
+</animation>
   
   <animation>
    <type>noshadow</type>

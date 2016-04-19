@@ -116,7 +116,7 @@
       <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
+      <Kp>0.075</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -219,8 +219,8 @@
                            <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-18.0</u_min> <!-- minimum output clamp -->
-      <u_max>18.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-16.0</u_min> <!-- minimum output clamp -->
+      <u_max>16.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -242,7 +242,7 @@
       <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
-      <Kp>0.1</Kp>        <!-- proportional gain -->
+      <Kp>0.05</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -340,7 +340,7 @@
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>0.075</Kp>          <!-- proportional gain 0.3-->
+      <Kp>0.05</Kp>          <!-- proportional gain 0.3-->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -16.67-->
       <u_max>25.0</u_max>   <!-- maximum output clamp 8.33-->
@@ -349,7 +349,7 @@
 
   <filter>
    <type>noise-spike</type>
-     <max-rate-of-change>3.0</max-rate-of-change>
+     <max-rate-of-change>1</max-rate-of-change>
      <input>/autopilot/internal/target-climb-rate-fps</input>
      <output>/autopilot/internal/target-climb-rate-fps-limited</output>
   </filter>
@@ -372,13 +372,13 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.005</Kp>      <!-- proportional gain -0.003-->
+      <Kp>-0.0025</Kp>      <!-- proportional gain -0.003-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor 0.1-->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>5.0</Ti>       <!-- integrator time 10.0-->
-      <Td>0.000005</Td>    <!-- derivator time 0.00001 new was 0.000005-->
+      <Ti>10.0</Ti>       <!-- integrator time 10.0-->
+      <Td>0.00001</Td>    <!-- derivator time 0.00001 new was 0.000005-->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
     </config>
@@ -492,7 +492,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.0005</Kp>      <!-- proportional gain -->
+      <Kp>-0.0025</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->

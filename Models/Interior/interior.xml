@@ -25,21 +25,25 @@
     <object-name>intvitreporte</object-name>
 </animation>
 
-<!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Aircraft/AN-12BK/Models/Effects/Glass/glass</inherits-from>
+<animation>
+<type>noshadow</type>
     <object-name>windows</object-name>
     <object-name>intvitreporte</object-name>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-  </effect>
+</animation>
 
-  <animation>
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+    <texture>Aircraft/AN-12BK/Models/glass_shader.png</texture>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
+</animation>
+
+<animation>
     <type>material</type>
        <object-name>windows</object-name>
-       <object-name>intvitreporte</object-name>
-  <emission>
+    <object-name>intvitreporte</object-name>      
+       <emission>
     <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
       <red>   0.15 </red>
       <green> 0.15 </green>
@@ -48,9 +52,31 @@
 </animation>
 
 <animation>
-<object-name>windows</object-name>
-<object-name>intvitreporte</object-name>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
 </animation>
+
+<animation>
+<type>noshadow</type>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
+</animation>
+
+<effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
+  </effect>
+  
+  <animation>
+    <object-name>windows</object-name>
+    <object-name>intvitreporte</object-name>
+</animation>
+
+
 
 <!-- Pilote, for what? I am the pilot
 <model>
