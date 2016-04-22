@@ -25,9 +25,9 @@
 
     <condition>
       <and>
-        <property>/gear/gear[0]/wow</property>
+        <property>sim/multiplay/generic/int[16]</property>
         <greater-than>
-          <property>/gear/gear[0]/rollspeed-ms</property>
+          <property>sim/multiplay/generic/float[13]</property>
           <value>15</value>
         </greater-than>
       </and>

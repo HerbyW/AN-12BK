@@ -527,3 +527,20 @@ setlistener("controls/flight/flaps", func
   }
 });
  
+##############################################################################################################
+# runway effect
+
+
+setprop("controls/gear/runway", 0);
+
+setlistener("gear/gear[2]/wow", func
+{
+  if (getprop("gear/gear[2]/wow") == 0)
+    interpolate("controls/gear/runway", 0 , 0.1);
+  else
+  {
+  if ( ( getprop("gear/gear[2]/compression-norm") > 0.35 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 50)  and ( getprop("/velocities/speed-down-fps") > 2))
+    interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
+  }
+}
+);

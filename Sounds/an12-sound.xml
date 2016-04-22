@@ -251,7 +251,7 @@
       <mode>once</mode>
       <path>Aircraft/AN-12BK/Sounds/squeal.wav</path>
       <condition>        
-          <property>sim/multiplay/generic/int[16]</property>                 
+          <property>sim/multiplay/generic/int[18]</property>                 
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>
@@ -280,7 +280,7 @@
       <mode>once</mode>
       <path>Aircraft/AN-12BK/Sounds/squeal.wav</path>
       <condition>        
-          <property>sim/multiplay/generic/int[18]</property>          
+          <property>sim/multiplay/generic/int[19]</property>          
       </condition>
       <volume>
         <property>/velocities/speed-down-fps</property>

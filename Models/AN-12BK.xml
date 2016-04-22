@@ -2068,7 +2068,45 @@
 	    <z-m> -10 </z-m>
 	  </offsets>
 	</model>
-	
+
+<!--runway effect -->
+
+<model> 
+ <path>Aircraft/AN-12BK/Models/Effects/tyres.xml</path>
+ <offsets> 
+  <x-m> -1.30503 </x-m>
+      <y-m> -2.48467 </y-m>
+      <z-m> -5.0 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-12BK/Models/Effects/tyres.xml</path>
+ <offsets> 
+  <x-m> -1.30503 </x-m>
+      <y-m> 2.48467 </y-m>
+      <z-m> -5.0 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-12BK/Models/Effects/ground/touch.xml</path>
+ <offsets> 
+  <x-m> -1.30503 </x-m>
+      <y-m> -2.48467 </y-m>
+      <z-m> -5.0 </z-m>
+ </offsets>
+</model>
+
+<model> 
+ <path>Aircraft/AN-12BK/Models/Effects/ground/touch.xml</path>
+ <offsets> 
+  <x-m> -1.30503 </x-m>
+      <y-m> 2.48467 </y-m>
+      <z-m> -5.0 </z-m>
+ </offsets>
+</model>
+
 </PropertyList>
 
     

@@ -54,8 +54,8 @@
   <object-name>_d_2</object-name>
   <condition>
     <greater-than>
-    <property>engines/engine[0]/rpm</property>
-    <value> 860 </value>
+    <property>/controls/engines/engine/throttle</property>
+    <value> 0.0987 </value>
     </greater-than>    
   </condition>
 </animation>

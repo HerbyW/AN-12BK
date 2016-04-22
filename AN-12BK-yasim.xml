@@ -13,7 +13,7 @@
      Cruise speed         : 670 km/h   (   361 kt      )
 
     #########################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-Mai2016
     Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
     all with full Multiplayer Support.
     Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
@@ -22,7 +22,7 @@
     Firefly: 3D model improvment
     Eagel: Liveries
     Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
-    Instruments from; Tu-154b, Il-76D, 707
+    Instruments from; Tu-154b, Il-76D, 707 and own developments
     ##########################################################################################
      
     https://en.wikipedia.org/wiki/Antonov_An-12
@@ -391,7 +391,7 @@
   <weight x="5" y="0" z="-2.5" mass-prop="/sim/weight[2]/weight-lb"/>
   <weight x="5" y="0" z="-2.5" mass-prop="/sim/weight[3]/weight-lb"/>
   
-  <!-- Thruster for Pushback action -->
+  <!-- Thruster for Reverser action -->
   
   <thruster x="-11.51110" y="0" z="-5.26151" vx="-1" vy="0" vz="0" thrust="18000">
   <control-input axis="/controls/engines/engine[0]/throttle-r" control="THROTTLE"/>
