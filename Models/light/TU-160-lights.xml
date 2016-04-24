@@ -84,11 +84,11 @@ modified by Herbert Wagner 2015 for TU-160
 	  <property>sim/multiplay/generic/int[9]</property>
 	  <property>gear/gear[0]/position-norm</property>	     
 	  <less-than>
-	    <property>sim/multiplay/generic/float[5]</property>
+	    <property>sim/multiplay/generic/float[2]</property>
 	    <value>-5</value>
 	  </less-than>
 	  <greater-than>
-	    <property>sim/multiplay/generic/float[5]</property>
+	    <property>sim/multiplay/generic/float[2]</property>
 	    <value>-0.4</value>
 	  </greater-than>
 	</and>
@@ -123,7 +123,7 @@ modified by Herbert Wagner 2015 for TU-160
       <name>Landinglight</name>
       <object-name>LightVolume</object-name>
       <position>
-	<x>-15.6</x>
+	<x>-20.6</x>
 	<y> 0.0</y>
 	<z>-1.11</z>
       </position>
