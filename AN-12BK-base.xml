@@ -69,6 +69,9 @@
       <ushdb-sel-1 type="double">0</ushdb-sel-1>
       <ushdb-sel-2 type="double">0</ushdb-sel-2>
       <metar type="bool">0</metar>
+      <glass-heating type="bool">0</glass-heating>
+      <rotor-heating type="bool">0</rotor-heating>
+      <instrument-heating type="bool">0</instrument-heating>
     </switches>
     <chokes>
       <activ type="int">0</activ>
@@ -84,7 +87,7 @@
       
       <description>Antonov An 12 BK (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>3.5.3</aircraft-version>    
+      <aircraft-version>3.5.4</aircraft-version>    
       <status>early production</status>
       <rating>
 	<FDM type="int">3</FDM>
@@ -105,8 +108,11 @@
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
 	  </livery>
-	  <AN-12BK><version type="string">3.5.3</version></AN-12BK>
-	  </model>
+	  <AN-12BK><version type="string">3.5.4</version></AN-12BK>
+	  <anti-ice-alpha type="float">1</anti-ice-alpha>
+	  <anti-ice-rotor type="float">1</anti-ice-rotor>
+	  <iceing type="float">1</iceing>
+	</model>
 	  
 	  <!--  <custom-settings type="bool" userarchive="y">false</custom-settings>   -->
 	  
@@ -179,6 +185,7 @@
 	      <float n="16" alias="/sim/weight[3]/weight-lb"/>
 	      <float n="17" alias="/ai/models/ballistic/sim/time/elapsed-sec"/>
 	      <float n="18" alias="/controls/gear/runway"> 0 </float>
+	      <float n="19" alias="/sim/model/iceing"/> <!-- the icing on the windshield -->
 	      
 	      <string  alias="/sim/multiplay/callsign"/>
 	      <string n="1" type="string" alias="/sim/model/AN-12BK/version"/>
@@ -227,7 +234,7 @@
 		<desc>Change Pilot Ramp View</desc>
 	      </key>
 	      <text>
-		Wellcome to version 3.5.3 of AN-12BK-B/BK
+		Wellcome to version 3.5.4 of AN-12BK-B/BK
 		
 		Autostart: press s and make the 2 additional settings!
 		
@@ -303,6 +310,8 @@
 		Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
 		
 		Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
+		
+		Latest update: Ice System, whatch out for the red lamps at the overhead panel
 		
 		Have fun and get the latest version at:
 		github.com/HerbyW

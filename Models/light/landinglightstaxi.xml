@@ -12,7 +12,7 @@
     <condition>
 	<greater-than>
 	  <property>gear/gear[0]/position-norm</property>
-	  <value>0.1</value>
+	  <value>0.95</value>
 	</greater-than>
     </condition>
   </animation>
@@ -26,7 +26,7 @@
       <and>
 	<greater-than>
 	  <property>gear/gear[0]/position-norm</property>
-	  <value>0.1</value>
+	  <value>0.95</value>
 	</greater-than>
 	<property>sim/multiplay/generic/int[10]</property>	  
       </and>
@@ -45,7 +45,7 @@
 	  </not>
 	<greater-than>
 	  <property>gear/gear[0]/position-norm</property>
-	  <value>0.1</value>
+	  <value>0.95</value>
 	</greater-than>
         <property>sim/multiplay/generic/int[10]</property>
       </and>
