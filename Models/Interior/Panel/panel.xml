@@ -2432,7 +2432,7 @@ Heating</text>
   </animation>
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-glassheating.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/redlamp/red-lamp-glassheating.xml</path>
     <offsets>
       <x-m>  0.382 </x-m>
       <y-m>  -0.161 </y-m>
@@ -2442,7 +2442,7 @@ Heating</text>
   </model>
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-rotorheating.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/redlamp/red-lamp-rotorheating.xml</path>
     <offsets>
       <x-m>  0.382 </x-m>
       <y-m>  -0.109 </y-m>
@@ -2452,7 +2452,7 @@ Heating</text>
   </model>
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/redlamp/red-lamp-instrumentheating.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/redlamp/red-lamp-instrumentheating.xml</path>
     <offsets>
       <x-m>  0.382 </x-m>
       <y-m>  -0.057 </y-m>
