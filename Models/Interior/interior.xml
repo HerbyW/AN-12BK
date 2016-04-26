@@ -18,7 +18,7 @@
 
 <PropertyList>
 
-  <path>interior.ac</path>
+  <path>interior-51.ac</path>
 
 <animation>
     <object-name>windows</object-name>
@@ -45,9 +45,9 @@
     <object-name>intvitreporte</object-name>      
        <emission>
     <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.60 </blue>
+      <red>   0.015 </red>
+      <green> 0.015 </green>
+      <blue>  0.015 </blue>
     </emission>
 </animation>
 

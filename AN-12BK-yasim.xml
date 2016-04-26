@@ -303,8 +303,7 @@
         damp="1.35"
         sfric="1.6"
         dfric="0.6">
-		<!-- <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-1.75" dst1="1.75"/> -->
-        <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.75" dst1="0.75" square="true"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-output control="STEER" prop="/gear/gear[0]/steering-norm"/>

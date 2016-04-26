@@ -16,7 +16,7 @@
 -->
 <PropertyList>
 
-  <path>an12-50.ac</path>
+  <path>an12-51.ac</path>
 
   <nasal>
     <load>
@@ -1165,7 +1165,7 @@
     <type>rotate</type>
     <object-name>roueA</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 28 </factor>
     <center>
       <x-m> -11.90319 </x-m>
       <y-m>   0.00000 </y-m>

@@ -141,7 +141,7 @@
   </model>
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/warning/warning60.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning60.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.635 </y-m>
@@ -149,7 +149,7 @@
     </offsets>
   </model>
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/warning/warning63.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/warning/warning63.xml</path>
     <offsets>
       <x-m>  0.008 </x-m>
       <y-m> -0.591 </y-m>
@@ -2308,7 +2308,7 @@ SKAWK</text>
          <!-- Switches block 5 ICE -->
   
   <model>
-    <path>Aircraft/AN-22A/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/bano/bano5.xml</path>
     <offsets>
       <x-m>  0.350 </x-m>
       <y-m>  -0.106 </y-m>
