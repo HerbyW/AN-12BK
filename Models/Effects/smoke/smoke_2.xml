@@ -27,7 +27,7 @@
 			<y-m>0</y-m>
 			<z-m>0</z-m>
 			<roll-deg>0</roll-deg>
-			<pitch-deg>3</pitch-deg>
+			<pitch-deg>1</pitch-deg>
 			<heading-deg>0</heading-deg>
 		</offsets>
 		<texture>smoke.png</texture>
@@ -67,59 +67,59 @@
 		<shooter>
 			<theta-min-deg>89</theta-min-deg>
 			<theta-max-deg>91</theta-max-deg>
-			<phi-min-deg>-2</phi-min-deg>
-			<phi-max-deg> 2</phi-max-deg>
+			<phi-min-deg>-1</phi-min-deg>
+			<phi-max-deg> 1</phi-max-deg>
 			<speed-mps>
-				<value>3.2</value>
-				<spread>3.5</spread>
+				<value>80</value>
+				<spread>15</spread>
 			</speed-mps>
 			<rotation-speed>
 				<x-min-deg-sec>0</x-min-deg-sec>
 				<y-min-deg-sec>0</y-min-deg-sec>
-				<z-min-deg-sec>-180</z-min-deg-sec>
+				<z-min-deg-sec>0</z-min-deg-sec>
 				<x-max-deg-sec>0</x-max-deg-sec>
 				<y-max-deg-sec>0</y-max-deg-sec>
-				<z-max-deg-sec>180</z-max-deg-sec>
+				<z-max-deg-sec>0</z-max-deg-sec>
 			</rotation-speed>
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>40</value>
+				<value>50</value>
 				<spread>3</spread>
 			</particles-per-sec>
 		</counter>
 		<particle>
 			<start>
 				<color>
-					<red><value>0.1</value></red>
-					<green><value>0.1</value></green>
-					<blue><value>0.11</value></blue>
-					<alpha><value>0.3</value></alpha>
+					<red><value>0.25</value></red>
+					<green><value>0.25</value></green>
+					<blue><value>0.25</value></blue>
+					<alpha><value>0.10</value></alpha>
 				</color>
 				<size>
-					<value>0.3</value>
+					<value>0.5</value>
 				</size>
 			</start>
 			<end>
 				<color>
-					<red><value>0.1</value></red>
-					<green><value>0.1</value></green>
-					<blue><value>0.11</value></blue>
-					<alpha><value>0</value></alpha>
+					<red><value>0.8</value></red>
+					<green><value>0.8</value></green>
+					<blue><value>0.8</value></blue>
+					<alpha><value>0.0</value></alpha>
 				</color>
 				<size>
-					<value>5.0</value>
+					<value>30</value>
 				</size>
 			</end>
 			<life-sec>
-				<value>3</value>
+				<value>8</value>
 			</life-sec>
 			<mass-kg>0.5</mass-kg>
-			<radius-m>0.40</radius-m>
+			<radius-m>0.01</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>
-			<gravity>true</gravity>
+			<gravity>false</gravity>
 			<wind>true</wind>
 		</program>
 	</particlesystem>
