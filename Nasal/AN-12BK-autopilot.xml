@@ -246,7 +246,7 @@
       <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.1</Kp><!-- 0.065 -->
+      <Kp>0.065</Kp><!-- 0.065 -->
       <beta>1.0</beta>
       <alpha>0.1</alpha>
       <gamma>0.0</gamma>
@@ -621,7 +621,7 @@
                           <!-- unfiltered derivative error -->
       <Ti>10.0</Ti>       <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>0.0</u_min>  <!-- minimum output clamp -->
+      <u_min>0.10</u_min>  <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
