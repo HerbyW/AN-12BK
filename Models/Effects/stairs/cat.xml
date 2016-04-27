@@ -51,6 +51,28 @@ Additional Info: Cat N260515 - 3D model (*.gsm+*.3ds+*.max) for 3d visualization
     <z-factor>10</z-factor>
   </animation>
   
+  <animation>
+    <type>pick</type>
+    <object-name>default</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-assign</command>
+	<property>controls/switches/cat</property>
+	<value> 1 </value>
+      </binding>
+      <mod-up>
+	<binding>
+	  <command>property-assign</command>
+	  <property>controls/switches/cat</property>
+	  <value> 0 </value>
+	</binding>
+      </mod-up>
+    </action>
+  </animation>
+  
   
   <!-- +right -left -->
   <animation>

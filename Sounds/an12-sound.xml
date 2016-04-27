@@ -566,6 +566,23 @@
       <reference-dist>10</reference-dist>
       <max-dist>100</max-dist>
     </decision>
+    
+                <!-- Cat -->
+ 
+    <cat>
+      <name>cat</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-12BK/Sounds/Meow-sound-effect.wav</path>
+      <condition>    
+      <property>controls/switches/cat</property>      
+      </condition>
+      <volume>
+        <min>0.8</min>
+        <max>0.8</max>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </cat>
 
   </fx>
 
