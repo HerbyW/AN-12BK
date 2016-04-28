@@ -60,7 +60,7 @@
           <blue><value>  0.0 </value></blue>
           <alpha><value> 1 </value></alpha>
         </color>
-        <size><value> 0.55 </value></size>
+        <size><value> 0.45 </value></size>
       </start>
       <end>
         <color>
@@ -69,9 +69,9 @@
           <blue><value>  0.0 </value></blue>
           <alpha><value> 1 </value></alpha>
         </color>
-        <size><value> 0.55 </value></size>
+        <size><value> 0.45 </value></size>
       </end>
-      <life-sec><value> 25 </value></life-sec>
+      <life-sec><value> 65 </value></life-sec>
       <mass-kg>0.35</mass-kg>
       <radius-m>0.40</radius-m>
     </particle>

@@ -545,6 +545,18 @@ setlistener("gear/gear[2]/wow", func
 }
 );
 
+setlistener("controls/gear/brake-parking", func
+{
+  if (getprop("controls/gear/brake-parking") == 0)
+    interpolate("controls/gear/runway", 0 , 0.1);
+  else
+  {
+  if ( ( getprop("controls/gear/brake-parking") == 1 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 30) )
+    interpolate("controls/gear/runway", 1 , 1.2, 0 , 1.2);
+  }
+}
+);
+
 ######################################################################################################################
 
 # ice system

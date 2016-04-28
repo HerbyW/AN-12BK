@@ -18,7 +18,6 @@
 
 <path>asi.ac</path>
 
-
   <animation>
     <type>material</type>
         <object-name>ASI320.needle</object-name>
@@ -35,9 +34,6 @@
       <blue>  0.35 </blue>
     </emission>
   </animation>
-
-
-
 
 
     <animation>

@@ -77,7 +77,7 @@
         </color>
         <size><value> 2 </value></size>
       </end>
-      <life-sec><value> 1 </value></life-sec>
+      <life-sec><value> 3 </value></life-sec>
       <mass-kg>  0.025 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
