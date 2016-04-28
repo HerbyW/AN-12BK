@@ -46,7 +46,7 @@
 				<and>
 					<greater-than>
 						<property>sim/multiplay/generic/float[10]</property>
-						<value>0.08</value>
+						<value>0.07</value>
 					</greater-than>
 					<less-than>
 						<property>sim/multiplay/generic/float[10]</property>
@@ -91,10 +91,10 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>0.25</value></red>
-					<green><value>0.25</value></green>
-					<blue><value>0.25</value></blue>
-					<alpha><value>0.10</value></alpha>
+					<red><value>0.32</value></red>
+					<green><value>0.32</value></green>
+					<blue><value>0.32</value></blue>
+					<alpha><value>0.06</value></alpha>
 				</color>
 				<size>
 					<value>0.5</value>
@@ -102,17 +102,17 @@
 			</start>
 			<end>
 				<color>
-					<red><value>0.8</value></red>
-					<green><value>0.8</value></green>
-					<blue><value>0.8</value></blue>
+					<red><value>0.85</value></red>
+					<green><value>0.85</value></green>
+					<blue><value>0.85</value></blue>
 					<alpha><value>0.0</value></alpha>
 				</color>
 				<size>
-					<value>30</value>
+					<value>32</value>
 				</size>
 			</end>
 			<life-sec>
-				<value>8</value>
+				<value>10</value>
 			</life-sec>
 			<mass-kg>0.5</mass-kg>
 			<radius-m>0.01</radius-m>
