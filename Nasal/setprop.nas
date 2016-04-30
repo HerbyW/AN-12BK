@@ -539,7 +539,7 @@ setlistener("gear/gear[2]/wow", func
     interpolate("controls/gear/runway", 0 , 0.1);
   else
   {
-  if ( ( getprop("gear/gear[2]/compression-norm") > 0.35 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 50)  and ( getprop("/velocities/speed-down-fps") > 2))
+  if ( ( getprop("gear/gear[2]/compression-norm") > 0.28 ) and ( getprop("gear/gear[2]/rollspeed-ms") > 40)  and ( getprop("/velocities/speed-down-fps") > 2))
     interpolate("controls/gear/runway", 1 , 0.3, 0 , 0.3);
   }
 }
