@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    #########################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
+    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
+    all with full Multiplayer Support.
+    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    D-Leon: technical assistance
+    Firefly: 3D model improvment
+    Eagel: Liveries
+    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
+    Instruments from; Tu-154b, Il-76D, 707
+    ##########################################################################################
+-->
+
+<PropertyList>
+ <path>fans2.ac</path>
+ 
+ <animation>
+   <type>material</type>
+   <object-name>fan2</object-name>   
+   <object-name>fan3</object-name>
+   <emission>
+     <factor-prop>controls/switches/gauge-light</factor-prop>
+     <red>   0.035 </red>
+     <green> 0.035 </green>
+     <blue>  0.035 </blue>
+   </emission>
+ </animation>
+
+<!--Fan animation from Valeo aug 2009-->
+
+<animation>
+	<type>spin</type>
+	<object-name>fan2</object-name>
+	<property>tu154/fan/rpm2</property>
+	<factor>-1</factor>
+	<axis>
+		<x1-m>0.674</x1-m>
+		<y1-m>-0.759</y1-m>
+		<z1-m>0.415</z1-m>
+		<x2-m>0.635</x2-m>
+		<y2-m>-0.780</y2-m>
+		<z2-m>0.453</z2-m>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>fan2</object-name>
+	<object-name>fan2.001</object-name>
+	<object-name>fan2.002</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>
+				if( getprop("tu154/fan/rpm2") == nil )
+				setprop("tu154/fan/rpm2", 0.0 );
+				if( getprop("tu154/fan/rpm2-aus") == nil )
+				setprop("tu154/fan/rpm2-aus", 1 );
+				if( getprop("tu154/fan/rpm2") == 0.0 )
+				{
+				interpolate( "tu154/fan/rpm2", 150, 2, 256, 1 );
+				setprop( "tu154/fan/rpm2-aus", 0 );
+				}
+				else
+				{
+				interpolate( "tu154/fan/rpm2", 0, 4 );
+				setprop( "tu154/fan/rpm2-aus", 1 );
+				}
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>spin</type>
+	<object-name>fan3</object-name>
+	<property>tu154/fan/rpm3</property>
+	<factor>1</factor>
+	<axis>
+		<x1-m>0.695</x1-m>
+		<y1-m>0.769</y1-m>
+		<z1-m>0.435</z1-m>
+		<x2-m>0.639</x2-m>
+		<y2-m>0.781</y2-m>
+		<z2-m>0.452</z2-m>
+	</axis>
+</animation>
+
+
+
+<animation>
+	<type>pick</type>
+	<object-name>fan3</object-name>
+	<object-name>fan3.001</object-name>
+	<object-name>fan3.002</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>
+				if( getprop("tu154/fan/rpm3") == nil )
+				setprop("tu154/fan/rpm3", 0.0 );
+				if( getprop("tu154/fan/rpm3-aus") == nil )
+				setprop("tu154/fan/rpm3-aus", 1 );
+				if( getprop("tu154/fan/rpm3") == 0.0 )
+				{
+				interpolate( "tu154/fan/rpm3", 150, 2, 256, 1 );
+				setprop( "tu154/fan/rpm3-aus", 0 );
+				}
+				else
+				{
+				interpolate( "tu154/fan/rpm3", 0, 4 );
+				setprop( "tu154/fan/rpm3-aus", 1 );
+				}
+			</script>
+		</binding>
+	</action>
+</animation>
+ 
+</PropertyList>
+

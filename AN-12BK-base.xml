@@ -88,12 +88,12 @@
       
       <description>Antonov An 12 BK (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>4.0.1</aircraft-version>    
+      <aircraft-version>4.0.2</aircraft-version>    
       <status>early production</status>
       <rating>
-	<FDM type="int">3</FDM>
-	<systems type="int">3</systems>
-	<cockpit type="int">3</cockpit>
+	<FDM type="int">4</FDM>
+	<systems type="int">4</systems>
+	<cockpit type="int">4</cockpit>
 	<model type="int">4</model>
       </rating>
       
@@ -109,7 +109,7 @@
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
 	  </livery>
-	  <AN-12BK><version type="string">4.0.1</version></AN-12BK>
+	  <AN-12BK><version type="string">4.0.2</version></AN-12BK>
 	  <anti-ice-alpha type="float">1</anti-ice-alpha>
 	  <anti-ice-rotor type="float">1</anti-ice-rotor>
 	  <iceing type="float">1</iceing>
@@ -142,6 +142,7 @@
 	      <int type="int" n="3" alias="/controls/chokes/activ">  0 </int>
 	      <int type="int" n="4" alias="/sim/replay/replay-state">  0 </int>
 	      <int type="int" n="5" alias="/controls/switches/gauge-light"/>
+	      <int type="int" n="6" alias="/controls/reverser">  0 </int>
 	      
 	      <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
 	      <int type="int" n="9" alias="/controls/lighting/landing-lights"/>
@@ -224,7 +225,7 @@
 		<desc>Change Pilot Ramp View</desc>
 	      </key>
 	      <text>
-		Wellcome to version 4.0.1 of AN-12BK-B/BK
+		Wellcome to version 4.0.2 of AN-12BK-B/BK
 		
 		Autostart: press s and make the 2 additional settings!
 		

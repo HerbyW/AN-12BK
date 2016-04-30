@@ -2507,5 +2507,8 @@ Heating</text>
         </emission>        
     </animation>
  
+ <model>
+    <path>Aircraft/AN-12BK/Models/Interior/Panel/Instruments/fan/fans.xml</path>
+  </model>
 
 </PropertyList>

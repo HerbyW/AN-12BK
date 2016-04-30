@@ -34,6 +34,7 @@
 		
 		<condition>
 		  <and>
+		    <not><property>sim/multiplay/generic/int[6]</property></not>
 		           <greater-than>
 					<property>sim/multiplay/generic/float[6]</property>
 					<value>62</value>
