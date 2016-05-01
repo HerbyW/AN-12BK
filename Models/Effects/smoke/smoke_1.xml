@@ -71,7 +71,7 @@
 			<phi-min-deg>-1</phi-min-deg>
 			<phi-max-deg> 1</phi-max-deg>
 			<speed-mps>
-				<value>80</value>
+				<property>sim/multiplay/generic/float[17]</property>
 				<spread>18</spread>
 			</speed-mps>
 			<rotation-speed>

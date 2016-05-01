@@ -579,6 +579,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-alpha", getprop("/environment/temperature-degc") * 0.03846 + 0.90 , 14 );
+      setprop("sim/messages/copilot", "Window Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -595,6 +596,7 @@ var ice = maketimer(15, func
     else
     {
       interpolate("/sim/model/anti-ice-rotor", getprop("/environment/temperature-degc") * 0.03846 , 14 );
+      setprop("sim/messages/copilot", "Propeller Ice Warning System has detected low temperature");
     }
    }
    else 
@@ -632,3 +634,23 @@ var rotorice = maketimer(15, func {
 });
 
 rotorice.start();
+
+######################################################################################################################
+# smoke shooter definition
+#  /sim/model/smokeshooterspeed  == float n="17"
+
+#<speed-mps>
+#<value>80</value>
+#<spread>15</spread>
+#</speed-mps>
+
+setlistener("gear/gear[2]/wow", func
+{
+  if (getprop("gear/gear[2]/wow") == 0)
+    setprop("/sim/model/smokeshooterspeed", 80 );
+  else
+  {
+   setprop("/sim/model/smokeshooterspeed", 35 + getprop("/gear/gear[2]/rollspeed-ms") * 0.5);
+  }
+}
+);
