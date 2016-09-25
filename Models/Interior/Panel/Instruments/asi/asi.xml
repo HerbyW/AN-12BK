@@ -35,7 +35,6 @@
     </emission>
   </animation>
 
-
     <animation>
         <type>rotate</type>
         <object-name>ASI320.needle</object-name>

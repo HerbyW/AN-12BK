@@ -1,4 +1,3 @@
-
 #    #########################################################################################
 #    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
 #    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
@@ -634,7 +633,6 @@ var rotorice = maketimer(15, func {
 });
 
 rotorice.start();
-
 ######################################################################################################################
 # smoke shooter definition
 #  /sim/model/smokeshooterspeed  == float n="17"
