@@ -117,7 +117,7 @@
         sweep="4.2"
         camber="0.1">
         <stall aoa="18" width="8" peak="1.5"/>
-        <flap0 start="0.15" end="1" lift="1.3" drag="1.7"/>
+        <flap0 start="0.15" end="1" lift="1.3" drag="1.8"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-speed control="FLAP0" transition-time="10"/>
