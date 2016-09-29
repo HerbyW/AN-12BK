@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<!--
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
+-->
+
 <!-- Antonov An 12        :  BARANGER Emmanuel (2013)
 
      Sources              : http://en.wikipedia.org/wiki/Antonov_An-12
@@ -12,19 +17,6 @@
      Max speed            : 777 km/h   (   419 kt      )
      Cruise speed         : 670 km/h   (   361 kt      )
 
-    #########################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-Mai2016
-    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
-    all with full Multiplayer Support.
-    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    D-Leon: technical assistance
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
-    Instruments from; Tu-154b, Il-76D, 707 and own developments
-    ##########################################################################################
-     
     https://en.wikipedia.org/wiki/Antonov_An-12
      
     An-12B – Bezeichnung für die zivile Versionen, die mit 200 Stück ab 1966 an die Aeroflot ausgeliefert wurde.
@@ -153,7 +145,7 @@
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="6.0"/>
+         <control-speed control="FLAP0" transition-time="8.0"/>
   </hstab>
 
   <!-- Ruder -->

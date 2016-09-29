@@ -1,26 +1,9 @@
 <?xml version="1.0"?>
  
-<!-- Generic Autopilot Configuration , softer reaction implemented by HerbyW Jan2015-->
-
 <!--
-    #########################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
-    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
-    all with full Multiplayer Support.
-    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    D-Leon: technical assistance
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
-    Instruments from; Tu-154b, Il-76D, 707
-    ##########################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
-
-<!-- Each component is evaluated in the order specified.  You can make up -->
-<!-- property names to pass the result of one component on to a subsequent -->
-<!-- component. -->
-
 
 <PropertyList>
   
@@ -113,10 +96,10 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
-      <Kp>0.085</Kp>        <!-- proportional gain -->
+      <Kp>0.065</Kp>        <!-- proportional gain 0.065-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -266,10 +249,16 @@
     <initialize-to>output</initialize-to>
     <enable>
       <condition>
-	    <equals>
-	      <property>/autopilot/locks/heading</property>
-	      <value>nav1-hold</value>
-	    </equals>
+	<or>
+	  <equals>
+	    <property>/autopilot/locks/heading</property>
+	    <value>nav1-hold</value>
+	  </equals>
+	  <equals> 
+	    <property>/autopilot/locks/heading</property>
+	    <value>dg-heading-hold</value>
+	  </equals> 
+	</or> 
       </condition>
     </enable>
     <input>
@@ -366,7 +355,7 @@
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>0.05</Kp>          <!-- proportional gain 0.3-->
+      <Kp>0.03</Kp>          <!-- proportional gain 0.3-->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -16.67-->
       <u_max>25.0</u_max>   <!-- maximum output clamp 8.33-->
@@ -493,7 +482,7 @@
     <config>
       <Kp>1.0</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
-      <u_min>-25.0</u_min> <!-- minimum output clamp -->
+      <u_min>-28.0</u_min> <!-- minimum output clamp -->
       <u_max>10.0</u_max>   <!-- maximum output clamp -->
     </config>
   </pi-simple-controller>  
@@ -574,7 +563,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.0025</Kp>      <!-- proportional gain -->
+      <Kp>-0.0015</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->

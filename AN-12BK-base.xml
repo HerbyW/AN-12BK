@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <!--
-#########################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-June2015
-    Animations, FDM, Instrumentation, Rembrandt, ALS, Paratroopers, Cargo, Sounds
-    all with full Multiplayer Support.
-    Development is ongoing, see latest version: https://github.com/HerbyW?tab=repositories
-    This file is licenced under the terms of the GNU General Public Licence V3 or later
-    D-Leon: technical assistance
-    Firefly: 3D model improvment
-    Eagel: Liveries
-    Michat, Joe, Miguel, 3m, D-07007 and many others: testing and giving hints for impovements
-    Instruments from; Tu-154b, Il-76D, 707
-    ##########################################################################################
+Copyright (C) Herbert Wagner Dec2014-2016
+see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
 <PropertyList>
-  
-  
-  
+ 
   <controls>
     <autostart type="int">0</autostart>
     <lighting>
@@ -87,14 +75,14 @@
     <sim include="Systems/views.xml">
       
       <description>Antonov An 12 BK (YASim)</description>
-      <author>HerbyW (Instrumentation, Animation, FDM, 3D-model), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>4.0.4</aircraft-version>    
-      <status>early production</status>
+      <author>HerbyW (Instrumentation, Animation, FDM, 3D), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
+      <aircraft-version>4.0.5</aircraft-version>    
+      <status>advanced production</status>
       <rating>
 	<FDM type="int">4</FDM>
 	<systems type="int">4</systems>
 	<cockpit type="int">4</cockpit>
-	<model type="int">4</model>
+	<model type="int">5</model>
       </rating>
       
       <fuel-fraction>0.6</fuel-fraction>
@@ -109,7 +97,7 @@
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
 	  </livery>
-	  <AN-12BK><version type="string">4.0.4</version></AN-12BK>
+	  <AN-12BK><version type="string">4.0.5</version></AN-12BK>
 	  <anti-ice-alpha type="float">1</anti-ice-alpha>
 	  <anti-ice-rotor type="float">1</anti-ice-rotor>
 	  <iceing type="float">1</iceing>
@@ -194,124 +182,10 @@
 	      <setting> 1.0 </setting>
 	    </flaps>
 	    
-	    <help>
-	      <title>Antonov An 12BK</title>
-	      <key>
-		<name>s</name>
-		<desc>Autostart</desc>
-	      </key>
-	      <key>
-		<name>d</name>
-		<desc>Open/Close fuselage door</desc>
-	      </key>
-	      <key>
-		<name>D</name>
-		<desc>Open/Close cargo doors</desc>
-	      </key>
-	      <key>
-		<name>=</name>
-		<desc>Parachutist</desc>
-	      </key>
-	      <key>
-		<name>Delete</name>
-		<desc>Reverser on/off</desc>
-	      </key>
-	      <key>
-		<name>&lt;</name>
-		<desc>Change Pilot Engineer View</desc>
-	      </key>
-	      <key>
-		<name>y</name>
-		<desc>Change Pilot Ramp View</desc>
-	      </key>
-	      <text>
-		Wellcome to version 4.0.4 of AN-12BK-B/BK
-		
-		Autostart: press s and make the 2 additional settings!
-		
-		Manual start up:
-		
-		- Middle top panel: Right switch group: all in upper position: Battery, Lights for Instruments and NAV lights on.
-		- Bottom middle panel: round knob for fuel in any right position - activates the tanks and pumps, a green lamp shows up.
-		- 4 Engine starter switches above the fuel knob - one to four in upper position - starting the engines, each engine needs 17 sec for running.
-		- Red lamps showing running engines, green lamps showing idle rpm.
-		- Overhead panel: all switches in up position, power for navigation radios (ADF and VOR), compass and skawk.
-		- Engineer panel: check red lamps going to green, then engines are ready to go, move throttle to idle position.
-		- Check cargo and/or payload: press y to switch to the ramp control and open the red box, for loading cargo and paratroopers.
-		
-		Additional Settings:
-		
-		1. Reference Compass at engineer panel, magnetic variation is shown as tooltip, set needle to marker position.
-		2. Altitude and/or pressure settings in the Altimeters in inHG, mmHG or hPa (as tooltip), the Autopilot will work with this values (not with the HUD-infos).
-		
-		Shut down: Fuel knob to left position or engine starter switches down.
-		
-		Failure training: you may shut down 1 to 3 engines during flight and try to land in emergency situation.
-		
-		Some instruments will show you metric values, some ft/knots.
-		
-		There is a 3 knob panel at the left side, marker volume, instrument lights and for rembrandt - cabin lights.
-		
-		The switch right from the Lights panel is for landing and taxi lights.
-		Then there is the switch for activating the parachuters and a switch for the cargo door.
-		Right from the Parachuters-switch is a switch for the new ALS lights, they are working only without Rembrandt and also not over the MP-modus.
-		
-		On the very left side you have a panel with 5 green lamps, the lower 3 are for trim-neutralisation, used after the Autopilot is dissabled.
-		The upper two you may press to get the latest METAR infos on screen.
-		
-		Reverser initialisation by the switch at the throttle or key "Delete", a red lamp shows the activ reverser. Also a placecard "R" is comming up
-		at top of the panel, the switch and the placecard can be used to deactivate the reverser. Any throttle change activates/deactivates the reverser then.
-		
-		The Autopilot Helper panel in the top middle console is fully working.You may use some instruments to put in the values:
-		- Heading Control: Heading Bug (HDG) and Course of ILS (NAV) are to set in the HSI (Horizontal Situation Indicator (with 4 green markers),
-		- Velocity Control: Speed with Throttle are set in the Speed Indicator, push IAS and turn needle (left from HSI)
-		- Pitch/Attitude Control is working if you get the plane in a climbing or descending position and push the Button VS, pitch wheel changes values.
-		- Wing leveler is activ when you push the AP button, it is also the AP activating/deactivating Button,
-		- APRP is used for intersepting the Glide Scope,
-		- GPS for flying routes from the Route Manager,
-		- ALT is holding your attitude.
-		
-		For ILS Landing you may use the HSI, it gives you the indication that ILS and/or Glide Scope is intersepted (if not, red flags comming up).
-		ILS heading works even far out the stream, for the glidscope you should wait till the indicator is in nearly horizontal position (yellow line).
-		
-		Flaps Controll Panel with 5 Steps (1-2 for starting, 2-4 for landing without payload).
-		
-		Open the backdoor during flight if you get to hot :) and take a look from the navigator view backwards.
-		
-		Trails are now working only above 14000 ft, on ground it is not realistic.
-		
-		There are 3 Altimeters: the left one is electrical and gets the information from Radio or GPS signals, in meter and mmHG,
-		the upper one is in meter and mmHG, a tooltip shows you the Value in hPa, the lower one is in ft and inHG,
-		they are connected and you should set them to the ATIS information of the airport befor starting or landing.
-		
-		The compasses are cleared of the magnetic variation if you set the reference compass in the engineer panel to the orange marker position.
-		
-		On top of the horizontal heading indicator (HSI) there are indicators for fuel low (below 2500 l),over speed warning, over-loading, parking brake,
-		outer, middle and inner marker, brake-chokes, decission hight and reverser.
-		
-		Paratroopers can be set up in the payload menue, each is 120 lb, they need a open back door to jump out, then use the switch on the panel to give
-		the signal :) From the tail cabin you may watch and control them also.
-		
-		In the tail cabin there is a additional panel, the middle instrument is for ground- and air-speed with a switch on the bottom.
-		
-		Maximal start weight is: 134481 lb = 61.000 kg. There is a warning light for overload on top of the compasses (sign: BEC).
-		
-		Radios, DMEs, ADFs and Kurs (ILS) Instruments are fully working and can be set in the Engineer-Panel.
-		
-		Liveries by eagle, for full effect: view-graphic options-shader options: model to higher position
-		
-		Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
-		
-		Latest update: Ice System, whatch out for the red lamps at the overhead panel, Runway effects (!)
-		
-		Have fun and get the latest version at:
-		github.com/HerbyW
-	      </text>
-	    </help>
+<help include="Systems/help.xml"/>
+<menubar include="Dialogs/AN-12BK-menu.xml"/>
 	    
-	    <menubar include="Dialogs/AN-12BK-menu.xml"/>
-	    
-	    </sim>  
+    </sim>  
 	    
 	    <engines>
 	      <engine n="0">
@@ -488,7 +362,4 @@
 	            <file>Aircraft/AN-12BK/Nasal/AN-12BK-stall.nas</file>
 	          </warning>
 		</nasal>
-		
-		
-		</PropertyList>
-		
+</PropertyList>
