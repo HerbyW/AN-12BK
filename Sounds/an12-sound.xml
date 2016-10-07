@@ -8,6 +8,126 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <PropertyList>
 
   <fx>
+    
+    <engineflight-L1>
+      <name>engineflight-L1</name>
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-02links.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <equals>
+	    <property>/sim/current-view/view-number</property>
+	    <value>12</value>	
+	  </equals>
+	  <equals>
+	    <property>sim/multiplay/generic/float[17]</property>
+	    <value>80</value>
+	  </equals>
+	</and>
+      </condition>
+      <volume>
+	<property>sim/multiplay/generic/float[8]</property>
+	<factor>0.38</factor>
+	<offset>0.2</offset>
+      </volume>
+      <position>
+	<x>-15.48</x>
+	<y>-0.86</y>
+	<z>-2.84</z>
+      </position>
+      <reference-dist>1.6</reference-dist>
+      <max-dist>3</max-dist>
+    </engineflight-L1>
+    
+    <engineflight-L2>
+      <name>engineflight-L2</name>
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-02links.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <equals>
+	    <property>/sim/current-view/view-number</property>
+	    <value>12</value>	
+	  </equals>
+	  <equals>
+	    <property>sim/multiplay/generic/float[17]</property>
+	    <value>80</value>
+	  </equals>
+	</and>
+      </condition>
+      <volume>
+	<property>sim/multiplay/generic/float[9]</property>
+	<factor>0.38</factor>
+	<offset>0.2</offset>
+      </volume>
+      <position>
+	<x>-15.48</x>
+	<y>-0.46</y>
+	<z>-2.84</z>
+      </position>
+      <reference-dist>1.6</reference-dist>
+      <max-dist>3</max-dist>
+    </engineflight-L2>
+    
+    <engineflight-R1>
+      <name>engineflight-R1</name>
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-02rechts.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <equals>
+	    <property>/sim/current-view/view-number</property>
+	    <value>12</value>	
+	  </equals>
+	  <equals>
+	    <property>sim/multiplay/generic/float[17]</property>
+	    <value>80</value>
+	  </equals>
+	</and>
+      </condition>
+      <volume>
+	<property>sim/multiplay/generic/float[10]</property>
+	<factor>0.38</factor>
+	<offset>0.2</offset>
+      </volume>
+      <position>
+	<x>-15.48</x>
+	<y> 0.46</y>
+	<z>-2.84</z>
+      </position>
+      <reference-dist>1.6</reference-dist>
+      <max-dist>3</max-dist>
+    </engineflight-R1>
+    
+    <engineflight-R2>
+      <name>engineflight-R2</name>
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-02rechts.wav</path>
+      <mode>looped</mode>
+      <condition>
+	<and>
+	  <equals>
+	    <property>/sim/current-view/view-number</property>
+	    <value>12</value>	
+	  </equals>
+	  <equals>
+	    <property>sim/multiplay/generic/float[17]</property>
+	    <value>80</value>
+	  </equals>
+	</and>
+      </condition>
+      <volume>
+	<property>sim/multiplay/generic/float[11]</property>
+	<factor>0.38</factor>
+	<offset>0.2</offset>
+      </volume>
+      <position>
+	<x>-15.48</x>
+	<y> 0.86</y>
+	<z>-2.84</z>
+      </position>
+      <reference-dist>1.6</reference-dist>
+      <max-dist>3</max-dist>
+    </engineflight-R2>
 
   <!-- Engines 1 -4 starting up-->
     <crank>
@@ -70,98 +190,148 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <engine>
        <name>engine0</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-01links.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[0]/rpm</property>
-        <factor>0.00034</factor>
+        <factor>0.00028</factor>
         <min>0.15</min>
         <max>0.85</max>        
       </volume>
-      <pitch>
-        <property>/engines/engine[0]/rpm</property>
-        <factor>0.00008</factor>
-        <min>0.0</min>
-        <max>0.2</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
+      <position>
+        <x>-1.95</x>
+        <y>-9.57</y>
+        <z>-1.57</z>
+      </position>
+      <reference-dist>1000</reference-dist>
+      <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine1</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-01links.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[1]/rpm</property>
-        <factor>0.00034</factor>
+        <factor>0.00028</factor>
         <min>0.15</min>
         <max>0.85</max>        
       </volume>
-      <pitch>
-        <property>/engines/engine[1]/rpm</property>
-        <factor>0.00008</factor>
-        <min>0.0</min>
-        <max>0.2</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
+      <position>
+	<x>-2.73</x>
+        <y>-4.67</y>
+        <z>-1.48</z>
+      </position>
+      <reference-dist>1000</reference-dist>
+      <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine2</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-01rechts.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[2]/rpm</property>
-        <factor>0.00034</factor>
+        <factor>0.00028</factor>
         <min>0.15</min>
         <max>0.85</max>       
       </volume>
-      <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00008</factor>
-        <min>0.0</min>
-        <max>0.2</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
+      <position>
+        <x>-2.73</x>
+        <y> 4.67</y>
+        <z>-1.48</z>
+      </position>
+      <reference-dist>1000</reference-dist>
+      <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
     
     <engine>
        <name>engine3</name>
       <mode>looped</mode>
-      <path>Aircraft/AN-12BK/Sounds/running.wav</path>      
+      <path>Aircraft/AN-12BK/Sounds/Antonov12ULTIMATE-running-01rechts.wav</path>      
         <condition>       
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>  
       <volume>
         <property>/engines/engine[3]/rpm</property>
-        <factor>0.00034</factor>
+        <factor>0.00028</factor>
         <min>0.15</min>
         <max>0.85</max>        
       </volume>
-      <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00008</factor>
-        <min>0.0</min>
-        <max>0.2</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>10000</max-dist>
+      <position>
+        <x>-1.95</x>
+        <y> 9.57</y>
+        <z>-1.57</z>
+      </position>
+      <reference-dist>1000</reference-dist>
+      <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
+    
+    <engine12r>
+      <name>engine12r</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-12BK/Sounds/Antonov22Antei-PARADISE-Views-reverse-left.wav</path>      
+      <condition>
+	<and>
+	  <or>
+	    <property>sim/multiplay/generic/int[12]</property>
+	    <property>sim/multiplay/generic/int[13]</property>
+	  </or>
+	  <property>sim/multiplay/generic/int[6]</property>
+	</and>
+      </condition>  
+      <volume>
+	<property>sim/multiplay/generic/float[8]</property>
+	<factor>0.4</factor>
+	<offset>0.1</offset>       
+      </volume>
+      <position>
+        <x>-1.95</x>
+        <y>-9.57</y>
+        <z>-1.57</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine12r>
+    
+    <engine34l>
+      <name>engine34l</name>
+      <mode>looped</mode>
+      <path>Aircraft/AN-12BK/Sounds/Antonov22Antei-PARADISE-Views-reverse-right.wav</path>      
+      <condition>
+	<and>
+	  <or>
+	    <property>sim/multiplay/generic/int[14]</property>
+	    <property>sim/multiplay/generic/int[15]</property>
+	  </or>
+	  <property>sim/multiplay/generic/int[6]</property>
+	</and>
+      </condition>  
+      <volume>
+	<property>sim/multiplay/generic/float[11]</property>
+	<factor>0.4</factor>
+	<offset>0.1</offset>      
+      </volume>
+      <position>
+        <x>-1.95</x>
+        <y> 9.57</y>
+        <z>-1.57</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>10000</max-dist>
+    </engine34l>
     
     <!-- Rumble on runway -->
 
@@ -228,6 +398,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
        </greater-than>
      </condition>
      <volume>
+       <property>sim/multiplay/generic/int[7]</property>
         <factor>0.5</factor>
       </volume>
       <reference-dist>500</reference-dist>
@@ -410,6 +581,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </equals>
       </condition>
       <volume>
+	<property>sim/multiplay/generic/int[7]</property>
         <factor>0.35</factor>
       </volume>
       <reference-dist>100</reference-dist>
@@ -449,6 +621,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </equals>
       </condition>
       <volume>
+	<property>sim/multiplay/generic/int[7]</property>
         <factor>0.35</factor>
       </volume>
       <reference-dist>100</reference-dist>
