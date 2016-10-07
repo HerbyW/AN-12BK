@@ -45,7 +45,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <condition>
     <less-than>
     <property>/engines/engine[3]/n2</property>
-    <value> 68.06 </value>
+    <value> 67.62 </value>
     </less-than>  
   </condition>
 </animation>

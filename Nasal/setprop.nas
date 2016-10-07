@@ -365,13 +365,41 @@ setprop("sim/messages/copilot", "For Autostart hit the s key!");
 ####################################################################################################################
 
 #
-# Reverser
+# Reverser and throttle control
 #
 
 setlistener("controls/engines/engine[0]/throttle", func
  {
-if
-(  getprop("/controls/reverser") == 0) 
+  if ((getprop("/controls/engines/engine[0]/throttle") < 0.075) and (getprop("controls/autostart-time") == 1)) 
+  setprop("/controls/engines/engine[0]/throttle", 0.075);
+ }
+);
+
+setlistener("controls/engines/engine[1]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[1]/throttle") < 0.075 and getprop("controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[1]/throttle", 0.075);
+ }
+);
+
+setlistener("controls/engines/engine[2]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[2]/throttle") < 0.075 and getprop("controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[2]/throttle", 0.075);
+ }
+);
+
+setlistener("controls/engines/engine[3]/throttle", func
+ {
+  if (getprop("/controls/engines/engine[3]/throttle") < 0.075 and getprop("controls/autostart-time") == 1) 
+  setprop("/controls/engines/engine[3]/throttle", 0.075);
+ }
+);
+
+
+setlistener("controls/engines/engine[0]/throttle", func
+ {
+if (getprop("/controls/reverser") == 0) 
 {
 setprop("/controls/engines/engine[0]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));
 setprop("/controls/engines/engine[1]/throttle-v", getprop("/controls/engines/engine[0]/throttle"));

@@ -5,13 +5,14 @@
 #  Copyright (C) Herbert Wagner Dec2014-2016
 #  see Read-Me.txt for all copyrights in the base folder of this aircraft
 ###########################################################################################
-
+setprop("/controls/autostart-time", 1);
 
 setlistener("/controls/autostart", func 
 
   { if(getprop("/controls/autostart") > 0.5)
       {
-	
+	setprop("/controls/autostart-time", 0);
+	interpolate("/controls/autostart-time", 1, 70);
 	setprop("/controls/electric/battery-switch", 1);
         setprop("/controls/switches/gauge-light", 1);
         setprop("/controls/lighting/nav-lights", 1);

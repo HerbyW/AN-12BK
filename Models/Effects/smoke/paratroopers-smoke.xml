@@ -75,7 +75,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 				</size>
 			</end>
 			<life-sec>
-				<value>280</value>
+				<value>720</value>
 			</life-sec>
 			<mass-kg>150</mass-kg>
 			<radius-m>1.85</radius-m>
