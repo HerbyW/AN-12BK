@@ -318,7 +318,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/dinamik_pr2.wav</path>
        <condition>
         <greater-than>
-	 <property>intrumentation/airspeed-indicator/true-speed-kt</property>
+	 <property>instrumentation/airspeed-indicator/true-speed-kt</property>
 	 <value>419</value>
          </greater-than>
         </condition> 
