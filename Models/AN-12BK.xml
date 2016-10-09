@@ -218,7 +218,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
   
   <effect>
-    <inherits-from>Aircraft/AN-12BK/Models/Effects/skin-reflect</inherits-from>
+    <inherits-from>Aircraft/AN-12BK/Models/Effects/c182sreflect-uber_body</inherits-from>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
