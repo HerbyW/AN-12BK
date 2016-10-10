@@ -75,7 +75,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[12]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <factor>0.00034</factor>
         <min>0.15</min>
         <max>0.85</max>        
@@ -98,7 +98,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[13]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[1]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>0.00034</factor>
         <min>0.15</min>
         <max>0.85</max>        
@@ -121,7 +121,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[14]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[2]/rpm</property>
+        <property>engines/engine[2]/rpm</property>
         <factor>0.00034</factor>
         <min>0.15</min>
         <max>0.85</max>       
@@ -144,7 +144,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
          <property>sim/multiplay/generic/int[15]</property>         
         </condition>  
       <volume>
-        <property>/engines/engine[3]/rpm</property>
+        <property>engines/engine[3]/rpm</property>
         <factor>0.00034</factor>
         <min>0.15</min>
         <max>0.85</max>        
@@ -220,7 +220,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <mode>looped</mode>
       <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
-          <property>/gear/gear[0]/wow</property>
+          <property>gear/gear[0]/wow</property>
       </condition>
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
@@ -239,8 +239,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
         <or>          
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
         </or>
       </condition>
       <volume>
@@ -260,7 +260,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>gear</name>
       <mode>in-transit</mode>
       <path>Aircraft/AN-12BK/Sounds/gear.wav</path>
-      <property>/gear/gear[0]/position-norm</property>
+      <property>gear/gear[0]/position-norm</property>
       <volume>
         <factor>0.5</factor>
       </volume>
@@ -273,11 +273,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <path>Aircraft/AN-12BK/Sounds/gear-lck.wav</path>
      <condition>
        <greater-than>
-         <property>/gear/gear[0]/position-norm</property>
+         <property>gear/gear[0]/position-norm</property>
          <value>0.96</value>
        </greater-than>
      </condition>
      <volume>
+       <property>sim/multiplay/generic/int[7]</property>
         <factor>0.5</factor>
       </volume>
       <reference-dist>500</reference-dist>
@@ -294,6 +295,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <property>sim/multiplay/generic/int[18]</property>                 
       </condition>
         <volume>
+	  <property>sim/multiplay/generic/int[7]</property>
         <factor>0.15</factor>
       </volume>
       <reference-dist>1000</reference-dist>
@@ -308,6 +310,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <property>sim/multiplay/generic/int[19]</property>          
       </condition>
         <volume>
+	  <property>sim/multiplay/generic/int[7]</property>
         <factor>0.15</factor>
       </volume>
       <reference-dist>1000</reference-dist>
@@ -320,7 +323,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Aircraft/AN-12BK/Sounds/flaps.wav</path>
-      <property>/surface-positions/flap-pos-norm</property>
+      <property>surface-positions/flap-pos-norm</property>
       <volume>
         <factor>0.35</factor>
       </volume>
@@ -363,6 +366,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </equals>
       </condition>
       <volume>
+	<property>sim/multiplay/generic/int[7]</property>
         <factor>0.35</factor>
       </volume>
       <reference-dist>100</reference-dist>
@@ -402,6 +406,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </equals>
       </condition>
       <volume>
+	<property>sim/multiplay/generic/int[7]</property>
         <factor>0.35</factor>
       </volume>
       <reference-dist>100</reference-dist>

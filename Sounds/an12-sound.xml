@@ -489,7 +489,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/dinamik_pr2.wav</path>
        <condition>
         <greater-than>
-	 <property>instrumentation/airspeed-indicator/true-speed-kt</property>
+	 <property>/instrumentation/airspeed-indicator/true-speed-kt</property>
 	 <value>419</value>
          </greater-than>
         </condition> 
@@ -511,15 +511,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
    <path>Aircraft/AN-12BK/Sounds/stall.wav</path>
    <condition>
      <and>
-       <property>instrumentation/alerts/stall</property>
+       <property>/instrumentation/alerts/stall</property>
        <greater-than>
-	 <property>sim/time/elapsed-sec</property>
+	 <property>/sim/time/elapsed-sec</property>
 	 <value>100</value>
        </greater-than>
      </and>
    </condition>    
    <volume>
-     <property>instrumentation/alerts/stall</property>
+     <property>/instrumentation/alerts/stall</property>
      <max>1.0</max>
    </volume>
    <reference-dist>10</reference-dist>
@@ -534,8 +534,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 -      <path>Aircraft/AN-12BK/Sounds/omi_1.wav</path>
 -      <condition>
 -    <less-than>
--      <property>position/altitude-agl-ft</property>
--      <property>instrumentation/altimeter/decision-height</property>      
+-      <property>/position/altitude-agl-ft</property>
+-      <property>/instrumentation/altimeter/decision-height</property>      
 -    </less-than>
 -  </condition>
 -      <volume>
@@ -689,7 +689,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <property>/instrumentation/adf[0]/in-range</property>         
        </condition>
       <volume>
-	<property>instrumentation/adf[0]/volume</property>	
+	<property>/instrumentation/adf[0]/volume</property>	
         <min>0.00</min>
         <max>1.0</max>
       </volume>      
@@ -705,7 +705,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
           <property>/instrumentation/adf[1]/in-range</property>        
        </condition>
       <volume>	
-	<property>instrumentation/adf[1]/volume</property>
+	<property>/instrumentation/adf[1]/volume</property>
         <min>0.00</min>
         <max>1.0</max>
       </volume>      
@@ -737,7 +737,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <mode>looped</mode>
       <path>Aircraft/AN-12BK/Sounds/Meow-sound-effect.wav</path>
       <condition>    
-      <property>controls/switches/cat</property>      
+      <property>/controls/switches/cat</property>      
       </condition>
       <volume>
         <min>0.8</min>
@@ -756,15 +756,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	  <greater-than>
-	    <property>tu154/fan/rpm2</property>
+	    <property>/tu154/fan/rpm2</property>
 	    <value>0.0</value>
 	  </greater-than>
 	  <less-than>
-	    <property>tu154/fan/rpm2</property>
+	    <property>/tu154/fan/rpm2</property>
 	    <value>150.0</value>
 	  </less-than>
 	  <equals>
-	  <property>tu154/fan/rpm2-aus</property>
+	  <property>/tu154/fan/rpm2-aus</property>
 	  <value>0</value>
 	</equals>
 	</and>
@@ -789,11 +789,11 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	<greater-than>
-	  <property>tu154/fan/rpm2</property>
+	  <property>/tu154/fan/rpm2</property>
 	  <value>150.0</value>
 	</greater-than>
 	<equals>
-	  <property>tu154/fan/rpm2-aus</property>
+	  <property>/tu154/fan/rpm2-aus</property>
 	  <value>0</value>
 	</equals>
 	</and>
@@ -818,11 +818,11 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	<greater-than>
-	  <property>tu154/fan/rpm2</property>
+	  <property>/tu154/fan/rpm2</property>
 	  <value>150.0</value>
 	</greater-than>
 	<equals>
-	  <property>tu154/fan/rpm2-aus</property>
+	  <property>/tu154/fan/rpm2-aus</property>
 	  <value>1</value>
 	</equals>
 	</and>
@@ -847,15 +847,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	  <greater-than>
-	    <property>tu154/fan/rpm3</property>
+	    <property>/tu154/fan/rpm3</property>
 	    <value>0.0</value>
 	  </greater-than>
 	  <less-than>
-	    <property>tu154/fan/rpm3</property>
+	    <property>/tu154/fan/rpm3</property>
 	    <value>150.0</value>
 	  </less-than>
 	  <equals>
-	  <property>tu154/fan/rpm3-aus</property>
+	  <property>/tu154/fan/rpm3-aus</property>
 	  <value>0</value>
 	</equals>
 	</and>
@@ -880,11 +880,11 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	<greater-than>
-	  <property>tu154/fan/rpm3</property>
+	  <property>/tu154/fan/rpm3</property>
 	  <value>150.0</value>
 	</greater-than>
 	<equals>
-	  <property>tu154/fan/rpm3-aus</property>
+	  <property>/tu154/fan/rpm3-aus</property>
 	  <value>0</value>
 	</equals>
 	</and>
@@ -909,11 +909,11 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <condition>
 	<and>
 	<greater-than>
-	  <property>tu154/fan/rpm3</property>
+	  <property>/tu154/fan/rpm3</property>
 	  <value>150.0</value>
 	</greater-than>
 	<equals>
-	  <property>tu154/fan/rpm3-aus</property>
+	  <property>/tu154/fan/rpm3-aus</property>
 	  <value>1</value>
 	</equals>
 	</and>
