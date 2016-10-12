@@ -387,7 +387,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.0025</Kp>      <!-- proportional gain -0.003-->
+      <Kp>-0.003</Kp>      <!-- proportional gain -0.003-->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor 0.1-->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -510,7 +510,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/controls/flight/elevator-trim-filter</prop>
     </output>
     <config>
-      <Kp>-0.0015</Kp><!-- 0.065 -->
+      <Kp>-0.0025</Kp><!-- 0.065 -->
       <beta>1.0</beta>
       <alpha>0.1</alpha>
       <gamma>0.0</gamma>
