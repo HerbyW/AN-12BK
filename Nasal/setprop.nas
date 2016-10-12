@@ -678,13 +678,13 @@ rotorice.start();
 #<spread>15</spread>
 #</speed-mps>
 
-setlistener("gear/gear[2]/wow", func
+setlistener("gear/gear[1]/wow", func
 {
-  if (getprop("gear/gear[2]/wow") == 0)
+  if (getprop("gear/gear[1]/wow") == 0)
     setprop("/sim/model/smokeshooterspeed", 80 );
   else
   {
-   setprop("/sim/model/smokeshooterspeed", 35 + getprop("/gear/gear[2]/rollspeed-ms") * 0.5);
+   setprop("/sim/model/smokeshooterspeed", 35 + getprop("/gear/gear[1]/rollspeed-ms") * 0.5);
   }
 }
 );

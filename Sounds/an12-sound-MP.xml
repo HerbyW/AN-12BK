@@ -76,16 +76,24 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </condition>  
       <volume>
         <property>engines/engine[0]/rpm</property>
-        <factor>0.00034</factor>
-        <min>0.15</min>
-        <max>0.85</max>        
+        <factor>0.000328</factor>
+        <min>0.18</min>
+        <max>1.0</max>        
       </volume>
       <position>
         <x>-1.95</x>
         <y>-9.57</y>
         <z>-1.57</z>
       </position>
-      <reference-dist>1000</reference-dist>
+      <orientation>
+         <x> 1 </x>
+         <y> 0 </y>
+         <z> 0 </z>
+         <inner-angle>160</inner-angle>
+         <outer-angle>200</outer-angle>
+         <outer-gain>0.7</outer-gain>
+      </orientation>
+      <reference-dist>100</reference-dist>
       <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
@@ -99,16 +107,24 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </condition>  
       <volume>
         <property>engines/engine[1]/rpm</property>
-        <factor>0.00034</factor>
-        <min>0.15</min>
-        <max>0.85</max>        
+        <factor>0.000328</factor>
+        <min>0.18</min>
+        <max>1.0</max>        
       </volume>
       <position>
 	<x>-2.73</x>
         <y>-4.67</y>
         <z>-1.48</z>
       </position>
-      <reference-dist>1000</reference-dist>
+      <orientation>
+         <x> 1 </x>
+         <y> 0 </y>
+         <z> 0 </z>
+         <inner-angle>160</inner-angle>
+         <outer-angle>200</outer-angle>
+         <outer-gain>0.7</outer-gain>
+      </orientation>
+      <reference-dist>100</reference-dist>
       <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
@@ -122,16 +138,24 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </condition>  
       <volume>
         <property>engines/engine[2]/rpm</property>
-        <factor>0.00034</factor>
-        <min>0.15</min>
-        <max>0.85</max>       
+        <factor>0.000328</factor>
+        <min>0.18</min>
+        <max>1.0</max>        
       </volume>
       <position>
         <x>-2.73</x>
         <y> 4.67</y>
         <z>-1.48</z>
       </position>
-      <reference-dist>1000</reference-dist>
+      <orientation>
+         <x> 1 </x>
+         <y> 0 </y>
+         <z> 0 </z>
+         <inner-angle>160</inner-angle>
+         <outer-angle>200</outer-angle>
+         <outer-gain>0.7</outer-gain>
+      </orientation>
+      <reference-dist>100</reference-dist>
       <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
@@ -145,16 +169,25 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
         </condition>  
       <volume>
         <property>engines/engine[3]/rpm</property>
-        <factor>0.00034</factor>
-        <min>0.15</min>
-        <max>0.85</max>        
+        <factor>0.000328</factor>
+        <min>0.18</min>
+        <max>1.0</max>         
       </volume>
       <position>
         <x>-1.95</x>
         <y> 9.57</y>
         <z>-1.57</z>
       </position>
-      <reference-dist>1000</reference-dist>
+      <orientation>
+         <x> 1 </x>
+         <y> 0 </y>
+         <z> 0 </z>
+         <inner-angle>160</inner-angle>
+         <outer-angle>200</outer-angle>
+         <outer-gain>0.7</outer-gain>
+      </orientation>
+      <reference-dist>100</reference-dist>
+      <max-dist>22000</max-dist>
       <max-dist>22000</max-dist>
       <delay-sec>17</delay-sec>
     </engine>
@@ -174,7 +207,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </condition>  
       <volume>
 	<property>sim/multiplay/generic/float[8]</property>
-	<factor>0.4</factor>
+	<factor>0.55</factor>
 	<offset>0.1</offset>       
       </volume>
       <position>
@@ -201,7 +234,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </condition>  
       <volume>
 	<property>sim/multiplay/generic/float[11]</property>
-	<factor>0.4</factor>
+	<factor>0.55</factor>
 	<offset>0.1</offset>      
       </volume>
       <position>
@@ -220,14 +253,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <mode>looped</mode>
       <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
-          <property>gear/gear[0]/wow</property>
+          <property>sim/multiplay/generic/int[16]</property>
       </condition>
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.25</factor>
+        <factor>0.18</factor>
 	<min>0.0</min>
-        <max>0.15</max>
+        <max>0.45</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>3000</max-dist>
@@ -239,16 +272,16 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/24roll.wav</path>
       <condition>
         <or>          
-          <property>gear/gear[1]/wow</property>
-          <property>gear/gear[2]/wow</property>
+          <property>sim/multiplay/generic/int[18]</property>
+          <property>sim/multiplay/generic/int[19]</property>
         </or>
       </condition>
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.25</factor>
+        <factor>0.18</factor>
 	<min>0.0</min>
-        <max>0.15</max>
+        <max>0.45</max>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>3000</max-dist>
@@ -412,10 +445,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
     </door>
-
-        <!-- Wind -->
-
-
 
   </fx>
 
