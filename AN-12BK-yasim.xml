@@ -40,24 +40,16 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     (Kompleks – avionics) : An increased 30-tonne (66,140 lb) payload, improved avionics suite, TG-16M APU and the widened cargo door of the An-12BP
     characterized the An-12BK, which was built exclusively for the VTA.
     
-    YASim solution results: elevator lift 2.3
-       Iterations: 909
- Drag Coefficient: 11.7163
-       Lift Ratio: 253.2
-       Cruise AoA: -0.888113
-   Tail Incidence: 1.3037
-Approach Elevator: -0.315134
-            CG: 2.717, -0.000, -1.480
-            
-     YASim solution results: elevator lift 1.5
-     Iterations: 916
- Drag Coefficient: 11.7164
-       Lift Ratio: 253.21
-       Cruise AoA: -0.888205
-   Tail Incidence: 1.3038
-Approach Elevator: -0.819298
-            CG: 2.717, -0.000, -1.480
     
+            
+            YASim solution results:
+       Iterations: 1151
+ Drag Coefficient: 10.7203
+       Lift Ratio: 331.484
+       Cruise AoA: 0.672848
+   Tail Incidence: -0.500049
+Approach Elevator: -0.45499
+            CG: 2.717, -0.000, -1.480
 -->
 
 <airplane mass="62000" version="YASIM_VERSION_CURRENT">
@@ -124,7 +116,7 @@ Approach Elevator: -0.819298
         length="13.392"
         taper="0.54"
         sweep="4.2"
-        camber="0.1">
+        camber="0.03">
         <stall aoa="18" width="8" peak="1.5"/>
         <flap0 start="0.15" end="1" lift="1.3" drag="1.8"/>
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
@@ -158,11 +150,11 @@ Approach Elevator: -0.819298
          sweep="3.5"
          taper="0.45">
          <stall aoa="18" width="8" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <flap0 start="0" end="1" lift="1.7" drag="1.2"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="8.0"/>
+         <control-speed control="FLAP0" transition-time="5.0"/>
   </hstab>
 
   <!-- Ruder -->

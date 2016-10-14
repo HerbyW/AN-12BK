@@ -355,7 +355,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/autopilot/internal/target-climb-rate-fps</prop>
     </output>
     <config>
-      <Kp>0.03</Kp>          <!-- proportional gain 0.3-->
+      <Kp>0.045</Kp>          <!-- proportional gain 0.3-->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-25.0</u_min> <!-- minimum output clamp -16.67-->
       <u_max>25.0</u_max>   <!-- maximum output clamp 8.33-->
@@ -483,7 +483,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <Kp>1.0</Kp>          <!-- proportional gain -->
       <Ki>0.0</Ki>          <!-- integral gain -->
       <u_min>-28.0</u_min> <!-- minimum output clamp -->
-      <u_max>10.0</u_max>   <!-- maximum output clamp -->
+      <u_max>15.0</u_max>   <!-- maximum output clamp -->
     </config>
   </pi-simple-controller>  
   
