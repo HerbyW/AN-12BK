@@ -200,7 +200,7 @@ Approach Elevator: -0.45499
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             bsfc="0.65"> 
+                             bsfc="0.41"> 
                              <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[0]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -228,7 +228,7 @@ Approach Elevator: -0.45499
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             bsfc="0.65"> 
+                             bsfc="0.41"> 
                              <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[1]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -256,7 +256,7 @@ Approach Elevator: -0.45499
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             bsfc="0.65"> 
+                             bsfc="0.41"> 
                              <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[2]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
@@ -284,7 +284,7 @@ Approach Elevator: -0.45499
                              n2-low-idle="32"
                              n2-high-idle="65"
                              n2-max="100"
-                             bsfc="0.65"> 
+                             bsfc="0.41"> 
                              <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
                              <control-input axis="/controls/engines/engine[3]/throttle-v" control="THROTTLE"/>
              </turbine-engine>
