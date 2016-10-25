@@ -38,7 +38,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>/sim/model/lights/sbc1/state</property>
+      <property>sim/multiplay/generic/int[11]</property>
     </condition>
   </animation>
 
@@ -49,6 +49,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <red>   2 </red>
       <green> 2 </green>
       <blue>  2 </blue>
+      <factor-prop>sim/multiplay/generic/int[11]</factor-prop>
     </emission>
   </animation>
 
@@ -61,13 +62,5 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>Light</object-name>
-    <condition>
-      <property>controls/lighting/nav-lights</property>
-    </condition>
-  </animation>
--->
+
 </PropertyList>

@@ -37,7 +37,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <type>select</type>
     <object-name>strobe</object-name>
     <condition>
-      <property>/sim/model/lights/beacon/state</property>
+      <property>sim/multiplay/generic/int[1]</property>
     </condition>
   </animation>
   
@@ -55,7 +55,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <red>   1 </red>
       <green> 1 </green>
       <blue>  1 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>sim/multiplay/generic/int[1]</factor-prop>
     </emission>
   </animation>
 
@@ -68,13 +68,5 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <entry><ind> 1500 </ind><dep> 4 </dep></entry>
     </interpolation>
   </animation>
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>Light</object-name>
-    <condition>
-      <property>controls/lighting/nav-lights</property>
-    </condition>
-  </animation>
--->
+
 </PropertyList>

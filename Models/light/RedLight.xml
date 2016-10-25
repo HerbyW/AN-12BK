@@ -33,6 +33,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <spherical type="bool">true</spherical>
   </animation>
 
+      <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+      <property>sim/multiplay/generic/int[8]</property>
+    </condition>
+  </animation>
+
+  
   <animation>
     <type>material</type>
     <object-name>Light</object-name>
@@ -40,7 +49,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <red>   1 </red>
       <green> 1 </green>
       <blue>  1 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>sim/multiplay/generic/int[8]</factor-prop>
     </emission>
   </animation>
 
@@ -53,13 +62,5 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>
-<!--
-  <animation>
-    <type>select</type>
-    <object-name>Light</object-name>
-    <condition>
-      <property>controls/lighting/nav-lights</property>
-    </condition>
-  </animation>
--->
+
 </PropertyList>
