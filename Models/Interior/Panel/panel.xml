@@ -1902,7 +1902,7 @@ Lights</text>
     <offsets>
       <x-m>  25.3 </x-m>
       <y-m> -1.0 </y-m>
-      <z-m> 0.7 </z-m>
+      <z-m> 0.8 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>
@@ -1912,7 +1912,7 @@ Lights</text>
     <offsets>
       <x-m>  25.3 </x-m>
       <y-m> -1.0 </y-m>
-      <z-m> 0.8 </z-m>
+      <z-m> 0.9 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model> 
@@ -1922,7 +1922,7 @@ Lights</text>
     <offsets>
       <x-m>  25.3 </x-m>
       <y-m> -1.0 </y-m>
-      <z-m> 0.9 </z-m>
+      <z-m> 0.7 </z-m>
       <heading-deg>180.0</heading-deg>
     </offsets>
   </model>  

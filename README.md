@@ -14,8 +14,6 @@ Some Instruments are from: Tu-154b, Il-76D
 
 Many files for light and smoke are derivated from 707 by Lake of Constance Hangar :: M.Kraus
 
-The document folder contains copyrighted material with is mentioned in the txt-file.
-
 Each xml-file holds own copyright notices.
 
 Most content is GPL some not.
