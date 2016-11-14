@@ -14,7 +14,7 @@
 var jumper = aircraft.light.new("controls/paratroopers/trigger", [0.5,0.5], "controls/paratroopers/jump-signal");
 
 
-var listener_id = setlistener("sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 120)},  0, 0);
+var listener_id = setlistener("/sim/weight[2]/weight-lb" , func {setprop("controls/paratroopers/paratroopers", getprop("/sim/weight[2]/weight-lb") / 120)},  0, 0);
 
 
 
@@ -44,7 +44,7 @@ setlistener("controls/paratroopers/trigger/state", func(state){
 
 var storageWeight = 6000;
 
-var listener_id2 = setlistener("sim/weight[3]/weight-lb" , func {setprop("controls/storage/storage", getprop("/sim/weight[3]/weight-lb") / storageWeight)}, 0, 0);
+var listener_id2 = setlistener("/sim/weight[3]/weight-lb" , func {setprop("controls/storage/storage", getprop("/sim/weight[3]/weight-lb") / storageWeight)}, 0, 0);
 
 var storageTimerRunning = 0;
 var storageTimer = func(){

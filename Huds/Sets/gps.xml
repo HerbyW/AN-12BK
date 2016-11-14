@@ -347,7 +347,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	      <format>Cargo:%6.1f..................................LBS</format>
 	      <halign>left</halign>
 	      <input>
-		<property>sim/weight[1]/weight-lb</property>
+		<property>/sim/weight[1]/weight-lb</property>
 	      </input>
 	    </label>	    
 	    
