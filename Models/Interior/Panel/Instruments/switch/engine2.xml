@@ -28,7 +28,7 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/engines/engine[2]/condition</property>
+        <property>controls/engines/engine[2]/condition</property>
       </binding>      
     </action>
   </animation>
@@ -36,7 +36,7 @@
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>/controls/engines/engine[2]/condition</property>
+    <property>controls/engines/engine[2]/condition</property>
     <factor> -50 </factor>
     <center>
       <x-m> 0 </x-m>

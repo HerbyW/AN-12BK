@@ -25,7 +25,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      <object-name>Cone</object-name>
      <object-name>Cone-texture</object-name>
      <condition>
-       <property>sim/rendering/rembrandt/enabled</property>
+       <property>/sim/rendering/rembrandt/enabled</property>
      </condition>
    </effect>
   

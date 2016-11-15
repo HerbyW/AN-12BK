@@ -52,7 +52,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>hour_needle</object-name>
-  <property>/instrumentation/clock/indicated-min</property>
+  <property>instrumentation/clock/indicated-min</property>
   <factor>-0.5</factor>
   <axis>
     <x>1.0</x>
@@ -64,7 +64,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>hour_needle</object-name>
-  <property>/instrumentation/clock/local-hour</property>
+  <property>instrumentation/clock/local-hour</property>
   <factor>-30.0</factor>
   <axis>
     <x>1.0</x>
@@ -76,7 +76,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>min_needle</object-name>
-  <property>/instrumentation/clock/indicated-sec</property>
+  <property>instrumentation/clock/indicated-sec</property>
   <factor>-0.1</factor>
   <axis>
     <x>1.0</x>
@@ -88,7 +88,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>sec_needle</object-name>
-  <property>/instrumentation/clock/indicated-sec</property>
+  <property>instrumentation/clock/indicated-sec</property>
   <factor>-6.0</factor>
   <axis>
     <x>1.0</x>
@@ -102,7 +102,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>timer_hour_needle</object-name>
-  <property>/instrumentation/stopwatch/flight-time/hours</property>
+  <property>instrumentation/stopwatch/flight-time/hours</property>
   <interpolation>
 		    <entry><ind> 0</ind><dep> 0 </dep></entry>
 		    <entry><ind>60</ind><dep>360</dep></entry>
@@ -122,7 +122,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>timer_min_needle</object-name>
-  <property>/instrumentation/stopwatch/flight-time/minutes</property>
+  <property>instrumentation/stopwatch/flight-time/minutes</property>
 			<interpolation>
 				<entry><ind> 0</ind><dep>  0</dep></entry>
 				<entry><ind>60</ind><dep>360</dep></entry>
@@ -142,7 +142,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
   <type>rotate</type>
   <object-name>secundomer_needle</object-name>
-  <property>/instrumentation/stopwatch/flight-time/seconds</property>
+  <property>instrumentation/stopwatch/flight-time/seconds</property>
 		  <interpolation>
 		    <entry><ind> 0</ind><dep>  0</dep></entry>
 		    <entry><ind>60</ind><dep>360</dep></entry>

@@ -376,7 +376,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	     	<value>0.1</value>
 		</greater-than>
 			<equals>
-				<property>sim/current-view/view-number</property>
+				<property>/sim/current-view/view-number</property>
 				<value>6</value>
 			</equals>
 			
@@ -386,7 +386,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 			</not>
 		</condition>
 		<volume>
-		<property>engines/engine[1]/rpm</property> 
+		<property>/engines/engine[1]/rpm</property> 
 		<factor>0.0005</factor>
 		<offset>0.0</offset>
 		</volume>

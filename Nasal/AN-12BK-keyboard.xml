@@ -31,7 +31,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <desc>Jump signal</desc>
     <binding>
       <command>property-toggle</command>
-      <property>controls/paratroopers/jump-signal</property>
+      <property>/controls/paratroopers/jump-signal</property>
       <value>true</value>
     </binding>
   </key>
@@ -41,7 +41,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <desc>Autostart</desc>
     <binding>
       <command>property-toggle</command>
-      <property>controls/autostart</property>
+      <property>/controls/autostart</property>
       <value>true</value>
     </binding>
   </key>
@@ -51,7 +51,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <desc>Change Pilot Engineer View</desc>
   <binding>
     <command>property-cycle</command>
-      <property>sim/current-view/view-number</property>  
+      <property>/sim/current-view/view-number</property>  
       <value>0</value>
       <value>9</value>
   </binding>
@@ -62,7 +62,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<desc>Change Pilot Ramp View</desc>
   <binding>
       <command>property-cycle</command>
-      <property>sim/current-view/view-number</property>  
+      <property>/sim/current-view/view-number</property>  
       <value>0</value>
       <value>13</value>
   </binding>
@@ -73,7 +73,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	<desc>Toggle Reversers</desc>
   <binding>
       <command>property-cycle</command>
-      <property>controls/reverser</property>
+      <property>/controls/reverser</property>
       <value>true</value>
       <value>false</value>
   </binding>

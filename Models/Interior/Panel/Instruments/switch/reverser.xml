@@ -28,7 +28,7 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/reverser</property>
+        <property>controls/reverser</property>
       </binding>      
     </action>
   </animation>
@@ -36,7 +36,7 @@
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>/controls/reverser</property>
+    <property>controls/reverser</property>
     <factor> -50 </factor>
     <center>
       <x-m> 0 </x-m>

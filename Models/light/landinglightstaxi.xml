@@ -44,7 +44,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <condition>
       <and>
 	<not>
-	    <property>sim/rendering/rembrandt/enabled</property>
+	    <property>/sim/rendering/rembrandt/enabled</property>
 	  </not>
 	<greater-than>
 	  <property>gear/gear[0]/position-norm</property>

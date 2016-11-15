@@ -16,13 +16,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <!--    
  YASim solution results:
-       Iterations: 909
-       Drag Coefficient: 11.7163
-       Lift Ratio: 253.2
-       Cruise AoA: -0.888113
-       Tail Incidence: 1.3037
-       Approach Elevator: -0.315134
-       CG: 2.717, -0.000, -1.480
+       Iterations: 1151
+ Drag Coefficient: 10.7203
+       Lift Ratio: 331.484
+       Cruise AoA: 0.672848
+   Tail Incidence: -0.500049
+Approach Elevator: -0.45499
+            CG: 2.717, -0.000, -1.480
 -->    
 
 </sim>
