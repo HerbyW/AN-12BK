@@ -12,7 +12,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <!-- Altimeter UVID-15 feet
 3D instrument for Tu-154 -->
 <PropertyList>
-  <path>uvid-15f4.ac</path>
+  <path>uvid-15f3.ac</path>
   
   <animation>
     <object-name>fond</object-name>
@@ -58,28 +58,28 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </emission>
   </animation>
   
-  <!--Warning lamp-->
-  <animation>
-    <type>material</type>
-    <object-name>lamp</object-name>
-    <emission>
-      <red>1.0</red>
-      <green>1.0</green>
-      <blue>1.0</blue>
-      <factor-prop>controls/switches/gauge-light</factor-prop>
-    </emission>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>lamp</object-name>
-    <condition>    
-      <greater-than>
-	<property>controls/switches/gauge-light</property>
-	<value>0.5</value>
-      </greater-than>       
-    </condition>
-  </animation>
+<!--Warning lamp-->
+<animation>
+  <type>material</type>
+  <object-name>lamp</object-name>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+    <factor-prop>sim/signals/fdm-initialized</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>lamp</object-name>
+  <condition>    
+       <equals>
+      	<property>/instrumentation/altimeter/setting-inhg</property>
+        <value>29.92</value>
+       </equals>       
+  </condition>
+</animation>
   
   
   <!--Needles-->
