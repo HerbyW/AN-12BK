@@ -1476,30 +1476,13 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </model>
  
     <!-- NEW   Taxi and Landing Lights-->
+
   <model>
-    <path>Aircraft/AN-12BK/Models/light/landinglightstaxi.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/AN12BK-lights.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
-  </model>
-  <!-- Landing lamps on top -->
-  <model>
-    <path>Aircraft/AN-12BK/Models/light/landinglights.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-    <path>Aircraft/AN-12BK/Models/light/AN12-lights.xml</path>
-    <offsets>
-      <x-m> 4.20</x-m>
-      <y-m>   0.0 </y-m>
-      <z-m>  -2.9 </z-m>
+      <x-m> 0.0</x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
     </offsets>
   </model>
   
