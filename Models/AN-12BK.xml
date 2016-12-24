@@ -7,7 +7,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <PropertyList>
 
-  <path>an12-52.ac</path>
+  <path>an12-53.ac</path>
 
   <nasal>
     <load>
@@ -74,6 +74,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>porte</object-name>
+    <object-name>pilotdoor</object-name>
+    <object-name>box</object-name>
     <object-name>baie</object-name>
     <object-name>baieG</object-name>
     <object-name>baieD</object-name>
@@ -134,6 +136,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>porte</object-name>
+    <object-name>pilotdoor</object-name>
+    <object-name>box</object-name>
     <object-name>baie</object-name>
     <object-name>baieG</object-name>
     <object-name>baieD</object-name>
@@ -224,6 +228,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </condition>
     <object-name>fuselage</object-name>
     <object-name>porte</object-name>
+    <object-name>pilotdoor</object-name>
+    <object-name>box</object-name>
     <object-name>baie</object-name>
     <object-name>baieG</object-name>
     <object-name>baieD</object-name>
@@ -260,6 +266,8 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </condition>
     <object-name>fuselage</object-name>
     <object-name>porte</object-name>
+    <object-name>pilotdoor</object-name>
+    <object-name>box</object-name>
     <object-name>baie</object-name>
     <object-name>baieG</object-name>
     <object-name>baieD</object-name>
@@ -1312,6 +1320,27 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <z> 1 </z>
     </axis>
   </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>pilotdoor</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 50 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -13.71 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -3.991 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
   <animation>
     <type>pick</type>
@@ -1472,6 +1501,48 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <x-m>  14.32 </x-m>
       <y-m>   0.00 </y-m>
       <z-m>   5.10 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Ambient special effect lamps-->
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -3.808 </x-m>
+      <y-m> 1.842 </y-m>
+      <z-m> -3.905 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -3.808 </x-m>
+      <y-m> -1.842 </y-m>
+      <z-m> -3.905 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -0.294 </x-m>
+      <y-m> 1.836 </y-m>
+      <z-m> -3.962 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -0.294 </x-m>
+      <y-m> -1.836 </y-m>
+      <z-m> -3.962 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <offsets>
+      <x-m> -12.174 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -4.194 </z-m>
     </offsets>
   </model>
  

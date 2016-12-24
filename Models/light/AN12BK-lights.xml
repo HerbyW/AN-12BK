@@ -64,6 +64,28 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </condition>
     </animation>
   
+  <animation>
+    <type>rotate</type>
+    <object-name>landinglamp3</object-name>
+    <object-name>spot_glass3</object-name>
+    <object-name>spot_glass3.001</object-name>
+    <property>sim/multiplay/generic/float[0]</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 50 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -13.71 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> -3.991 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
   
   <animation>
     <type>rotate</type>
@@ -238,16 +260,15 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
   <!-- No preview for fgrun-->
   <animation>
-    <object-name>LightVolumeLL</object-name> 
+    <object-name>LightVolumeLL</object-name>
     <object-name>LightVolumeRL</object-name>
     <object-name>LightVolumeML</object-name>
-    <object-name>LightVolumeLT</object-name> 
+    <object-name>LightVolumeLT</object-name>
     <object-name>LightVolumeRT</object-name>
     <object-name>LightVolumeMT</object-name>
     <object-name>SpotLL</object-name> 
     <object-name>SpotLT</object-name>
     <object-name>Cone-textureTL</object-name>
-    <object-name>Cone-textureTR</object-name>
     <object-name>Cone-textureLL</object-name>
     <object-name>Cone-textureLR</object-name>
     <object-name>Cone-textureLM</object-name>
@@ -268,7 +289,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <object-name>SpotLL</object-name> 
     <object-name>SpotLT</object-name>
     <object-name>Cone-textureTL</object-name>
-    <object-name>Cone-textureTR</object-name>
     <object-name>Cone-textureLL</object-name>
     <object-name>Cone-textureLR</object-name>
     <object-name>Cone-textureLM</object-name>
@@ -281,7 +301,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <object-name>SpotLL</object-name> 
     <object-name>SpotLT</object-name>
     <object-name>Cone-textureTL</object-name>
-    <object-name>Cone-textureTR</object-name>
     <object-name>Cone-textureLL</object-name>
     <object-name>Cone-textureLR</object-name>
     <object-name>Cone-textureLM</object-name>
@@ -353,7 +372,6 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <animation>
       <type>select</type>
       <object-name>Cone-textureTL</object-name>
-      <object-name>Cone-textureTR</object-name>
       <object-name>Cone-textureTM</object-name>
       <condition>
 	<and>
