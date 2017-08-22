@@ -24,7 +24,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 
 <animation>
     <type>rotate</type>    
-    <property>switches/startpanel-cover</property>
+    <property>controls/switches/startpanel-cover</property>
     <factor>60.0</factor>
     <center>
       <x-m>0.0</x-m>
@@ -41,7 +41,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 <animation>
     <type>rotate</type>
     <object-name>RCcover</object-name>
-    <property>switches/startpanel-cover</property>
+    <property>controls/switches/startpanel-cover</property>
     <factor>90.0</factor>
     <center>
       <x-m>0.0</x-m>
@@ -67,9 +67,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <binding>
       <command>nasal</command>
       <script>
-        if( getprop("switches/startpanel-cover" ) == 0.0 )
-        	interpolate("switches/startpanel-cover", 1.0, 0.7 );
-        else 	interpolate("switches/startpanel-cover", 0.0, 0.7 );
+        if( getprop("controls/switches/startpanel-cover" ) == 0.0 )
+        	interpolate("controls/switches/startpanel-cover", 1.0, 0.7 );
+        else 	interpolate("controls/switches/startpanel-cover", 0.0, 0.7 );
       </script>
     </binding>
   </action>
