@@ -405,7 +405,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.22</factor>
+        <factor>0.18</factor>
 	<min>0.0</min>
         <max>0.5</max>
       </volume>
@@ -428,7 +428,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <volume>
         <property>sim/multiplay/generic/float[13]</property>
         <type>log</type>
-        <factor>0.22</factor>
+        <factor>0.18</factor>
 	<min>0.0</min>
         <max>0.5</max>
       </volume>
@@ -444,7 +444,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/gear.wav</path>
       <property>/gear/gear[0]/position-norm</property>
       <volume>
-        <factor>0.5</factor>
+        <factor>0.4</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -461,7 +461,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      </condition>
      <volume>
        <property>sim/multiplay/generic/int[7]</property>
-        <factor>0.5</factor>
+        <factor>0.4</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -535,7 +535,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/flaps.wav</path>
       <property>/surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>0.35</factor>
+        <factor>0.15</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -610,85 +610,85 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   
   <!-- Doors -->
   
-    <door>
+  <door>
       <name>Crew doorT</name>
       <mode>in-transit</mode>
       <path>Aircraft/AN-12BK/Sounds/door_close.wav</path>
       <condition>
-       <and>
-	<greater-than>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.01</value>
-        </greater-than>
-	<less-than>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.99</value>
-        </less-than>
-       </and>
+          <and>
+              <greater-than>
+                  <property>sim/multiplay/generic/float[0]</property>
+                  <value>0.01</value>
+              </greater-than>
+              <less-than>
+                  <property>sim/multiplay/generic/float[0]</property>
+                  <value>0.99</value>
+              </less-than>
+          </and>
       </condition>
       <volume>
-        <factor>0.11</factor>
+          <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
-    </door>
-    
-    <door>
+  </door>
+  
+  <door>
       <name>Crew door</name>
       <path>Aircraft/AN-12BK/Sounds/door_closed.wav</path>
       <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[0]</property>
-          <value>0.0</value>
-        </equals>
+          <equals>
+              <property>sim/multiplay/generic/float[0]</property>
+              <value>0.0</value>
+          </equals>
       </condition>
       <volume>
-	<property>sim/multiplay/generic/int[7]</property>
-        <factor>0.35</factor>
+          <property>sim/multiplay/generic/int[7]</property>
+          <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
-    </door>
-
-    <door>
+  </door>
+  
+  <door>
       <name>Passenger doorT</name>
       <mode>in-transit</mode>
       <path>Aircraft/AN-12BK/Sounds/door_close.wav</path>
       <condition>
-       <and>
-	<greater-than>
-          <property>sim/multiplay/generic/float[12]</property>
-          <value>0.01</value>
-        </greater-than>
-	<less-than>
-          <property>sim/multiplay/generic/float[12]</property>
-          <value>0.99</value>
-        </less-than>
-       </and>
+          <and>
+              <greater-than>
+                  <property>sim/multiplay/generic/float[12]</property>
+                  <value>0.01</value>
+              </greater-than>
+              <less-than>
+                  <property>sim/multiplay/generic/float[12]</property>
+                  <value>0.99</value>
+              </less-than>
+          </and>
       </condition>
       <volume>
-        <factor>0.12</factor>
+          <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
-    </door>
-    
-    <door>
+  </door>
+  
+  <door>
       <name>Passenger door</name>
       <path>Aircraft/AN-12BK/Sounds/door_closed.wav</path>
       <condition>
-        <equals>
-          <property>sim/multiplay/generic/float[12]</property>
-          <value>0.0</value>
-        </equals>
+          <equals>
+              <property>sim/multiplay/generic/float[12]</property>
+              <value>0.0</value>
+          </equals>
       </condition>
       <volume>
-	<property>sim/multiplay/generic/int[7]</property>
-        <factor>0.35</factor>
+          <property>sim/multiplay/generic/int[7]</property>
+          <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
-    </door>
+  </door>
 
         <!-- Wind -->
 

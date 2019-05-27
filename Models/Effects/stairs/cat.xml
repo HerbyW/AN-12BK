@@ -12,156 +12,192 @@ Downloads: 856
 Added by: Edusoft Studios
 Resource: Free 3d models
 Additional Info: Cat N260515 - 3D model (*.gsm+*.3ds+*.max) for 3d visualization. 
-    http://archive3d.net/?a=download&id=c8d12545
-    
-    livery adjustment by: m.herweg 09-2015
+http://archive3d.net/?a=download&id=c8d12545
+
+livery adjustment by: m.herweg 09-2015
 -->
 
 <PropertyList>
-  
-  <path>katze.ac</path>
-  
-  <animation>
-    <type>select</type>	  
-    <condition>      
-      <greater-than>
-	<property>sim/multiplay/generic/int[17]</property>
-	<value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
-  
-  <animation>
-    <type>scale</type>	
-    <property>sim/multiplay/generic/int[17]</property>
-    <offset>1</offset>
-    <x-max>10</x-max>
-    <y-max>10</y-max>
-    <z-max>10</z-max>
-    <x-factor>10</x-factor>
-    <y-factor>10</y-factor>
-    <z-factor>10</z-factor>
-  </animation>
-  
-  <animation>
-    <type>pick</type>
-    <object-name>default</object-name>
-    <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-	<command>property-assign</command>
-	<property>controls/switches/cat</property>
-	<value> 1 </value>
-      </binding>
-      <mod-up>
-	<binding>
-	  <command>property-assign</command>
-	  <property>controls/switches/cat</property>
-	  <value> 0 </value>
-	</binding>
-      </mod-up>
-    </action>
-  </animation>
-  
-  
-  <!-- +right -left -->
-  <animation>
-    <type>translate</type>    
-    <property>sim/multiplay/generic/float[0]</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 0.2 </ind><dep>  0.50 </dep></entry>
-      <entry><ind> 0.3 </ind><dep>  0.70 </dep></entry>
-      <entry><ind> 0.4 </ind><dep> 1.20 </dep></entry>
-      <entry><ind> 0.5 </ind><dep>  -8.7 </dep></entry>
-      <entry><ind> 0.6 </ind><dep>  -8.7 </dep></entry>
-      <entry><ind> 0.7 </ind><dep>  -8.7 </dep></entry>
-      <entry><ind> 0.8 </ind><dep> 15.0 </dep></entry>
-      <entry><ind> 0.9 </ind><dep> 15.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> 15.0 </dep></entry>
-    </interpolation>
-    <axis>
-      <x>-1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <!-- +down -up -->
- <animation>
-    <type>translate</type>    
-    <property>sim/multiplay/generic/float[0]</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 0.2 </ind><dep>  0.88 </dep></entry>
-      <entry><ind> 0.3 </ind><dep>  0.88 </dep></entry>
-      <entry><ind> 0.4 </ind><dep> 0.88 </dep></entry>
-      <entry><ind> 0.5 </ind><dep>  0.88 </dep></entry>
-      <entry><ind> 0.55 </ind><dep>  0.53 </dep></entry>
-      <entry><ind> 0.6 </ind><dep>  2.83 </dep></entry>
-      <entry><ind> 0.7 </ind><dep>  2.73 </dep></entry>
-      <entry><ind> 0.8 </ind><dep> 2.63 </dep></entry>
-      <entry><ind> 0.9 </ind><dep> 2.63 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  2.45 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z>-1 </z>
-    </axis>
-  </animation>
-  
+    
+    <path>katze.ac</path>
+    
+    <animation>
+        <type>select</type>	  
+        <condition>      
+            <greater-than>
+                <property>sim/multiplay/generic/int[17]</property>
+                <value>0</value>
+            </greater-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>scale</type>	
+        <property>sim/multiplay/generic/int[17]</property>
+        <offset>1</offset>
+        <x-max>10</x-max>
+        <y-max>10</y-max>
+        <z-max>10</z-max>
+        <x-factor>10</x-factor>
+        <y-factor>10</y-factor>
+        <z-factor>10</z-factor>
+    </animation>
+    
+    <!-- Cat Head movement -->
+    
+    <animation>
+        <type>pick</type>
+        <object-name>default.001</object-name>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>interpolate("controls/switches/cat2", 1, 2, 0, 2)</script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>default.001</object-name>
+        <property>controls/switches/cat2</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+            <entry><ind> 0.3 </ind><dep> 50.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep> 80.0 </dep></entry>
+        </interpolation>
+        <center>
+            <x-m> -0.0 </x-m>
+            <y-m> -0.0173 </y-m>
+            <z-m>  0.0265 </z-m>
+        </center>
+        <axis>
+            <x> 0 </x>
+            <y> 0 </y>
+            <z> 1 </z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>default</object-name>
+        <visible>true</visible>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/switches/cat</property>
+                <value> 1 </value>
+            </binding>
+            <mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>controls/switches/cat</property>
+                    <value> 0 </value>
+                </binding>
+            </mod-up>
+        </action>
+    </animation>
+    
+    <!-- Cat movement -->
+    <!-- +right -left -->
+    <animation>
+        <type>translate</type>    
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+            <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  0.50 </dep></entry>
+            <entry><ind> 0.3 </ind><dep>  0.70 </dep></entry>
+            <entry><ind> 0.4 </ind><dep> 1.20 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  -8.7 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  -8.7 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  -8.7 </dep></entry>
+            <entry><ind> 0.8 </ind><dep> 15.0 </dep></entry>
+            <entry><ind> 0.9 </ind><dep> 15.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep> 15.0 </dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1 </x>
+            <y> 0 </y>
+            <z> 0 </z>
+        </axis>
+    </animation>
+    
+    <!-- +down -up -->
+    <animation>
+        <type>translate</type>    
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+            <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  0.88 </dep></entry>
+            <entry><ind> 0.3 </ind><dep>  0.88 </dep></entry>
+            <entry><ind> 0.4 </ind><dep> 0.88 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  0.88 </dep></entry>
+            <entry><ind> 0.55 </ind><dep>  0.53 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  2.83 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  2.73 </dep></entry>
+            <entry><ind> 0.8 </ind><dep> 2.63 </dep></entry>
+            <entry><ind> 0.9 </ind><dep> 2.63 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  2.45 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> 0 </x>
+            <y> 0 </y>
+            <z>-1 </z>
+        </axis>
+    </animation>
+    
     <!-- +forward -backward -->
- <animation>
-    <type>translate</type>    
-    <property>sim/multiplay/generic/float[0]</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
-      <entry><ind> 0.3 </ind><dep>  7.0 </dep></entry>
-      <entry><ind> 0.4 </ind><dep> 8.50 </dep></entry>
-      <entry><ind> 0.5 </ind><dep>  1.90 </dep></entry>
-      <entry><ind> 0.6 </ind><dep>  3.90 </dep></entry>
-      <entry><ind> 0.7 </ind><dep>  13.90 </dep></entry>
-      <entry><ind> 0.8 </ind><dep> 23.0 </dep></entry>
-      <entry><ind> 0.9 </ind><dep> 33.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  44.50 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y>-1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-  
-  <!-- +turnleft -turnright -->
-  <animation>
-    <type>rotate</type>    
-    <property>sim/multiplay/generic/float[0]</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 0.1 </ind><dep>  90.0 </dep></entry>
-      <entry><ind> 0.2 </ind><dep> 180.0 </dep></entry>
-      <entry><ind> 0.3 </ind><dep> 180.0 </dep></entry>
-      <entry><ind> 0.4 </ind><dep> 180.0 </dep></entry>
-      <entry><ind> 0.5 </ind><dep> 90.0 </dep></entry>
-      <entry><ind> 0.6 </ind><dep>  90.0 </dep></entry>
-      <entry><ind> 0.7 </ind><dep>  90.0 </dep></entry>
-      <entry><ind> 0.8 </ind><dep> 180.0 </dep></entry>
-      <entry><ind> 0.9 </ind><dep> 180.0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> 180.0 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-  
-  </PropertyList>
-      
+    <animation>
+        <type>translate</type>    
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+            <entry><ind> 0.1 </ind><dep>  0.0 </dep></entry>
+            <entry><ind> 0.2 </ind><dep>  0.0 </dep></entry>
+            <entry><ind> 0.3 </ind><dep>  7.0 </dep></entry>
+            <entry><ind> 0.4 </ind><dep> 8.50 </dep></entry>
+            <entry><ind> 0.5 </ind><dep>  1.90 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  3.90 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  13.90 </dep></entry>
+            <entry><ind> 0.8 </ind><dep> 23.0 </dep></entry>
+            <entry><ind> 0.9 </ind><dep> 33.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep>  44.50 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> 0 </x>
+            <y>-1 </y>
+            <z> 0 </z>
+        </axis>
+    </animation>
+    
+    <!-- +turnleft -turnright -->
+    <animation>
+        <type>rotate</type>    
+        <property>sim/multiplay/generic/float[0]</property>
+        <interpolation>
+            <entry><ind> 0.0 </ind><dep> 0.0 </dep></entry>
+            <entry><ind> 0.1 </ind><dep>  90.0 </dep></entry>
+            <entry><ind> 0.2 </ind><dep> 180.0 </dep></entry>
+            <entry><ind> 0.3 </ind><dep> 180.0 </dep></entry>
+            <entry><ind> 0.4 </ind><dep> 180.0 </dep></entry>
+            <entry><ind> 0.5 </ind><dep> 90.0 </dep></entry>
+            <entry><ind> 0.6 </ind><dep>  90.0 </dep></entry>
+            <entry><ind> 0.7 </ind><dep>  90.0 </dep></entry>
+            <entry><ind> 0.8 </ind><dep> 180.0 </dep></entry>
+            <entry><ind> 0.9 </ind><dep> 180.0 </dep></entry>
+            <entry><ind> 1.0 </ind><dep> 180.0 </dep></entry>
+        </interpolation>
+        <axis>
+            <x> 0 </x>
+            <y> 0 </y>
+            <z> 1 </z>
+        </axis>
+    </animation>
+    
+</PropertyList>

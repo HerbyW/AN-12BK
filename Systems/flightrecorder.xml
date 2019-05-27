@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList>
+  
+ 
+        <replay-config type="int">0</replay-config>
+        <config n="0">
+            <name type="string">An-12-BK</name>
+            
+            <signals include="/Aircraft/Generic/flightrecorder/components/environment.xml"/>
+            <signals include="/Aircraft/Generic/flightrecorder/components/position.xml"/>
+            <signals include="/Aircraft/Generic/flightrecorder/components/controls.xml"/>
+            <signals include="/Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+            <signals include="/Aircraft/Generic/flightrecorder/components/engine-turboprop.xml">
+        <count type="int">4</count>
+    </signals>
+            <signals include="/Aircraft/Generic/flightrecorder/components/tanks.xml">
+                <count type="int">4</count>
+            </signals>
+            <signals include="Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+                <count type="int">5</count>
+            </signals>
+            <signals include="/Aircraft/Generic/flightrecorder/components/faults-engines.xml">
+                <count type="int">4</count>
+            </signals>            
+           <signal>
+                <type>float</type><property type="string">sim/weight[0]/weight-lb</property>
+            </signal>
+            <signal>
+                <type>float</type><property type="string">sim/weight[1]/weight-lb</property>
+            </signal>
+            <signal>
+                <type>float</type><property type="string">sim/weight[2]/weight-lb</property>
+            </signal>    
+            <signal>
+                <type>float</type><property type="string">sim/weight[3]/weight-lb</property>
+            </signal>  
+            <signal>
+                <type>bool</type><property type="string">controls/lighting/nav-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property type="string">controls/lighting/beacon-state/state</property>
+            </signal>
+            <signal>
+                <type>bool</type><property type="string">controls/lighting/strobe-state/state</property>
+            </signal>            
+            <signal>
+                <type>bool</type><property type="string">controls/lighting/taxi-lights</property>
+            </signal>            
+            <signal>
+                <type>bool</type><property type="string">controls/lighting/landing-lights</property>
+            </signal>            
+            <signal>
+                <type>int8</type><property type="string">sim/signals/fdm-ready</property>
+            </signal>            
+            <signal>
+                <type>int8</type><property type="string">controls/storage/trigger/state</property>
+            </signal>
+            <signal>
+                <type>int8</type><property type="string">controls/paratroopers/jump-signal</property>
+            </signal>            
+            <signal>
+                <type>int8</type><property type="string">controls/switches/gauge-light</property>
+            </signal>            
+            <signal>
+                <type>float</type><property type="string">controls/engines/engine[0]/reverserminus</property>
+            </signal>            
+            <signal>
+                <type>float</type><property type="string">controls/gear/runway</property>
+            </signal>
+            <signal>
+                <type>int8</type><property type="string">controls/chokes/activ</property>
+            </signal>            
+            <signal>
+                <type>bool</type><property type="string">controls/reverser</property>
+            </signal>            
+            <signal>
+                <type>float</type><property type="string">velocities/groundspeed-kt</property>
+            </signal>
+            <signal>
+                <type>float</type><property type="string">position/gear-agl-m</property>
+            </signal> 
+            <signal>
+                <type>float</type><property type="string">sim/model/door-positions/crew/position-norm</property>
+            </signal>            
+            <signal>
+                <type>float</type><property type="string">sim/model/door-positions/passenger/position-norm</property>
+            </signal> 
+            <signal>
+                <type>float</type><property type="string">sim/model/door-positions/baie/position-norm</property>
+            </signal>
+            <signal>
+                <type>float</type><property type="string">sim/model/smokeshooterspeed</property>
+            </signal>
+            <signal>
+                <type>float</type><property type="string">sim/model/iceing</property>
+            </signal>
+            
+        </config>
+      
+      </PropertyList>

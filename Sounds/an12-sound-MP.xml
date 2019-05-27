@@ -295,7 +295,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/gear.wav</path>
       <property>gear/gear[0]/position-norm</property>
       <volume>
-        <factor>0.5</factor>
+        <factor>0.4</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -312,7 +312,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
      </condition>
      <volume>
        <property>sim/multiplay/generic/int[7]</property>
-        <factor>0.5</factor>
+        <factor>0.4</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -358,7 +358,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <path>Aircraft/AN-12BK/Sounds/flaps.wav</path>
       <property>surface-positions/flap-pos-norm</property>
       <volume>
-        <factor>0.35</factor>
+        <factor>0.15</factor>
       </volume>
       <reference-dist>500</reference-dist>
       <max-dist>2000</max-dist>
@@ -383,7 +383,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
        </and>
       </condition>
       <volume>
-        <factor>0.11</factor>
+        <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
@@ -400,7 +400,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </condition>
       <volume>
 	<property>sim/multiplay/generic/int[7]</property>
-        <factor>0.35</factor>
+        <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
@@ -423,7 +423,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
        </and>
       </condition>
       <volume>
-        <factor>0.12</factor>
+        <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>
@@ -440,7 +440,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       </condition>
       <volume>
 	<property>sim/multiplay/generic/int[7]</property>
-        <factor>0.35</factor>
+        <factor>0.05</factor>
       </volume>
       <reference-dist>100</reference-dist>
       <max-dist>2000</max-dist>

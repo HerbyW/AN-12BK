@@ -79,12 +79,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       
       <description>Antonov An 12 BK (YASim)</description>
       <author>HerbyW (Instrumentation, Animation, FDM, 3D), firefly graphic blender design for interior and panel, BARANGER Emmanuel (3D/FDM-original)</author>
-      <aircraft-version>5.0.2</aircraft-version>    
+      <aircraft-version>5.0.3</aircraft-version>    
       <status>advanced production</status>
       <rating>
-	<FDM type="int">4</FDM>
-	<systems type="int">4</systems>
-	<cockpit type="int">4</cockpit>
+	<FDM type="int">5</FDM>
+	<systems type="int">5</systems>
+	<cockpit type="int">5</cockpit>
 	<model type="int">5</model>
       </rating>
       
@@ -101,7 +101,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <file type="string">an12</file>
 	  <!--liveries from: eagel 03/2015 -->
 	  </livery>
-	  <AN-12BK><version type="string">5.0.2</version></AN-12BK>
+	  <AN-12BK><version type="string">5.0.3</version></AN-12BK>
 	  <anti-ice-alpha type="float">1</anti-ice-alpha>
 	  <anti-ice-rotor type="float">1</anti-ice-rotor>
 	  <iceing type="float">1</iceing>
@@ -186,6 +186,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	    </flaps>
 	    
 <help include="Systems/help.xml"/>
+
+<flight-recorder include="Systems/flightrecorder.xml"/>
+
 <menubar include="Dialogs/AN-12BK-menu.xml"/>
 	    
     </sim>  
@@ -339,30 +342,30 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 		<keyboard include="Nasal/AN-12BK-keyboard.xml"/>
 		</input>
 		
-		<nasal>
-		  <doors>
-		    <file>Aircraft/AN-12BK/Nasal/doors.nas</file>
-		  </doors>
-		  <an12>
-		    <file>Aircraft/AN-12BK/Nasal/liveries.nas</file>
-		    <file>Aircraft/AN-12BK/Nasal/light.nas</file>
-		    <file>Aircraft/AN-12BK/Nasal/autostart.nas</file>
-		    <file>Aircraft/AN-12BK/Nasal/autopilot.nas</file>
-		  </an12>
-		  <instruments>
-		    <file>Aircraft/AN-12BK/Nasal/setprop.nas</file>      
-		  </instruments>
-		  <para>
-		    <file>Aircraft/AN-12BK/Nasal/paratroopers.nas</file>
-		  </para>
-		  <help>
-		    <file>Aircraft/AN-12BK/Nasal/km-5-1.nas</file>
-		  </help>
-		  <mapcase>
-		    <file>Aircraft/AN-12BK/Nasal/mapcase.nas</file>
-		  </mapcase>
-		  <warning>
-	            <file>Aircraft/AN-12BK/Nasal/AN-12BK-stall.nas</file>
-	          </warning>
-		</nasal>
+        <nasal>
+            <doors>
+                <file>Aircraft/AN-12BK/Nasal/doors.nas</file>
+            </doors>
+            <an12>
+                <file>Aircraft/AN-12BK/Nasal/liveries.nas</file>
+                <file>Aircraft/AN-12BK/Nasal/light.nas</file>
+                <file>Aircraft/AN-12BK/Nasal/autostart.nas</file>
+                <file>Aircraft/AN-12BK/Nasal/autopilot.nas</file>
+            </an12>
+            <instruments>
+                <file>Aircraft/AN-12BK/Nasal/setprop.nas</file>      
+            </instruments>
+            <para>
+                <file>Aircraft/AN-12BK/Nasal/paratroopers.nas</file>
+            </para>
+            <help>
+                <file>Aircraft/AN-12BK/Nasal/km-5-1.nas</file>
+            </help>
+            <mapcase>
+                <file>Aircraft/AN-12BK/Nasal/mapcase.nas</file>
+            </mapcase>
+            <warning>
+                <file>Aircraft/AN-12BK/Nasal/AN-12BK-stall.nas</file>
+            </warning>
+        </nasal>
 </PropertyList>

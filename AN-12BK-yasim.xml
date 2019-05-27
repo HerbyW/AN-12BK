@@ -154,7 +154,7 @@ Approach Elevator: -0.45499
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
-         <control-speed control="FLAP0" transition-time="5.0"/>
+         <control-speed control="FLAP0" transition-time="7.0"/>
   </hstab>
 
   <!-- Ruder -->

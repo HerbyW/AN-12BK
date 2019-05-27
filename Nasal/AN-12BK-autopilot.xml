@@ -159,7 +159,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <prop>/autopilot/internal/target-roll-deg</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron-trim</prop>
+      <prop>/controls/flight/aileron-trim-filter</prop>
     </output>
     <config>
       <Kp>0.05</Kp>        <!-- proportional gain -->
@@ -257,7 +257,11 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
 	  <equals> 
 	    <property>/autopilot/locks/heading</property>
 	    <value>dg-heading-hold</value>
-	  </equals> 
+	  </equals>
+      <equals>
+	      <property>/autopilot/locks/heading</property>
+	      <value>true-heading-hold</value>
+	    </equals>
 	</or> 
       </condition>
     </enable>
@@ -266,7 +270,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     </input>
     <output>/controls/flight/aileron-trim</output>
     <type>noise-spike</type>
-    <max-rate-of-change>2.0</max-rate-of-change>
+    <max-rate-of-change>2</max-rate-of-change>
   </filter>
 
     <!-- Rudder Control -->

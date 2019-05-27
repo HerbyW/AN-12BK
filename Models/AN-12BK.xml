@@ -382,6 +382,9 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <!-- A shadow for OSG without Rembrandt  -->
   <model>
     <path>Aircraft/AN-12BK/Models/shadow.xml</path>
+    <condition>
+      <not><property>/sim/rendering/rembrandt/enabled</property></not>
+    </condition>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
@@ -1273,6 +1276,7 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <animation>
     <type>pick</type>
     <object-name>LaPorteduCote</object-name>
+    <object-name>pilotdoor</object-name>
     <visible>true</visible>
     <action>
       <button>0</button>
@@ -1408,74 +1412,14 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   <!-- Lighting effects -->
   <!-- Beacon: red-orange at top and bottom of fuselage -->
   <model>
-    <path>Aircraft/AN-12BK/Models/light/beacon.xml</path>
+    <path>Aircraft/AN-12BK/Models/light/an12-nav-pos-beacon-lights.xml</path>
     <offsets>
-      <x-m> -3.12209 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m>  -0.10 </z-m>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
-  <model>
-    <path>Aircraft/AN-12BK/Models/light/beacon.xml</path>
-    <offsets>
-      <x-m> -3.28209 </x-m>
-      <y-m>  0.00000 </y-m>
-      <z-m> -4.42 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- VavLights: green-right, red-left -->
-  <model>
-    <path>Aircraft/AN-12BK/Models/light/RedLight.xml</path>
-    <offsets>
-      <x-m>  -1.66 </x-m>
-      <y-m> -18.84 </y-m>
-      <z-m>  -0.69819 </z-m>
-    </offsets>
-  </model>  
-  <model>
-    <path>Aircraft/AN-12BK/Models/light/GreenLight.xml</path>
-    <offsets>
-      <x-m> -1.66 </x-m>
-      <y-m> 18.84 </y-m>
-      <z-m> -0.69819 </z-m>
-    </offsets>
-  </model>
-    
-  <!-- PositionLights: white-steady 2 on tail position, 2 on wing middle position-->
-  <model>
-   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> 14.25 </x-m>
-      <y-m> -5.98 </y-m>
-      <z-m>  -0.4 </z-m>
-    </offsets>
-  </model>  
-  <model>
-   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> 14.25 </x-m>
-      <y-m>  5.98 </y-m>
-      <z-m>  -0.4 </z-m>
-    </offsets>
-  </model>
-  
-  <model>
-   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> -2.67 </x-m>
-      <y-m> -13.58 </y-m>
-      <z-m>  -0.50 </z-m>
-    </offsets>
-  </model>  
-  <model>
-   <path>Aircraft/AN-12BK/Models/light/WhiteLight.xml</path>
-    <offsets>
-      <x-m> -2.67 </x-m>
-      <y-m>  13.58 </y-m>
-      <z-m>  -0.50 </z-m>
-    </offsets>
-  </model>
+
   
     
   <!-- StrobeLights: white-pulse, left-right-back-->
@@ -1543,6 +1487,28 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
       <x-m> -12.174 </x-m>
       <y-m> 0.0 </y-m>
       <z-m> -4.194 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[12]</property>
+    </condition>
+    <offsets>
+      <x-m> 12.96 </x-m>
+      <y-m> -0.48 </y-m>
+      <z-m> -1.05 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/AN-12BK/Models/light/BlueAmbientLight.xml</path>
+    <condition>
+      <property>sim/multiplay/generic/float[12]</property>
+    </condition>
+    <offsets>
+      <x-m> 12.96 </x-m>
+      <y-m> 0.48 </y-m>
+      <z-m> -1.05 </z-m>
     </offsets>
   </model>
  

@@ -1,6 +1,6 @@
 # Antonov-12: AN-12BK for FlightGear
 
-Copyright (C) Herbert Wagner Dec2014-2018
+Copyright (C) Herbert Wagner Dec2014-2019
 
 https://github.com/HerbyW?tab=repositories
 

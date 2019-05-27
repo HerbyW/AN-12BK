@@ -65,6 +65,9 @@ setlistener("/controls/electric/battery-switch", func
         setprop("/controls/lighting/nav-lights", 0);
 	setprop("/controls/lighting/beacon", 0);
 	setprop("/controls/lighting/strobe", 0);
+	setprop("/controls/switches/headlight-mode",1);
+    setprop("/sim/multiplay/generic/int[9]",0);
+    setprop("/sim/multiplay/generic/int[10]",0);
 	
 	setprop("/sim/messages/copilot", "Main power and lights are off");
 	

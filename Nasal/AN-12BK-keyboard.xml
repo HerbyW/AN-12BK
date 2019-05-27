@@ -68,6 +68,17 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
   </binding>
 </key>
 
+<key n="89">
+	<name>Y</name>
+	<desc>Change Pilot - FlyBy View</desc>
+  <binding>
+      <command>property-cycle</command>
+      <property>/sim/current-view/view-number</property>  
+      <value>0</value>
+      <value>6</value>
+  </binding>
+</key>
+
 <key n="127">
 	<name>Delete</name>
 	<desc>Toggle Reversers</desc>

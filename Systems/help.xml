@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!--
-Copyright (C) Herbert Wagner Dec2014-2016
+Copyright (C) Herbert Wagner Dec2014-2019
 see Read-Me.txt for all copyrights in the base folder of this aircraft
 -->
 
@@ -37,8 +37,12 @@ see Read-Me.txt for all copyrights in the base folder of this aircraft
     <name>y</name>
     <desc>Change Pilot Ramp View</desc>
   </key>
+  <key>
+    <name>Y</name>
+    <desc>Change Pilot FlyBy View</desc>
+  </key>
 <text>
-Wellcome to version 5.0.2 of AN-12BK-B/BK
+Wellcome to version 5.0.3 of AN-12BK-B/BK
 
 Autostart: Throttle to idle postition, then press s and make the 2 additional settings!
 
@@ -122,7 +126,7 @@ Liveries by eagle, for full effect: view-graphic options-shader options: model t
 
 Rembrandt ready! Also everything is working fine without Rembrandt. ALS lights are also implemented.
 
-Latest update: Ice System, whatch out for the red lamps at the overhead panel, Runway effects for touch down (!) Extra sounds in navigator view
+Latest update: Real nav and pos lights, cat animation
 
 Have fun and get the latest version at:
 https://github.com/HerbyW?tab=repositories
